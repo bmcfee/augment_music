@@ -1,0 +1,82 @@
+{
+  "__class__": {
+    "py/type": "muda.base.Pipeline"
+  },
+  "params": {
+    "steps": [
+      [
+        "Pitch shift",
+        {
+          "__class__": {
+            "py/type": "muda.deformers.pitch.LinearPitchShift"
+          },
+          "params": {
+            "lower": -5.0,
+            "n_samples": 9,
+            "upper": 5.0
+          }
+        }
+      ],
+      [
+        "Time stretch",
+        {
+          "__class__": {
+            "py/type": "muda.deformers.time.LogspaceTimeStretch"
+          },
+          "params": {
+            "lower": -0.5,
+            "n_samples": 3,
+            "upper": 0.5
+          }
+        }
+      ],
+      [
+        "Background noise",
+        {
+          "__class__": {
+            "py/type": "muda.deformers.util.Bypass"
+          },
+          "params": {
+            "transformer": {
+              "__class__": {
+                "py/type": "muda.deformers.background.BackgroundNoise"
+              },
+              "params": {
+                "files": [
+                  "/home/bmcfee/data/noises/112252__jobro__stockholm-subway-ride.ogg",
+                  "/home/bmcfee/data/noises/171317__klankbeeld__people-ambience-large-hall-01.ogg",
+                  "/home/bmcfee/data/noises/231870__inkhorn__city-noise-at-night.ogg",
+                  "/home/bmcfee/data/noises/250373__klankbeeld__calm-downtownpark-lunchtime-140923-0414.2.ogg"
+                ],
+                "n_samples": 2,
+                "weight_max": 0.4,
+                "weight_min": 0.1
+              }
+            }
+          }
+        }
+      ],
+      [
+        "Dynamic range compression",
+        {
+          "__class__": {
+            "py/type": "muda.deformers.util.Bypass"
+          },
+          "params": {
+            "transformer": {
+              "__class__": {
+                "py/type": "muda.deformers.sox.DynamicRangeCompression"
+              },
+              "params": {
+                "preset": [
+                  "radio",
+                  "music"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    ]
+  }
+}
