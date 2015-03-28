@@ -1,0 +1,142 @@
+{
+  "sandbox": {
+    "content_path": "CroqueMadame_Pilot_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 473.78, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 480.9317, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.6502
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 1.2539
+        }, 
+        {
+          "duration": 63.762, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 6.0836
+        }, 
+        {
+          "duration": 46.9043, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 12.8639
+        }, 
+        {
+          "duration": 113.4991, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 61.6258
+        }, 
+        {
+          "duration": 6.4087, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 74.8611
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 82.8024
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 90.0934
+        }, 
+        {
+          "duration": 78.2048, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 95.1554
+        }, 
+        {
+          "duration": 5.9907, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 176.0073
+        }, 
+        {
+          "duration": 81.0377, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 176.5645
+        }, 
+        {
+          "duration": 23.2199, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 183.9485
+        }, 
+        {
+          "duration": 4.6439, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 208.4688
+        }, 
+        {
+          "duration": 37.1519, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 214.6917
+        }, 
+        {
+          "duration": 223.4224, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 255.048
+        }, 
+        {
+          "duration": 33.9476, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 261.4102
+        }, 
+        {
+          "duration": 134.6293, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 297.169
+        }, 
+        {
+          "duration": 30.0002, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 441.3649
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 481.62133786848074, 
+    "title": "Pilot", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "CroqueMadame"
+  }
+}

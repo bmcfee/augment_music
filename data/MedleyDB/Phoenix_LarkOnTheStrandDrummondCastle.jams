@@ -1,0 +1,46 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_LarkOnTheStrandDrummondCastle_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 228.2057, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 198.9021, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 1.8576
+        }, 
+        {
+          "duration": 187.2457, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 40.96
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 228.25215419501134, 
+    "title": "LarkOnTheStrandDrummondCastle", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

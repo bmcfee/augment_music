@@ -1,0 +1,322 @@
+{
+  "sandbox": {
+    "content_path": "Meaxic_TakeAStep_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 280.2184, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 1.9505
+        }, 
+        {
+          "duration": 18.9011, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 1.9969
+        }, 
+        {
+          "duration": 19.6905, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 2.0434
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 22.1518
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 23.3128
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 24.4738
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 25.5884
+        }, 
+        {
+          "duration": 191.6575, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 26.7494
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 26.7958
+        }, 
+        {
+          "duration": 245.8065, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 35.898
+        }, 
+        {
+          "duration": 128.4528, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 38.8238
+        }, 
+        {
+          "duration": 9.6596, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 56.8424
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 56.9353
+        }, 
+        {
+          "duration": 5.2477, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 69.7063
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 75.4649
+        }, 
+        {
+          "duration": 5.7585, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 77.1367
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 84.3813
+        }, 
+        {
+          "duration": 19.8298, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 84.66
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 93.5764
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 99.8922
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 99.9387
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 113.6385
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 121.1617
+        }, 
+        {
+          "duration": 6.4087, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 124.8769
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 127.6169
+        }, 
+        {
+          "duration": 5.8979, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 132.8181
+        }, 
+        {
+          "duration": 7.9877, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 140.9451
+        }, 
+        {
+          "duration": 8.2199, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 141.1773
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 148.3755
+        }, 
+        {
+          "duration": 20.5729, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 148.3755
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 157.5706
+        }, 
+        {
+          "duration": 3.0651, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 163.8864
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 163.8864
+        }, 
+        {
+          "duration": 45.8361, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 196.4873
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 208.5616
+        }, 
+        {
+          "duration": 20.6193, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 214.6453
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 214.6917
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 218.732
+        }, 
+        {
+          "duration": 52.8021, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 218.732
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 223.8868
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 225.698
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 230.2026
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 230.2491
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 234.1965
+        }, 
+        {
+          "duration": 8.4985, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 237.633
+        }, 
+        {
+          "duration": 18.0187, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 251.2399
+        }, 
+        {
+          "duration": 6.9196, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 260.435
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 269.3979
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 271.8592
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 282.71430839002267, 
+    "title": "TakeAStep", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Meaxic"
+  }
+}

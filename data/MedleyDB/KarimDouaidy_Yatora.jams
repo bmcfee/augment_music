@@ -1,0 +1,286 @@
+{
+  "sandbox": {
+    "content_path": "KarimDouaidy_Yatora_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 73.3286, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 1.1146
+        }, 
+        {
+          "duration": 194.2117, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 7.6626
+        }, 
+        {
+          "duration": 5.8515, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 7.709
+        }, 
+        {
+          "duration": 105.511399, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 7.7555
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 8.7307
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 11.8886
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 15.5574
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 15.9289
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 23.1735
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 24.7989
+        }, 
+        {
+          "duration": 10.9598, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 26.6101
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 36.734
+        }, 
+        {
+          "duration": 3.2973, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 37.9878
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 38.1272
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 39.9848
+        }, 
+        {
+          "duration": 24.0559, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 41.7959
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 43.7928
+        }, 
+        {
+          "duration": 9.4273, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 45.6504
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 55.4957
+        }, 
+        {
+          "duration": 12.7246, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 60.3254
+        }, 
+        {
+          "duration": 9.7059, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 66.4091
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 74.8147
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 75.6042
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 77.4618
+        }, 
+        {
+          "duration": 10.4955, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 77.7868
+        }, 
+        {
+          "duration": 23.6843, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 79.3194
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 88.9789
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 89.2575
+        }, 
+        {
+          "duration": 10.6347, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 92.7405
+        }, 
+        {
+          "duration": 11.192, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 92.9263
+        }, 
+        {
+          "duration": 81.3162, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 103.979
+        }, 
+        {
+          "duration": 97.8024, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 104.0254
+        }, 
+        {
+          "duration": 19.5048, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 114.1493
+        }, 
+        {
+          "duration": 13.7462, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 134.7222
+        }, 
+        {
+          "duration": 19.1333, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 149.5365
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 169.4128
+        }, 
+        {
+          "duration": 8.9165, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 174.0103
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 183.2983
+        }, 
+        {
+          "duration": 9.6131, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 184.9237
+        }, 
+        {
+          "duration": 16.6255, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 185.1095
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 194.6297
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 194.8619
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 198.7628
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 208.0, 
+    "title": "Yatora", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "KarimDouaidy"
+  }
+}

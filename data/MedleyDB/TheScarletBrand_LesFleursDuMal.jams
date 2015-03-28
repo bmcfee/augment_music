@@ -1,0 +1,202 @@
+{
+  "sandbox": {
+    "content_path": "TheScarletBrand_LesFleursDuMal_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 146.2857, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 4.8298, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.4799
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.8669
+        }, 
+        {
+          "duration": 198.7628, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 16.7648
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 17.1363
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 22.802
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 28.3748
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 33.994
+        }, 
+        {
+          "duration": 116.0069, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 39.0095
+        }, 
+        {
+          "duration": 113.6384, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 39.056
+        }, 
+        {
+          "duration": 23.1735, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 49.6907
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 78.4834
+        }, 
+        {
+          "duration": 11.5635, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 89.6755
+        }, 
+        {
+          "duration": 23.266299, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 116.6571
+        }, 
+        {
+          "duration": 35.898, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 138.5767
+        }, 
+        {
+          "duration": 66.4091, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 150.7439
+        }, 
+        {
+          "duration": 59.8146, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 153.9483
+        }, 
+        {
+          "duration": 51.2696, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 160.775
+        }, 
+        {
+          "duration": 45.8826, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 161.2858
+        }, 
+        {
+          "duration": 0.3716, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 215.4347
+        }, 
+        {
+          "duration": 57.957, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 216.1778
+        }, 
+        {
+          "duration": 34.9692, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 216.41
+        }, 
+        {
+          "duration": 30.8361, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 249.4752
+        }, 
+        {
+          "duration": 52.3842, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 250.404
+        }, 
+        {
+          "duration": 31.3005, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 250.7755
+        }, 
+        {
+          "duration": 31.7649, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 250.7755
+        }, 
+        {
+          "duration": 10.1239, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 293.1287
+        }, 
+        {
+          "duration": 6.2694, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 293.5931
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 295.6829
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 303.6373469387755, 
+    "title": "LesFleursDuMal", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TheScarletBrand"
+  }
+}

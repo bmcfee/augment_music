@@ -1,0 +1,52 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_SpeedMetal_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 35.3408, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 34.5513, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 35.0621, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 21.966, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 7.9877
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 36.00834467120181, 
+    "title": "SpeedMetal", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

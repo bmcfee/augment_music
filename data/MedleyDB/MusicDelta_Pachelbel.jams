@@ -1,0 +1,100 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Pachelbel_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 299.4909, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 290.7603, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 10.5883
+        }, 
+        {
+          "duration": 77.4153, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 31.9507
+        }, 
+        {
+          "duration": 77.6011, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 53.1737
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 109.9233
+        }, 
+        {
+          "duration": 27.8175, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 113.0347
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 131.0999
+        }, 
+        {
+          "duration": 36.5482, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 134.0256
+        }, 
+        {
+          "duration": 5.2013, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 141.038
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 146.425
+        }, 
+        {
+          "duration": 151.4405, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 149.8616
+        }, 
+        {
+          "duration": 129.3816, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 171.0846
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 302.78820861678, 
+    "title": "Pachelbel", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

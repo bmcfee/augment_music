@@ -1,0 +1,406 @@
+{
+  "sandbox": {
+    "content_path": "PortStWillow_StayEven_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 157.7564, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.5542
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 5.7585
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 8.8236
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.8205
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 11.0527
+        }, 
+        {
+          "duration": 50.8517, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 11.8422
+        }, 
+        {
+          "duration": 18.1116, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 14.2106
+        }, 
+        {
+          "duration": 18.5295, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 14.3035
+        }, 
+        {
+          "duration": 22.9413, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 35.6659
+        }, 
+        {
+          "duration": 23.0342, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 35.8052
+        }, 
+        {
+          "duration": 56.796, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 61.3471
+        }, 
+        {
+          "duration": 95.9913, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 61.44
+        }, 
+        {
+          "duration": 29.1179, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 86.146
+        }, 
+        {
+          "duration": 5.9908, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 86.2389
+        }, 
+        {
+          "duration": 27.5853, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 86.2389
+        }, 
+        {
+          "duration": 108.8087, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 104.4898
+        }, 
+        {
+          "duration": 48.7155, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 109.6446
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 110.0626
+        }, 
+        {
+          "duration": 49.3657, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 110.4805
+        }, 
+        {
+          "duration": 55.7743, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 110.6199
+        }, 
+        {
+          "duration": 22.2912, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 113.9171
+        }, 
+        {
+          "duration": 5.4334, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 115.4961
+        }, 
+        {
+          "duration": 5.6656, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 115.6354
+        }, 
+        {
+          "duration": 11.4242, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 121.6726
+        }, 
+        {
+          "duration": 10.2632, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 121.8583
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 135.0473
+        }, 
+        {
+          "duration": 4.3653, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 135.2795
+        }, 
+        {
+          "duration": 30.0931, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 138.6231
+        }, 
+        {
+          "duration": 15.0001, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 139.9234
+        }, 
+        {
+          "duration": 14.9537, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 140.2485
+        }, 
+        {
+          "duration": 33.3903, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 161.1929
+        }, 
+        {
+          "duration": 33.8083, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 161.3322
+        }, 
+        {
+          "duration": 9.8452, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 195.3263
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 195.4191
+        }, 
+        {
+          "duration": 92.9727, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 202.8031
+        }, 
+        {
+          "duration": 92.3225, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 206.0539
+        }, 
+        {
+          "duration": 99.1027, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 206.6112
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 222.215
+        }, 
+        {
+          "duration": 69.567, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 222.5865
+        }, 
+        {
+          "duration": 66.4555, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 223.4224
+        }, 
+        {
+          "duration": 87.3999, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 224.8156
+        }, 
+        {
+          "duration": 23.6379, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 225.2336
+        }, 
+        {
+          "duration": 82.2451, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 225.3729
+        }, 
+        {
+          "duration": 23.8237, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 225.4193
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 249.521599
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 249.8003
+        }, 
+        {
+          "duration": 12.1208, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 255.6053
+        }, 
+        {
+          "duration": 36.5018, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 255.8839
+        }, 
+        {
+          "duration": 5.7585, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 267.9583
+        }, 
+        {
+          "duration": 17.6007, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 274.1348
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 291.8284
+        }, 
+        {
+          "duration": 0.325, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 292.6179
+        }, 
+        {
+          "duration": 5.4335, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 292.9894
+        }, 
+        {
+          "duration": 11.3314, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 293.0358
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 294.0575
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 296.1937
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 298.4693
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 299.1659
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 299.3517
+        }, 
+        {
+          "duration": 2.8792, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 299.8161
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 305.4353
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 305.6675
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 317.0147845804989, 
+    "title": "StayEven", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "PortStWillow"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "sandbox": {
+    "content_path": "Schubert_Erstarrung_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 166.9979, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 157.6635, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.7369
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 173.8942403628118, 
+    "title": "Erstarrung", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Schubert"
+  }
+}

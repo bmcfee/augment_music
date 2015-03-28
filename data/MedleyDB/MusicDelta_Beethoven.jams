@@ -1,0 +1,142 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Beethoven_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 26.2385, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 26.2385, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 26.4243, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.0064, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.0064, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.1457, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.3315, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.5637, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 26.9816, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 13.7926, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 25.6348, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 25.6812, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 25.867, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 25.9599, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 26.0063, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 26.0063, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 11.7029, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 14.3499
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 27.374875283446713, 
+    "title": "Beethoven", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

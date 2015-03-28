@@ -1,0 +1,184 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Beatles_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 34.9228, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.1086, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.2015, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.3408, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.7123, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.4149
+        }, 
+        {
+          "duration": 14.6286, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.1796
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 4.5976
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 6.7802
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 8.9629
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 11.0991
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 13.2818
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 15.4645
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 17.6472
+        }, 
+        {
+          "duration": 15.3252, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 17.7865
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 19.8763
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 22.059
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 24.2416
+        }, 
+        {
+          "duration": 1.2538, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 26.3779
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 28.5605
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 30.7432
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 32.9259
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 33.6225
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 35.155
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 36.37351473922902, 
+    "title": "Beatles", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "sandbox": {
+    "content_path": "HopAlong_SisterCities_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 211.8125, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 274.5527, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 215.5741, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 210.9765, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.4644
+        }, 
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 19.5512, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 10.031
+        }, 
+        {
+          "duration": 24.0559, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 20.8051
+        }, 
+        {
+          "duration": 107.3226, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 32.3686
+        }, 
+        {
+          "duration": 20.6193, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 43.0498
+        }, 
+        {
+          "duration": 25.9134, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 45.0932
+        }, 
+        {
+          "duration": 6.7802, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 63.5298
+        }, 
+        {
+          "duration": 31.3005, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 64.2728
+        }, 
+        {
+          "duration": 29.2107, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 74.2574
+        }, 
+        {
+          "duration": 7.9412, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 95.434
+        }, 
+        {
+          "duration": 20.9444, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 96.3164
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 104.722
+        }, 
+        {
+          "duration": 19.4118, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 105.3722
+        }, 
+        {
+          "duration": 22.0589, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 117.493
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 126.1308
+        }, 
+        {
+          "duration": 29.1643, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 138.3445
+        }, 
+        {
+          "duration": 128.0349, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 148.8863
+        }, 
+        {
+          "duration": 55.9137, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 160.357
+        }, 
+        {
+          "duration": 9.6131, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 168.3911
+        }, 
+        {
+          "duration": 10.5418, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 179.0259
+        }, 
+        {
+          "duration": 5.8978, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 181.4872
+        }, 
+        {
+          "duration": 9.8452, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 190.125
+        }, 
+        {
+          "duration": 5.8979, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 192.1683
+        }, 
+        {
+          "duration": 8.9629, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 201.6421
+        }, 
+        {
+          "duration": 55.8208, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 220.4967
+        }, 
+        {
+          "duration": 54.7062, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 220.5431
+        }, 
+        {
+          "duration": 49.4586, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 220.6824
+        }, 
+        {
+          "duration": 46.6721, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 225.1871
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 271.0233
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 276.6425
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 283.4217006802721, 
+    "title": "SisterCities", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "HopAlong"
+  }
+}

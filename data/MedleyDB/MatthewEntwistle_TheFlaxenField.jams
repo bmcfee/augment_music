@@ -1,0 +1,988 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_TheFlaxenField_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 2.4148, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 1.579
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 1.7183
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 5.5728
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 6.2229
+        }, 
+        {
+          "duration": 2.74, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 10.031
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 10.0775
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 11.0063
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 13.9784
+        }, 
+        {
+          "duration": 3.4829, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 14.2571
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 14.535699
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 18.9939
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 19.0868
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 19.1797
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 22.2447
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 22.6627
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 23.127099
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 23.4057
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 24.9847
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 25.9135
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 27.028
+        }, 
+        {
+          "duration": 6.7803, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 27.2602
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 27.6317
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 30.511
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 31.1612
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 31.2076
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 34.7835
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 34.9228
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 35.0621
+        }, 
+        {
+          "duration": 11.1455, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 35.4337
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 35.9909
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 37.0126
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 37.8485
+        }, 
+        {
+          "duration": 8.0806, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 38.4522
+        }, 
+        {
+          "duration": 6.2694, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 41.0993
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 43.6535
+        }, 
+        {
+          "duration": 145.9606, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 45.4647
+        }, 
+        {
+          "duration": 29.9073, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 67.3379
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 67.6165
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 68.9168
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 69.4741
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 69.8456
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 71.2388
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 71.2853
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 71.7497
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 73.8395
+        }, 
+        {
+          "duration": 15.0929, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 75.9293
+        }, 
+        {
+          "duration": 15.2787, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 75.9293
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 86.3782
+        }, 
+        {
+          "duration": 36.8733, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 92.1368
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 92.6941
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 93.8551
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 94.4123
+        }, 
+        {
+          "duration": 5.9908, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 94.9696
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 96.7808
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 97.9418
+        }, 
+        {
+          "duration": 5.8514, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 99.1492
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 101.3783
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 104.8149
+        }, 
+        {
+          "duration": 16.2075, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 107.3691
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 107.787
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 109.1338
+        }, 
+        {
+          "duration": 9.613, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 110.8521
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 114.9852
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 120.9295
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 121.3475
+        }, 
+        {
+          "duration": 8.0805, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 135.9761
+        }, 
+        {
+          "duration": 10.8205, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 136.0225
+        }, 
+        {
+          "duration": 10.8669, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 136.0225
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 144.1959
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 146.0071
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 150.7439
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 153.9483
+        }, 
+        {
+          "duration": 31.7185, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 158.2672
+        }, 
+        {
+          "duration": 6.6873, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 158.3137
+        }, 
+        {
+          "duration": 37.9414, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 158.3137
+        }, 
+        {
+          "duration": 26.8423, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 158.3601
+        }, 
+        {
+          "duration": 21.1301, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 173.128
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 186.1312
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 188.0816
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 189.1498
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 190.3107
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 191.1931
+        }, 
+        {
+          "duration": 3.9939, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 191.7039
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 192.029
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 193.8866
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 195.1869
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 195.1869
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 196.9517
+        }, 
+        {
+          "duration": 7.5697, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 197.1374
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 199.5523
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 200.574
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 201.8743
+        }, 
+        {
+          "duration": 3.2973, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 202.06
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 203.5926
+        }, 
+        {
+          "duration": 67.523599, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 206.1468
+        }, 
+        {
+          "duration": 37.8021, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 206.7505
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 207.0291
+        }, 
+        {
+          "duration": 33.9476, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 207.1684
+        }, 
+        {
+          "duration": 22.0125, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 213.8558
+        }, 
+        {
+          "duration": 6.7337, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 216.2707
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 223.4224
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 225.8837
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 234.521499
+        }, 
+        {
+          "duration": 5.7586, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 236.6113
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 239.3049
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 241.859
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 242.7414
+        }, 
+        {
+          "duration": 19.6441, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 244.9705
+        }, 
+        {
+          "duration": 21.4088, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 244.9705
+        }, 
+        {
+          "duration": 19.8298, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 245.0634
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 246.4566
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 251.3328
+        }, 
+        {
+          "duration": 4.0402, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 258.531
+        }, 
+        {
+          "duration": 8.9165, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 263.6858
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 265.3112
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 265.4041
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 268.6549
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 269.0264
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 273.3917
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 273.4846
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 273.6704
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 273.6704
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 274.4599
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 276.1781
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 278.128599
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 278.4073
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 278.5001
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 278.6859
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 278.7788
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 282.494
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 283.0048
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 283.237
+        }, 
+        {
+          "duration": 18.2973, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 283.4692
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 283.8407
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 286.9986
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 287.2308
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 288.0668
+        }, 
+        {
+          "duration": 2.7399, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 288.2061
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 290.0172
+        }, 
+        {
+          "duration": 4.0402, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 291.4569
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 292.0606
+        }, 
+        {
+          "duration": 3.158, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 292.2463
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 292.3857
+        }, 
+        {
+          "duration": 5.2477, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 296.6117
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 296.9832
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 297.0297
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 297.3083
+        }, 
+        {
+          "duration": 16.672, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 302.138
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 302.7882
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 302.7882
+        }, 
+        {
+          "duration": 4.1331, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 302.8811
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 303.2526
+        }, 
+        {
+          "duration": 10.1239, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 307.7108
+        }, 
+        {
+          "duration": 4.1331, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 307.8502
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 307.9895
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 308.0824
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 312.587
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 313.0979
+        }, 
+        {
+          "duration": 2.647, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 313.5623
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 323.52238095238096, 
+    "title": "TheFlaxenField", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

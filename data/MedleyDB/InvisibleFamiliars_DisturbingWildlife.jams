@@ -1,0 +1,754 @@
+{
+  "sandbox": {
+    "content_path": "InvisibleFamiliars_DisturbingWildlife_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 13.7462, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 0.5573
+        }, 
+        {
+          "duration": 213.4843, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.9752
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 1.7183
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 7.2911
+        }, 
+        {
+          "duration": 14.3499, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.449
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 13.9784
+        }, 
+        {
+          "duration": 19.5512, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 18.7617
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 20.2014
+        }, 
+        {
+          "duration": 15.0929, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 23.4522
+        }, 
+        {
+          "duration": 11.4706, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 26.0528
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 26.0992
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 31.7185
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 38.22
+        }, 
+        {
+          "duration": 11.7957, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 38.638
+        }, 
+        {
+          "duration": 173.3138, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 39.2417
+        }, 
+        {
+          "duration": 23.4986, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 39.8454
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 39.9383
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 43.1427
+        }, 
+        {
+          "duration": 3.901, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 44.4894
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 46.3006
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 46.9043
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 49.4585
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 50.8053
+        }, 
+        {
+          "duration": 11.5171, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 51.3625
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 52.6164
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 55.7743
+        }, 
+        {
+          "duration": 38.9631, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 57.3068
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 57.957
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 58.9322
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 62.1366
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 64.5515
+        }, 
+        {
+          "duration": 12.2601, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 65.1552
+        }, 
+        {
+          "duration": 16.1611, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 77.8333
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 78.019
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 79.598
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 81.2234
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 82.8024
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 84.3813
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 86.0067
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 87.5857
+        }, 
+        {
+          "duration": 28.3283, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 90.3721
+        }, 
+        {
+          "duration": 31.0683, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 90.8365
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 91.9975
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 95.2018
+        }, 
+        {
+          "duration": 25.6813, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 96.7343
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 98.4526
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 101.6105
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 104.8149
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 107.9728
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 111.4558
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 112.8954
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 113.127599
+        }, 
+        {
+          "duration": 11.2849, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 116.9357
+        }, 
+        {
+          "duration": 23.7772, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 116.9357
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 117.7716
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 117.9574
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 119.4899
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 121.1153
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 122.7407
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 122.9729
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 124.2732
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 125.8986
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 127.4311
+        }, 
+        {
+          "duration": 19.6905, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 127.8491
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 129.0565
+        }, 
+        {
+          "duration": 9.613, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 130.4033
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 130.589
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 132.168
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 133.7005
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 135.2795
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 136.8584
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 138.4374
+        }, 
+        {
+          "duration": 8.4985, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 139.5519
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 141.1773
+        }, 
+        {
+          "duration": 11.3778, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 145.3105
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 146.1464
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 148.2826
+        }, 
+        {
+          "duration": 5.4335, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 150.0009
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 156.2703
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 157.6635
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 158.8245
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 159.3818
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 161.0072
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 165.6976
+        }, 
+        {
+          "duration": 12.6317, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 169.5985
+        }, 
+        {
+          "duration": 11.8422, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 170.1094
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 170.3416
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 170.388
+        }, 
+        {
+          "duration": 9.7059, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 171.5026
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 171.6883
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 173.2209
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 174.7998
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 174.7998
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 176.4252
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 178.0042
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 179.5831
+        }, 
+        {
+          "duration": 5.4335, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 181.6265
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 183.1126
+        }, 
+        {
+          "duration": 11.3778, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 183.159
+        }, 
+        {
+          "duration": 11.3313, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 183.3448
+        }, 
+        {
+          "duration": 10.6812, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 184.1807
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 184.32
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 185.9454
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 187.5244
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 187.5244
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 189.1033
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 190.7287
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 192.3077
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 193.7937
+        }, 
+        {
+          "duration": 16.9041, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 195.1405
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 195.3727
+        }, 
+        {
+          "duration": 5.2013, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 195.8835
+        }, 
+        {
+          "duration": 5.3405, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 196.0229
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 196.8123
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 196.9981
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 16.0218, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 200.0631
+        }, 
+        {
+          "duration": 4.5046, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 201.735
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "shaker", 
+          "time": 203.2675
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 203.3604
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 204.9393
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 218.69419501133788, 
+    "title": "DisturbingWildlife", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "InvisibleFamiliars"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "sandbox": {
+    "content_path": "Schumann_Mignon_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 14.9072, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.2074
+        }, 
+        {
+          "duration": 69.7992, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 15.6967
+        }, 
+        {
+          "duration": 80.3875, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 17.5543
+        }, 
+        {
+          "duration": 15.5109, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 97.2916
+        }, 
+        {
+          "duration": 154.7842, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 99.1492
+        }, 
+        {
+          "duration": 52.8022, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 113.592
+        }, 
+        {
+          "duration": 14.8143, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 178.515
+        }, 
+        {
+          "duration": 52.7093, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 194.6761
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 262.8382766439909, 
+    "title": "Mignon", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Schumann"
+  }
+}

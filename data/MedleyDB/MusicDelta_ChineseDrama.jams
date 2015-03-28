@@ -1,0 +1,106 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseDrama_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 60.279, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 62.5545, 
+          "confidence": 1, 
+          "value": "guzheng", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 61.4865, 
+          "confidence": 1, 
+          "value": "zhongruan", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 61.254199, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 18.6224
+        }, 
+        {
+          "duration": 2.74, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 21.4088
+        }, 
+        {
+          "duration": 8.3128, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 32.6008
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 42.0281
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 44.257199
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 46.4399
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 48.5761
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 50.2944
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 53.0344
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 63.89424036281179, 
+    "title": "ChineseDrama", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

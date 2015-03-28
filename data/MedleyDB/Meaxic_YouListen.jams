@@ -1,0 +1,430 @@
+{
+  "sandbox": {
+    "content_path": "Meaxic_YouListen_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 71.889, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 2.0898
+        }, 
+        {
+          "duration": 20.1085, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 2.1362
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 16.4862
+        }, 
+        {
+          "duration": 9.7059, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 20.4336
+        }, 
+        {
+          "duration": 7.3375, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 23.0806
+        }, 
+        {
+          "duration": 6.8266, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 30.7897
+        }, 
+        {
+          "duration": 2.6007, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 31.8113
+        }, 
+        {
+          "duration": 7.2447, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 36.8268
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 40.3098
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 44.443
+        }, 
+        {
+          "duration": 7.6162, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 46.2541
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 48.0653
+        }, 
+        {
+          "duration": 2.4614, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 51.1303
+        }, 
+        {
+          "duration": 55.635, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 52.8022
+        }, 
+        {
+          "duration": 20.5729, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 53.8703
+        }, 
+        {
+          "duration": 57.2604, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 53.8703
+        }, 
+        {
+          "duration": 19.6905, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 54.7062
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 61.0685
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 65.1088
+        }, 
+        {
+          "duration": 33.4368, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 73.0964
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 82.9881
+        }, 
+        {
+          "duration": 6.2229, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 83.081
+        }, 
+        {
+          "duration": 5.9443, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 88.0036
+        }, 
+        {
+          "duration": 9.7989, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 90.2327
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 93.8086
+        }, 
+        {
+          "duration": 6.4551, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 100.4031
+        }, 
+        {
+          "duration": 5.9443, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 100.6353
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 105.9759
+        }, 
+        {
+          "duration": 77.9261, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 105.9759
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 109.8304
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 111.27
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 111.7344
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 112.9883
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 115.8211
+        }, 
+        {
+          "duration": 55.4492, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 117.6323
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 118.3289
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 119.0255
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 120.4187
+        }, 
+        {
+          "duration": 48.1118, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 122.7871
+        }, 
+        {
+          "duration": 7.2446, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 123.6695
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 125.1091
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 129.6138
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 131.8893
+        }, 
+        {
+          "duration": 40.3098, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 132.2609
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 134.7222
+        }, 
+        {
+          "duration": 74.4896, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 136.6727
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 145.3105
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 150.326
+        }, 
+        {
+          "duration": 4.3653, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 153.6697
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 164.536599
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 173.2209
+        }, 
+        {
+          "duration": 225.5122, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 173.871
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 174.6141
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 177.0289
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 179.3974
+        }, 
+        {
+          "duration": 23.9166, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 181.8122
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 211.1623
+        }, 
+        {
+          "duration": 187.5244, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 212.0446
+        }, 
+        {
+          "duration": 20.48, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 212.0911
+        }, 
+        {
+          "duration": 20.8051, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 212.1375
+        }, 
+        {
+          "duration": 13.3283, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 216.3635
+        }, 
+        {
+          "duration": 171.549, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 228.9952
+        }, 
+        {
+          "duration": 25.542, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 230.2955
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 230.527699
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 257.0449
+        }, 
+        {
+          "duration": 20.1085, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 298.6086
+        }, 
+        {
+          "duration": 18.4831, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 377.4636
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 412.713514739229, 
+    "title": "YouListen", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Meaxic"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Reggae_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.4614, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.4614, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.418
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.5542
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.4118
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 4.9691
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 6.966
+        }, 
+        {
+          "duration": 3.9009, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 8.4521
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 9.1487
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 13.0496
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 13.6998
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 15.6502
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 17.46267573696145, 
+    "title": "Reggae", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

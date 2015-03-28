@@ -1,0 +1,64 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Hendrix_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 17.6007, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.6472, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.74, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 7.5697, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.3189
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 12.3066
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 19.843945578231292, 
+    "title": "Hendrix", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

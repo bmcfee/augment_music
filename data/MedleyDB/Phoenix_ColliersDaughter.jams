@@ -1,0 +1,106 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_ColliersDaughter_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 189.4283, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 11.9351, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 8.9629
+        }, 
+        {
+          "duration": 64.923, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 9.0558
+        }, 
+        {
+          "duration": 62.4617, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 20.9908
+        }, 
+        {
+          "duration": 113.6385, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 74.3967
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 84.1027
+        }, 
+        {
+          "duration": 8.1734, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 86.7033
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 95.2018
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 98.7777
+        }, 
+        {
+          "duration": 54.2883, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 103.561
+        }, 
+        {
+          "duration": 72.5392, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 116.6106
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 157.9886
+        }, 
+        {
+          "duration": 21.641, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 167.5088
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 190.6590476190476, 
+    "title": "ColliersDaughter", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

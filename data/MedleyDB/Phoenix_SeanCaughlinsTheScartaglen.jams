@@ -1,0 +1,64 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_SeanCaughlinsTheScartaglen_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 195.6978, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 194.5368, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.5573
+        }, 
+        {
+          "duration": 16.9041, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.6966
+        }, 
+        {
+          "duration": 193.608, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 0.743
+        }, 
+        {
+          "duration": 16.6255, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 32.4615
+        }, 
+        {
+          "duration": 131.1928, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 62.9725
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 196.11258503401362, 
+    "title": "SeanCaughlinsTheScartaglen", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

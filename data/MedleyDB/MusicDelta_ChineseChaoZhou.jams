@@ -1,0 +1,88 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseChaoZhou_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 54.892, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 54.8455, 
+          "confidence": 1, 
+          "value": "guzheng", 
+          "time": 0.6502
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 3.0186
+        }, 
+        {
+          "duration": 4.2724, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 6.3623
+        }, 
+        {
+          "duration": 44.3501, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 10.3561
+        }, 
+        {
+          "duration": 4.969, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 13.932
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 20.1085
+        }, 
+        {
+          "duration": 6.4552, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 28.4212
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 37.9414
+        }, 
+        {
+          "duration": 9.6595, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 44.443
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 56.66827664399093, 
+    "title": "ChineseChaoZhou", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "sandbox": {
+    "content_path": "ClaraBerryAndWooldog_Boys_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 143.1742, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 30.2324, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 4.226
+        }, 
+        {
+          "duration": 10.8205, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 12.2601
+        }, 
+        {
+          "duration": 108.4836, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 23.3593
+        }, 
+        {
+          "duration": 39.6132, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 31.532699
+        }, 
+        {
+          "duration": 16.532599, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 31.6256
+        }, 
+        {
+          "duration": 39.1024, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 31.672
+        }, 
+        {
+          "duration": 88.6538, 
+          "confidence": 1, 
+          "value": "snare drum", 
+          "time": 31.672
+        }, 
+        {
+          "duration": 44.861, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 39.8454
+        }, 
+        {
+          "duration": 4.7369, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 39.9383
+        }, 
+        {
+          "duration": 13.5604, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 48.0189
+        }, 
+        {
+          "duration": 12.3066, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 52.3378
+        }, 
+        {
+          "duration": 8.2198, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 64.4122
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 80.6661
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 81.2698
+        }, 
+        {
+          "duration": 38.9166, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 81.3163
+        }, 
+        {
+          "duration": 43.2355, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 81.4092
+        }, 
+        {
+          "duration": 39.0095, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 81.4556
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 85.1708
+        }, 
+        {
+          "duration": 3.5758, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 93.8551
+        }, 
+        {
+          "duration": 8.4056, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 97.6167
+        }, 
+        {
+          "duration": 24.4274, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 97.756
+        }, 
+        {
+          "duration": 43.5606, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 97.756
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 110.4341
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 112.1059
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 153.4771201814059, 
+    "title": "Boys", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ClaraBerryAndWooldog"
+  }
+}

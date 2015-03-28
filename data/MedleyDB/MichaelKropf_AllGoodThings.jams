@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "MichaelKropf_AllGoodThings_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 208.1437, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 21.641, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.6502
+        }, 
+        {
+          "duration": 35.2943, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 22.9413
+        }, 
+        {
+          "duration": 26.1922, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 59.3966
+        }, 
+        {
+          "duration": 120.9295, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 87.4928
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 208.46004535147392, 
+    "title": "AllGoodThings", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MichaelKropf"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_InTheHalloftheMountainKing_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 17.3686, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 17.3686, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 17.3686, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 17.3686, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 17.1363, 
+          "confidence": 1, 
+          "value": "tuba", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 17.2757, 
+          "confidence": 1, 
+          "value": "trombone", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 17.1828, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 17.1828, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 17.1828, 
+          "confidence": 1, 
+          "value": "toms", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 17.1364, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 17.1364, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 17.0899, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 17.0435, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 17.0435, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 8.4521, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 8.9629
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 17.443990929705215, 
+    "title": "InTheHalloftheMountainKing", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

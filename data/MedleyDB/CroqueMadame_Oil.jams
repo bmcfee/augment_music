@@ -1,0 +1,166 @@
+{
+  "sandbox": {
+    "content_path": "CroqueMadame_Oil_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 90.6043, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 449.6777, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 443.5011, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 81.6878, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 82.3844
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 86.6104
+        }, 
+        {
+          "duration": 2.6936, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 88.1429
+        }, 
+        {
+          "duration": 10.4955, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 90.9293
+        }, 
+        {
+          "duration": 6.4087, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 91.2544
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 98.2204
+        }, 
+        {
+          "duration": 30.0002, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 101.7498
+        }, 
+        {
+          "duration": 343.2838, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 101.8892
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 132.6324
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 134.072
+        }, 
+        {
+          "duration": 30.1859, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 136.6727
+        }, 
+        {
+          "duration": 28.3748, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 167.1837
+        }, 
+        {
+          "duration": 29.35, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 195.9764
+        }, 
+        {
+          "duration": 8.2199, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 226.3481
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 235.1253
+        }, 
+        {
+          "duration": 2.2292, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 237.0757
+        }, 
+        {
+          "duration": 130.1246, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 239.7228
+        }, 
+        {
+          "duration": 7.8483, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 370.0332
+        }, 
+        {
+          "duration": 68.6846, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 377.9744
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 451.34501133786847, 
+    "title": "Oil", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "CroqueMadame"
+  }
+}

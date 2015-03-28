@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Vivaldi_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 20.6193, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 20.8051, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 21.2231, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 21.1302, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.6966
+        }, 
+        {
+          "duration": 21.1302, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.6966
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 21.837369614512472, 
+    "title": "Vivaldi", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

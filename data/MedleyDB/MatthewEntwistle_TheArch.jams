@@ -1,0 +1,832 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_TheArch_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 51.1768, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.5573
+        }, 
+        {
+          "duration": 40.5885, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 14.9072
+        }, 
+        {
+          "duration": 8.7772, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 16.1146
+        }, 
+        {
+          "duration": 37.6627, 
+          "confidence": 1, 
+          "value": "bamboo flute", 
+          "time": 29.0714
+        }, 
+        {
+          "duration": 3.9939, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 29.9537
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 39.0095
+        }, 
+        {
+          "duration": 6.7802, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 44.3966
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 47.926
+        }, 
+        {
+          "duration": 10.6348, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 51.9198
+        }, 
+        {
+          "duration": 11.6564, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 52.4771
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 55.8208
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 58.6536
+        }, 
+        {
+          "duration": 5.7121, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 59.0251
+        }, 
+        {
+          "duration": 7.7555, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 59.7217
+        }, 
+        {
+          "duration": 39.7525, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 68.8704
+        }, 
+        {
+          "duration": 11.4242, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 68.9168
+        }, 
+        {
+          "duration": 121.9512, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 73.793
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 84.242
+        }, 
+        {
+          "duration": 40.7743, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 88.2358
+        }, 
+        {
+          "duration": 39.9383, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 89.3504
+        }, 
+        {
+          "duration": 4.5046, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 105.3722
+        }, 
+        {
+          "duration": 22.8949, 
+          "confidence": 1, 
+          "value": "bamboo flute", 
+          "time": 107.2762
+        }, 
+        {
+          "duration": 15.6503, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 21.9661, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 107.4155
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 110.3412
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 113.0347
+        }, 
+        {
+          "duration": 3.2043, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 114.5673
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 118.0038
+        }, 
+        {
+          "duration": 14.9537, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 125.3413
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 125.8986
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 127.8955
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 130.9605
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 131.0534
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 131.0999
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 136.7655
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 137.2764
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 137.6015
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 137.7408
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 137.9265
+        }, 
+        {
+          "duration": 25.542, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 138.0194
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 138.1587
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 140.1092
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 140.1556
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 140.4343
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 140.7594
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 141.3631
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 142.6634
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 143.0349
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 143.3136
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 143.9173
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 145.264
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 145.5891
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 145.9142
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 146.4715
+        }, 
+        {
+          "duration": 11.9815, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 147.8182
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 147.8647
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 148.0504
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 148.2362
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 148.4684
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 148.4684
+        }, 
+        {
+          "duration": 21.2695, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 148.4684
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 149.0721
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 150.1867
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 150.6975
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 151.0226
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 151.6263
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 151.6727
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 152.8337
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 153.0195
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 153.2981
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 153.5768
+        }, 
+        {
+          "duration": 6.4551, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 153.5768
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 154.1805
+        }, 
+        {
+          "duration": 2.8792, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 155.2951
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 155.8988
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "trombone section", 
+          "time": 156.1774
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 156.7347
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 156.8276
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 158.7316
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 161.7966
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 161.936
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 162.0753
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 165.6512
+        }, 
+        {
+          "duration": 27.9569, 
+          "confidence": 1, 
+          "value": "bamboo flute", 
+          "time": 166.4406
+        }, 
+        {
+          "duration": 6.0371, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 166.58
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 166.7193
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 174.289
+        }, 
+        {
+          "duration": 22.802, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 174.3354
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 174.6141
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 174.8927
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 175.032
+        }, 
+        {
+          "duration": 16.7648, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 175.45
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 175.45
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 175.4964
+        }, 
+        {
+          "duration": 2.5541, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 177.1683
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 178.6543
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 179.8153
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 180.0011
+        }, 
+        {
+          "duration": 2.5077, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 182.3231
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 183.8092
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 184.9702
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 185.1559
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 185.8061
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 187.4315
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 188.964
+        }, 
+        {
+          "duration": 7.6161, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 189.8928
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 190.125
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 190.3107
+        }, 
+        {
+          "duration": 7.3375, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 190.9145
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 194.0724
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 197.9269
+        }, 
+        {
+          "duration": 45.0002, 
+          "confidence": 1, 
+          "value": "bamboo flute", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 46.2077, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 48.9476, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 198.8093
+        }, 
+        {
+          "duration": 18.2044, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 200.7133
+        }, 
+        {
+          "duration": 34.133399, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 209.026
+        }, 
+        {
+          "duration": 24.4738, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 216.6422
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 217.2459
+        }, 
+        {
+          "duration": 15.6502, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 219.1964
+        }, 
+        {
+          "duration": 23.0806, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 219.1964
+        }, 
+        {
+          "duration": 21.5016, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 219.2893
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 224.9085
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 226.7196
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 235.2181
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 237.1222
+        }, 
+        {
+          "duration": 22.384, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 240.2337
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 241.3018
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 244.7383
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 246.178
+        }, 
+        {
+          "duration": 12.2602, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 248.4535
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "french horn section", 
+          "time": 259.274
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 260.1099
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 262.0604
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 266.14285714285717, 
+    "title": "TheArch", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

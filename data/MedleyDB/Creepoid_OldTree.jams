@@ -1,0 +1,262 @@
+{
+  "sandbox": {
+    "content_path": "Creepoid_OldTree_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 298.0977, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.418
+        }, 
+        {
+          "duration": 295.7293, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.6502
+        }, 
+        {
+          "duration": 297.0297, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.8359
+        }, 
+        {
+          "duration": 300.1875, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.8824
+        }, 
+        {
+          "duration": 74.3968, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 1.9969
+        }, 
+        {
+          "duration": 12.028, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.1548
+        }, 
+        {
+          "duration": 11.5171, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 5.2477
+        }, 
+        {
+          "duration": 12.0744, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.2477
+        }, 
+        {
+          "duration": 49.5049, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 15.7896
+        }, 
+        {
+          "duration": 27.028, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 49.9229
+        }, 
+        {
+          "duration": 15.2787, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.8363
+        }, 
+        {
+          "duration": 16.2075, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.8363
+        }, 
+        {
+          "duration": 33.9011, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 93.7622
+        }, 
+        {
+          "duration": 16.0682, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 127.7562
+        }, 
+        {
+          "duration": 6.7338, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 128.4528
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 135.0008
+        }, 
+        {
+          "duration": 19.9227, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 135.651
+        }, 
+        {
+          "duration": 47.3223, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 135.9296
+        }, 
+        {
+          "duration": 14.7215, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 139.4126
+        }, 
+        {
+          "duration": 15.836, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 139.5984
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 184.6915
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 187.8959
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 189.382
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 190.125
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 192.2612
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 192.5863
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 195.3727
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 199.5523
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 200.1096
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 204.3356
+        }, 
+        {
+          "duration": 90.4649, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 206.1468
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 209.026
+        }, 
+        {
+          "duration": 18.7617, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 238.2832
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 258.3917
+        }, 
+        {
+          "duration": 27.5388, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 265.032599
+        }, 
+        {
+          "duration": 16.5791, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 277.5713
+        }, 
+        {
+          "duration": 15.4645, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 278.3608
+        }, 
+        {
+          "duration": 14.9072, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 278.4073
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 298.5622
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 302.2077097505669, 
+    "title": "OldTree", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Creepoid"
+  }
+}

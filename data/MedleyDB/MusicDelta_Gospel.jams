@@ -1,0 +1,502 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Gospel_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 0.5573
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 2.8793
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 4.226
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 4.6904
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 7.0124
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 7.3839
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 8.4056
+        }, 
+        {
+          "duration": 66.5949, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 9.1022
+        }, 
+        {
+          "duration": 61.2078, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.1487
+        }, 
+        {
+          "duration": 61.9509, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 9.2415
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 9.7524
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 10.6812
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 10.7276
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 11.3313
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 13.514
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 14.0249
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 14.9072
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 15.6502
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 15.7431
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 17.8794
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 18.158
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 19.3654
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 19.5048
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 19.9692
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 20.062
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 22.2447
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 22.2912
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 23.5915
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 24.4738
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 26.3779
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 26.5636
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 28.0033
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 28.8392
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 30.929
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 31.0219
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 32.4151
+        }, 
+        {
+          "duration": 4.0402, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 33.0188
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 33.1581
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 33.6225
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 34.7371
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 36.8733
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 36.9197
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 37.5234
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 39.6597
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 39.7061
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 41.0993
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 41.9352
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 44.0715
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 44.4894
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 45.5576
+        }, 
+        {
+          "duration": 2.8329, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 45.6504
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 46.2541
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 48.4833
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 48.9477
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 49.7836
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 50.5731
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 50.6659
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 52.7557
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 53.0808
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 54.1954
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 54.3811
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 54.892
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 55.0313
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 57.1211
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 57.1675
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 58.6072
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 59.2109
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 61.3007
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 62.9261
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 63.762
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 65.8518
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 65.8982
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 67.1057
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 68.0809
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 68.0809
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 68.5453
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 69.6599
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 70.31
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 75.73730158730159, 
+    "title": "Gospel", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

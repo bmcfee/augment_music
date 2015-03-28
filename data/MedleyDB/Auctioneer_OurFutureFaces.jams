@@ -1,0 +1,226 @@
+{
+  "sandbox": {
+    "content_path": "Auctioneer_OurFutureFaces_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 66.5949, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 52.8951, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 21.1766, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.9288
+        }, 
+        {
+          "duration": 36.0838, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 18.9475
+        }, 
+        {
+          "duration": 9.0557, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 24.1488
+        }, 
+        {
+          "duration": 14.4429, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 27.8639
+        }, 
+        {
+          "duration": 6.7802, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 29.9073
+        }, 
+        {
+          "duration": 172.5707, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 30.0002
+        }, 
+        {
+          "duration": 171.9669, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 30.0931
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 37.6628
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 46.3935
+        }, 
+        {
+          "duration": 12.6781, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 52.3378
+        }, 
+        {
+          "duration": 12.0279, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 52.4307
+        }, 
+        {
+          "duration": 151.3941, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 53.1737
+        }, 
+        {
+          "duration": 12.9103, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 53.4988
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 65.6196
+        }, 
+        {
+          "duration": 14.35, 
+          "confidence": 1, 
+          "value": "banjo", 
+          "time": 67.2914
+        }, 
+        {
+          "duration": 137.3229, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 67.4307
+        }, 
+        {
+          "duration": 24.7061, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 67.523599
+        }, 
+        {
+          "duration": 136.7655, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 67.5701
+        }, 
+        {
+          "duration": 5.8979, 
+          "confidence": 1, 
+          "value": "banjo", 
+          "time": 84.7528
+        }, 
+        {
+          "duration": 0.325, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 90.6043
+        }, 
+        {
+          "duration": 108.623, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 93.5764
+        }, 
+        {
+          "duration": 108.1586, 
+          "confidence": 1, 
+          "value": "banjo", 
+          "time": 94.6445
+        }, 
+        {
+          "duration": 10.3096, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 96.6415
+        }, 
+        {
+          "duration": 10.9598, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 96.8272
+        }, 
+        {
+          "duration": 51.0375, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 108.3443
+        }, 
+        {
+          "duration": 56.6103, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 108.3443
+        }, 
+        {
+          "duration": 81.8735, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 119.3506
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 159.9855
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 201.8743
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 202.896
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 203.0817
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 207.88244897959183, 
+    "title": "OurFutureFaces", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Auctioneer"
+  }
+}

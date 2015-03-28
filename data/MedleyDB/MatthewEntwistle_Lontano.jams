@@ -1,0 +1,262 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_Lontano_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 2.1362
+        }, 
+        {
+          "duration": 0.325, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 3.6688
+        }, 
+        {
+          "duration": 12.1673, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 6.8731
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 12.4459
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 13.1425
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 17.2756
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 19.4583
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 21.0373
+        }, 
+        {
+          "duration": 266.518599, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 21.3624
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 25.0776
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 25.9599
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 28.9321
+        }, 
+        {
+          "duration": 7.1518, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 39.0095
+        }, 
+        {
+          "duration": 5.2013, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 48.4368
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 54.520499
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 63.7156
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 69.520499
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 80.9912
+        }, 
+        {
+          "duration": 12.2137, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 91.2544
+        }, 
+        {
+          "duration": 7.8948, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 104.722
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 113.7313
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 124.784
+        }, 
+        {
+          "duration": 7.0589, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 131.5178
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 142.2919
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 153.0659
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 155.3879
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 166.2549
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 178.8401
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 199.8309
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 201.317
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 207.865
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 214.6917
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 225.1407
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 227.0912
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 230.0169
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 231.6887
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 241.0231
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 250.2647
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 254.8622
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 298.0, 
+    "title": "Lontano", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

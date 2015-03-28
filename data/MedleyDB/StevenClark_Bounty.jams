@@ -1,0 +1,406 @@
+{
+  "sandbox": {
+    "content_path": "StevenClark_Bounty_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 9.7988, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 10.1239, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 64.9694, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 9.9846
+        }, 
+        {
+          "duration": 20.2013, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.3097
+        }, 
+        {
+          "duration": 265.3577, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 10.7276
+        }, 
+        {
+          "duration": 272.4165, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 10.7276
+        }, 
+        {
+          "duration": 71.1923, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 10.7741
+        }, 
+        {
+          "duration": 4.3653, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 31.0219
+        }, 
+        {
+          "duration": 41.4244, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 31.0683
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 36.1767
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 41.1922
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 46.2541
+        }, 
+        {
+          "duration": 21.641, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 50.248
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 68.5453
+        }, 
+        {
+          "duration": 20.3871, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 80.9912
+        }, 
+        {
+          "duration": 198.9022, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 81.2698
+        }, 
+        {
+          "duration": 84.4742, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 81.4556
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 82.7095
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 85.2172
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 87.725
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 95.1554
+        }, 
+        {
+          "duration": 8.0805, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 97.8489
+        }, 
+        {
+          "duration": 4.7369, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 101.7498
+        }, 
+        {
+          "duration": 179.0259, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 101.7498
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 106.8118
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 107.044
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 111.8737
+        }, 
+        {
+          "duration": 3.9009, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 112.1524
+        }, 
+        {
+          "duration": 46.3005, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 116.8893
+        }, 
+        {
+          "duration": 28.4212, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 117.1215
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 120.8831
+        }, 
+        {
+          "duration": 43.7464, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 121.9048
+        }, 
+        {
+          "duration": 40.635, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 122.2298
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 131.0534
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 141.0844
+        }, 
+        {
+          "duration": 4.5976, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 146.0535
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 146.1
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 151.2083
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 151.2548
+        }, 
+        {
+          "duration": 25.7277, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 156.2239
+        }, 
+        {
+          "duration": 6.4087, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 156.3167
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 162.9576
+        }, 
+        {
+          "duration": 100.4495, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 182.4624
+        }, 
+        {
+          "duration": 49.5514, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 193.0971
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 193.5615
+        }, 
+        {
+          "duration": 46.5328, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 197.0445
+        }, 
+        {
+          "duration": 75.4184, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 201.735
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 201.7814
+        }, 
+        {
+          "duration": 24.4738, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 201.8743
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 211.9517
+        }, 
+        {
+          "duration": 4.6905, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 221.7041
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 226.9518
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 226.9983
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 232.0138
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 232.0138
+        }, 
+        {
+          "duration": 30.7433, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 237.0757
+        }, 
+        {
+          "duration": 6.548, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 237.1222
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 261.7353
+        }, 
+        {
+          "duration": 10.6812, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 265.079
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 267.9583
+        }, 
+        {
+          "duration": 2.0897, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 270.6054
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 276.4103
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 278.8252
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 289.4614739229025, 
+    "title": "Bounty", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "StevenClark"
+  }
+}

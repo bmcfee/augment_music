@@ -1,0 +1,640 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_GriegTrolltog_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 8.87, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 61.3471, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 43.7, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 1.4396
+        }, 
+        {
+          "duration": 0.836, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 1.4396
+        }, 
+        {
+          "duration": 24.2416, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 1.6254
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 1.6718
+        }, 
+        {
+          "duration": 24.1952, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 1.904
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 4.4118
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 4.4118
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 4.4582
+        }, 
+        {
+          "duration": 1.1609, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 4.8298
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 4.8762
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 4.9226
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 7.8483
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 7.8483
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 7.9877
+        }, 
+        {
+          "duration": 10.2632, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 8.5914
+        }, 
+        {
+          "duration": 38.6844, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 11.1456
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 11.4707
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 11.4707
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 13.0496
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 13.0496
+        }, 
+        {
+          "duration": 10.9133, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 14.7215
+        }, 
+        {
+          "duration": 10.9598, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 14.7215
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 15.093
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 15.1394
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 18.7153
+        }, 
+        {
+          "duration": 7.0589, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 18.7617
+        }, 
+        {
+          "duration": 9.2879, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 25.0776
+        }, 
+        {
+          "duration": 16.3932, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 25.0776
+        }, 
+        {
+          "duration": 16.3468, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 25.124
+        }, 
+        {
+          "duration": 16.2075, 
+          "confidence": 1, 
+          "value": "tuba", 
+          "time": 25.2169
+        }, 
+        {
+          "duration": 16.5791, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 25.263299
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 26.6101
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 26.6565
+        }, 
+        {
+          "duration": 19.9228, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 26.7029
+        }, 
+        {
+          "duration": 15.1394, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 26.7494
+        }, 
+        {
+          "duration": 21.1301, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 26.7494
+        }, 
+        {
+          "duration": 14.8144, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 26.7958
+        }, 
+        {
+          "duration": 14.8144, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 26.7958
+        }, 
+        {
+          "duration": 17.1364, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 26.7958
+        }, 
+        {
+          "duration": 7.9413, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 27.028
+        }, 
+        {
+          "duration": 14.1642, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 27.2138
+        }, 
+        {
+          "duration": 14.3035, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 27.2138
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 36.5946
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 37.7092
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 40.0312
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 43.5606
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 43.7
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 43.7
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 44.2108
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 44.4894
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 47.0436
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 47.1829
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 47.1829
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 47.8331
+        }, 
+        {
+          "duration": 5.8978, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 48.2511
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 49.0405
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 49.0405
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 49.5514
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 49.6907
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 50.2015
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 50.8981
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 50.9446
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 50.9446
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 51.7341
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 51.7805
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 52.523499
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 52.523499
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 53.2666
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 53.313
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 53.313
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 53.3595
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 55.2635
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 55.4028
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 55.4493
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 56.0994
+        }, 
+        {
+          "duration": 0.1394, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 57.7712
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 58.0963
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 58.0963
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 59.6753
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 60.4648
+        }, 
+        {
+          "duration": 4.2724, 
+          "confidence": 1, 
+          "value": "oboe", 
+          "time": 61.3936
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 61.44
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 62.601
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 63.9942
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 64.0406
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 64.0406
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 64.0871
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 64.0871
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 64.0871
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 64.0871
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "tuba", 
+          "time": 64.1335
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 64.1335
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 64.1335
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 64.1335
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 64.18
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 64.2264
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "piccolo", 
+          "time": 64.2264
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "flute section", 
+          "time": 64.2264
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 64.2728
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 68.49886621315193, 
+    "title": "GriegTrolltog", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

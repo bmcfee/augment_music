@@ -1,0 +1,94 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Britpop_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 36.7804, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 33.6689, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 35.898, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.8824
+        }, 
+        {
+          "duration": 35.898, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.8824
+        }, 
+        {
+          "duration": 35.2479, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.9288
+        }, 
+        {
+          "duration": 35.8052, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.9752
+        }, 
+        {
+          "duration": 35.8052, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.9752
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 2.9722
+        }, 
+        {
+          "duration": 24.7989, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.6131
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 34.8299
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 34.9228
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 36.78886621315193, 
+    "title": "Britpop", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "sandbox": {
+    "content_path": "ClaraBerryAndWooldog_TheBadGuys_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 241.2089, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 64.5979, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 30.5575
+        }, 
+        {
+          "duration": 11.0527, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 97.6167
+        }, 
+        {
+          "duration": 13.6998, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 110.0161
+        }, 
+        {
+          "duration": 35.7123, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 124.7376
+        }, 
+        {
+          "duration": 8.9629, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 164.583
+        }, 
+        {
+          "duration": 11.8886, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 176.7503
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 191.8433
+        }, 
+        {
+          "duration": 12.5388, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 206.1932
+        }, 
+        {
+          "duration": 13.7926, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 220.8218
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 254.68482993197279, 
+    "title": "TheBadGuys", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ClaraBerryAndWooldog"
+  }
+}

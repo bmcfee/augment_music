@@ -1,0 +1,196 @@
+{
+  "sandbox": {
+    "content_path": "PurlingHiss_Lolita_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 254.63, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 247.7105, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 2.8793
+        }, 
+        {
+          "duration": 253.2833, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 2.9257
+        }, 
+        {
+          "duration": 5.387, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 35.2015
+        }, 
+        {
+          "duration": 25.7277, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 43.0034
+        }, 
+        {
+          "duration": 15.5109, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 63.0654
+        }, 
+        {
+          "duration": 6.5016, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 69.7992
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 77.6475
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 83.1739
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 87.6785
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 89.1182
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 90.7436
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 94.9696
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 110.6663
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 118.4682
+        }, 
+        {
+          "duration": 15.4181, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 138.3909
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 145.3569
+        }, 
+        {
+          "duration": 3.7151, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 158.5459
+        }, 
+        {
+          "duration": 22.3376, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 164.6759
+        }, 
+        {
+          "duration": 5.2942, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 166.0691
+        }, 
+        {
+          "duration": 36.0838, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 166.162
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 203.221
+        }, 
+        {
+          "duration": 23.7772, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 210.9301
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 217.9425
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 221.4719
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 225.698
+        }, 
+        {
+          "duration": 3.0185, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 229.4132
+        }, 
+        {
+          "duration": 7.8483, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 241.2089
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 256.22340136054424, 
+    "title": "Lolita", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "PurlingHiss"
+  }
+}

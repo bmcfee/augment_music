@@ -1,0 +1,1246 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_MiloVsMongo_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 208.2366, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 13.4676, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 2.6935
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 15.7431
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 19.5512
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 23.545
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 27.5853
+        }, 
+        {
+          "duration": 68.4059, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 30.7897
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 31.5791
+        }, 
+        {
+          "duration": 353.6399, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 31.7185
+        }, 
+        {
+          "duration": 314.2589, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 31.9042
+        }, 
+        {
+          "duration": 13.4675, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 34.7371
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 35.573
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 39.5668
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 43.5606
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 47.5545
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 51.5483
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 55.5886
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 59.5824
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 63.5762
+        }, 
+        {
+          "duration": 290.0172, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 63.762
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 64.5979
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 66.6413
+        }, 
+        {
+          "duration": 26.4244, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 66.7341
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 67.5701
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 68.5917
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 70.6351
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 71.5639
+        }, 
+        {
+          "duration": 1.3004, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 72.7713
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 74.7218
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 75.5577
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 76.7652
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 78.7621
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 79.5516
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 83.5454
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 87.5857
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 91.5795
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 95.5733
+        }, 
+        {
+          "duration": 32.5079, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 95.6662
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 99.5672
+        }, 
+        {
+          "duration": 29.4893, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 99.9387
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 103.561
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 107.5548
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 111.5487
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 112.4775
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 114.5673
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 115.5889
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 116.4249
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 118.514599
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 119.5828
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 120.558
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 122.462
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 123.5766
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 124.6447
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 126.5952
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 127.5704
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 127.8491
+        }, 
+        {
+          "duration": 48.8548, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 130.3568
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 131.4714
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 131.5643
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 135.4188
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 135.5581
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 139.4126
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 139.5519
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 143.4064
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 143.5458
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 144.6139
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 146.6108
+        }, 
+        {
+          "duration": 26.4707, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 146.7037
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 147.4467
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 147.586
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 148.6077
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 150.6511
+        }, 
+        {
+          "duration": 3.2973, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 151.4405
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 151.5799
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 152.7409
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 154.7378
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 155.3879
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 155.5737
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 156.7347
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 158.6852
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 159.3818
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 159.5675
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 163.3756
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 163.5614
+        }, 
+        {
+          "duration": 3.2973, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 167.3694
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 167.5552
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 171.4097
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 171.549
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 175.4035
+        }, 
+        {
+          "duration": 3.7151, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 175.5429
+        }, 
+        {
+          "duration": 48.669, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 175.6822
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 176.611
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 178.6543
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 179.3974
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 179.5831
+        }, 
+        {
+          "duration": 206.8898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 180.1404
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 180.6512
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 182.6482
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 183.3912
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 183.577
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 184.6915
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 186.7349
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 187.385
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 187.5708
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 188.7318
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 190.6823
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 191.3789
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 191.5646
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 192.447
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 194.5832
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 195.3727
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 195.5585
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 196.4873
+        }, 
+        {
+          "duration": 1.3931, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 3.1114, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 199.413
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 199.5523
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 200.4811
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 202.5709
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 203.4068
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 203.5461
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 204.5214
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 206.5183
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 207.4006
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 207.5864
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 208.6081
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 210.605
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 211.4409
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 211.5802
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 212.6019
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 214.5988
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 215.4347
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 215.5741
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 216.8279
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 218.6855
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 219.3821
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 219.5679
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 220.7289
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 222.7258
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 223.376
+        }, 
+        {
+          "duration": 96.4557, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 223.7475
+        }, 
+        {
+          "duration": 13.4212, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 226.7196
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 239.7228
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 243.5773
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 247.5712
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 251.565
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 255.5588
+        }, 
+        {
+          "duration": 13.4676, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 258.7167
+        }, 
+        {
+          "duration": 3.7151, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 259.5527
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 263.5465
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 267.5868
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 271.5806
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 275.5744
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 279.5683
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 283.5621
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 287.5559
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 288.624
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 290.621
+        }, 
+        {
+          "duration": 26.4243, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 290.7138
+        }, 
+        {
+          "duration": 3.7151, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 291.5498
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 292.6179
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 294.6612
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 295.5436
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 296.7046
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 298.7015
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 299.5839
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 300.6984
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 302.7418
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 303.5777
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 307.5715
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 311.5654
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 315.5592
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 319.553
+        }, 
+        {
+          "duration": 16.4398, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 319.6923
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 319.8781
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 320.6211
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 322.618
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 323.500399
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 323.5468
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 324.615
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 326.6583
+        }, 
+        {
+          "duration": 3.1114, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 327.4014
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 327.5871
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 328.7017
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 330.6986
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 331.4416
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 331.581
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 332.7884
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 334.6924
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 335.389
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 335.5748
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 336.4107
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 338.5469
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 339.3829
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 339.5686
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 340.5903
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 342.5408
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 343.3767
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 343.5624
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 344.4912
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 346.534599
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 347.3705
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 347.5563
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 348.578
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 392.0, 
+    "title": "MiloVsMongo", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

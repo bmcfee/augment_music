@@ -1,0 +1,52 @@
+{
+  "sandbox": {
+    "content_path": "AmarLal_Rest_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 169.2735, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.6006
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 76.2079
+        }, 
+        {
+          "duration": 56.4245, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 80.7126
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 172.4314
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 184.42451247165533, 
+    "title": "Rest", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AmarLal"
+  }
+}

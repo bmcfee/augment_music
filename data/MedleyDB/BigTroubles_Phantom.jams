@@ -1,0 +1,118 @@
+{
+  "sandbox": {
+    "content_path": "BigTroubles_Phantom_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 145.0783, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 143.6851, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 94.0872, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.8824
+        }, 
+        {
+          "duration": 145.8677, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 1.0217
+        }, 
+        {
+          "duration": 49.7372, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 9.7988
+        }, 
+        {
+          "duration": 11.1456, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 55.8672
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 61.9508
+        }, 
+        {
+          "duration": 19.6905, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 62.8332
+        }, 
+        {
+          "duration": 25.3562, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 65.4803
+        }, 
+        {
+          "duration": 46.3006, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 82.7095
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 87.9107
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 90.2327
+        }, 
+        {
+          "duration": 28.2819, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 117.5394
+        }, 
+        {
+          "duration": 17.1828, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 123.9481
+        }, 
+        {
+          "duration": 17.0434, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 124.2268
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 146.93587301587303, 
+    "title": "Phantom", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "BigTroubles"
+  }
+}

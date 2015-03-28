@@ -1,0 +1,46 @@
+{
+  "sandbox": {
+    "content_path": "BrandonWebster_YesSirICanFly_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 91.9974, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 34.2262, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 3.1115
+        }, 
+        {
+          "duration": 61.5793, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 38.0343
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 99.641179138322, 
+    "title": "YesSirICanFly", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "BrandonWebster"
+  }
+}

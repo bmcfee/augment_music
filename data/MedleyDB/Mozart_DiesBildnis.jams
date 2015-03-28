@@ -1,0 +1,94 @@
+{
+  "sandbox": {
+    "content_path": "Mozart_DiesBildnis_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 9.1022, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.0217
+        }, 
+        {
+          "duration": 49.2264, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.9907
+        }, 
+        {
+          "duration": 20.8051, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 11.61
+        }, 
+        {
+          "duration": 82.8952, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 34.0869
+        }, 
+        {
+          "duration": 28.0032, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 61.3007
+        }, 
+        {
+          "duration": 31.672, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 91.7188
+        }, 
+        {
+          "duration": 35.2479, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 117.8645
+        }, 
+        {
+          "duration": 26.0992, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 125.8986
+        }, 
+        {
+          "duration": 24.6596, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 154.0876
+        }, 
+        {
+          "duration": 63.0189, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 155.8988
+        }, 
+        {
+          "duration": 48.4833, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 179.676
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 229.13451247165534, 
+    "title": "DiesBildnis", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Mozart"
+  }
+}

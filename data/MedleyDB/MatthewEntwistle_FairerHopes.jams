@@ -1,0 +1,676 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_FairerHopes_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 51.3161, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 1.8112
+        }, 
+        {
+          "duration": 61.8579, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 2.1827
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 2.2756
+        }, 
+        {
+          "duration": 61.1149, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 2.2756
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 2.3684
+        }, 
+        {
+          "duration": 60.3719, 
+          "confidence": 1, 
+          "value": "harp", 
+          "time": 2.5542
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 4.0867
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 4.644
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 7.1517
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 9.6131
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 12.1673
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 12.9103
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 14.6286
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 17.0899
+        }, 
+        {
+          "duration": 4.6905, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 19.5976
+        }, 
+        {
+          "duration": 39.8455, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 22.4769
+        }, 
+        {
+          "duration": 36.5482, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 22.6627
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 24.6132
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 27.0745
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 34.6442
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 37.1984
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 42.0746
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 44.6752
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 47.1829
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 54.520499
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 57.0282
+        }, 
+        {
+          "duration": 81.2699, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 63.9013
+        }, 
+        {
+          "duration": 81.1769, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 64.6444
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 64.7372
+        }, 
+        {
+          "duration": 50.5731, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 64.8301
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 64.923
+        }, 
+        {
+          "duration": 69.2419, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 64.923
+        }, 
+        {
+          "duration": 73.2821, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 65.0159
+        }, 
+        {
+          "duration": 40.0777, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 65.2016
+        }, 
+        {
+          "duration": 77.1831, 
+          "confidence": 1, 
+          "value": "harp", 
+          "time": 65.2481
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 67.1057
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 69.567
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 77.1367
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 79.6909
+        }, 
+        {
+          "duration": 4.6439, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 86.982
+        }, 
+        {
+          "duration": 22.7555, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 91.9975
+        }, 
+        {
+          "duration": 38.4986, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 104.2112
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 104.8149
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 106.2081
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 111.1771
+        }, 
+        {
+          "duration": 9.7989, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 114.8923
+        }, 
+        {
+          "duration": 20.8051, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 114.9388
+        }, 
+        {
+          "duration": 25.867, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 115.6354
+        }, 
+        {
+          "duration": 3.808, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 115.7283
+        }, 
+        {
+          "duration": 11.192, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 120.7438
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 129.7531
+        }, 
+        {
+          "duration": 10.9598, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 134.5364
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 134.7222
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 137.0906
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 139.5984
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 143.778
+        }, 
+        {
+          "duration": 7.4303, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 146.1
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 146.1464
+        }, 
+        {
+          "duration": 6.5944, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 146.2393
+        }, 
+        {
+          "duration": 6.7337, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 146.3322
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 146.3786
+        }, 
+        {
+          "duration": 11.9351, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 154.7842
+        }, 
+        {
+          "duration": 11.4707, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 154.8771
+        }, 
+        {
+          "duration": 11.4707, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 154.9235
+        }, 
+        {
+          "duration": 11.5635, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 154.97
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 168.1589
+        }, 
+        {
+          "duration": 6.3622, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 168.2054
+        }, 
+        {
+          "duration": 6.3159, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 168.2982
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 168.2982
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 176.193
+        }, 
+        {
+          "duration": 11.5635, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 176.2859
+        }, 
+        {
+          "duration": 11.3778, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 176.3323
+        }, 
+        {
+          "duration": 11.4243, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 176.3323
+        }, 
+        {
+          "duration": 41.9353, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 189.6141
+        }, 
+        {
+          "duration": 41.7959, 
+          "confidence": 1, 
+          "value": "cello section", 
+          "time": 189.707
+        }, 
+        {
+          "duration": 39.8919, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 191.7504
+        }, 
+        {
+          "duration": 39.7526, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 191.7968
+        }, 
+        {
+          "duration": 26.7958, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 204.1963
+        }, 
+        {
+          "duration": 12.2137, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 219.1035
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 220.0323
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 226.1624
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 233.5463
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 234.1036
+        }, 
+        {
+          "duration": 6.9195, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 234.1036
+        }, 
+        {
+          "duration": 59.3502, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 234.15
+        }, 
+        {
+          "duration": 59.9074, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 234.1965
+        }, 
+        {
+          "duration": 58.4679, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 234.2893
+        }, 
+        {
+          "duration": 57.7248, 
+          "confidence": 1, 
+          "value": "harp", 
+          "time": 234.568
+        }, 
+        {
+          "duration": 59.9539, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 234.568
+        }, 
+        {
+          "duration": 9.3345, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 235.4503
+        }, 
+        {
+          "duration": 58.7465, 
+          "confidence": 1, 
+          "value": "bass drum", 
+          "time": 236.472
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 241.534
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 244.0417
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 245.5278
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 246.503
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 249.0572
+        }, 
+        {
+          "duration": 29.3965, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 250.4504
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 251.518499
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 254.0263
+        }, 
+        {
+          "duration": 22.2447, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 256.5341
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 261.4102
+        }, 
+        {
+          "duration": 8.6842, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 268.6549
+        }, 
+        {
+          "duration": 5.2942, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 277.3391
+        }, 
+        {
+          "duration": 14.2106, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 278.2215
+        }, 
+        {
+          "duration": 4.969, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 278.8717
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "gong", 
+          "time": 279.1967
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "clarinet section", 
+          "time": 280.8686
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 284.3516
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 300.4687528344671, 
+    "title": "FairerHopes", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

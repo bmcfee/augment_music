@@ -1,0 +1,70 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_80sRock_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.2015, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 35.0622, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 36.5018, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 1.7647
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.7585
+        }, 
+        {
+          "duration": 25.542, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.031
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 36.91972789115646, 
+    "title": "80sRock", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "sandbox": {
+    "content_path": "CelestialShore_DieForUs_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 269.6301, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 5.6657, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 9.7059
+        }, 
+        {
+          "duration": 107.2762, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 9.7059
+        }, 
+        {
+          "duration": 107.4155, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 9.9846
+        }, 
+        {
+          "duration": 39.8454, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 11.2385
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 11.5171
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 15.6967
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 19.5512
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 20.062
+        }, 
+        {
+          "duration": 6.223, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 21.0837
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 29.1643
+        }, 
+        {
+          "duration": 7.3375, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 29.3036
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 34.8299
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 38.8238
+        }, 
+        {
+          "duration": 5.8978, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 40.5885
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 49.3192
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 49.7836
+        }, 
+        {
+          "duration": 5.9907, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 57.6784
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 57.8177
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 64.4122
+        }, 
+        {
+          "duration": 9.8917, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 64.7372
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 67.3379
+        }, 
+        {
+          "duration": 40.4027, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 76.0686
+        }, 
+        {
+          "duration": 9.2416, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 76.115
+        }, 
+        {
+          "duration": 19.9691, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 76.1615
+        }, 
+        {
+          "duration": 39.9383, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 77.6011
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 85.7745
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 95.5269
+        }, 
+        {
+          "duration": 6.2694, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 97.338
+        }, 
+        {
+          "duration": 7.8483, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 105.3722
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 107.0904
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 115.9605
+        }, 
+        {
+          "duration": 5.2012, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 116.4249
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 119.1648
+        }, 
+        {
+          "duration": 6.223, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 119.3041
+        }, 
+        {
+          "duration": 159.3354, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 119.3041
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 124.2732
+        }, 
+        {
+          "duration": 5.7586, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 124.4125
+        }, 
+        {
+          "duration": 144.8461, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 127.2918
+        }, 
+        {
+          "duration": 144.5674, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 127.4311
+        }, 
+        {
+          "duration": 13.096, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 131.007
+        }, 
+        {
+          "duration": 8.1734, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 131.3321
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 140.9451
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 278.6739909297052, 
+    "title": "DieForUs", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "CelestialShore"
+  }
+}

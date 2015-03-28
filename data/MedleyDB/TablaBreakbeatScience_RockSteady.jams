@@ -1,0 +1,694 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_RockSteady_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 161.6573, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 2.2291
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 2.6471
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 2.8793
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 3.6223
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 4.7833
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 4.8762
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 5.062
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 6.0372
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 6.6873
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 7.1982
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 7.8948
+        }, 
+        {
+          "duration": 0.8823, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 8.2199
+        }, 
+        {
+          "duration": 365.575, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 8.7307
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 9.2415
+        }, 
+        {
+          "duration": 0.836, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 9.2415
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 10.3561
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 11.1456
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 11.5171
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 12.4459
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 12.5852
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 13.6998
+        }, 
+        {
+          "duration": 43.4213, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 14.535699
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 14.9072
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 15.6038
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 15.9289
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 17.0899
+        }, 
+        {
+          "duration": 125.5735, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 17.5543
+        }, 
+        {
+          "duration": 38.2665, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 20.3407
+        }, 
+        {
+          "duration": 123.3908, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 124.5983, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 59.257299
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 143.8708
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 148.422
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 152.8802
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 157.3384
+        }, 
+        {
+          "duration": 41.2851, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 160.357
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 184.0878
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 186.1776
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 186.5956
+        }, 
+        {
+          "duration": 2.4148, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 187.6637
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 188.6854
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 190.4501
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 191.1002
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 192.9114
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 193.2365
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 195.4191
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 195.4191
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 197.1374
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 197.5089
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 199.413
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 199.7845
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 201.7814
+        }, 
+        {
+          "duration": 8.7772, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 201.8278
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 202.06
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 203.8248
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 204.3356
+        }, 
+        {
+          "duration": 16.8576, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 206.1468
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 206.6112
+        }, 
+        {
+          "duration": 16.6719, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 208.7474
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 210.6979
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 214.5988
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 216.6886
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 223.5617
+        }, 
+        {
+          "duration": 26.0992, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 225.1407
+        }, 
+        {
+          "duration": 48.3903, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 226.1624
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 230.1562
+        }, 
+        {
+          "duration": 216.6886, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 231.4101
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 232.7104
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 234.8931
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 237.1222
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 239.3513
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 241.5804
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 243.8095
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 246.0386
+        }, 
+        {
+          "duration": 144.2424, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 248.3142
+        }, 
+        {
+          "duration": 19.9228, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 251.518499
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 272.0914
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 273.2989
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 276.6425
+        }, 
+        {
+          "duration": 5.8979, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 277.5249
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 281.2865
+        }, 
+        {
+          "duration": 92.9727, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 283.1906
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 285.1875
+        }, 
+        {
+          "duration": 84.1491, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 286.72
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 371.5657
+        }, 
+        {
+          "duration": 10.449, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 374.3521
+        }, 
+        {
+          "duration": 10.3097, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 377.0456
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 386.1478
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 388.377
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 390.3274
+        }, 
+        {
+          "duration": 14.0713, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 391.7671
+        }, 
+        {
+          "duration": 2.0897, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 392.7888
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 394.9714
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 397.247
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 399.4761
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 401.7052
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 403.9343
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 406.1634
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 406.256299
+        }, 
+        {
+          "duration": 5.805, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 408.2997
+        }, 
+        {
+          "duration": 28.9785, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 408.3926
+        }, 
+        {
+          "duration": 13.3747, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 412.2935
+        }, 
+        {
+          "duration": 11.8886, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 414.3833
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 425.8075
+        }, 
+        {
+          "duration": 18.3438, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 426.5041
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 426.6899
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 428.6404
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 429.8942
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 431.2874
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 437.9748
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 450.4739002267574, 
+    "title": "RockSteady", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

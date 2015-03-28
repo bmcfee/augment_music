@@ -1,0 +1,64 @@
+{
+  "sandbox": {
+    "content_path": "Handel_TornamiAVagheggiar_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 218.8248, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 4.1332
+        }, 
+        {
+          "duration": 20.5728, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 23.22
+        }, 
+        {
+          "duration": 51.6412, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 46.3006
+        }, 
+        {
+          "duration": 35.526499, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 103.7003
+        }, 
+        {
+          "duration": 20.5264, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 147.9576
+        }, 
+        {
+          "duration": 51.7805, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 171.1775
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 223.00444444444443, 
+    "title": "TornamiAVagheggiar", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Handel"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "sandbox": {
+    "content_path": "FacesOnFilm_WaitingForGa_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 257.4629, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 24.0559, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 17.9258
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 36.5482
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 39.9848
+        }, 
+        {
+          "duration": 26.1921, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 41.1922
+        }, 
+        {
+          "duration": 100.0315, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 42.3068
+        }, 
+        {
+          "duration": 31.2541, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 42.3532
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 63.8549
+        }, 
+        {
+          "duration": 25.4026, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 65.8054
+        }, 
+        {
+          "duration": 190.8216, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 66.7806
+        }, 
+        {
+          "duration": 11.4242, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 78.2977
+        }, 
+        {
+          "duration": 55.9136, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 88.4216
+        }, 
+        {
+          "duration": 50.7588, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 90.1399
+        }, 
+        {
+          "duration": 167.2766, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 90.3256
+        }, 
+        {
+          "duration": 57.539, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 91.208
+        }, 
+        {
+          "duration": 51.1303, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 91.3473
+        }, 
+        {
+          "duration": 48.529699, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 91.4866
+        }, 
+        {
+          "duration": 24.5203, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 115.7747
+        }, 
+        {
+          "duration": 41.6101, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 139.134
+        }, 
+        {
+          "duration": 5.7121, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 142.4312
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 148.6077
+        }, 
+        {
+          "duration": 6.3159, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 155.3879
+        }, 
+        {
+          "duration": 95.7127, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 161.8895
+        }, 
+        {
+          "duration": 95.0625, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 162.5397
+        }, 
+        {
+          "duration": 94.4588, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 163.1434
+        }, 
+        {
+          "duration": 92.8334, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 164.6295
+        }, 
+        {
+          "duration": 92.787, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 164.8152
+        }, 
+        {
+          "duration": 84.1955, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 171.5955
+        }, 
+        {
+          "duration": 25.6813, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 175.8679
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 256.5805
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 257.6323129251701, 
+    "title": "WaitingForGa", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "FacesOnFilm"
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_CoolJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.4644
+        }, 
+        {
+          "duration": 98.7777, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.9288
+        }, 
+        {
+          "duration": 99.1492, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.9288
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 4.0403
+        }, 
+        {
+          "duration": 38.9631, 
+          "confidence": 1, 
+          "value": "baritone saxophone", 
+          "time": 5.7585
+        }, 
+        {
+          "duration": 0.3716, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 7.1517
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 9.0093
+        }, 
+        {
+          "duration": 26.1457, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 9.9381
+        }, 
+        {
+          "duration": 8.4056, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 11.4707
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 22.3376
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 23.545
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 25.124
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 26.1457
+        }, 
+        {
+          "duration": 5.3406, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 32.6008
+        }, 
+        {
+          "duration": 9.1951, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 37.7556
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 38.1272
+        }, 
+        {
+          "duration": 2.647, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 39.5204
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 42.3068
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "baritone saxophone", 
+          "time": 44.9074
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 44.9538
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 46.8114
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 47.508
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 51.1768
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 53.0344
+        }, 
+        {
+          "duration": 47.6473, 
+          "confidence": 1, 
+          "value": "baritone saxophone", 
+          "time": 53.731
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 54.7991
+        }, 
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 56.3316
+        }, 
+        {
+          "duration": 26.1921, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 57.957
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 66.130399
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 67.7558
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 71.0066
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 71.471
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 72.9107
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 77.4153
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 78.6228
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 80.8054
+        }, 
+        {
+          "duration": 10.3097, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 83.3596
+        }, 
+        {
+          "duration": 7.0124, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 85.7745
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 94.1801
+        }, 
+        {
+          "duration": 6.6874, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 94.273
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 101.56249433106576, 
+    "title": "CoolJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

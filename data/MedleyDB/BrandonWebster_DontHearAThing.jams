@@ -1,0 +1,202 @@
+{
+  "sandbox": {
+    "content_path": "BrandonWebster_DontHearAThing_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 45.2325, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.3003
+        }, 
+        {
+          "duration": 18.9474, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.6131
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 24.9847
+        }, 
+        {
+          "duration": 60.0004, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 28.9785
+        }, 
+        {
+          "duration": 13.189, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 47.1829
+        }, 
+        {
+          "duration": 19.8299, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 60.5576
+        }, 
+        {
+          "duration": 11.2385, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 77.7404
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 81.3627
+        }, 
+        {
+          "duration": 25.1704, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 85.3566
+        }, 
+        {
+          "duration": 5.8979, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 89.3968
+        }, 
+        {
+          "duration": 12.9568, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 93.0191
+        }, 
+        {
+          "duration": 34.5977, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 105.14
+        }, 
+        {
+          "duration": 13.1889, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 111.2236
+        }, 
+        {
+          "duration": 3.6224, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 123.3908
+        }, 
+        {
+          "duration": 21.7804, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 124.5518
+        }, 
+        {
+          "duration": 5.9908, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 140.3878
+        }, 
+        {
+          "duration": 18.6224, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 146.4715
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 147.3538
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 149.3507
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 150.6046
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 153.3446
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 155.3415
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 157.3384
+        }, 
+        {
+          "duration": 1.8575, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 158.5459
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 161.4251
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "male speaker", 
+          "time": 162.8648
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 165.3725
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 168.6698
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 171.65308390022676, 
+    "title": "DontHearAThing", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "BrandonWebster"
+  }
+}

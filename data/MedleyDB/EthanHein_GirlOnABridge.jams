@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "EthanHein_GirlOnABridge_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 129.846, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 116.1462, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 12.8174
+        }, 
+        {
+          "duration": 91.4401, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 37.895
+        }, 
+        {
+          "duration": 90.2327, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 38.9631
+        }, 
+        {
+          "duration": 43.8857, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 85.6816
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 130.06979591836733, 
+    "title": "GirlOnABridge", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "EthanHein"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Disco_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 23.8701, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 124.6447, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 123.2051, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 14.3035, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.0867
+        }, 
+        {
+          "duration": 12.4924, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 19.3654
+        }, 
+        {
+          "duration": 34.737, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 24.0559
+        }, 
+        {
+          "duration": 3.4829, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 32.4151
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 36.6875
+        }, 
+        {
+          "duration": 18.7153, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 43.1427
+        }, 
+        {
+          "duration": 34.737, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 58.9787
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 62.8796
+        }, 
+        {
+          "duration": 8.4521, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 66.827
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 75.9757
+        }, 
+        {
+          "duration": 12.8639, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 81.3627
+        }, 
+        {
+          "duration": 27.7711, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 93.9015
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 95.7127
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 100.1244
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 124.77995464852607, 
+    "title": "Disco", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

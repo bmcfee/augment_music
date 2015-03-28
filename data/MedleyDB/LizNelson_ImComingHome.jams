@@ -1,0 +1,226 @@
+{
+  "sandbox": {
+    "content_path": "LizNelson_ImComingHome_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 68.8239, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 33.7154, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 9.3808, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 9.7059, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.8917
+        }, 
+        {
+          "duration": 9.6595, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.9846
+        }, 
+        {
+          "duration": 9.5202, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 19.8763
+        }, 
+        {
+          "duration": 9.4273, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 19.9692
+        }, 
+        {
+          "duration": 29.2571, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 29.9073
+        }, 
+        {
+          "duration": 78.7157, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 29.9537
+        }, 
+        {
+          "duration": 4.5976, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 34.8299
+        }, 
+        {
+          "duration": 9.6595, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 39.7061
+        }, 
+        {
+          "duration": 19.5048, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 49.5049
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 59.4895
+        }, 
+        {
+          "duration": 39.0096, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 69.2883
+        }, 
+        {
+          "duration": 49.087, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 69.3348
+        }, 
+        {
+          "duration": 78.2977, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 69.8456
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 108.9945
+        }, 
+        {
+          "duration": 39.1489, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 109.0409
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 114.01
+        }, 
+        {
+          "duration": 29.0714, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 118.8862
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 121.5332
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 123.8552
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 128.9172
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 133.7934
+        }, 
+        {
+          "duration": 8.8236, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 138.8553
+        }, 
+        {
+          "duration": 29.6751, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 148.4684
+        }, 
+        {
+          "duration": 9.2415, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 148.5613
+        }, 
+        {
+          "duration": 9.6595, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 148.5613
+        }, 
+        {
+          "duration": 29.5823, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 148.747
+        }, 
+        {
+          "duration": 19.6441, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 158.4065
+        }, 
+        {
+          "duration": 14.5821, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 158.4994
+        }, 
+        {
+          "duration": 4.7369, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 173.3602
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 179.69922902494332, 
+    "title": "ImComingHome", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "LizNelson"
+  }
+}

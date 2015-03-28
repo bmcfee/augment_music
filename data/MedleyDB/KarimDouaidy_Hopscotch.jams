@@ -1,0 +1,352 @@
+{
+  "sandbox": {
+    "content_path": "KarimDouaidy_Hopscotch_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 52.0127, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 0.743
+        }, 
+        {
+          "duration": 14.9536, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 50.248, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 51.5947, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 13.096, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 2.322
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 2.3684
+        }, 
+        {
+          "duration": 183.0196, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 16.7184
+        }, 
+        {
+          "duration": 13.2819, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 16.8112
+        }, 
+        {
+          "duration": 13.9784, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 31.2541
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 49.8765
+        }, 
+        {
+          "duration": 106.7189, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 51.5019
+        }, 
+        {
+          "duration": 15.7431, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 52.57
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 52.8022
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 53.1737
+        }, 
+        {
+          "duration": 2.9258, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 57.3068
+        }, 
+        {
+          "duration": 11.8887, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 60.7898
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 61.8115
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 68.5453
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 72.6785
+        }, 
+        {
+          "duration": 15.6038, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 73.2357
+        }, 
+        {
+          "duration": 9.7524, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 77.7404
+        }, 
+        {
+          "duration": 88.4681, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 77.7868
+        }, 
+        {
+          "duration": 77.9726, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 88.0965
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 89.5826
+        }, 
+        {
+          "duration": 57.1675, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 93.6693
+        }, 
+        {
+          "duration": 48.2046, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 152.1836
+        }, 
+        {
+          "duration": 23.3128, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 158.5923
+        }, 
+        {
+          "duration": 15.7431, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 166.6264
+        }, 
+        {
+          "duration": 33.065199, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 167.6481
+        }, 
+        {
+          "duration": 11.6564, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 182.5553
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 182.741
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 190.3572
+        }, 
+        {
+          "duration": 3.0651, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 194.2581
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 194.5368
+        }, 
+        {
+          "duration": 89.2111, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 199.738
+        }, 
+        {
+          "duration": 41.703, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 202.8031
+        }, 
+        {
+          "duration": 12.6317, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 203.1746
+        }, 
+        {
+          "duration": 28.6999, 
+          "confidence": 1, 
+          "value": "doumbek", 
+          "time": 203.1746
+        }, 
+        {
+          "duration": 68.2203, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 203.221
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 217.153
+        }, 
+        {
+          "duration": 3.2043, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 223.1438
+        }, 
+        {
+          "duration": 6.4552, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 230.9921
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 231.3172
+        }, 
+        {
+          "duration": 34.0868, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 237.9117
+        }, 
+        {
+          "duration": 27.8175, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 243.5773
+        }, 
+        {
+          "duration": 25.9134, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 245.2492
+        }, 
+        {
+          "duration": 15.0465, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 270.8376
+        }, 
+        {
+          "duration": 15.6503, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 273.7168
+        }, 
+        {
+          "duration": 10.1703, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 274.2741
+        }, 
+        {
+          "duration": 14.4429, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 274.3205
+        }, 
+        {
+          "duration": 0.2787, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 279.1967
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "oud", 
+          "time": 283.515599
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "darbuka", 
+          "time": 286.7664
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 287.9739
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 294.0, 
+    "title": "Hopscotch", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "KarimDouaidy"
+  }
+}

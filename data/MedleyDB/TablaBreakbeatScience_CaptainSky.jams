@@ -1,0 +1,226 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_CaptainSky_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 397.1541, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 50.4801, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 1.6254
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 3.8081
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 5.7121
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 7.9412
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 9.8453
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 12.0744
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 13.9784
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 16.2075
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 20.48
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 24.6596
+        }, 
+        {
+          "duration": 5.7122, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 28.7927
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 37.059
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 41.1922
+        }, 
+        {
+          "duration": 6.2229, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 45.3254
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 51.5019
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 53.0344
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 53.5917
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 55.5886
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 57.1675
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 57.4926
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 59.8146
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 61.3007
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 61.9044
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 63.9013
+        }, 
+        {
+          "duration": 67.7094, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 65.4338
+        }, 
+        {
+          "duration": 332.7884, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 65.7589
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 133.7469
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 137.7872
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 141.9204
+        }, 
+        {
+          "duration": 257.8344, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 146.0535
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 403.91607709750565, 
+    "title": "CaptainSky", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

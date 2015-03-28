@@ -1,0 +1,100 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_SwingJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 88.514499, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.4644
+        }, 
+        {
+          "duration": 88.2823, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.9752
+        }, 
+        {
+          "duration": 12.5852, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 2.0898
+        }, 
+        {
+          "duration": 8.87, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 9.7524
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 15.1394
+        }, 
+        {
+          "duration": 6.0837, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 17.3685
+        }, 
+        {
+          "duration": 25.542, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 19.3654
+        }, 
+        {
+          "duration": 8.545, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 23.8701
+        }, 
+        {
+          "duration": 12.5852, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 32.6473
+        }, 
+        {
+          "duration": 43.5142, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 45.6969
+        }, 
+        {
+          "duration": 9.0093, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 53.4059
+        }, 
+        {
+          "duration": 25.6348, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 63.019
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 89.51292517006803, 
+    "title": "SwingJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

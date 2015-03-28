@@ -1,0 +1,124 @@
+{
+  "sandbox": {
+    "content_path": "JoelHelander_IntheAtticBedroom_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 226.6732, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 226.3017, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 114.5208, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 23.8237, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.5108
+        }, 
+        {
+          "duration": 114.1493, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.5108
+        }, 
+        {
+          "duration": 83.2203, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 24.7989
+        }, 
+        {
+          "duration": 2.5077, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 110.3877
+        }, 
+        {
+          "duration": 110.6198, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 115.2639
+        }, 
+        {
+          "duration": 110.9914, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 115.3567
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 116.0533
+        }, 
+        {
+          "duration": 59.5824, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 117.5859
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 181.3943
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 183.4841
+        }, 
+        {
+          "duration": 4.1331, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 187.1993
+        }, 
+        {
+          "duration": 5.6656, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 193.9331
+        }, 
+        {
+          "duration": 25.5884, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 199.9702
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 231.79310657596372, 
+    "title": "IntheAtticBedroom", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "JoelHelander"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "ChrisJacoby_PigsFoot_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 350.4356, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 167.5552, 
+          "confidence": 1, 
+          "value": "kick drum", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 339.9866, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 21.7803
+        }, 
+        {
+          "duration": 338.0361, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 22.4305
+        }, 
+        {
+          "duration": 121.6261, 
+          "confidence": 1, 
+          "value": "kick drum", 
+          "time": 208.6545
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 367.1143764172336, 
+    "title": "PigsFoot", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ChrisJacoby"
+  }
+}

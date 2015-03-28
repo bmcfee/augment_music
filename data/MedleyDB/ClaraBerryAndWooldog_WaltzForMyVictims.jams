@@ -1,0 +1,124 @@
+{
+  "sandbox": {
+    "content_path": "ClaraBerryAndWooldog_WaltzForMyVictims_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 159.9854, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.3468
+        }, 
+        {
+          "duration": 11.2384, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 13.3283
+        }, 
+        {
+          "duration": 151.2548, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 13.3747
+        }, 
+        {
+          "duration": 128.9172, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 24.706
+        }, 
+        {
+          "duration": 11.0527, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 38.3129
+        }, 
+        {
+          "duration": 13.9784, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 50.3409
+        }, 
+        {
+          "duration": 5.2941, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 74.211
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 80.1088
+        }, 
+        {
+          "duration": 11.3313, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 86.2854
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 97.9882
+        }, 
+        {
+          "duration": 5.2942, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 104.3969
+        }, 
+        {
+          "duration": 11.935, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 110.3877
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "glockenspiel", 
+          "time": 122.0905
+        }, 
+        {
+          "duration": 5.387, 
+          "confidence": 1, 
+          "value": "glockenspiel", 
+          "time": 128.1277
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 153.809
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 155.3879
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 175.43031746031747, 
+    "title": "WaltzForMyVictims", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ClaraBerryAndWooldog"
+  }
+}

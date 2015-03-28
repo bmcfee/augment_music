@@ -1,0 +1,160 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseHenan_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 56.2852, 
+          "confidence": 1, 
+          "value": "guzheng", 
+          "time": 1.8576
+        }, 
+        {
+          "duration": 5.9443, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 2.322
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 2.3684
+        }, 
+        {
+          "duration": 56.4245, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 2.3684
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 3.6688
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 5.8514
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 8.7771
+        }, 
+        {
+          "duration": 3.0651, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 15.5109
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 20.8051
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 21.5017
+        }, 
+        {
+          "duration": 5.6193, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 22.1518
+        }, 
+        {
+          "duration": 10.9599, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 29.4893
+        }, 
+        {
+          "duration": 9.0094, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 30.9754
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 39.381
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 41.0529
+        }, 
+        {
+          "duration": 16.1611, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 41.5637
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 43.9322
+        }, 
+        {
+          "duration": 8.6842, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 44.0715
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 50.4337
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 54.7062
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 54.7527
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 59.0, 
+    "title": "ChineseHenan", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

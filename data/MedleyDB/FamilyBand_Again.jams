@@ -1,0 +1,322 @@
+{
+  "sandbox": {
+    "content_path": "FamilyBand_Again_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 179.0259, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 197.3232, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 97.7096, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.9288
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 4.4118
+        }, 
+        {
+          "duration": 21.3159, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 11.9815
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 13.1425
+        }, 
+        {
+          "duration": 9.5201, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 26.3779
+        }, 
+        {
+          "duration": 14.7214, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 33.3903
+        }, 
+        {
+          "duration": 7.2911, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 38.6844
+        }, 
+        {
+          "duration": 48.5761, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 48.9477
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 50.0622
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 50.248
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 53.2201
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 62.3688
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 62.4617
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 65.4338
+        }, 
+        {
+          "duration": 9.3808, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 75.6042
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 88.0036
+        }, 
+        {
+          "duration": 80.759, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 98.0811
+        }, 
+        {
+          "duration": 80.7126, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 98.2204
+        }, 
+        {
+          "duration": 80.434, 
+          "confidence": 1, 
+          "value": "melodica", 
+          "time": 98.266799
+        }, 
+        {
+          "duration": 23.9165, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 98.4062
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 100.5888
+        }, 
+        {
+          "duration": 12.8639, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 112.8954
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 115.9605
+        }, 
+        {
+          "duration": 20.9908, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 127.2454
+        }, 
+        {
+          "duration": 5.6657, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 127.4311
+        }, 
+        {
+          "duration": 11.9815, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 128.1741
+        }, 
+        {
+          "duration": 9.6595, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 128.2206
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 128.7779
+        }, 
+        {
+          "duration": 5.7121, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 133.329
+        }, 
+        {
+          "duration": 10.2167, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 139.5984
+        }, 
+        {
+          "duration": 18.9474, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 140.5272
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 141.130899
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 147.0752
+        }, 
+        {
+          "duration": 11.5635, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 152.7873
+        }, 
+        {
+          "duration": 6.501499, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 153.4375
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 156.131
+        }, 
+        {
+          "duration": 19.7834, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 162.2146
+        }, 
+        {
+          "duration": 9.3809, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 165.001
+        }, 
+        {
+          "duration": 19.2261, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 165.7905
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 175.032
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 179.2116
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 180.419
+        }, 
+        {
+          "duration": 19.319, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 181.3478
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 182.416
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 192.2612
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 196.9981
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 201.2865306122449, 
+    "title": "Again", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "FamilyBand"
+  }
+}

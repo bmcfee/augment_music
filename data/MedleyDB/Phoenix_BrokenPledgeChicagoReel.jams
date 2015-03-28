@@ -1,0 +1,46 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_BrokenPledgeChicagoReel_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 180.1868, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 178.3292, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 2.0898
+        }, 
+        {
+          "duration": 178.2363, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 2.1827
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 180.43065759637187, 
+    "title": "BrokenPledgeChicagoReel", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Grunge_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 41.1922, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 1.904
+        }, 
+        {
+          "duration": 36.1767, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 1.9969
+        }, 
+        {
+          "duration": 37.1984, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 1.9969
+        }, 
+        {
+          "duration": 39.056, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 1.9969
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.1796
+        }, 
+        {
+          "duration": 31.2541, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 8.1734
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 41.85414965986394, 
+    "title": "Grunge", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

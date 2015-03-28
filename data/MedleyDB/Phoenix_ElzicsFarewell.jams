@@ -1,0 +1,82 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_ElzicsFarewell_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 172.9887, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.743
+        }, 
+        {
+          "duration": 169.0877, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 4.7369
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 4.9691
+        }, 
+        {
+          "duration": 34.2262, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 5.6657
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 40.6349
+        }, 
+        {
+          "duration": 19.9228, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 48.3439
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 69.3812
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 69.8456
+        }, 
+        {
+          "duration": 102.5393, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 71.0066
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 175.08278911564625, 
+    "title": "ElzicsFarewell", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

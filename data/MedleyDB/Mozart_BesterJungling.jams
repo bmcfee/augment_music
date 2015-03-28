@@ -1,0 +1,166 @@
+{
+  "sandbox": {
+    "content_path": "Mozart_BesterJungling_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 17.0435, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.0681
+        }, 
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 18.576
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 19.5976
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 23.5915
+        }, 
+        {
+          "duration": 8.8701, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 27.3995
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 28.6534
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 32.9259
+        }, 
+        {
+          "duration": 37.8486, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 36.9197
+        }, 
+        {
+          "duration": 15.3252, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 38.7309
+        }, 
+        {
+          "duration": 26.4243, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 54.5669
+        }, 
+        {
+          "duration": 8.8701, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 75.3255
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 81.8271
+        }, 
+        {
+          "duration": 8.5449, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 85.5888
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 86.7033
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 90.8829
+        }, 
+        {
+          "duration": 8.7772, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 94.6445
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 95.9913
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 100.4495
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 104.3505
+        }, 
+        {
+          "duration": 65.8054, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 106.3938
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 112.1059
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 119.397
+        }, 
+        {
+          "duration": 36.1767, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 129.7067
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 174.1380498866213, 
+    "title": "BesterJungling", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Mozart"
+  }
+}

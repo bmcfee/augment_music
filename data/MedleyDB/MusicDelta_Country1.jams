@@ -1,0 +1,76 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Country1_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 34.5048, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 34.6442, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 34.6442, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 16.6255, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 13.3283, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.743
+        }, 
+        {
+          "duration": 16.8577, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 17.3221
+        }, 
+        {
+          "duration": 13.0961, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 18.0651
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 31.8113
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 34.74285714285714, 
+    "title": "Country1", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

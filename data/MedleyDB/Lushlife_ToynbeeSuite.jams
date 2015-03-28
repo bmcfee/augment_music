@@ -1,0 +1,1228 @@
+{
+  "sandbox": {
+    "content_path": "Lushlife_ToynbeeSuite_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 126.3166, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 105.465, 
+          "confidence": 1, 
+          "value": "glockenspiel", 
+          "time": 24.5667
+        }, 
+        {
+          "duration": 27.9103, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 25.3098
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 48.3439
+        }, 
+        {
+          "duration": 25.4027, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 48.9012
+        }, 
+        {
+          "duration": 62.183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 48.9477
+        }, 
+        {
+          "duration": 74.211, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 49.133399
+        }, 
+        {
+          "duration": 17.4149, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 49.3192
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 49.5049
+        }, 
+        {
+          "duration": 27.5853, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 49.6907
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 52.6164
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 54.1954
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 55.7279
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 57.2604
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 58.7929
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 60.2326
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 61.858
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 63.4369
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 64.9694
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 66.4555
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 67.0128
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 68.0345
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 69.567
+        }, 
+        {
+          "duration": 29.3036, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 70.6815
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 71.0995
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 72.632
+        }, 
+        {
+          "duration": 0.1857, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 74.7683
+        }, 
+        {
+          "duration": 2.1826, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 75.2327
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 76.533
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 77.4153
+        }, 
+        {
+          "duration": 8.8236, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 77.9262
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 80.016
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 82.0593
+        }, 
+        {
+          "duration": 1.4397, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 82.8952
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 85.8674
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 86.9355
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 87.7714
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 88.5609
+        }, 
+        {
+          "duration": 0.2787, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 90.0005
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 90.9758
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 92.4154
+        }, 
+        {
+          "duration": 29.9537, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 93.4371
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 95.0625
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 96.2235
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 96.9665
+        }, 
+        {
+          "duration": 25.4491, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 98.1275
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 98.2204
+        }, 
+        {
+          "duration": 24.5202, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 98.6384
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 98.8241
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 100.3566
+        }, 
+        {
+          "duration": 1.2538, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 101.8892
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 103.3752
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 104.9542
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 106.4867
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 107.8799
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 109.5982
+        }, 
+        {
+          "duration": 37.1984, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 110.7592
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 111.1307
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 112.6168
+        }, 
+        {
+          "duration": 2.6936, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 114.1957
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 117.2143
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 118.7468
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 120.3722
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "claps", 
+          "time": 121.9048
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 124.3661
+        }, 
+        {
+          "duration": 116.0069, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 143.5922
+        }, 
+        {
+          "duration": 23.963, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 151.6727
+        }, 
+        {
+          "duration": 18.1116, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 159.0567
+        }, 
+        {
+          "duration": 14.535699, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 160.2641
+        }, 
+        {
+          "duration": 37.1055, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 175.4964
+        }, 
+        {
+          "duration": 37.3841, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 175.4964
+        }, 
+        {
+          "duration": 40.3563, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 175.5893
+        }, 
+        {
+          "duration": 37.3377, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 175.6822
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 188.6854
+        }, 
+        {
+          "duration": 67.245, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 189.3355
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 205.6824
+        }, 
+        {
+          "duration": 50.526699, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 207.4006
+        }, 
+        {
+          "duration": 16.6254, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 207.54
+        }, 
+        {
+          "duration": 16.3469, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 207.6328
+        }, 
+        {
+          "duration": 16.2075, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 208.1437
+        }, 
+        {
+          "duration": 0.325, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 213.2521
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 213.3449
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 214.5059
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 216.5957
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 218.8713
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 220.0323
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 220.8682
+        }, 
+        {
+          "duration": 41.0993, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 222.8651
+        }, 
+        {
+          "duration": 36.2696, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 222.958
+        }, 
+        {
+          "duration": 36.1767, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 223.376
+        }, 
+        {
+          "duration": 33.0188, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 223.701
+        }, 
+        {
+          "duration": 22.6162, 
+          "confidence": 1, 
+          "value": "scratches", 
+          "time": 248.8715
+        }, 
+        {
+          "duration": 52.7558, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 255.5588
+        }, 
+        {
+          "duration": 118.3753, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 255.6053
+        }, 
+        {
+          "duration": 142.4776, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 255.8839
+        }, 
+        {
+          "duration": 24.6596, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 265.9149
+        }, 
+        {
+          "duration": 46.6257, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 266.0078
+        }, 
+        {
+          "duration": 108.8552, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 266.518599
+        }, 
+        {
+          "duration": 120.5116, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 266.518599
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 266.5651
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 268.98
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 271.7199
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 274.367
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 277.1534
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 279.9862
+        }, 
+        {
+          "duration": 29.5358, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 282.3546
+        }, 
+        {
+          "duration": 15.0001, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 290.7603
+        }, 
+        {
+          "duration": 7.1982, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 306.1783
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "scratches", 
+          "time": 308.4539
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 308.5932
+        }, 
+        {
+          "duration": 26.0063, 
+          "confidence": 1, 
+          "value": "scratches", 
+          "time": 309.7078
+        }, 
+        {
+          "duration": 65.1087, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 309.94
+        }, 
+        {
+          "duration": 23.127, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 310.6366
+        }, 
+        {
+          "duration": 45.5111, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 310.9616
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 312.587
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 314.8626
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 315.3734
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 318.1134
+        }, 
+        {
+          "duration": 2.0897, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 320.7605
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 323.5468
+        }, 
+        {
+          "duration": 7.384, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 326.3332
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 334.2745
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 337.2466
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 339.4757
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 342.5408
+        }, 
+        {
+          "duration": 32.1828, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 345.2343
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 350.4356
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 351.643
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 353.1755
+        }, 
+        {
+          "duration": 23.3593, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 353.1755
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 356.7049
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 357.5873
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 357.6802
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 358.7483
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 359.77
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 360.6523
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 360.6988
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 362.3242
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 362.9279
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 363.578
+        }, 
+        {
+          "duration": 11.9815, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 364.739
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 365.0641
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 365.575
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 370.3583
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 371.4264
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 372.4481
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 373.284
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 374.1663
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "scratches", 
+          "time": 374.445
+        }, 
+        {
+          "duration": 20.6193, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 375.2345
+        }, 
+        {
+          "duration": 22.802, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 375.3738
+        }, 
+        {
+          "duration": 54.3347, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 375.4667
+        }, 
+        {
+          "duration": 13.3283, 
+          "confidence": 1, 
+          "value": "scratches", 
+          "time": 375.5595
+        }, 
+        {
+          "duration": 11.5635, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 375.606
+        }, 
+        {
+          "duration": 11.0063, 
+          "confidence": 1, 
+          "value": "trumpet section", 
+          "time": 376.1168
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 377.2778
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 377.8815
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 378.0209
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 380.6679
+        }, 
+        {
+          "duration": 2.0897, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 383.3615
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 385.9156
+        }, 
+        {
+          "duration": 15.511, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 394.8785
+        }, 
+        {
+          "duration": 34.0869, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 411.3647
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 430.498
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 431.519599
+        }, 
+        {
+          "duration": 99.3814, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 432.402
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 432.6342
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 434.7704
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 437.6961
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 438.7643
+        }, 
+        {
+          "duration": 0.1857, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 440.0646
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 445.0801
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 446.2411
+        }, 
+        {
+          "duration": 0.0, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 446.8448
+        }, 
+        {
+          "duration": 42.7247, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 447.4485
+        }, 
+        {
+          "duration": 0.1857, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 447.6343
+        }, 
+        {
+          "duration": 101.239, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 483.3001
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 484.1825
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 491.52
+        }, 
+        {
+          "duration": 8.2198, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 494.4922
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 503.501499
+        }, 
+        {
+          "duration": 25.2168, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 507.5418
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 532.1085
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 532.3407
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 532.9908
+        }, 
+        {
+          "duration": 94.1337, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 533.8268
+        }, 
+        {
+          "duration": 48.2975, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 534.1983
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 538.7494
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 539.8175
+        }, 
+        {
+          "duration": 5.2012, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 542.5575
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 547.8516
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 548.8733
+        }, 
+        {
+          "duration": 21.3159, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 554.9569
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 577.1088
+        }, 
+        {
+          "duration": 42.539, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 583.0066
+        }, 
+        {
+          "duration": 0.1857, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 584.6785
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 589.1831
+        }, 
+        {
+          "duration": 31.3005, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 593.4092
+        }, 
+        {
+          "duration": 21.4553, 
+          "confidence": 1, 
+          "value": "male rapper", 
+          "time": 596.7528
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 628.0533
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 628.5580045351473, 
+    "title": "ToynbeeSuite", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Lushlife"
+  }
+}

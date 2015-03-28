@@ -1,0 +1,178 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_DontYouEver_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 13.4676, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 4.9227, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 15.0465
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 21.0837
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 25.1704
+        }, 
+        {
+          "duration": 21.7803, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 28.6534
+        }, 
+        {
+          "duration": 22.9878, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 28.8856
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 29.3965
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 33.9011
+        }, 
+        {
+          "duration": 4.8298, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 38.9166
+        }, 
+        {
+          "duration": 4.4583, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 44.257199
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 52.0591
+        }, 
+        {
+          "duration": 38.4058, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 53.0344
+        }, 
+        {
+          "duration": 9.5202, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 53.313
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 57.3997
+        }, 
+        {
+          "duration": 26.0992, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 62.9725
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 63.019
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 65.6196
+        }, 
+        {
+          "duration": 37.895, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 71.0066
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 71.1459
+        }, 
+        {
+          "duration": 36.2232, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 73.0035
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 73.0964
+        }, 
+        {
+          "duration": 36.0373, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 73.514399
+        }, 
+        {
+          "duration": 33.3903, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 75.4184
+        }, 
+        {
+          "duration": 18.158, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 89.4433
+        }, 
+        {
+          "duration": 16.3004, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 90.1863
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 114.01655328798186, 
+    "title": "DontYouEver", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

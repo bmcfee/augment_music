@@ -1,0 +1,52 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Shadows_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 33.2045, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 32.6937, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 33.2046, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 33.1581, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0929
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 33.4909977324263, 
+    "title": "Shadows", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

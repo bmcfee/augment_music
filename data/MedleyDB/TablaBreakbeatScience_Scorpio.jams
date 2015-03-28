@@ -1,0 +1,700 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_Scorpio_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 66.2233, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 4.0403
+        }, 
+        {
+          "duration": 75.4649, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 8.1734
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 8.2199
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 12.3995
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 16.532599
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 16.7184
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 20.7122
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 20.7586
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 24.8918
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 24.9382
+        }, 
+        {
+          "duration": 92.9727, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 24.9382
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 29.0714
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 29.1178
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 33.251
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 33.2974
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 33.994
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 36.0838
+        }, 
+        {
+          "duration": 1.7182, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 37.4306
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 37.477
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 38.1736
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 40.2634
+        }, 
+        {
+          "duration": 4.8761, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 41.6102
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 41.6566
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 42.3532
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 44.443
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 45.8362
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 46.5328
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 48.6226
+        }, 
+        {
+          "duration": 0.7894, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 49.8765
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 49.9693
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 49.9693
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 50.8981
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 52.0591
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 54.1489
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 54.1489
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 55.2635
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 56.1923
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 58.2821
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 5.1549, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 3.9009, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 59.3038
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 60.3719
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 62.4617
+        }, 
+        {
+          "duration": 2.6007, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 62.5081
+        }, 
+        {
+          "duration": 186.8277, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 63.6227
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 64.5515
+        }, 
+        {
+          "duration": 135.3723, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 66.502
+        }, 
+        {
+          "duration": 1.2538, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 66.6413
+        }, 
+        {
+          "duration": 17.5079, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 66.6877
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 68.7311
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 70.8209
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 72.9107
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 75.0005
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 77.0902
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 79.18
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 81.2698
+        }, 
+        {
+          "duration": 67.7558, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 83.266799
+        }, 
+        {
+          "duration": 67.1521, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 99.9851
+        }, 
+        {
+          "duration": 170.6202, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 100.0316
+        }, 
+        {
+          "duration": 384.3831, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 133.4219
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 152.0907
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 156.2703
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 160.4499
+        }, 
+        {
+          "duration": 2.5077, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 164.6295
+        }, 
+        {
+          "duration": 317.5561, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 183.4841
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 200.2489
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 202.4316
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 204.5214
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 208.701
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 210.7907
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 212.8341
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 217.0137
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 219.1035
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 221.1933
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 225.3729
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 227.4627
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 229.5525
+        }, 
+        {
+          "duration": 302.6489, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 233.4999
+        }, 
+        {
+          "duration": 217.2459, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 266.9366
+        }, 
+        {
+          "duration": 1.8575, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 270.8376
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 273.0202
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 275.0171
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 277.1534
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 279.1503
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 281.2865
+        }, 
+        {
+          "duration": 83.5454, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 283.7478
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 302.5096
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 306.7356
+        }, 
+        {
+          "duration": 6.4551, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 311.2403
+        }, 
+        {
+          "duration": 2.6007, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 319.2279
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 323.4075
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 327.5871
+        }, 
+        {
+          "duration": 35.7587, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 331.7203
+        }, 
+        {
+          "duration": 85.6816, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 368.5007
+        }, 
+        {
+          "duration": 3.901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 383.9187
+        }, 
+        {
+          "duration": 7.6162, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 388.5627
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 396.8755
+        }, 
+        {
+          "duration": 129.1958, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 400.5442
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 402.5411
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 406.7207
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 410.9003
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 415.0799
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 419.2595
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 423.4391
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 427.6187
+        }, 
+        {
+          "duration": 69.8456, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 431.7983
+        }, 
+        {
+          "duration": 3.9473, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 454.461
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 458.5941
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 462.8201
+        }, 
+        {
+          "duration": 47.601, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 466.9068
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 538.4347845804989, 
+    "title": "Scorpio", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

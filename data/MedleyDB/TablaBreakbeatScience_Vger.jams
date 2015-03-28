@@ -1,0 +1,646 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_Vger_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 118.1896, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 249.5681, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 5.387, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 1.4861
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 1.7647
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 3.8545
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 4.0403
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 4.9226
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 5.9443
+        }, 
+        {
+          "duration": 28.8857, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 7.3839
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 7.8019
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 8.0805
+        }, 
+        {
+          "duration": 109.1803, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 8.0805
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 9.5666
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 10.1239
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 10.9598
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 12.2137
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 14.3035
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 16.3933
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 16.7184
+        }, 
+        {
+          "duration": 475.5911, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 17.0899
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 18.4831
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 18.5295
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 20.5729
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 21.5017
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 22.4305
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 22.6627
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 24.7525
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 24.9847
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 26.4707
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 26.8423
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 28.2355
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 28.9321
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 29.0714
+        }, 
+        {
+          "duration": 1.997, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 29.9537
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 31.0219
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 32.4615
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 32.6473
+        }, 
+        {
+          "duration": 417.8663, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 33.1117
+        }, 
+        {
+          "duration": 468.4858, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 33.1117
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 35.6659
+        }, 
+        {
+          "duration": 181.9051, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 36.8733
+        }, 
+        {
+          "duration": 11.192, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 37.0126
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 39.3346
+        }, 
+        {
+          "duration": 69.2884, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 39.6132
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 43.0962
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 47.2758
+        }, 
+        {
+          "duration": 65.8054, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 48.9941
+        }, 
+        {
+          "duration": 11.7028, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 51.7341
+        }, 
+        {
+          "duration": 2.647, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 63.9478
+        }, 
+        {
+          "duration": 55.635, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 67.988
+        }, 
+        {
+          "duration": 108.6694, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 109.2731
+        }, 
+        {
+          "duration": 20.2943, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 115.8211
+        }, 
+        {
+          "duration": 23.9166, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 124.784
+        }, 
+        {
+          "duration": 184.32, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 133.2825
+        }, 
+        {
+          "duration": 49.087, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 136.9513
+        }, 
+        {
+          "duration": 116.0534, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 149.3507
+        }, 
+        {
+          "duration": 168.1589, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 150.3724
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 186.224
+        }, 
+        {
+          "duration": 8.8236, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 190.9609
+        }, 
+        {
+          "duration": 23.9165, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 200.0167
+        }, 
+        {
+          "duration": 11.0992, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 219.1499
+        }, 
+        {
+          "duration": 0.0, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 219.5679
+        }, 
+        {
+          "duration": 5.7586, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 220.1716
+        }, 
+        {
+          "duration": 83.1739, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 224.258299
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 228.9023
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 230.527699
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 233.4999
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 233.8714
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 236.0541
+        }, 
+        {
+          "duration": 0.3716, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 241.1624
+        }, 
+        {
+          "duration": 13.6534, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 242.0912
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 242.1841
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 244.8312
+        }, 
+        {
+          "duration": 250.9613, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 249.9396
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 252.0758
+        }, 
+        {
+          "duration": 21.4088, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 256.209
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 258.4381
+        }, 
+        {
+          "duration": 213.2521, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 268.562
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 269.305
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 271.9057
+        }, 
+        {
+          "duration": 19.8298, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 277.9429
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 279.3825
+        }, 
+        {
+          "duration": 15.3717, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 283.515599
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 298.0049
+        }, 
+        {
+          "duration": 7.8019, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 299.8625
+        }, 
+        {
+          "duration": 7.1982, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 300.0947
+        }, 
+        {
+          "duration": 194.9083, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 307.6644
+        }, 
+        {
+          "duration": 198.8557, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 308.500299
+        }, 
+        {
+          "duration": 196.0693, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 308.779
+        }, 
+        {
+          "duration": 134.257799, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 333.6243
+        }, 
+        {
+          "duration": 151.4405, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 350.7142
+        }, 
+        {
+          "duration": 9.7524, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 483.3466
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 493.3776
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 493.424
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 499.1361
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 504.3839
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 506.1021
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 507.6811
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 507.7275
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 507.9597
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 509.7244
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 511.31995464852605, 
+    "title": "Vger", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "sandbox": {
+    "content_path": "TheSoSoGlos_Emergency_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 45.6504, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 128.8707, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 3.065
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 4.4582
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 4.644
+        }, 
+        {
+          "duration": 20.2478, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.7121
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 5.8514
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 5.8979
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 7.4768
+        }, 
+        {
+          "duration": 3.6224, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 8.7771
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 8.8236
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 11.2385
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 12.8639
+        }, 
+        {
+          "duration": 31.3469, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 14.2571
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 14.3035
+        }, 
+        {
+          "duration": 5.1548, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 16.7648
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 19.8298
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 22.2912
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 25.3562
+        }, 
+        {
+          "duration": 20.8515, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 27.7246
+        }, 
+        {
+          "duration": 12.6317, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 33.2974
+        }, 
+        {
+          "duration": 11.9351, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 33.3903
+        }, 
+        {
+          "duration": 12.0279, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 33.3903
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 36.9197
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 38.1736
+        }, 
+        {
+          "duration": 26.0992, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 44.3966
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 44.443
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 47.1365
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 47.3223
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 47.3687
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 49.3656
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 50.0158
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 52.7093
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 52.8486
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 52.8486
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 54.7991
+        }, 
+        {
+          "duration": 32.6937, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 54.7991
+        }, 
+        {
+          "duration": 18.7152, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 55.4493
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 57.0282
+        }, 
+        {
+          "duration": 42.539, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 58.2356
+        }, 
+        {
+          "duration": 45.7898, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 58.2356
+        }, 
+        {
+          "duration": 41.0529, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 39.2882, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 59.7217
+        }, 
+        {
+          "duration": 22.4305, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 61.022
+        }, 
+        {
+          "duration": 7.8019, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 72.0283
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 74.4896
+        }, 
+        {
+          "duration": 18.6224, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 79.5516
+        }, 
+        {
+          "duration": 11.2385, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 81.1305
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 88.5609
+        }, 
+        {
+          "duration": 4.1331, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 94.9232
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 96.5486
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 100.8675
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 103.561
+        }, 
+        {
+          "duration": 18.6688, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 103.6539
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 106.3474
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 106.626
+        }, 
+        {
+          "duration": 3.2043, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 108.9945
+        }, 
+        {
+          "duration": 9.3808, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 111.7809
+        }, 
+        {
+          "duration": 3.1114, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 112.0131
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 117.3072
+        }, 
+        {
+          "duration": 2.6936, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 118.7468
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 118.8862
+        }, 
+        {
+          "duration": 9.0093, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 120.1865
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 120.976
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 121.3475
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 121.9512
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 123.9017
+        }, 
+        {
+          "duration": 38.5916, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 125.0162
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 126.5952
+        }, 
+        {
+          "duration": 8.5914, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 127.3847
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 129.6138
+        }, 
+        {
+          "duration": 36.6875, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 129.7067
+        }, 
+        {
+          "duration": 36.7804, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 129.7067
+        }, 
+        {
+          "duration": 36.7804, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 129.7067
+        }, 
+        {
+          "duration": 32.7401, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 129.7531
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 130.0317
+        }, 
+        {
+          "duration": 31.8578, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 130.2639
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 131.4249
+        }, 
+        {
+          "duration": 26.8887, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 136.6727
+        }, 
+        {
+          "duration": 21.5017, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 141.130899
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 150.8368
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 167.0, 
+    "title": "Emergency", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TheSoSoGlos"
+  }
+}

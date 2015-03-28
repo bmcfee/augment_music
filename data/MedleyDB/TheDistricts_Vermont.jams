@@ -1,0 +1,280 @@
+{
+  "sandbox": {
+    "content_path": "TheDistricts_Vermont_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 225.5587, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 1.3003
+        }, 
+        {
+          "duration": 19.2261, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 7.6626
+        }, 
+        {
+          "duration": 20.2478, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 7.709
+        }, 
+        {
+          "duration": 20.2014, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 7.8483
+        }, 
+        {
+          "duration": 15.0001, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 31.3005
+        }, 
+        {
+          "duration": 54.3347, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 31.3469
+        }, 
+        {
+          "duration": 54.3811, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 31.3934
+        }, 
+        {
+          "duration": 31.3933, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 31.9507
+        }, 
+        {
+          "duration": 34.0405, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 46.9043
+        }, 
+        {
+          "duration": 20.9909, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 64.0406
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 86.0996
+        }, 
+        {
+          "duration": 80.6661, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 89.0253
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 89.0717
+        }, 
+        {
+          "duration": 30.8825, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 89.2111
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 92.4154
+        }, 
+        {
+          "duration": 25.7277, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 94.4588
+        }, 
+        {
+          "duration": 14.8607, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 97.7096
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 113.4527
+        }, 
+        {
+          "duration": 44.1643, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 120.0472
+        }, 
+        {
+          "duration": 18.8082, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 120.558
+        }, 
+        {
+          "duration": 12.3995, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 120.6044
+        }, 
+        {
+          "duration": 43.6999, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 120.7438
+        }, 
+        {
+          "duration": 19.1333, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 123.623
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 164.9546
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 165.3261
+        }, 
+        {
+          "duration": 4.9227, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 170.1558
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 170.388
+        }, 
+        {
+          "duration": 4.319, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 170.5273
+        }, 
+        {
+          "duration": 48.3439, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 172.6636
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 175.4035
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 176.611
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 177.7255
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 178.6543
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 179.7224
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 180.6512
+        }, 
+        {
+          "duration": 44.1643, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 181.7194
+        }, 
+        {
+          "duration": 43.5606, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 182.0909
+        }, 
+        {
+          "duration": 42.3996, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 183.3448
+        }, 
+        {
+          "duration": 17.6472, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 204.2427
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 222.4007
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 227.3698
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 228.1529931972789, 
+    "title": "Vermont", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TheDistricts"
+  }
+}

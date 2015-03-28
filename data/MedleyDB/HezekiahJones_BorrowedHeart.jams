@@ -1,0 +1,364 @@
+{
+  "sandbox": {
+    "content_path": "HezekiahJones_BorrowedHeart_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 50.248, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 241.534, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 241.4876, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 19.319, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 1.7647
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 3.9474
+        }, 
+        {
+          "duration": 224.0726, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 17.4614
+        }, 
+        {
+          "duration": 19.1333, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 17.5078
+        }, 
+        {
+          "duration": 17.6936, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 26.3314
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 33.1581
+        }, 
+        {
+          "duration": 26.1922, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 40.0776
+        }, 
+        {
+          "duration": 45.7433, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 40.217
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 50.7124
+        }, 
+        {
+          "duration": 44.1179, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 52.9415
+        }, 
+        {
+          "duration": 35.0622, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 57.1675
+        }, 
+        {
+          "duration": 18.9475, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 57.3997
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 66.4091
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 77.1831
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 81.7807
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 86.7498
+        }, 
+        {
+          "duration": 153.2053, 
+          "confidence": 1, 
+          "value": "banjo", 
+          "time": 88.3287
+        }, 
+        {
+          "duration": 46.9508, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 88.6073
+        }, 
+        {
+          "duration": 135.4652, 
+          "confidence": 1, 
+          "value": "cymbal", 
+          "time": 106.0688
+        }, 
+        {
+          "duration": 49.4585, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 127.3847
+        }, 
+        {
+          "duration": 69.1955, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 172.3385
+        }, 
+        {
+          "duration": 36.0374, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 172.5707
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 180.094
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 183.0197
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 184.7844
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 186.8742
+        }, 
+        {
+          "duration": 52.1985, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 189.3355
+        }, 
+        {
+          "duration": 52.152, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 189.382
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 190.6358
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 191.3789
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 193.5615
+        }, 
+        {
+          "duration": 1.2538, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 195.7907
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 197.9733
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 200.156
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 202.478
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 204.6142
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 206.8898
+        }, 
+        {
+          "duration": 30.6039, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 208.7938
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 208.9796
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 211.3016
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 213.530699
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 215.7134
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 217.7567
+        }, 
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 220.0787
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 222.2614
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 226.6732
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 230.9921
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 233.2212
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 235.3575
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 237.5866
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 239.7228
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 239.7693
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 241.57843537414965, 
+    "title": "BorrowedHeart", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "HezekiahJones"
+  }
+}

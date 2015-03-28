@@ -1,0 +1,358 @@
+{
+  "sandbox": {
+    "content_path": "LizNelson_Rainfall_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 284.0729, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 14.3964
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 21.4552
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 27.446
+        }, 
+        {
+          "duration": 6.548, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 28.607
+        }, 
+        {
+          "duration": 22.1054, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 35.7587
+        }, 
+        {
+          "duration": 15.0465, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 43.4213
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 50.6195
+        }, 
+        {
+          "duration": 30.7432, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 58.8858
+        }, 
+        {
+          "duration": 3.9009, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 59.3038
+        }, 
+        {
+          "duration": 29.4894, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 60.3254
+        }, 
+        {
+          "duration": 17.9258, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 63.7156
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 81.8736
+        }, 
+        {
+          "duration": 16.1147, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 85.5423
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 101.7963
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 104.7684
+        }, 
+        {
+          "duration": 2.8792, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 105.6044
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 108.2514
+        }, 
+        {
+          "duration": 10.0774, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 108.9016
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 116.3784
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 119.5828
+        }, 
+        {
+          "duration": 4.2724, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 122.6014
+        }, 
+        {
+          "duration": 13.8391, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 123.3908
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 128.7779
+        }, 
+        {
+          "duration": 15.4181, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 131.0534
+        }, 
+        {
+          "duration": 12.1673, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 137.555
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 147.4467
+        }, 
+        {
+          "duration": 30.6503, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 148.5613
+        }, 
+        {
+          "duration": 28.2355, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 150.326
+        }, 
+        {
+          "duration": 4.7369, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 152.1836
+        }, 
+        {
+          "duration": 13.6533, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 156.0381
+        }, 
+        {
+          "duration": 13.1425, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 157.1062
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 170.7595
+        }, 
+        {
+          "duration": 8.8236, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 170.8524
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 174.5676
+        }, 
+        {
+          "duration": 2.5077, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 191.0538
+        }, 
+        {
+          "duration": 13.6534, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 194.0259
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 194.769
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 198.2984
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 201.6885
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 205.7752
+        }, 
+        {
+          "duration": 3.0185, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 208.9332
+        }, 
+        {
+          "duration": 22.1518, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 212.6019
+        }, 
+        {
+          "duration": 12.8174, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 220.3109
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 222.4936
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 227.6949
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 236.0076
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 236.4256
+        }, 
+        {
+          "duration": 33.7154, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 238.1903
+        }, 
+        {
+          "duration": 39.9383, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 239.3049
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 239.3977
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 241.4411
+        }, 
+        {
+          "duration": 16.1611, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 246.503
+        }, 
+        {
+          "duration": 24.7989, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 248.825
+        }, 
+        {
+          "duration": 8.5914, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 262.8963
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 284.90884353741495, 
+    "title": "Rainfall", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "LizNelson"
+  }
+}

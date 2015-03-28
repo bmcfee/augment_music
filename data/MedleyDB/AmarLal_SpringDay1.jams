@@ -1,0 +1,34 @@
+{
+  "sandbox": {
+    "content_path": "AmarLal_SpringDay1_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 127.2918, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 1.7183
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 133.92049886621317, 
+    "title": "SpringDay1", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AmarLal"
+  }
+}

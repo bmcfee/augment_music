@@ -1,0 +1,190 @@
+{
+  "sandbox": {
+    "content_path": "EthanHein_HarmonicaFigure_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 55.4957, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 108.4372, 
+          "confidence": 1, 
+          "value": "harmonica", 
+          "time": 1.4861
+        }, 
+        {
+          "duration": 37.1055, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 18.4831
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 37.3841
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 41.9817
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 46.6257
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 51.2232
+        }, 
+        {
+          "duration": 74.0252, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 55.4028
+        }, 
+        {
+          "duration": 46.4863, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 64.4122
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 74.3039
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 78.9014
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 83.5454
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 88.1429
+        }, 
+        {
+          "duration": 36.9662, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 92.4154
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 92.7405
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 97.3845
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 101.982
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 106.626
+        }, 
+        {
+          "duration": 39.381, 
+          "confidence": 1, 
+          "value": "harmonica", 
+          "time": 110.3877
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 111.2236
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 115.8211
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 120.4651
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 125.0627
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 129.6602
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 134.3042
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 138.9018
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 143.5458
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 150.94854875283445, 
+    "title": "HarmonicaFigure", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "EthanHein"
+  }
+}

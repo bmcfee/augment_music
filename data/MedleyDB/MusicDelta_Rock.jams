@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Rock_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 12.4923, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0929
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 13.091156462585033, 
+    "title": "Rock", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

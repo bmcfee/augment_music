@@ -1,0 +1,274 @@
+{
+  "sandbox": {
+    "content_path": "EthanHein_1930sSynthAndUprightBass_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 277.2927, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 278.2215, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 89.3968, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 9.6595
+        }, 
+        {
+          "duration": 5.1548, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 39.799
+        }, 
+        {
+          "duration": 4.7368, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 46.022
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 50.8517
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 54.7062
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 64.18
+        }, 
+        {
+          "duration": 3.0185, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 66.2698
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 69.6134
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 70.728
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 75.5577
+        }, 
+        {
+          "duration": 9.7524, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 80.5732
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 90.5578
+        }, 
+        {
+          "duration": 12.4924, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 93.0191
+        }, 
+        {
+          "duration": 17.3685, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 106.4867
+        }, 
+        {
+          "duration": 57.1676, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 118.6075
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 124.3196
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 125.0627
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 127.6633
+        }, 
+        {
+          "duration": 10.9134, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 130.2175
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 141.4095
+        }, 
+        {
+          "duration": 18.0651, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 143.2207
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 161.7502
+        }, 
+        {
+          "duration": 18.3902, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 164.3973
+        }, 
+        {
+          "duration": 59.7217, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 177.9113
+        }, 
+        {
+          "duration": 2.4614, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 183.2054
+        }, 
+        {
+          "duration": 22.059, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 185.8525
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 208.2366
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 211.0694
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 212.509
+        }, 
+        {
+          "duration": 5.6657, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 214.6917
+        }, 
+        {
+          "duration": 8.7772, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 220.4502
+        }, 
+        {
+          "duration": 1.2075, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 230.2026
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 231.6423
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 234.0571
+        }, 
+        {
+          "duration": 5.8514, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 236.7042
+        }, 
+        {
+          "duration": 5.8978, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 242.695
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 248.8715
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 255.0944
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 287.0103174603175, 
+    "title": "1930sSynthAndUprightBass", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "EthanHein"
+  }
+}

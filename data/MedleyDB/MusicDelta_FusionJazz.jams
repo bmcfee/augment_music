@@ -1,0 +1,382 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_FusionJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 6.7338, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 33.7154, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 6.8731, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 106.2546, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 5.2477, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 4.2725
+        }, 
+        {
+          "duration": 15.8824, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 7.2911
+        }, 
+        {
+          "duration": 4.9227, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 7.709
+        }, 
+        {
+          "duration": 10.4489, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 9.6131
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 13.2818
+        }, 
+        {
+          "duration": 8.9629, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 16.3004
+        }, 
+        {
+          "duration": 7.2911, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 18.3902
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 24.706
+        }, 
+        {
+          "duration": 8.9164, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 25.4491
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 27.0745
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 27.0745
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 32.9259
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 33.4367
+        }, 
+        {
+          "duration": 73.793, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 34.3655
+        }, 
+        {
+          "duration": 9.613, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 35.8052
+        }, 
+        {
+          "duration": 6.8732, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 35.898
+        }, 
+        {
+          "duration": 12.2137, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 37.8485
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 38.4058
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 43.2356
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 46.1148
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 46.5792
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 48.8548
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 50.7124
+        }, 
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 50.9446
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 54.1954
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 57.6784
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 58.9322
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 59.118
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 59.6753
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 60.1861
+        }, 
+        {
+          "duration": 8.8701, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 61.9508
+        }, 
+        {
+          "duration": 8.4985, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 65.6196
+        }, 
+        {
+          "duration": 7.1982, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 68.3595
+        }, 
+        {
+          "duration": 4.6905, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 68.8239
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 71.517499
+        }, 
+        {
+          "duration": 4.5511, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 73.7001
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 74.8147
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 77.0902
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 77.9262
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 79.3658
+        }, 
+        {
+          "duration": 6.5016, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 79.5051
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 81.1305
+        }, 
+        {
+          "duration": 6.4551, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 82.1058
+        }, 
+        {
+          "duration": 2.0897, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 86.982
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 88.0965
+        }, 
+        {
+          "duration": 12.1672, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 88.2823
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 90.1863
+        }, 
+        {
+          "duration": 5.3406, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 91.2544
+        }, 
+        {
+          "duration": 14.1642, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 94.5052
+        }, 
+        {
+          "duration": 10.5419, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 95.5269
+        }, 
+        {
+          "duration": 7.9412, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 96.8272
+        }, 
+        {
+          "duration": 7.8948, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 101.982
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 105.8366
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "soprano saxophone", 
+          "time": 106.4403
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 110.98560090702948, 
+    "title": "FusionJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

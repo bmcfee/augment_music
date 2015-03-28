@@ -1,0 +1,82 @@
+{
+  "sandbox": {
+    "content_path": "EthanHein_BluesForNofi_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 159.4282, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.4644
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 5.2477
+        }, 
+        {
+          "duration": 74.7218, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 10.031
+        }, 
+        {
+          "duration": 3.0651, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 87.2141
+        }, 
+        {
+          "duration": 6.3623, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 90.5578
+        }, 
+        {
+          "duration": 5.2941, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 97.9418
+        }, 
+        {
+          "duration": 6.2694, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 104.4898
+        }, 
+        {
+          "duration": 50.526599, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 111.3629
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 166.8, 
+    "title": "BluesForNofi", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "EthanHein"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "sandbox": {
+    "content_path": "AimeeNorwich_Child_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 160.4498, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.418
+        }, 
+        {
+          "duration": 150.8368, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 11.8422
+        }, 
+        {
+          "duration": 162.4004, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 12.0279
+        }, 
+        {
+          "duration": 140.7594, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 20.3871
+        }, 
+        {
+          "duration": 95.4805, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 26.4707
+        }, 
+        {
+          "duration": 7.0588, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 30.2324
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 38.1272
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 43.4678
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 50.2015
+        }, 
+        {
+          "duration": 0.836, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 52.2913
+        }, 
+        {
+          "duration": 9.5202, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 56.7496
+        }, 
+        {
+          "duration": 5.9444, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 69.9849
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 76.533
+        }, 
+        {
+          "duration": 89.0253, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 77.276
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 78.0655
+        }, 
+        {
+          "duration": 5.9443, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 83.2203
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 89.6755
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 96.4557
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 99.8922
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 102.8644
+        }, 
+        {
+          "duration": 5.9908, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 109.7375
+        }, 
+        {
+          "duration": 19.9691, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 116.332
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 167.0444
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 189.26943310657597, 
+    "title": "Child", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AimeeNorwich"
+  }
+}

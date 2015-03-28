@@ -1,0 +1,136 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_FreeJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 57.1211, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 78.2977, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 7.0124, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 1.1146
+        }, 
+        {
+          "duration": 5.805, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 9.1951
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 17.6936
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 20.9444
+        }, 
+        {
+          "duration": 8.2199, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 25.6348
+        }, 
+        {
+          "duration": 6.3158, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 34.2727
+        }, 
+        {
+          "duration": 22.4769, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 41.378
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 60.0004
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 64.18
+        }, 
+        {
+          "duration": 2.8329, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 64.7372
+        }, 
+        {
+          "duration": 27.5389, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 69.1026
+        }, 
+        {
+          "duration": 9.0094, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 77.7404
+        }, 
+        {
+          "duration": 19.9227, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 78.7621
+        }, 
+        {
+          "duration": 14.9536, 
+          "confidence": 1, 
+          "value": "bass clarinet", 
+          "time": 87.2606
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 97.5238
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 98.9634
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 104.32210884353742, 
+    "title": "FreeJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

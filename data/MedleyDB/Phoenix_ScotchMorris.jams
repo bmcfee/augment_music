@@ -1,0 +1,94 @@
+{
+  "sandbox": {
+    "content_path": "Phoenix_ScotchMorris_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 111.9666, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.6037
+        }, 
+        {
+          "duration": 74.9076, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 1.161
+        }, 
+        {
+          "duration": 175.2178, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 1.6718
+        }, 
+        {
+          "duration": 5.6656, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 76.6259
+        }, 
+        {
+          "duration": 3.9474, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 82.7095
+        }, 
+        {
+          "duration": 15.3251, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 87.5857
+        }, 
+        {
+          "duration": 40.2634, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 103.6074
+        }, 
+        {
+          "duration": 63.4369, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 112.9419
+        }, 
+        {
+          "duration": 5.4334, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 144.6139
+        }, 
+        {
+          "duration": 12.0279, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 150.4189
+        }, 
+        {
+          "duration": 13.6069, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 163.1434
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 177.141179138322, 
+    "title": "ScotchMorris", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Phoenix"
+  }
+}

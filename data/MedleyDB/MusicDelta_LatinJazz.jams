@@ -1,0 +1,82 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_LatinJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 66.0375, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 65.8983, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 66.2698, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 0.1393
+        }, 
+        {
+          "duration": 61.8115, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 4.5511
+        }, 
+        {
+          "duration": 3.0651, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 44.025
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 47.4616
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 54.1489
+        }, 
+        {
+          "duration": 6.0836, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 57.9106
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 64.5979
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 66.96580498866213, 
+    "title": "LatinJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ModalJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 103.4681, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 103.3752, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 18.9939, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 0.7895
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 0.8359
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 6.4087
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 6.4087
+        }, 
+        {
+          "duration": 4.7369, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 9.4273
+        }, 
+        {
+          "duration": 2.74, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 15.0465
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 15.1394
+        }, 
+        {
+          "duration": 4.319, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 18.2044
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 18.2509
+        }, 
+        {
+          "duration": 33.251, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 20.1549
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 23.7772
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 23.8237
+        }, 
+        {
+          "duration": 5.1084, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 26.9351
+        }, 
+        {
+          "duration": 4.6905, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 27.028
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 32.5079
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 32.5544
+        }, 
+        {
+          "duration": 18.9475, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 34.1333
+        }, 
+        {
+          "duration": 7.8483, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 52.4307
+        }, 
+        {
+          "duration": 49.9693, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 53.6381
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 60.697
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 66.2233
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 70.5887
+        }, 
+        {
+          "duration": 4.5976, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 70.6351
+        }, 
+        {
+          "duration": 7.8483, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 76.1615
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 76.2543
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 79.3658
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 84.8457
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 84.985
+        }, 
+        {
+          "duration": 4.3653, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 87.9572
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 88.0036
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 93.5764
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 93.6229
+        }, 
+        {
+          "duration": 5.1549, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 96.7343
+        }, 
+        {
+          "duration": 4.8298, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 96.8272
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 102.3071
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 102.3536
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 103.77866213151927, 
+    "title": "ModalJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

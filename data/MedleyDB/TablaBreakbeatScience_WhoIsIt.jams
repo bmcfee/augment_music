@@ -1,0 +1,1264 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_WhoIsIt_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 1.3003, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 2.6007, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 1.6718
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 2.1362
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 6.7802
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 7.1982
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 9.7524
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 11.2385
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 12.2601
+        }, 
+        {
+          "duration": 1.3004, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 12.4923
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 13.7462
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 14.9072
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 16.254
+        }, 
+        {
+          "duration": 45.0467, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 16.9041
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 17.3685
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 18.7617
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 20.5264
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 21.3159
+        }, 
+        {
+          "duration": 2.2292, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 21.9196
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 23.8237
+        }, 
+        {
+          "duration": 0.1858, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 23.963
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 24.9382
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 25.263299
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 26.3779
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 28.7927
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 28.8856
+        }, 
+        {
+          "duration": 52.6629, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 30.0466
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 30.511
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 30.7897
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 33.251
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 35.7587
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 37.6163
+        }, 
+        {
+          "duration": 163.9793, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 38.0807
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 38.2665
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 40.4492
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 40.7742
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 41.8424
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 43.3284
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 44.5359
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 45.4647
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 45.8362
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 47.8331
+        }, 
+        {
+          "duration": 22.6627, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 48.3904
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 50.0622
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 50.526599
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 52.7557
+        }, 
+        {
+          "duration": 9.2416, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 55.1706
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 55.5886
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 62.3688
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 62.7868
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 64.8766
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 65.4338
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 67.3843
+        }, 
+        {
+          "duration": 4.5976, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 67.4307
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 69.9385
+        }, 
+        {
+          "duration": 1.8111, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 70.4958
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 71.6103
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 72.4463
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 72.8642
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 72.9571
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 74.0717
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 75.0005
+        }, 
+        {
+          "duration": 5.2477, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 75.6506
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 76.5794
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 77.5082
+        }, 
+        {
+          "duration": 45.0003, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 77.5546
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 79.1336
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 80.0624
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 81.6414
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 82.5237
+        }, 
+        {
+          "duration": 18.483, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 83.0346
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 83.1739
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 84.1491
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 85.0779
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 86.7033
+        }, 
+        {
+          "duration": 4.1331, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 87.4928
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 87.5857
+        }, 
+        {
+          "duration": 115.7282, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 89.2111
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 90.0934
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 92.6476
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 95.1554
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 97.6631
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 100.2173
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 100.821
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 101.982
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 103.3752
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 104.4898
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 105.9294
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 106.9976
+        }, 
+        {
+          "duration": 7.2446, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 108.205
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 108.4372
+        }, 
+        {
+          "duration": 53.2201, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 109.5053
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 110.9914
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 113.4991
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 116.0069
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 116.4249
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 118.5611
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 121.0688
+        }, 
+        {
+          "duration": 26.7959, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 121.301
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 123.0193
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 123.3908
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 125.5271
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 128.0348
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 128.0813
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 130.589
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 133.0968
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 133.5147
+        }, 
+        {
+          "duration": 2.2292, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 135.6045
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 138.1587
+        }, 
+        {
+          "duration": 24.8454, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 138.1587
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 140.6665
+        }, 
+        {
+          "duration": 20.48, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 142.2919
+        }, 
+        {
+          "duration": 1.7648, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 148.8863
+        }, 
+        {
+          "duration": 6.966, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 151.2548
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 158.9638
+        }, 
+        {
+          "duration": 40.1705, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 161.4716
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 163.5149
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 163.84
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 166.0227
+        }, 
+        {
+          "duration": 34.9228, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 168.484
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 168.5304
+        }, 
+        {
+          "duration": 12.8174, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 171.0382
+        }, 
+        {
+          "duration": 140.062799, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 181.7658
+        }, 
+        {
+          "duration": 3.3902, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 185.5274
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 190.5894
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 195.6049
+        }, 
+        {
+          "duration": 44.2108, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 200.6668
+        }, 
+        {
+          "duration": 3.0186, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 203.7783
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 204.2427
+        }, 
+        {
+          "duration": 3.5758, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 206.379
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 208.8867
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 209.4904
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 211.4409
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 214.3666
+        }, 
+        {
+          "duration": 2.9258, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 214.5059
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 216.5029
+        }, 
+        {
+          "duration": 45.0467, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 219.0106
+        }, 
+        {
+          "duration": 62.8331, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 219.0571
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 221.5184
+        }, 
+        {
+          "duration": 80.6197, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 223.3295
+        }, 
+        {
+          "duration": 2.4614, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 247.4318
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 252.4473
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 257.5093
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 262.5712
+        }, 
+        {
+          "duration": 162.261, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 262.7106
+        }, 
+        {
+          "duration": 4.2261, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 264.8932
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 267.6332
+        }, 
+        {
+          "duration": 4.5976, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 269.5372
+        }, 
+        {
+          "duration": 2.4614, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 272.6951
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 274.9707
+        }, 
+        {
+          "duration": 2.5077, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 277.7107
+        }, 
+        {
+          "duration": 24.7989, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 279.6611
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 282.5868
+        }, 
+        {
+          "duration": 61.254199, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 282.7726
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 285.0946
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 287.6488
+        }, 
+        {
+          "duration": 19.737, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 289.785
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 304.4136
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 305.296
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 306.9678
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 309.522
+        }, 
+        {
+          "duration": 4.6439, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 309.94
+        }, 
+        {
+          "duration": 8.87, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 310.5437
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 312.0298
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 314.5839
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 315.4199
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 317.0917
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 319.5995
+        }, 
+        {
+          "duration": 25.2169, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 319.9245
+        }, 
+        {
+          "duration": 24.8453, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 320.0639
+        }, 
+        {
+          "duration": 19.9692, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 322.1072
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 322.1537
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 324.6614
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 327.2156
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 329.7234
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 332.2311
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 334.7853
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 337.2931
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 339.8473
+        }, 
+        {
+          "duration": 89.4433, 
+          "confidence": 1, 
+          "value": "accordion", 
+          "time": 342.2621
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 342.355
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 344.5841
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 345.7451
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 345.838
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 347.0454
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 347.6956
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 349.5996
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 350.3891
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 352.1074
+        }, 
+        {
+          "duration": 2.0433, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 354.6616
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 355.8226
+        }, 
+        {
+          "duration": 78.5299, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 355.9155
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 357.1693
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 359.6771
+        }, 
+        {
+          "duration": 45.0467, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 360.4666
+        }, 
+        {
+          "duration": 5.4335, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 362.2313
+        }, 
+        {
+          "duration": 70.4958, 
+          "confidence": 1, 
+          "value": "mandolin", 
+          "time": 363.8567
+        }, 
+        {
+          "duration": 9.7524, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 368.0363
+        }, 
+        {
+          "duration": 8.127, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 378.1137
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 388.377
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 393.4389
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 398.5009
+        }, 
+        {
+          "duration": 1.2074, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 403.516399
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 406.3492
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 410.9932
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 416.4731
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 421.1171
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 440.47269841269843, 
+    "title": "WhoIsIt", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

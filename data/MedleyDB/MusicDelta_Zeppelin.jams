@@ -1,0 +1,52 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Zeppelin_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 17.4614, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.4614, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 17.415, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 17.3685, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0929
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 17.47503401360544, 
+    "title": "Zeppelin", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

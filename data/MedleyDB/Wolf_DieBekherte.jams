@@ -1,0 +1,82 @@
+{
+  "sandbox": {
+    "content_path": "Wolf_DieBekherte_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 185.8525, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 14.675, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 9.6595
+        }, 
+        {
+          "duration": 14.6286, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 30.0466
+        }, 
+        {
+          "duration": 16.3933, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 45.2789
+        }, 
+        {
+          "duration": 42.6783, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 65.8518
+        }, 
+        {
+          "duration": 6.3622, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 120.7438
+        }, 
+        {
+          "duration": 8.7771, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 127.942
+        }, 
+        {
+          "duration": 15.6038, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 141.6882
+        }, 
+        {
+          "duration": 24.5667, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 158.6852
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 188.83628117913833, 
+    "title": "DieBekherte", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Wolf"
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "sandbox": {
+    "content_path": "AClassicEducation_NightOwl_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 168.7162, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 2.8793, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 4.8298, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 57.8641, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 18.2045, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.743
+        }, 
+        {
+          "duration": 138.8554, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.9752
+        }, 
+        {
+          "duration": 168.2054, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 1.0681
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 2.2756
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 5.1548
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 9.1487
+        }, 
+        {
+          "duration": 2.7399, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 9.9846
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 11.61
+        }, 
+        {
+          "duration": 9.2415, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 12.8639
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 16.2075
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 18.7617
+        }, 
+        {
+          "duration": 18.0187, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 19.8763
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 21.0373
+        }, 
+        {
+          "duration": 4.0402, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 23.5915
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 24.2416
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 28.3748
+        }, 
+        {
+          "duration": 28.1426, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 29.4429
+        }, 
+        {
+          "duration": 4.3189, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 32.9723
+        }, 
+        {
+          "duration": 10.8669, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 37.7092
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 37.9414
+        }, 
+        {
+          "duration": 18.1115, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 38.9631
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 40.1705
+        }, 
+        {
+          "duration": 4.3654, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 42.6318
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 47.4616
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 51.9663
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 54.7062
+        }, 
+        {
+          "duration": 109.4125, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 109.8768, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 58.375
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 17.8329, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 41.8423, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 58.7465
+        }, 
+        {
+          "duration": 14.3964, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 58.9787
+        }, 
+        {
+          "duration": 14.9072, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.8363
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.8827
+        }, 
+        {
+          "duration": 6.9196, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 63.1118
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 70.4029
+        }, 
+        {
+          "duration": 13.9784, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 73.6073
+        }, 
+        {
+          "duration": 18.5759, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 77.2296
+        }, 
+        {
+          "duration": 19.2726, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 77.4153
+        }, 
+        {
+          "duration": 19.5047, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 77.4618
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 87.8179
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 90.1399
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 92.5083
+        }, 
+        {
+          "duration": 41.2851, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 94.6445
+        }, 
+        {
+          "duration": 38.8702, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 96.1771
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 97.2916
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 99.6136
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 101.9356
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 104.1647
+        }, 
+        {
+          "duration": 1.6253, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 106.5332
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 108.8551
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 111.1307
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 113.4527
+        }, 
+        {
+          "duration": 1.904, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 115.7283
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 117.9574
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 120.3258
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 122.6478
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 124.9698
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 127.2918
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 129.5673
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 131.8429
+        }, 
+        {
+          "duration": 6.7338, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 133.0503
+        }, 
+        {
+          "duration": 6.9195, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 133.0968
+        }, 
+        {
+          "duration": 38.22, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 133.1897
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 140.5736
+        }, 
+        {
+          "duration": 9.0557, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 141.2238
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 141.502399
+        }, 
+        {
+          "duration": 6.9195, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 151.0226
+        }, 
+        {
+          "duration": 7.0124, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 151.0226
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 152.1371
+        }, 
+        {
+          "duration": 13.1425, 
+          "confidence": 1, 
+          "value": "tambourine", 
+          "time": 154.2269
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 159.1031
+        }, 
+        {
+          "duration": 9.1023, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 159.3353
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 168.7626
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 171.4401814058957, 
+    "title": "NightOwl", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AClassicEducation"
+  }
+}

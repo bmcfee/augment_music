@@ -1,0 +1,316 @@
+{
+  "sandbox": {
+    "content_path": "ClaraBerryAndWooldog_Stella_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 75.1398, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.4644
+        }, 
+        {
+          "duration": 66.5019, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 8.4521
+        }, 
+        {
+          "duration": 12.8639, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 17.5078
+        }, 
+        {
+          "duration": 8.9165, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 34.3191
+        }, 
+        {
+          "duration": 25.867, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 46.9043
+        }, 
+        {
+          "duration": 23.6843, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 47.4616
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 47.6938
+        }, 
+        {
+          "duration": 23.2664, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 48.0653
+        }, 
+        {
+          "duration": 10.031, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 60.9292
+        }, 
+        {
+          "duration": 23.0807, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 61.9508
+        }, 
+        {
+          "duration": 7.3839, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 72.2605
+        }, 
+        {
+          "duration": 5.8514, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 75.6971
+        }, 
+        {
+          "duration": 64.18, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 75.8828
+        }, 
+        {
+          "duration": 74.0252, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 75.9293
+        }, 
+        {
+          "duration": 73.468, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 76.0221
+        }, 
+        {
+          "duration": 62.183, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 76.2079
+        }, 
+        {
+          "duration": 63.5763, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 76.2543
+        }, 
+        {
+          "duration": 13.0496, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 84.2884
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 92.6941
+        }, 
+        {
+          "duration": 8.5449, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 101.1926
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 101.4248
+        }, 
+        {
+          "duration": 11.2849, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 114.3351
+        }, 
+        {
+          "duration": 10.6347, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 114.5673
+        }, 
+        {
+          "duration": 20.7586, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 126.9203
+        }, 
+        {
+          "duration": 10.774, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 127.2454
+        }, 
+        {
+          "duration": 9.4273, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 138.1123
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 142.1526
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 142.3848
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 142.5241
+        }, 
+        {
+          "duration": 6.8267, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 142.5705
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 144.0102
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 146.3322
+        }, 
+        {
+          "duration": 7.9412, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 150.0009
+        }, 
+        {
+          "duration": 7.1982, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 150.7904
+        }, 
+        {
+          "duration": 7.9412, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 150.8368
+        }, 
+        {
+          "duration": 7.2446, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 150.8833
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 150.9297
+        }, 
+        {
+          "duration": 7.9413, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 159.0102
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 159.1496
+        }, 
+        {
+          "duration": 36.2232, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 159.4746
+        }, 
+        {
+          "duration": 25.0311, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 159.5211
+        }, 
+        {
+          "duration": 26.7494, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 159.5211
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 159.7068
+        }, 
+        {
+          "duration": 23.545, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 159.7533
+        }, 
+        {
+          "duration": 26.285, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 161.7966
+        }, 
+        {
+          "duration": 16.579, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 167.5552
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 168.2518
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 176.5645
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 195.74197278911564, 
+    "title": "Stella", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ClaraBerryAndWooldog"
+  }
+}

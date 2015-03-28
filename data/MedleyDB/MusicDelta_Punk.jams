@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Punk_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 28.7463, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 28.7463, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 28.7463, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 1.6718, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 2.6471
+        }, 
+        {
+          "duration": 22.1054, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 6.2694
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 28.762539682539682, 
+    "title": "Punk", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

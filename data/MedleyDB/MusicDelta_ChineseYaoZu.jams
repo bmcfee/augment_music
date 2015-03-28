@@ -1,0 +1,166 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseYaoZu_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 0.6502
+        }, 
+        {
+          "duration": 17.8794, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 4.644
+        }, 
+        {
+          "duration": 53.5916, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 4.8298
+        }, 
+        {
+          "duration": 53.6845, 
+          "confidence": 1, 
+          "value": "guzheng", 
+          "time": 4.8298
+        }, 
+        {
+          "duration": 8.266299, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 4.8762
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 5.1548
+        }, 
+        {
+          "duration": 7.2446, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 7.3375
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 13.2818
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 14.9072
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 15.9753
+        }, 
+        {
+          "duration": 5.8514, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 18.1116
+        }, 
+        {
+          "duration": 4.4583, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 23.0806
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 23.4057
+        }, 
+        {
+          "duration": 24.9382, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 24.1023
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 24.5203
+        }, 
+        {
+          "duration": 0.2786, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 25.542
+        }, 
+        {
+          "duration": 8.4057, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 26.4707
+        }, 
+        {
+          "duration": 9.9846, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 28.5605
+        }, 
+        {
+          "duration": 8.4056, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 35.2015
+        }, 
+        {
+          "duration": 11.2849, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 38.8702
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 43.9322
+        }, 
+        {
+          "duration": 6.501499, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 50.3409
+        }, 
+        {
+          "duration": 1.9505, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 51.409
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 60.225963718820864, 
+    "title": "ChineseYaoZu", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

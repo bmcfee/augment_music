@@ -1,0 +1,88 @@
+{
+  "sandbox": {
+    "content_path": "Debussy_LenfantProdigue_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 27.0745, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 1.6718
+        }, 
+        {
+          "duration": 13.6998, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 4.3189
+        }, 
+        {
+          "duration": 12.3994, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 18.9475
+        }, 
+        {
+          "duration": 35.8981, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 34.1333
+        }, 
+        {
+          "duration": 38.9631, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 34.8764
+        }, 
+        {
+          "duration": 127.2917, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 72.4463
+        }, 
+        {
+          "duration": 24.6132, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 81.1305
+        }, 
+        {
+          "duration": 60.9756, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 105.9759
+        }, 
+        {
+          "duration": 43.9322, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 168.066
+        }, 
+        {
+          "duration": 15.511, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 202.5244
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 223.52689342403627, 
+    "title": "LenfantProdigue", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Debussy"
+  }
+}

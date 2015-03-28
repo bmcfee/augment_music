@@ -1,0 +1,238 @@
+{
+  "sandbox": {
+    "content_path": "AimeeNorwich_Flying_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 75.5112, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.2756
+        }, 
+        {
+          "duration": 75.4648, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 2.322
+        }, 
+        {
+          "duration": 183.4841, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 5.4799
+        }, 
+        {
+          "duration": 69.8921, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 7.9412
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 50.8517
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 51.5019
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 57.8641
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 58.4214
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 64.3193
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 64.9694
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 71.0995
+        }, 
+        {
+          "duration": 3.6688, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 71.0995
+        }, 
+        {
+          "duration": 7.0125, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 77.3224
+        }, 
+        {
+          "duration": 9.0558, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 77.3689
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 77.8333
+        }, 
+        {
+          "duration": 2.9722, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 80.1088
+        }, 
+        {
+          "duration": 106.8118, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 82.663
+        }, 
+        {
+          "duration": 107.2297, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 82.7095
+        }, 
+        {
+          "duration": 78.6227, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 82.8024
+        }, 
+        {
+          "duration": 78.1584, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 82.8952
+        }, 
+        {
+          "duration": 68.1273, 
+          "confidence": 1, 
+          "value": "trombone", 
+          "time": 92.8334
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 95.5269
+        }, 
+        {
+          "duration": 55.3564, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 105.4186
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 106.5332
+        }, 
+        {
+          "duration": 22.0125, 
+          "confidence": 1, 
+          "value": "trombone", 
+          "time": 115.2639
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 118.0038
+        }, 
+        {
+          "duration": 33.529599, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 127.8491
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 129.0101
+        }, 
+        {
+          "duration": 23.4057, 
+          "confidence": 1, 
+          "value": "trombone", 
+          "time": 137.5086
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 140.4807
+        }, 
+        {
+          "duration": 9.288, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 151.5334
+        }, 
+        {
+          "duration": 32.415, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 161.8431
+        }, 
+        {
+          "duration": 12.8639, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 172.3385
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 185.6668
+        }, 
+        {
+          "duration": 5.7121, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 185.899
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 217.80312925170068, 
+    "title": "Flying", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AimeeNorwich"
+  }
+}

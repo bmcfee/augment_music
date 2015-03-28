@@ -1,0 +1,826 @@
+{
+  "sandbox": {
+    "content_path": "MatthewEntwistle_ImpressionsOfSaturn_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 101.9356, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 12.2137
+        }, 
+        {
+          "duration": 0.325, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 12.6317
+        }, 
+        {
+          "duration": 5.5728, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 13.6998
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 18.3438
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 19.6441
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 19.7834
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 22.7091
+        }, 
+        {
+          "duration": 14.7679, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 24.706
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 25.9599
+        }, 
+        {
+          "duration": 13.5605, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 28.0961
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 28.8856
+        }, 
+        {
+          "duration": 1.3004, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 29.7215
+        }, 
+        {
+          "duration": 0.8823, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 29.768
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 30.9754
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 31.7649
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 31.9042
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 32.0435
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 36.5018
+        }, 
+        {
+          "duration": 2.8328, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 36.5018
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 36.6411
+        }, 
+        {
+          "duration": 24.0559, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 39.8919
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 40.8671
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 41.5173
+        }, 
+        {
+          "duration": 2.647, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 41.6102
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 44.8145
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 47.1829
+        }, 
+        {
+          "duration": 0.1857, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 47.3223
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 51.5947
+        }, 
+        {
+          "duration": 13.2819, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 52.2913
+        }, 
+        {
+          "duration": 4.4582, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 59.118
+        }, 
+        {
+          "duration": 5.1549, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 59.1644
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 59.3038
+        }, 
+        {
+          "duration": 6.2229, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 64.18
+        }, 
+        {
+          "duration": 68.3131, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 66.130399
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 67.5701
+        }, 
+        {
+          "duration": 10.5418, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 73.7466
+        }, 
+        {
+          "duration": 42.4925, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 78.3441
+        }, 
+        {
+          "duration": 16.3468, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 78.3906
+        }, 
+        {
+          "duration": 27.1673, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 78.855
+        }, 
+        {
+          "duration": 10.7276, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 85.4959
+        }, 
+        {
+          "duration": 3.9938, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 89.4897
+        }, 
+        {
+          "duration": 24.6596, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 96.0842
+        }, 
+        {
+          "duration": 1.3467, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 98.3133
+        }, 
+        {
+          "duration": 16.1611, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 101.2854
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 107.2762
+        }, 
+        {
+          "duration": 10.5419, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 110.2483
+        }, 
+        {
+          "duration": 13.932, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 118.5611
+        }, 
+        {
+          "duration": 12.1208, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 121.1617
+        }, 
+        {
+          "duration": 11.6564, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 121.3939
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 125.9915
+        }, 
+        {
+          "duration": 127.8026, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 135.4188
+        }, 
+        {
+          "duration": 55.8672, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 135.6974
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 142.1061
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 142.199
+        }, 
+        {
+          "duration": 2.1826, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 145.4034
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 145.4498
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 147.0288
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 148.6077
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 148.6077
+        }, 
+        {
+          "duration": 2.3685, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 151.9049
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 151.9514
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 151.9514
+        }, 
+        {
+          "duration": 9.3344, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 154.8771
+        }, 
+        {
+          "duration": 2.6007, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 154.9235
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 154.97
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 158.4065
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 158.4065
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 161.7038
+        }, 
+        {
+          "duration": 2.1826, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 161.7038
+        }, 
+        {
+          "duration": 28.0962, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 164.6759
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 164.9081
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 164.9546
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 168.1589
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 168.2054
+        }, 
+        {
+          "duration": 21.7338, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 171.1311
+        }, 
+        {
+          "duration": 19.8763, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 171.1775
+        }, 
+        {
+          "duration": 3.5759, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 191.7968
+        }, 
+        {
+          "duration": 15.1394, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 195.6978
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 202.1529
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 202.1994
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 205.3108
+        }, 
+        {
+          "duration": 1.1145, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 205.3573
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 206.7969
+        }, 
+        {
+          "duration": 10.867, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 207.9579
+        }, 
+        {
+          "duration": 64.8301, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 208.2366
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 208.6545
+        }, 
+        {
+          "duration": 114.2422, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 211.3016
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 211.8589
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 215.1097
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 218.4069
+        }, 
+        {
+          "duration": 53.7774, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 218.9642
+        }, 
+        {
+          "duration": 2.0898, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 221.6577
+        }, 
+        {
+          "duration": 5.6192, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 224.6763
+        }, 
+        {
+          "duration": 41.4244, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 231.2243
+        }, 
+        {
+          "duration": 56.053, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 264.0573
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 274.8314
+        }, 
+        {
+          "duration": 11.7493, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 277.85
+        }, 
+        {
+          "duration": 8.7307, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 280.915
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 283.0512
+        }, 
+        {
+          "duration": 24.0094, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 290.6674
+        }, 
+        {
+          "duration": 2.4148, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 291.0854
+        }, 
+        {
+          "duration": 28.0497, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 291.1318
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 293.9182
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 297.0761
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 300.0018
+        }, 
+        {
+          "duration": 17.3685, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 302.7882
+        }, 
+        {
+          "duration": 4.644, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 315.5592
+        }, 
+        {
+          "duration": 44.6288, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 319.9245
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 325.7295
+        }, 
+        {
+          "duration": 12.5388, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 326.6119
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 331.0701
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 331.0701
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 331.2559
+        }, 
+        {
+          "duration": 3.9009, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 336.5965
+        }, 
+        {
+          "duration": 2.322, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 337.711
+        }, 
+        {
+          "duration": 2.7399, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 337.7575
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 338.268299
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 340.7761
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 341.6584
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 341.7977
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 341.8442
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 341.9835
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 345.3272
+        }, 
+        {
+          "duration": 9.0093, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 346.0702
+        }, 
+        {
+          "duration": 5.1084, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 346.999
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 347.2776
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 347.742
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 348.6244
+        }, 
+        {
+          "duration": 0.0928, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 351.5966
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 353.3148
+        }, 
+        {
+          "duration": 0.8823, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 354.9867
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 356.7978
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 367.68902494331064, 
+    "title": "ImpressionsOfSaturn", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MatthewEntwistle"
+  }
+}

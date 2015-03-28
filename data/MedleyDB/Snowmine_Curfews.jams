@@ -1,0 +1,298 @@
+{
+  "sandbox": {
+    "content_path": "Snowmine_Curfews_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 68.0809, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 265.6363, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 274.5992, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 9.9845, 
+          "confidence": 1, 
+          "value": "sampler", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 20.3871, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 1.8112
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "sampler", 
+          "time": 10.5419
+        }, 
+        {
+          "duration": 240.4194, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 10.7741
+        }, 
+        {
+          "duration": 54.1025, 
+          "confidence": 1, 
+          "value": "sampler", 
+          "time": 15.836
+        }, 
+        {
+          "duration": 14.1177, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 15.9289
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 22.4305
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 25.0311
+        }, 
+        {
+          "duration": 17.6007, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 26.4243
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 30.1395
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 35.3408
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 38.0343
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 40.5885
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 41.6102
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 43.0498
+        }, 
+        {
+          "duration": 17.4614, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 47.1365
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 48.2975
+        }, 
+        {
+          "duration": 10.1704, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 50.7588
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 61.1149
+        }, 
+        {
+          "duration": 5.9907, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 61.1614
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 62.3224
+        }, 
+        {
+          "duration": 24.9382, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 66.6877
+        }, 
+        {
+          "duration": 176.8431, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 67.5701
+        }, 
+        {
+          "duration": 40.6349, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 86.6569
+        }, 
+        {
+          "duration": 61.9973, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 88.3287
+        }, 
+        {
+          "duration": 17.5543, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 108.9016
+        }, 
+        {
+          "duration": 11.61, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 123.9017
+        }, 
+        {
+          "duration": 58.0499, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 124.0874
+        }, 
+        {
+          "duration": 17.3221, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 129.5673
+        }, 
+        {
+          "duration": 6.8266, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 144.7068
+        }, 
+        {
+          "duration": 6.5016, 
+          "confidence": 1, 
+          "value": "sampler", 
+          "time": 145.7749
+        }, 
+        {
+          "duration": 52.9415, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 149.7687
+        }, 
+        {
+          "duration": 104.4898, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 170.388
+        }, 
+        {
+          "duration": 61.7187, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 180.8834
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 187.9888
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 198.2984
+        }, 
+        {
+          "duration": 61.8115, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 210.8372
+        }, 
+        {
+          "duration": 31.6256, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 211.2551
+        }, 
+        {
+          "duration": 7.2447, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 211.348
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 243.0665
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 248.3606
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 275.19473922902495, 
+    "title": "Curfews", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "Snowmine"
+  }
+}

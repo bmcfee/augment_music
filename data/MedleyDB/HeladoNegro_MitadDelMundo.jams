@@ -1,0 +1,730 @@
+{
+  "sandbox": {
+    "content_path": "HeladoNegro_MitadDelMundo_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 22.8484, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 24.0094, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 12.0744
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 14.1642
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 16.0682
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 18.158
+        }, 
+        {
+          "duration": 11.8886, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 23.2664
+        }, 
+        {
+          "duration": 45.2325, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 23.2664
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 23.3128
+        }, 
+        {
+          "duration": 148.747, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 23.6379
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 23.963
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 24.3345
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 26.1457
+        }, 
+        {
+          "duration": 5.2478, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 26.2385
+        }, 
+        {
+          "duration": 3.3902, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 30.1859
+        }, 
+        {
+          "duration": 2.1827, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 32.09
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 32.3222
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 34.1333
+        }, 
+        {
+          "duration": 32.3686, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 35.4337
+        }, 
+        {
+          "duration": 72.1212, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 35.6194
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 36.2231
+        }, 
+        {
+          "duration": 7.1517, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 36.2696
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 38.1272
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 40.1705
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 42.121
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 44.2108
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 44.257199
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 46.1148
+        }, 
+        {
+          "duration": 11.4242, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 48.2046
+        }, 
+        {
+          "duration": 2.1826, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 48.2511
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 50.1087
+        }, 
+        {
+          "duration": 6.8731, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 51.6412
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 54.1025
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 58.0963
+        }, 
+        {
+          "duration": 2.74, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.5112
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.6505
+        }, 
+        {
+          "duration": 32.8331, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 61.022
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 62.1366
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 64.9694
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 65.0623
+        }, 
+        {
+          "duration": 1.8112, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 66.130399
+        }, 
+        {
+          "duration": 24.9382, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 67.3843
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 69.1026
+        }, 
+        {
+          "duration": 2.6471, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 69.1026
+        }, 
+        {
+          "duration": 1.532599, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 72.0747
+        }, 
+        {
+          "duration": 7.384, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 73.0964
+        }, 
+        {
+          "duration": 7.3375, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 73.1429
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 75.1862
+        }, 
+        {
+          "duration": 1.486, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 76.0686
+        }, 
+        {
+          "duration": 9.7524, 
+          "confidence": 1, 
+          "value": "vibraphone", 
+          "time": 76.6723
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 80.0624
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 81.0376
+        }, 
+        {
+          "duration": 2.8329, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 81.0376
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 82.1058
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 85.1244
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 85.1708
+        }, 
+        {
+          "duration": 7.4304, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 86.146
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 89.3504
+        }, 
+        {
+          "duration": 80.7126, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 91.2544
+        }, 
+        {
+          "duration": 8.127, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 91.6724
+        }, 
+        {
+          "duration": 72.0748, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 91.7188
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 92.8334
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 93.8086
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 94.0873
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 94.8303
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 96.4093
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 98.1275
+        }, 
+        {
+          "duration": 1.5789, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 98.8706
+        }, 
+        {
+          "duration": 8.0341, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 100.7746
+        }, 
+        {
+          "duration": 0.6502, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 100.821
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 101.8427
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 102.1214
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 102.8644
+        }, 
+        {
+          "duration": 72.9106, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 104.1183
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 104.4434
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 106.1152
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 106.9511
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 107.8799
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 108.9016
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 109.9233
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 110.0626
+        }, 
+        {
+          "duration": 7.709, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 110.1555
+        }, 
+        {
+          "duration": 0.5572, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 110.8521
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 112.5239
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 114.1029
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 114.9388
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 115.8211
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 116.8893
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 117.9109
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 118.0967
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 118.1896
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 118.8397
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 120.4187
+        }, 
+        {
+          "duration": 9.9382, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 122.0905
+        }, 
+        {
+          "duration": 2.74, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 122.3227
+        }, 
+        {
+          "duration": 1.4396, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 122.88
+        }, 
+        {
+          "duration": 0.5109, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 124.8769
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 125.8057
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 126.1308
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 126.8274
+        }, 
+        {
+          "duration": 0.5573, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 127.5704
+        }, 
+        {
+          "duration": 0.6038, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 128.4063
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 130.1711
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 130.8212
+        }, 
+        {
+          "duration": 12.3995, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 131.2856
+        }, 
+        {
+          "duration": 49.6443, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 131.2856
+        }, 
+        {
+          "duration": 39.8455, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 132.1215
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 134.257799
+        }, 
+        {
+          "duration": 7.1053, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 138.3909
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 144.2888
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 146.1928
+        }, 
+        {
+          "duration": 26.5172, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 148.2362
+        }, 
+        {
+          "duration": 4.4118, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 150.1867
+        }, 
+        {
+          "duration": 7.2447, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 155.3879
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 165.0939
+        }, 
+        {
+          "duration": 0.1393, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 166.7193
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 175.5893
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 181.85034013605443, 
+    "title": "MitadDelMundo", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "HeladoNegro"
+  }
+}

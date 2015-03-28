@@ -1,0 +1,388 @@
+{
+  "sandbox": {
+    "content_path": "AlexanderRoss_GoodbyeBolero_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 11.4243, 
+          "confidence": 1, 
+          "value": "harmonica", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 289.7851, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 296.426, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 293.5466, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 4.9691, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 11.5171
+        }, 
+        {
+          "duration": 4.6904, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 17.1828
+        }, 
+        {
+          "duration": 10.4025, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 23.22
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 35.526499
+        }, 
+        {
+          "duration": 4.0403, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 41.2851
+        }, 
+        {
+          "duration": 4.8298, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 46.5792
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 52.9415
+        }, 
+        {
+          "duration": 235.9612, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 8.1735, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 58.4678
+        }, 
+        {
+          "duration": 39.9848, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 58.7
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 60.1861
+        }, 
+        {
+          "duration": 27.7711, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 64.9694
+        }, 
+        {
+          "duration": 8.3127, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 67.1057
+        }, 
+        {
+          "duration": 11.2849, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 75.6971
+        }, 
+        {
+          "duration": 11.7028, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 87.2606
+        }, 
+        {
+          "duration": 13.2818, 
+          "confidence": 1, 
+          "value": "harmonica", 
+          "time": 98.8706
+        }, 
+        {
+          "duration": 5.062, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 110.4805
+        }, 
+        {
+          "duration": 4.7368, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 116.4249
+        }, 
+        {
+          "duration": 5.2942, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 122.4156
+        }, 
+        {
+          "duration": 10.2632, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 128.7314
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 140.9451
+        }, 
+        {
+          "duration": 4.2724, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 146.7037
+        }, 
+        {
+          "duration": 3.6687, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 152.9731
+        }, 
+        {
+          "duration": 2.4613, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 158.4065
+        }, 
+        {
+          "duration": 40.3098, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 158.5923
+        }, 
+        {
+          "duration": 4.2725, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 159.2424
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 161.3322
+        }, 
+        {
+          "duration": 22.9413, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 164.2115
+        }, 
+        {
+          "duration": 28.1426, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 165.0939
+        }, 
+        {
+          "duration": 11.7029, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 187.385
+        }, 
+        {
+          "duration": 33.4368, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 198.9021
+        }, 
+        {
+          "duration": 60.6505, 
+          "confidence": 1, 
+          "value": "harmonica", 
+          "time": 222.9116
+        }, 
+        {
+          "duration": 13.0031, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 233.2677
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 246.5495
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 246.8746
+        }, 
+        {
+          "duration": 40.5884, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 247.1068
+        }, 
+        {
+          "duration": 35.6194, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 249.6145
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 249.8467
+        }, 
+        {
+          "duration": 34.9692, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 252.726
+        }, 
+        {
+          "duration": 24.6132, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 257.7879
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 294.1968
+        }, 
+        {
+          "duration": 107.787, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 297.3083
+        }, 
+        {
+          "duration": 92.6012, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 307.8037
+        }, 
+        {
+          "duration": 99.0563, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 307.8966
+        }, 
+        {
+          "duration": 90.2792, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 318.4849
+        }, 
+        {
+          "duration": 52.57, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 318.7635
+        }, 
+        {
+          "duration": 77.5546, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 329.1661
+        }, 
+        {
+          "duration": 40.4492, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 350.5284
+        }, 
+        {
+          "duration": 31.3005, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 371.8908
+        }, 
+        {
+          "duration": 16.3932, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 391.6278
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 400.7764
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 403.6557
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "viola section", 
+          "time": 403.7486
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 405.0953
+        }, 
+        {
+          "duration": 0.6501, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 407.1387
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 408.1139
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 418.8167573696145, 
+    "title": "GoodbyeBolero", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "AlexanderRoss"
+  }
+}

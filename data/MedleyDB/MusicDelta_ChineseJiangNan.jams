@@ -1,0 +1,160 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseJiangNan_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 55.7744, 
+          "confidence": 1, 
+          "value": "guzheng", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 12.1672, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 4.644
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 6.1765
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 7.8019
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 10.4954
+        }, 
+        {
+          "duration": 42.6319, 
+          "confidence": 1, 
+          "value": "zhongruan", 
+          "time": 12.2601
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 13.7462
+        }, 
+        {
+          "duration": 1.6719, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 15.2787
+        }, 
+        {
+          "duration": 38.7309, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 17.3685
+        }, 
+        {
+          "duration": 10.4025, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 18.2509
+        }, 
+        {
+          "duration": 12.2601, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 19.9692
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 29.6287
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 31.7649
+        }, 
+        {
+          "duration": 9.1951, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 33.0188
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 33.8083
+        }, 
+        {
+          "duration": 1.161, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 36.734
+        }, 
+        {
+          "duration": 1.7647, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 38.2665
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 40.4956
+        }, 
+        {
+          "duration": 7.0125, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 42.864
+        }, 
+        {
+          "duration": 3.1579, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 44.3966
+        }, 
+        {
+          "duration": 5.0156, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 47.8795
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "dizi", 
+          "time": 50.4337
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 57.37018140589569, 
+    "title": "ChineseJiangNan", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

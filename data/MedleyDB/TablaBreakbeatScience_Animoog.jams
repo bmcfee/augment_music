@@ -1,0 +1,238 @@
+{
+  "sandbox": {
+    "content_path": "TablaBreakbeatScience_Animoog_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 96.2235, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 9.613, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 5.2013
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 7.8019
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 9.0558
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 11.0527
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 13.0496
+        }, 
+        {
+          "duration": 273.0666, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 15.093
+        }, 
+        {
+          "duration": 89.6755, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 15.4645
+        }, 
+        {
+          "duration": 268.7013, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 19.9227
+        }, 
+        {
+          "duration": 9.4737, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 63.9942
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 74.954
+        }, 
+        {
+          "duration": 2.4148, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 75.6042
+        }, 
+        {
+          "duration": 51.5019, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 79.9695
+        }, 
+        {
+          "duration": 48.5761, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 95.852
+        }, 
+        {
+          "duration": 2.6006, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 105.4186
+        }, 
+        {
+          "duration": 11.9815, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 108.1121
+        }, 
+        {
+          "duration": 62.3223, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 120.976
+        }, 
+        {
+          "duration": 73.7465, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 131.7965
+        }, 
+        {
+          "duration": 1.579, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 144.7996
+        }, 
+        {
+          "duration": 13.4211, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 146.9359
+        }, 
+        {
+          "duration": 96.3628, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 159.8462
+        }, 
+        {
+          "duration": 3.4366, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 160.9607
+        }, 
+        {
+          "duration": 126.781, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 165.001
+        }, 
+        {
+          "duration": 7.2911, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 183.6698
+        }, 
+        {
+          "duration": 50.2016, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 191.4717
+        }, 
+        {
+          "duration": 31.6255, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 205.9146
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 237.9117
+        }, 
+        {
+          "duration": 20.5729, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 239.6764
+        }, 
+        {
+          "duration": 3.065, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 242.4628
+        }, 
+        {
+          "duration": 1.8576, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 246.0386
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 248.4535
+        }, 
+        {
+          "duration": 42.0746, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 252.4009
+        }, 
+        {
+          "duration": 24.0094, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 260.4815
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 285.0946
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "tabla", 
+          "time": 287.463
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 294.5, 
+    "title": "Animoog", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "TablaBreakbeatScience"
+  }
+}

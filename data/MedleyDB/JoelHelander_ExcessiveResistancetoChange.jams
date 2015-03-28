@@ -1,0 +1,280 @@
+{
+  "sandbox": {
+    "content_path": "JoelHelander_ExcessiveResistancetoChange_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 121.4868, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 1.7183
+        }, 
+        {
+          "duration": 0.0464, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 3.3437
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 6.6409
+        }, 
+        {
+          "duration": 128.3135, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 7.0124
+        }, 
+        {
+          "duration": 125.6664, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 7.5697
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 10.449
+        }, 
+        {
+          "duration": 0.2322, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 17.0899
+        }, 
+        {
+          "duration": 0.4644, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 20.062
+        }, 
+        {
+          "duration": 0.5108, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 23.9166
+        }, 
+        {
+          "duration": 14.9537, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 24.2416
+        }, 
+        {
+          "duration": 15.1394, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 24.2416
+        }, 
+        {
+          "duration": 14.9072, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 24.3345
+        }, 
+        {
+          "duration": 6.4552, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 39.8454
+        }, 
+        {
+          "duration": 6.3622, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 39.8919
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 40.0312
+        }, 
+        {
+          "duration": 1.3932, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 41.4708
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 43.0962
+        }, 
+        {
+          "duration": 86.3318, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 47.0901
+        }, 
+        {
+          "duration": 10.6347, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 47.1365
+        }, 
+        {
+          "duration": 10.7741, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 47.1365
+        }, 
+        {
+          "duration": 10.4489, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 47.3223
+        }, 
+        {
+          "duration": 21.5481, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 58.6072
+        }, 
+        {
+          "duration": 21.4088, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 58.7
+        }, 
+        {
+          "duration": 21.2695, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 58.7929
+        }, 
+        {
+          "duration": 20.898, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 59.0251
+        }, 
+        {
+          "duration": 36.1767, 
+          "confidence": 1, 
+          "value": "clarinet", 
+          "time": 97.3845
+        }, 
+        {
+          "duration": 35.9909, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 97.5238
+        }, 
+        {
+          "duration": 36.1767, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 97.5238
+        }, 
+        {
+          "duration": 35.9445, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 97.6167
+        }, 
+        {
+          "duration": 17.6471, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 116.1927
+        }, 
+        {
+          "duration": 73.6537, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 133.4683
+        }, 
+        {
+          "duration": 37.2448, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 147.2145
+        }, 
+        {
+          "duration": 37.059, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 147.3074
+        }, 
+        {
+          "duration": 37.1984, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 147.3074
+        }, 
+        {
+          "duration": 4.226, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 198.5771
+        }, 
+        {
+          "duration": 4.5047, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 198.6235
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "violin section", 
+          "time": 198.7164
+        }, 
+        {
+          "duration": 14.5821, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 203.7319
+        }, 
+        {
+          "duration": 12.8638, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 218.6391
+        }, 
+        {
+          "duration": 7.5697, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 232.4782
+        }, 
+        {
+          "duration": 0.3715, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 240.5123
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 250.1809523809524, 
+    "title": "ExcessiveResistancetoChange", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "JoelHelander"
+  }
+}

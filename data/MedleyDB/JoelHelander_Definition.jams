@@ -1,0 +1,604 @@
+{
+  "sandbox": {
+    "content_path": "JoelHelander_Definition_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 51.409, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 51.6877, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 52.2449, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 51.4554, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 51.5483, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 28.4677, 
+          "confidence": 1, 
+          "value": "chimes", 
+          "time": 17.5543
+        }, 
+        {
+          "duration": 34.1798, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 17.5543
+        }, 
+        {
+          "duration": 33.3439, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 17.6007
+        }, 
+        {
+          "duration": 33.7618, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 17.6007
+        }, 
+        {
+          "duration": 35.8981, 
+          "confidence": 1, 
+          "value": "snare drum", 
+          "time": 17.6007
+        }, 
+        {
+          "duration": 33.8547, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 17.6936
+        }, 
+        {
+          "duration": 33.8547, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 17.74
+        }, 
+        {
+          "duration": 13.096, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 52.1985
+        }, 
+        {
+          "duration": 34.6441, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 52.1985
+        }, 
+        {
+          "duration": 13.0961, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 52.2913
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 54.1025
+        }, 
+        {
+          "duration": 3.2972, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 54.1954
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 54.1954
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 54.2418
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 54.474
+        }, 
+        {
+          "duration": 6.5945, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 58.3285
+        }, 
+        {
+          "duration": 6.548, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 58.375
+        }, 
+        {
+          "duration": 6.5016, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 58.4214
+        }, 
+        {
+          "duration": 6.5016, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 58.4678
+        }, 
+        {
+          "duration": 6.1301, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 58.5143
+        }, 
+        {
+          "duration": 15.5109, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 65.5732
+        }, 
+        {
+          "duration": 15.4645, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 65.6196
+        }, 
+        {
+          "duration": 21.0838, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 65.666
+        }, 
+        {
+          "duration": 21.0838, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 65.666
+        }, 
+        {
+          "duration": 21.0838, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 65.666
+        }, 
+        {
+          "duration": 21.1301, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 65.7125
+        }, 
+        {
+          "duration": 15.4181, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 65.7589
+        }, 
+        {
+          "duration": 12.4459, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 68.6382
+        }, 
+        {
+          "duration": 12.2602, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 68.6846
+        }, 
+        {
+          "duration": 5.6657, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 81.3163
+        }, 
+        {
+          "duration": 5.4799, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 81.4092
+        }, 
+        {
+          "duration": 5.1084, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 81.4556
+        }, 
+        {
+          "duration": 5.2477, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 81.4556
+        }, 
+        {
+          "duration": 5.1549, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 81.502
+        }, 
+        {
+          "duration": 149.1186, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 86.0067
+        }, 
+        {
+          "duration": 15.836, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 90.0934
+        }, 
+        {
+          "duration": 15.4645, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 90.3721
+        }, 
+        {
+          "duration": 51.7341, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 90.4649
+        }, 
+        {
+          "duration": 16.997, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 90.6507
+        }, 
+        {
+          "duration": 15.093, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 90.9293
+        }, 
+        {
+          "duration": 15.0001, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 91.0222
+        }, 
+        {
+          "duration": 14.9073, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 91.1615
+        }, 
+        {
+          "duration": 14.9073, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 91.1615
+        }, 
+        {
+          "duration": 14.7214, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 91.208
+        }, 
+        {
+          "duration": 14.675, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 91.3009
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 107.3226
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 107.3691
+        }, 
+        {
+          "duration": 14.1177, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 107.8799
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 108.5765
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 108.5765
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 108.5765
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 108.6229
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 108.6694
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 109.8304
+        }, 
+        {
+          "duration": 2.1362, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 109.8304
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 109.8304
+        }, 
+        {
+          "duration": 2.1363, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 109.8768
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 109.9697
+        }, 
+        {
+          "duration": 0.7431, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 111.1771
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 112.3846
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 112.3846
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 112.3846
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 112.3846
+        }, 
+        {
+          "duration": 0.743, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 112.4775
+        }, 
+        {
+          "duration": 28.6069, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 113.6385
+        }, 
+        {
+          "duration": 28.6069, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 113.6385
+        }, 
+        {
+          "duration": 28.6998, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 113.6385
+        }, 
+        {
+          "duration": 28.3748, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 113.6849
+        }, 
+        {
+          "duration": 28.3748, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 113.7778
+        }, 
+        {
+          "duration": 1.0682, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 122.462
+        }, 
+        {
+          "duration": 18.2973, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 123.7624
+        }, 
+        {
+          "duration": 20.1085, 
+          "confidence": 1, 
+          "value": "snare drum", 
+          "time": 144.7996
+        }, 
+        {
+          "duration": 18.2974, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 146.425
+        }, 
+        {
+          "duration": 18.3438, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 146.425
+        }, 
+        {
+          "duration": 18.3437, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 146.4715
+        }, 
+        {
+          "duration": 18.3902, 
+          "confidence": 1, 
+          "value": "trombone", 
+          "time": 146.4715
+        }, 
+        {
+          "duration": 14.3499, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 150.4189
+        }, 
+        {
+          "duration": 14.1178, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 150.5117
+        }, 
+        {
+          "duration": 25.2169, 
+          "confidence": 1, 
+          "value": "bassoon", 
+          "time": 165.1403
+        }, 
+        {
+          "duration": 26.8887, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 165.1868
+        }, 
+        {
+          "duration": 25.0311, 
+          "confidence": 1, 
+          "value": "french horn", 
+          "time": 165.2796
+        }, 
+        {
+          "duration": 24.7989, 
+          "confidence": 1, 
+          "value": "horn section", 
+          "time": 165.419
+        }, 
+        {
+          "duration": 22.1982, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 169.5057
+        }, 
+        {
+          "duration": 22.3376, 
+          "confidence": 1, 
+          "value": "viola", 
+          "time": 169.5057
+        }, 
+        {
+          "duration": 22.1518, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 169.645
+        }, 
+        {
+          "duration": 21.9661, 
+          "confidence": 1, 
+          "value": "violin", 
+          "time": 169.8307
+        }, 
+        {
+          "duration": 21.7338, 
+          "confidence": 1, 
+          "value": "cello", 
+          "time": 169.9701
+        }, 
+        {
+          "duration": 19.0403, 
+          "confidence": 1, 
+          "value": "flute", 
+          "time": 173.128
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 235.15696145124716, 
+    "title": "Definition", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "JoelHelander"
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "sandbox": {
+    "content_path": "StrandOfOaks_Spacestation_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 134.3506, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 79.5051, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 10.9598
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 22.1983
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 26.285
+        }, 
+        {
+          "duration": 8.4056, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 33.2974
+        }, 
+        {
+          "duration": 45.604, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 43.6535
+        }, 
+        {
+          "duration": 188.2209, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 44.9074
+        }, 
+        {
+          "duration": 88.2822, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 45.0003
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 55.1706
+        }, 
+        {
+          "duration": 22.8485, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 66.7341
+        }, 
+        {
+          "duration": 144.1959, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 91.208
+        }, 
+        {
+          "duration": 14.9536, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 92.9727
+        }, 
+        {
+          "duration": 24.706, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 108.2979
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 115.3567
+        }, 
+        {
+          "duration": 21.5946, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 115.3567
+        }, 
+        {
+          "duration": 5.9907, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 120.0472
+        }, 
+        {
+          "duration": 9.7059, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 126.3166
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 137.6479
+        }, 
+        {
+          "duration": 3.8081, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 137.9265
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 143.2671
+        }, 
+        {
+          "duration": 3.7152, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 143.5922
+        }, 
+        {
+          "duration": 83.5919, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 151.6727
+        }, 
+        {
+          "duration": 84.3813, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 152.1836
+        }, 
+        {
+          "duration": 23.5451, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 152.23
+        }, 
+        {
+          "duration": 46.0219, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 152.4158
+        }, 
+        {
+          "duration": 9.9846, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 174.5676
+        }, 
+        {
+          "duration": 2.647, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 174.6141
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 179.0259
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 181.6265
+        }, 
+        {
+          "duration": 9.9382, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 185.8525
+        }, 
+        {
+          "duration": 2.5542, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 185.9918
+        }, 
+        {
+          "duration": 3.7617, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 190.3107
+        }, 
+        {
+          "duration": 2.7399, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 197.091
+        }, 
+        {
+          "duration": 17.6936, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 197.091
+        }, 
+        {
+          "duration": 2.2755, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 199.0415
+        }, 
+        {
+          "duration": 4.4583, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 201.4563
+        }, 
+        {
+          "duration": 8.3128, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 201.6885
+        }, 
+        {
+          "duration": 31.672, 
+          "confidence": 1, 
+          "value": "tack piano", 
+          "time": 203.7783
+        }, 
+        {
+          "duration": 7.6161, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 210.3728
+        }, 
+        {
+          "duration": 8.7307, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 215.1097
+        }, 
+        {
+          "duration": 0.9288, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 218.732
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 220.3574
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 224.537
+        }, 
+        {
+          "duration": 1.2538, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 226.1624
+        }, 
+        {
+          "duration": 1.3468, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 228.5308
+        }, 
+        {
+          "duration": 0.418, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 232.1995
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 233.3605
+        }, 
+        {
+          "duration": 0.8359, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 235.729
+        }, 
+        {
+          "duration": 0.0929, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 236.3791
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 243.86176870748298, 
+    "title": "Spacestation", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "StrandOfOaks"
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "sandbox": {
+    "content_path": "DreamersOfTheGhetto_HeavyLove_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 8.5914, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 1.5325
+        }, 
+        {
+          "duration": 278.6859, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 10.9598
+        }, 
+        {
+          "duration": 116.75, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 25.6348
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 41.7959
+        }, 
+        {
+          "duration": 6.8267, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 46.4863
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 54.0561
+        }, 
+        {
+          "duration": 4.319, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 57.539
+        }, 
+        {
+          "duration": 6.1765, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 62.6939
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 70.1707
+        }, 
+        {
+          "duration": 4.0867, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 73.5608
+        }, 
+        {
+          "duration": 3.6223, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 73.9323
+        }, 
+        {
+          "duration": 4.8762, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 74.6754
+        }, 
+        {
+          "duration": 66.7341, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 75.0005
+        }, 
+        {
+          "duration": 5.6193, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 78.7156
+        }, 
+        {
+          "duration": 1.4861, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 80.3875
+        }, 
+        {
+          "duration": 7.4768, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 82.7559
+        }, 
+        {
+          "duration": 5.8978, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 86.6569
+        }, 
+        {
+          "duration": 4.8297, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 90.7436
+        }, 
+        {
+          "duration": 26.3779, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 91.2544
+        }, 
+        {
+          "duration": 4.5512, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 92.3225
+        }, 
+        {
+          "duration": 3.6224, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 93.4835
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 96.3164
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 97.4309
+        }, 
+        {
+          "duration": 3.5294, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 97.6167
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 98.7777
+        }, 
+        {
+          "duration": 17.8794, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 101.3783
+        }, 
+        {
+          "duration": 39.2417, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 101.5641
+        }, 
+        {
+          "duration": 38.2201, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 104.1647
+        }, 
+        {
+          "duration": 46.7185, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 107.1369
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 117.8645
+        }, 
+        {
+          "duration": 15.7431, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 119.6292
+        }, 
+        {
+          "duration": 0.8824, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 120.14
+        }, 
+        {
+          "duration": 5.2941, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 135.651
+        }, 
+        {
+          "duration": 7.8948, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 141.502399
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 141.5953
+        }, 
+        {
+          "duration": 2.2756, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 144.103
+        }, 
+        {
+          "duration": 2.0434, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 144.2888
+        }, 
+        {
+          "duration": 3.3436, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 145.6356
+        }, 
+        {
+          "duration": 2.2291, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 148.1433
+        }, 
+        {
+          "duration": 1.9969, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 148.3291
+        }, 
+        {
+          "duration": 2.9721, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 148.9328
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 152.7873
+        }, 
+        {
+          "duration": 115.263799, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 153.4375
+        }, 
+        {
+          "duration": 11.7029, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 153.4839
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 158.3601
+        }, 
+        {
+          "duration": 1.2539, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 158.778
+        }, 
+        {
+          "duration": 7.7555, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 160.357
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 166.3942
+        }, 
+        {
+          "duration": 6.5481, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 166.6728
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 174.3819
+        }, 
+        {
+          "duration": 6.223, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 174.4747
+        }, 
+        {
+          "duration": 10.0775, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 174.5676
+        }, 
+        {
+          "duration": 2.2292, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 180.8834
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 182.416
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 183.902
+        }, 
+        {
+          "duration": 29.8609, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 185.5274
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 185.7596
+        }, 
+        {
+          "duration": 4.9226, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 186.7349
+        }, 
+        {
+          "duration": 84.242, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 186.9671
+        }, 
+        {
+          "duration": 29.8608, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 187.2922
+        }, 
+        {
+          "duration": 3.483, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 189.707
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 190.3572
+        }, 
+        {
+          "duration": 1.9504, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 192.3077
+        }, 
+        {
+          "duration": 3.5295, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 193.5615
+        }, 
+        {
+          "duration": 1.0216, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 194.3975
+        }, 
+        {
+          "duration": 6.6409, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 194.769
+        }, 
+        {
+          "duration": 71.3317, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 197.6018
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 198.3449
+        }, 
+        {
+          "duration": 68.5918, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 201.6885
+        }, 
+        {
+          "duration": 64.3193, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 203.0817
+        }, 
+        {
+          "duration": 15.7895, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 215.5741
+        }, 
+        {
+          "duration": 6.2694, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 220.5431
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 227.9735
+        }, 
+        {
+          "duration": 37.3842, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 231.5958
+        }, 
+        {
+          "duration": 12.5387, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 234.8931
+        }, 
+        {
+          "duration": 2.3684, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 239.5371
+        }, 
+        {
+          "duration": 15.1394, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 242.277
+        }, 
+        {
+          "duration": 12.2137, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 250.9148
+        }, 
+        {
+          "duration": 1.7183, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 257.8808
+        }, 
+        {
+          "duration": 18.5295, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 260.435
+        }, 
+        {
+          "duration": 3.3901, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 269.6301
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 269.7694
+        }, 
+        {
+          "duration": 3.2508, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 273.4846
+        }, 
+        {
+          "duration": 2.5078, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 273.8097
+        }, 
+        {
+          "duration": 3.4365, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 274.8314
+        }, 
+        {
+          "duration": 2.6935, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 277.8964
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 278.0822
+        }, 
+        {
+          "duration": 0.9753, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 279.0574
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "fx/processed sound", 
+          "time": 281.1937
+        }, 
+        {
+          "duration": 1.5325, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 281.8438
+        }, 
+        {
+          "duration": 3.2044, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 282.9119
+        }, 
+        {
+          "duration": 0.9752, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 284.3516
+        }, 
+        {
+          "duration": 0.4179, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 291.3176
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 294.9863038548753, 
+    "title": "HeavyLove", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "DreamersOfTheGhetto"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "sandbox": {
+    "content_path": "LizNelson_Coldwar_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 13.3282, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 0.1858
+        }, 
+        {
+          "duration": 155.5272, 
+          "confidence": 1, 
+          "value": "acoustic guitar", 
+          "time": 13.932
+        }, 
+        {
+          "duration": 45.5576, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 23.6379
+        }, 
+        {
+          "duration": 45.0003, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 70.0778
+        }, 
+        {
+          "duration": 48.4368, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 115.914
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 169.9874829931973, 
+    "title": "Coldwar", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "LizNelson"
+  }
+}

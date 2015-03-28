@@ -1,0 +1,112 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_ChineseXinJing_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 61.7651, 
+          "confidence": 1, 
+          "value": "gu", 
+          "time": 0.2322
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 32.6008, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 4.8762
+        }, 
+        {
+          "duration": 53.5452, 
+          "confidence": 1, 
+          "value": "zhongruan", 
+          "time": 5.062
+        }, 
+        {
+          "duration": 57.6319, 
+          "confidence": 1, 
+          "value": "yangqin", 
+          "time": 6.8731
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 11.0527
+        }, 
+        {
+          "duration": 2.4149, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 12.9103
+        }, 
+        {
+          "duration": 2.9257, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 15.6967
+        }, 
+        {
+          "duration": 4.1796, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 19.8298
+        }, 
+        {
+          "duration": 29.3036, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 24.2881
+        }, 
+        {
+          "duration": 10.6812, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 39.5668
+        }, 
+        {
+          "duration": 5.7585, 
+          "confidence": 1, 
+          "value": "erhu", 
+          "time": 55.8208
+        }, 
+        {
+          "duration": 6.0372, 
+          "confidence": 1, 
+          "value": "liuqin", 
+          "time": 57.1211
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "zhongruan", 
+          "time": 60.1861
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 65.37018140589569, 
+    "title": "ChineseXinJing", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

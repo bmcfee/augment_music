@@ -1,0 +1,112 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_BebopJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 102.4929, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 29.025, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 0.2786
+        }, 
+        {
+          "duration": 2.7399, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 102.3536, 
+          "confidence": 1, 
+          "value": "double bass", 
+          "time": 0.3715
+        }, 
+        {
+          "duration": 102.3535, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.418
+        }, 
+        {
+          "duration": 4.1332, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 3.2972
+        }, 
+        {
+          "duration": 37.9414, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 7.6626
+        }, 
+        {
+          "duration": 50.6659, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 29.768
+        }, 
+        {
+          "duration": 12.7709, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 45.9291
+        }, 
+        {
+          "duration": 38.0343, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 58.8394
+        }, 
+        {
+          "duration": 21.5481, 
+          "confidence": 1, 
+          "value": "tenor saxophone", 
+          "time": 81.0841
+        }, 
+        {
+          "duration": 1.0217, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 97.1523
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 98.4062
+        }, 
+        {
+          "duration": 1.1146, 
+          "confidence": 1, 
+          "value": "trumpet", 
+          "time": 101.4712
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 102.95909297052154, 
+    "title": "BebopJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

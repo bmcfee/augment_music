@@ -1,0 +1,280 @@
+{
+  "sandbox": {
+    "content_path": "NightPanther_Fire_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 46.4399, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 103.7003, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 0.0929
+        }, 
+        {
+          "duration": 5.48, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 8.0805
+        }, 
+        {
+          "duration": 43.3285, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 10.031
+        }, 
+        {
+          "duration": 5.5263, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 15.7896
+        }, 
+        {
+          "duration": 21.1302, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 26.0992
+        }, 
+        {
+          "duration": 21.4088, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 30.0002
+        }, 
+        {
+          "duration": 21.1766, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 30.3253
+        }, 
+        {
+          "duration": 128.1741, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 30.7897
+        }, 
+        {
+          "duration": 106.5796, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 50.8517
+        }, 
+        {
+          "duration": 56.796, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 51.3161
+        }, 
+        {
+          "duration": 52.3378, 
+          "confidence": 1, 
+          "value": "string section", 
+          "time": 51.3625
+        }, 
+        {
+          "duration": 44.0715, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 61.3007
+        }, 
+        {
+          "duration": 41.378, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 61.8115
+        }, 
+        {
+          "duration": 41.3315, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 61.9973
+        }, 
+        {
+          "duration": 50.3873, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 100.4495
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 102.0749
+        }, 
+        {
+          "duration": 1.0681, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 108.3443
+        }, 
+        {
+          "duration": 1.9041, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 109.8768
+        }, 
+        {
+          "duration": 4.7833, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 112.7561
+        }, 
+        {
+          "duration": 37.9878, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 113.3134
+        }, 
+        {
+          "duration": 88.2822, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 113.3134
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 113.592
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 116.1462
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 118.8862
+        }, 
+        {
+          "duration": 89.7683, 
+          "confidence": 1, 
+          "value": "auxiliary percussion", 
+          "time": 119.257699
+        }, 
+        {
+          "duration": 1.6254, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 120.2329
+        }, 
+        {
+          "duration": 25.4955, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 122.5549
+        }, 
+        {
+          "duration": 26.6565, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 123.7159
+        }, 
+        {
+          "duration": 63.1118, 
+          "confidence": 1, 
+          "value": "male singer", 
+          "time": 148.5613
+        }, 
+        {
+          "duration": 0.3251, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 148.9328
+        }, 
+        {
+          "duration": 0.6966, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 149.5365
+        }, 
+        {
+          "duration": 0.6037, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 152.4158
+        }, 
+        {
+          "duration": 0.7895, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 154.97
+        }, 
+        {
+          "duration": 45.0003, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 159.0102
+        }, 
+        {
+          "duration": 41.5173, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 159.0567
+        }, 
+        {
+          "duration": 51.9662, 
+          "confidence": 1, 
+          "value": "vocalists", 
+          "time": 159.1496
+        }, 
+        {
+          "duration": 51.827, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 159.2424
+        }, 
+        {
+          "duration": 50.526599, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 159.7997
+        }, 
+        {
+          "duration": 43.282, 
+          "confidence": 1, 
+          "value": "synthesizer", 
+          "time": 159.8462
+        }, 
+        {
+          "duration": 49.1335, 
+          "confidence": 1, 
+          "value": "drum machine", 
+          "time": 159.939
+        }, 
+        {
+          "duration": 25.7741, 
+          "confidence": 1, 
+          "value": "brass section", 
+          "time": 180.6977
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 212.99609977324263, 
+    "title": "Fire", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "NightPanther"
+  }
+}

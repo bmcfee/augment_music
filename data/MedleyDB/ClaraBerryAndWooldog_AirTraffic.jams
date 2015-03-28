@@ -1,0 +1,184 @@
+{
+  "sandbox": {
+    "content_path": "ClaraBerryAndWooldog_AirTraffic_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 156.0845, 
+          "confidence": 1, 
+          "value": "piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 18.158, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 6.7338
+        }, 
+        {
+          "duration": 33.6689, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 16.1611
+        }, 
+        {
+          "duration": 7.2911, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 50.6195
+        }, 
+        {
+          "duration": 102.0285, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 51.3161
+        }, 
+        {
+          "duration": 2.7864, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 51.3625
+        }, 
+        {
+          "duration": 98.8706, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 51.6876
+        }, 
+        {
+          "duration": 7.0125, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 51.8269
+        }, 
+        {
+          "duration": 102.3071, 
+          "confidence": 1, 
+          "value": "lap steel guitar", 
+          "time": 51.9198
+        }, 
+        {
+          "duration": 7.5233, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 58.6536
+        }, 
+        {
+          "duration": 6.641, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 59.6288
+        }, 
+        {
+          "duration": 3.3437, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 67.1985
+        }, 
+        {
+          "duration": 20.5264, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 67.8487
+        }, 
+        {
+          "duration": 10.3561, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 78.1119
+        }, 
+        {
+          "duration": 22.2911, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 79.7838
+        }, 
+        {
+          "duration": 3.7616, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 82.6166
+        }, 
+        {
+          "duration": 6.4552, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 89.9541
+        }, 
+        {
+          "duration": 4.5975, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 91.6724
+        }, 
+        {
+          "duration": 3.8545, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 98.6848
+        }, 
+        {
+          "duration": 40.3098, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 100.078
+        }, 
+        {
+          "duration": 40.3099, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 100.3566
+        }, 
+        {
+          "duration": 20.3871, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 131.75
+        }, 
+        {
+          "duration": 3.1115, 
+          "confidence": 1, 
+          "value": "timpani", 
+          "time": 135.1401
+        }, 
+        {
+          "duration": 9.8452, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 141.9204
+        }, 
+        {
+          "duration": 8.8236, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 142.2454
+        }, 
+        {
+          "duration": 12.7246, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 152.23
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 173.44566893424036, 
+    "title": "AirTraffic", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "ClaraBerryAndWooldog"
+  }
+}

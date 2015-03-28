@@ -1,0 +1,70 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_Rockabilly_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 25.3562, 
+          "confidence": 1, 
+          "value": "clean electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 25.6813, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "distorted electric guitar", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 25.9135, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 10.4954, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 0.3251
+        }, 
+        {
+          "duration": 3.2043, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 12.0744
+        }, 
+        {
+          "duration": 9.6131, 
+          "confidence": 1, 
+          "value": "female singer", 
+          "time": 16.3004
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 25.949160997732427, 
+    "title": "Rockabilly", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}

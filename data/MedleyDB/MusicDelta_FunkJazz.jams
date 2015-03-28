@@ -1,0 +1,70 @@
+{
+  "sandbox": {
+    "content_path": "MusicDelta_FunkJazz_MIX.wav"
+  }, 
+  "annotations": [
+    {
+      "data": [
+        {
+          "duration": 49.087, 
+          "confidence": 1, 
+          "value": "drum set", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 49.3656, 
+          "confidence": 1, 
+          "value": "electric piano", 
+          "time": 0.0
+        }, 
+        {
+          "duration": 49.1799, 
+          "confidence": 1, 
+          "value": "electric bass", 
+          "time": 0.0464
+        }, 
+        {
+          "duration": 5.0155, 
+          "confidence": 1, 
+          "value": "alto saxophone", 
+          "time": 9.1487
+        }, 
+        {
+          "duration": 7.0125, 
+          "confidence": 1, 
+          "value": "alto saxophone", 
+          "time": 17.8329
+        }, 
+        {
+          "duration": 7.384, 
+          "confidence": 1, 
+          "value": "alto saxophone", 
+          "time": 25.9599
+        }, 
+        {
+          "duration": 14.8608, 
+          "confidence": 1, 
+          "value": "alto saxophone", 
+          "time": 34.4584
+        }
+      ], 
+      "annotation_metadata": {
+        "corpus": "MedleyDB", 
+        "curator": {
+          "name": "Rachel Bittner", 
+          "email": "rachel.bittner@nyu.edu"
+        }, 
+        "annotator": {}
+      }, 
+      "namespace": "tag_medleydb_instruments", 
+      "sandbox": {}
+    }
+  ], 
+  "file_metadata": {
+    "duration": 49.386326530612244, 
+    "title": "FunkJazz", 
+    "identifiers": {}, 
+    "jams_version": "0.1.0", 
+    "artist": "MusicDelta"
+  }
+}
