@@ -11,9 +11,9 @@
             "py/type": "muda.deformers.pitch.LinearPitchShift"
           },
           "params": {
-            "lower": -3.0,
-            "n_samples": 7,
-            "upper": 3.0
+            "lower": -2.0,
+            "n_samples": 5,
+            "upper": 2.0
           }
         }
       ],
@@ -24,7 +24,7 @@
             "py/type": "muda.deformers.time.LogspaceTimeStretch"
           },
           "params": {
-            "lower": -0.75,
+            "lower": -0.5,
             "n_samples": 3,
             "upper": 0.5
           }
@@ -47,7 +47,7 @@
                   "../data/noises/171317__klankbeeld__people-ambience-large-hall-01.ogg",
                   "../data/noises/231870__inkhorn__city-noise-at-night.ogg"
                 ],
-                "n_samples": 2,
+                "n_samples": 1,
                 "weight_max": 0.4,
                 "weight_min": 0.1
               }
