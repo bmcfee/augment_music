@@ -2,6 +2,8 @@
 # -*- encoding: utf-8 -*-
 '''Generate augmented data from jams'''
 
+from __future__ import print_function
+
 from argparse import ArgumentParser
 from glob import glob
 
@@ -46,6 +48,7 @@ def augment_data(transformer, i, ann_file, content_path, output_dir, fmt):
         out_jam = os.path.extsep.join([out_base, 'jams'])
         muda.save(out_audio, out_jam, jam_aug,
                   exclusive_creation=False)
+    print('Finished {:05d} | {:s}'.format(i, os.path.basename(ann_file)))
 
 
 def run(pipeline=None, annotation_path=None, content_path=None,
@@ -55,14 +58,12 @@ def run(pipeline=None, annotation_path=None, content_path=None,
     # Step 1: load in the transformation
     transformer = make_pipeline(pipeline)
 
-    print transformer
-
     # Step 2: absorb the files
-    anns = sorted(glob(os.path.join(annotation_path, '*.jams')))[:5]
+    anns = sorted(glob(os.path.join(annotation_path, '*.jams')))
 
     # Step 3: schedule the jobs
     AD = delayed(augment_data)
-    Parallel(n_jobs=num_jobs, verbose=9)(AD(transformer, i, ann,
+    Parallel(n_jobs=num_jobs, verbose=1)(AD(transformer, i, ann,
                                             content_path, output_dir, fmt)
                                          for (i, ann) in enumerate(anns))
 
