@@ -11,9 +11,9 @@
             "py/type": "muda.deformers.pitch.LinearPitchShift"
           },
           "params": {
-            "lower": -2.0,
-            "n_samples": 5,
-            "upper": 2.0
+            "lower": -1.0,
+            "n_samples": 3,
+            "upper": 1.0
           }
         }
       ],
@@ -70,7 +70,6 @@
                 "preset": [
                   "speech",
                   "music standard",
-                  "film standard"
                 ]
               }
             }
