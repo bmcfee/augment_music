@@ -41,10 +41,10 @@ def augment_data(transformer, ann_file, content_path, output_dir, fmt):
     # Load the audio
     jam = muda.load_jam_audio(jam, audio)
 
-    root_name = jams.util.filebase(jam)
+    root_name = jams.util.filebase(ann_file)
 
     for j, jam_aug in enumerate(transformer.transform(jam)):
-        out_base = os.path.join(output_dir, '{s}_{:05d}'.format(root_name, j))
+        out_base = os.path.join(output_dir, '{}_{:05d}'.format(root_name, j))
         out_audio = os.path.extsep.join([out_base, fmt])
         out_jam = os.path.extsep.join([out_base, 'jams'])
         muda.save(out_audio, out_jam, jam_aug,
