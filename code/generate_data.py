@@ -5,7 +5,6 @@
 from __future__ import print_function
 
 from argparse import ArgumentParser
-from glob import glob
 
 import os
 import sys
@@ -19,8 +18,8 @@ from joblib import Parallel, delayed
 def make_pipeline(plfile):
     '''Construct the audio deformation pipeline'''
 
-    with open(plfile, 'r') as f:
-        pljson = '\n'.join([line for line in f])
+    with open(plfile, 'r') as fdesc:
+        pljson = '\n'.join([line for line in fdesc])
         return muda.deserialize(pljson)
 
 
@@ -30,7 +29,7 @@ def audio_path(jam, content_path):
     return os.path.join(content_path, jam.sandbox.content_path)
 
 
-def augment_data(transformer, i, ann_file, content_path, output_dir, fmt):
+def augment_data(transformer, ann_file, content_path, output_dir, fmt):
     '''Perform data augmentation'''
 
     # First, load the jam
@@ -42,30 +41,32 @@ def augment_data(transformer, i, ann_file, content_path, output_dir, fmt):
     # Load the audio
     jam = muda.load_jam_audio(jam, audio)
 
+    root_name = jams.util.filebase(jam)
+
     for j, jam_aug in enumerate(transformer.transform(jam)):
-        out_base = os.path.join(output_dir, '{:05d}_{:05d}'.format(i, j))
+        out_base = os.path.join(output_dir, '{s}_{:05d}'.format(root_name, j))
         out_audio = os.path.extsep.join([out_base, fmt])
         out_jam = os.path.extsep.join([out_base, 'jams'])
         muda.save(out_audio, out_jam, jam_aug,
                   exclusive_creation=False)
-    print('Finished {:05d} | {:s}'.format(i, os.path.basename(ann_file)))
+    print('Finished {}'.format(root_name))
 
 
-def run(pipeline=None, annotation_path=None, content_path=None,
-        output_dir=None, num_jobs=2, fmt='ogg'):
+def run(pipeline=None, jam_files=None, content_path=None,
+        verbose=0, output_dir=None, num_jobs=2, fmt='ogg'):
     '''Do the needful'''
 
     # Step 1: load in the transformation
     transformer = make_pipeline(pipeline)
 
-    # Step 2: absorb the files
-    anns = sorted(glob(os.path.join(annotation_path, '*.jams')))
-
     # Step 3: schedule the jobs
-    AD = delayed(augment_data)
-    Parallel(n_jobs=num_jobs, verbose=1)(AD(transformer, i, ann,
-                                            content_path, output_dir, fmt)
-                                         for (i, ann) in enumerate(anns))
+    augment = delayed(augment_data)
+
+    Parallel(n_jobs=num_jobs,
+             verbose=verbose)(augment(transformer, ann,
+                                      content_path,
+                                      output_dir, fmt)
+                              for ann in jam_files)
 
 
 def get_params(args):
@@ -73,20 +74,26 @@ def get_params(args):
 
     parser = ArgumentParser(description='Execute a muda pipeline')
 
-    parser.add_argument('pipeline', type=str,
-                        help='Path to the pipeline json')
-    parser.add_argument('annotation_path', type=str,
-                        help='Path to the annotations')
-    parser.add_argument('content_path', type=str,
-                        help='Path to the audio content')
-    parser.add_argument('output_dir', type=str,
-                        help='Path to store the output files')
-
     parser.add_argument('-n', '--num_jobs', dest='num_jobs',
-                        type=int, default=2, help='Number of parallel threads')
+                        type=int, default=1, help='Number of parallel threads')
 
     parser.add_argument('-f', '--format', dest='fmt', type=str, default='ogg',
                         help='Output audio format')
+
+    parser.add_argument('-v', '--verbose', type=int, default=0,
+                        help='Verbosity')
+
+    parser.add_argument('pipeline', type=str,
+                        help='Path to the pipeline json')
+
+    parser.add_argument('content_path', type=str,
+                        help='Path to the audio content')
+
+    parser.add_argument('output_dir', type=str,
+                        help='Path to store the output files')
+
+    parser.add_argument('jam_files', type=str, nargs='+',
+                        help='Path to the annotations')
 
     return vars(parser.parse_args(args))
 
