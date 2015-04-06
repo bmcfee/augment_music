@@ -8,7 +8,6 @@ import os
 import sys
 import librosa
 import numpy as np
-import cPickle as pickle
 
 from joblib import Parallel, delayed
 
@@ -22,7 +21,7 @@ def get_output_name(output_dir, fname):
 
     root = os.path.splitext(os.path.basename(fname))[0]
 
-    return os.path.join(output_dir, os.path.extsep.join([root, 'pickle']))
+    return os.path.join(output_dir, os.path.extsep.join([root, 'npz']))
 
 
 def feature_extractor(fname, output_dir):
@@ -36,8 +35,8 @@ def feature_extractor(fname, output_dir):
 
     output_name = get_output_name(output_dir, fname)
 
-    with open(output_name, 'w') as fdesc:
-        pickle.dump({'C': C}, fdesc, protocol=-1)
+    np.savez(output_name, C=C)
+
 
 
 def run(ogg_files=None, verbose=0, output_dir=None, num_jobs=2):
