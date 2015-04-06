@@ -13,8 +13,9 @@ import cPickle as pickle
 from joblib import Parallel, delayed
 
 RESOLUTION = 3
-N_BINS = 84 * RESOLUTION
+N_BINS = 72 * RESOLUTION
 BINS_PER_OCTAVE = 12 * RESOLUTION
+FMIN = librosa.note_to_hz('C3')
 
 
 def get_output_name(output_dir, fname):
@@ -28,8 +29,10 @@ def feature_extractor(fname, output_dir):
 
     y, sr = librosa.load(fname)
 
-    C = librosa.cqt(y, sr=sr, n_bins=N_BINS, bins_per_octave=BINS_PER_OCTAVE)
-    C = C.astype(np.float32)
+    C = librosa.cqt(y, sr=sr,
+                    fmin=FMIN,
+                    n_bins=N_BINS,
+                    bins_per_octave=BINS_PER_OCTAVE).astype(np.float32)
 
     output_name = get_output_name(output_dir, fname)
 
