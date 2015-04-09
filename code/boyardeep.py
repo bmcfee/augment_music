@@ -2,13 +2,13 @@
 '''Chef Boyardeep!  He cooks up lasagne.'''
 
 import six
-import json
 import jsonpickle
 
 import numpy as np
 import scipy
 
 import lasagne
+from lasagne.layers import get_all_params
 import theano
 import theano.tensor as T
 
@@ -73,7 +73,7 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
 
         # Compute updates, there's also SGD with momentum, Adagrad, etc.
         updates = lasagne.updates.rmsprop(cost,
-                                          lasagne.layers.get_all_params(layers[-1]),
+                                          get_all_params(layers[-1]),
                                           self.learning_rate,
                                           self.momentum)
 
@@ -102,3 +102,25 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.callback(self)
 
     fit = partial_fit
+
+
+def load_architecture(jsfile, **kwargs):
+    '''Load an architecture specification from a json file
+
+    Parameters
+    ----------
+    jsfile : path or readable
+        Where the architecture file lives
+
+    kwargs
+        Additional parameters to jsonpickle.decode
+
+    Returns
+    -------
+    architecture : list of tuples
+        Deserialized architecture
+    '''
+
+    with open(jsfile, mode='r') as fd:
+        plj = ''.join([_ for _ in fd])
+        return jsonpickle.decode(plj, **kwargs)
