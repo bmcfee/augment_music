@@ -5,16 +5,17 @@ import six
 import jsonpickle
 
 import pandas as pd
+import numpy as np
 
 from lasagne.layers import get_all_params
 import theano
 
-from sklearn.base import ClassifierMixin, BaseEstimator
+from sklearn.base import ClassifierMixin, BaseEstimator, TransformerMixin
 
 
-class Boyardeep(BaseEstimator, ClassifierMixin):
+class Boyardeep(BaseEstimator, ClassifierMixin, TransformerMixin):
 
-    def __init__(self, architecture, callback=None):
+    def __init__(self, architecture, multilabel=False, regression=False, callback=None):
         '''Initialize a chef boyardeep model.
 
         Parameters
@@ -51,6 +52,8 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         else:
             raise TypeError('callback must be None or callable')
 
+        self.multilabel = multilabel
+        self.regression = regression
         self._construct_model(architecture)
 
     def _construct_model(self, arch):
@@ -79,20 +82,27 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
                                     *arch['update'][1].get('args', []),
                                     **arch['update'][1].get('kwargs', {}))
 
+        self.layers = layers
+
         # Compile theano functions for train/test
-        train = theano.function([layers[0].input_var, target], cost,
-                                updates=updates)
+        self.train = theano.function([layers[0].input_var, target], cost,
+                                     updates=updates)
 
         # Other useful functions
-        compute_cost = theano.function([layers[0].input_var, target], cost)
+        self.cost = theano.function([layers[0].input_var, target], cost)
 
-        output = theano.function([layers[0].input_var],
-                                 layers[-1].get_output())
+        self.output = theano.function([layers[0].input_var],
+                                      layers[-1].get_output())
 
-        self.layers = layers
-        self.train = train
-        self.compute_cost = compute_cost
-        self.output = output
+        self.output_d = theano.function([layers[0].input_var],
+                                        layers[-1].get_output(deterministic=True))
+
+        if len(layers) > 1:
+            self.feature = theano.function([layers[0].input_var],
+                                           layers[-2].get_output(deterministic=True))
+        else:
+            self.feature = theano.function([layers[0].input_var],
+                                           layers[0].input_var)
 
         self.n_ = 0
         self.n_batches_ = 0
@@ -111,13 +121,30 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.n_ += len(X)
 
         # Cache the cost on this batch
-        self.train_cost_.set_value(self.n_batches_, self.compute_cost(X, y))
+        self.train_cost_.set_value(self.n_batches_, self.cost(X, y))
 
         # Hit the callback
         if six.callable(self.callback):
             self.callback(self)
 
     fit = partial_fit
+
+    def predict(self, X):
+
+        if self.multilabel:
+            return self.output_d(X) > 0.5
+        elif self.regression:
+            return self.output_d(X)
+        else:
+            return np.argmax(self.output_d(X), axis=1)
+
+    def predict_proba(self, X):
+
+        return self.output_d(X)
+
+    def transform(self, X):
+
+        return self.feature(X)
 
 
 def load_architecture(jsfile, **kwargs):
