@@ -8,7 +8,6 @@ import pandas as pd
 
 from lasagne.layers import get_all_params
 import theano
-import theano.tensor as T
 
 from sklearn.base import ClassifierMixin, BaseEstimator
 
@@ -39,6 +38,10 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
             the target and final layer output.
             The actual score will be the mean of the outputs over the batch.
 
+            `architecture['output']` is a Theano class specifying the output
+            type, eg, `theano.tensor.ivector`
+
+
         callback : None or callable
             An optional function to call after each iteration
         '''
@@ -58,23 +61,23 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
 
         for layer_type, layer_params in arch['layers']:
             if layers is None:
-                layers = [layer_type(*layer_params['args'],
-                                     **layer_params['kwargs'])]
+                layers = [layer_type(*layer_params.get('args', []),
+                                     **layer_params.get('kwargs', {}))]
             else:
                 layers.append(layer_type(layers[-1],
-                                         *layer_params['args'],
-                                         **layer_params['kwargs']))
+                                         *layer_params.get('args', []),
+                                         **layer_params.get('kwargs', {})))
 
         # Bake the functions
-        target = T.matrix(name='target')
+        target = arch['output'](name='target')
 
         cost = arch['cost'](layers[-1].get_output(), target).mean()
 
         # Compute updates, there's also SGD with momentum, Adagrad, etc.
         updates = arch['update'][0](cost,
                                     get_all_params(layers[-1]),
-                                    *arch['update'][1]['args'],
-                                    **arch['update'][1]['kwargs'])
+                                    *arch['update'][1].get('args', []),
+                                    **arch['update'][1].get('kwargs', {}))
 
         # Compile theano functions for train/test
         train = theano.function([layers[0].input_var, target], cost,
@@ -95,6 +98,8 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.n_batches_ = 0
         self.train_cost_ = pd.Series(name='cost_train')
 
+        self._arch = arch
+
     def partial_fit(self, X, y):
         '''Do a partial update'''
 
@@ -109,7 +114,8 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.train_cost_.set_value(self.n_batches_, self.compute_cost(X, y))
 
         # Hit the callback
-        self.callback(self)
+        if six.callable(self.callback):
+            self.callback(self)
 
     fit = partial_fit
 
