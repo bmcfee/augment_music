@@ -90,6 +90,7 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.train = train
         self.compute_cost = compute_cost
         self.output = output
+
         self.n_ = 0
         self.n_batches_ = 0
         self.train_cost_ = pd.Series(name='cost_train')
