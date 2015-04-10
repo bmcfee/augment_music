@@ -4,6 +4,7 @@
 import six
 import jsonpickle
 
+import pandas as pd
 import numpy as np
 import scipy
 
@@ -78,13 +79,11 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
                                           self.momentum)
 
         # Compile theano functions for train/test
-        train = theano.function([layers[0].input_var, target],
-                                cost,
+        train = theano.function([layers[0].input_var, target], cost,
                                 updates=updates)
 
         # Other useful functions
-        compute_cost = theano.function([layers[0].input_var, target],
-                                       cost)
+        compute_cost = theano.function([layers[0].input_var, target], cost)
 
         output = theano.function([layers[0].input_var],
                                  layers[-1].get_output())
@@ -93,12 +92,24 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         self.train = train
         self.compute_cost = compute_cost
         self.output = output
+        self.n_ = 0
+        self.n_batches_ = 0
+        self.train_cost_ = pd.Series(name='cost_train')
 
     def partial_fit(self, X, y):
         '''Do a partial update'''
 
+        # Take a step
         self.train(X, y)
 
+        # Increment the counters
+        self.n_batches_ += 1
+        self.n_ += len(X)
+
+        # Cache the cost on this batch
+        self.train_cost_.set_value(self.n_batches_, self.compute_cost(X, y))
+
+        # Hit the callback
         self.callback(self)
 
     fit = partial_fit
