@@ -1,14 +1,11 @@
 #!/usr/bin/env python
-'''Chef Boyardeep!  He cooks up lasagne.'''
+'''Chef Boyardeep: canned pasta'''
 
 import six
 import jsonpickle
 
 import pandas as pd
-import numpy as np
-import scipy
 
-import lasagne
 from lasagne.layers import get_all_params
 import theano
 import theano.tensor as T
@@ -18,22 +15,29 @@ from sklearn.base import ClassifierMixin, BaseEstimator
 
 class Boyardeep(BaseEstimator, ClassifierMixin):
 
-    def __init__(self, architecture, learning_rate=1e-2, momentum=0.9,
-                 callback=None):
+    def __init__(self, architecture, callback=None):
         '''Initialize a chef boyardeep model.
 
         Parameters
         ----------
-        architecture : list of tuples
-            the model architecture, described as tuples
+        architecture : dict
+            the model architecture.
+
+            `architecture['layers']` contains tuples
             `(layer_type, params_dict)`
             where `layer_type` is a Lasagne layer class,
             and `params_dict` contains the parameters of the layer
             as `params_dict['args']` and `params_dict['kwargs']`.
 
-        learning_rate : float
-        momentum : float
-            Update parameters
+            `architecture['update']` contains a single tuple
+            `(update_function, params_dict)`
+            where `update_function` is one of `lasagne.updates.*`
+            and `params_dict` is as before.
+
+            `architecture['cost']` contains a single function, eg,
+            `theano.nnet.binary_entropy` to by applied against
+            the target and final layer output.
+            The actual score will be the mean of the outputs over the batch.
 
         callback : None or callable
             An optional function to call after each iteration
@@ -44,20 +48,15 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         else:
             raise TypeError('callback must be None or callable')
 
-        self.architecture = architecture
+        self._construct_model(architecture)
 
-        self.learning_rate = learning_rate
-        self.momentum = momentum
-
-        self._construct_model()
-
-    def _construct_model(self):
+    def _construct_model(self, arch):
         '''Construct the model'''
 
         # Lay down the model
         layers = None
 
-        for layer_type, layer_params in self.architecture:
+        for layer_type, layer_params in arch['layers']:
             if layers is None:
                 layers = [layer_type(*layer_params['args'],
                                      **layer_params['kwargs'])]
@@ -69,14 +68,13 @@ class Boyardeep(BaseEstimator, ClassifierMixin):
         # Bake the functions
         target = T.matrix(name='target')
 
-        cost = T.nnet.binary_crossentropy(layers[-1].get_output(),
-                                          target).mean()
+        cost = arch['cost'](layers[-1].get_output(), target).mean()
 
         # Compute updates, there's also SGD with momentum, Adagrad, etc.
-        updates = lasagne.updates.rmsprop(cost,
-                                          get_all_params(layers[-1]),
-                                          self.learning_rate,
-                                          self.momentum)
+        updates = arch['update'][0](cost,
+                                    get_all_params(layers[-1]),
+                                    *arch['update'][1]['args'],
+                                    **arch['update'][1]['kwargs'])
 
         # Compile theano functions for train/test
         train = theano.function([layers[0].input_var, target], cost,
@@ -132,6 +130,6 @@ def load_architecture(jsfile, **kwargs):
         Deserialized architecture
     '''
 
-    with open(jsfile, mode='r') as fd:
-        plj = ''.join([_ for _ in fd])
+    with open(jsfile, mode='r') as fdesc:
+        plj = ''.join([_ for _ in fdesc])
         return jsonpickle.decode(plj, **kwargs)
