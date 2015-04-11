@@ -1,0 +1,76 @@
+{
+  "layers": [
+    {
+      "py/tuple": [
+        { "py/type": "lasagne.layers.input.InputLayer" },
+        { "kwargs": { "shape": { "py/tuple": [ 1000, 8 ] } } }
+      ]
+    },
+    {
+      "py/tuple": [
+        { "py/type": "lasagne.layers.dense.DenseLayer" },
+        {
+          "kwargs": {
+            "num_units": 100,
+            "nonlinearity": {
+              "py/object": "lasagne.nonlinearities.LeakyRectify",
+              "leakiness": 0.01
+            }
+          }
+        }
+      ]
+    },
+    {
+      "py/tuple": [
+        { "py/type": "lasagne.layers.noise.DropoutLayer" },
+        { "kwargs": { "p": 0.5 } }
+      ]
+    },
+    {
+      "py/tuple": [
+        { "py/type": "lasagne.layers.dense.DenseLayer" },
+        { "kwargs": { "num_units": 100, "nonlinearity": { "py/id": 1 } } }
+      ]
+    },
+    {
+      "py/tuple": [
+        { "py/type": "lasagne.layers.dense.DenseLayer" },
+        {
+          "kwargs": {
+            "num_units": 4,
+            "nonlinearity": {
+              "py/object": "theano.tensor.nnet.nnet.Softmax",
+              "_op_use_c_code": "/usr/bin/g++"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "output": {
+    "py/object": "theano.tensor.type.TensorType",
+    "broadcastable": {
+      "py/tuple": [ false ]
+    },
+    "name": null,
+    "dtype": "int32",
+    "numpy_dtype": {
+      "py/object": "numpy.dtype",
+      "py/reduce": [
+        { "py/type": "numpy.dtype" },
+        { "py/tuple": [ "i4", 0, 1 ] },
+        { "py/tuple": [ 3, "<", null, null, null, -1, -1, 0 ] },
+        null,
+        null
+      ]
+    },
+    "sparse_grad": false
+  },
+  "cost": { "py/function": "theano.tensor.nnet.nnet.categorical_crossentropy" },
+  "update": {
+    "py/tuple": [
+      { "py/function": "lasagne.updates.adagrad" },
+      {}
+    ]
+  }
+}
