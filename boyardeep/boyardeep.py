@@ -2,7 +2,6 @@
 '''Chef Boyardeep: canned pasta'''
 
 import six
-import jsonpickle
 
 import pandas as pd
 import numpy as np
@@ -15,7 +14,8 @@ from sklearn.base import ClassifierMixin, BaseEstimator, TransformerMixin
 
 class Boyardeep(BaseEstimator, ClassifierMixin, TransformerMixin):
 
-    def __init__(self, architecture, multilabel=False, regression=False, callback=None):
+    def __init__(self, architecture, multilabel=False, regression=False,
+                 callback=None):
         '''Initialize a chef boyardeep model.
 
         Parameters
@@ -132,7 +132,7 @@ class Boyardeep(BaseEstimator, ClassifierMixin, TransformerMixin):
     def predict(self, X):
 
         if self.multilabel:
-            return self.output_d(X) > 0.5
+            return (self.output_d(X) >= 0.5).astype(np.int32)
         elif self.regression:
             return self.output_d(X)
         else:
@@ -145,25 +145,3 @@ class Boyardeep(BaseEstimator, ClassifierMixin, TransformerMixin):
     def transform(self, X):
 
         return self.feature(X)
-
-
-def load_architecture(jsfile, **kwargs):
-    '''Load an architecture specification from a json file
-
-    Parameters
-    ----------
-    jsfile : path or readable
-        Where the architecture file lives
-
-    kwargs
-        Additional parameters to jsonpickle.decode
-
-    Returns
-    -------
-    architecture : list of tuples
-        Deserialized architecture
-    '''
-
-    with open(jsfile, mode='r') as fdesc:
-        plj = ''.join([_ for _ in fdesc])
-        return jsonpickle.decode(plj, **kwargs)
