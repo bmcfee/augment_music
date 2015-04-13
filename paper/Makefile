@@ -12,8 +12,9 @@ check: $(SRC).tex
 	ispell -t $<
 
 gray: $(SRC).pdf
-	pdf2ps -sDEVICE=psgray $(SRC).pdf - |ps2pdf - $(SRC)-gray.pdf
-
+	gs -sOutputFile=$(SRC)-gray.pdf -sDEVICE=pdfwrite \
+        -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray \
+        -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH $(SRC).pdf
 
 clean:
 	rm -f *.aux *.log *.out
