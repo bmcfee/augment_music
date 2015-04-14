@@ -60,7 +60,7 @@ def intersect_labels(annotation, time, duration, overlap):
     return list(label_time.index)
 
 
-def generate_data(name, feature_path, jam_path, label_encoder,
+def generate_data(name, data_path, label_encoder,
                   n_columns=128, min_overlap=0.25):
     '''Data generator for a single track
 
@@ -69,11 +69,8 @@ def generate_data(name, feature_path, jam_path, label_encoder,
     name : str
         The name of the track, eg, 'MusicDelta_Reggae_000081'
 
-    feature_path : str
-        Path to the directory containing feature files
-
-    jam_path : str
-        Path to the directory containing jams files
+    data_path : str
+        Path to the directory containing feature and annotation files
 
     label_encoder : sklearn.preprocessing.MultiLabelBinarizer
         Transform label arrays into binary vectors
@@ -85,11 +82,11 @@ def generate_data(name, feature_path, jam_path, label_encoder,
         The minimum overlap required for a valid observation
     '''
 
-    featurefile = os.path.join(feature_path, '{}.npz'.format(name))
+    featurefile = os.path.join(data_path, '{}.npz'.format(name))
 
     data = np.load(featurefile)
 
-    jamfile = os.path.join(jam_path, '{}.jams'.format(name))
+    jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
     jam = jams.load(jamfile)
 
@@ -114,13 +111,13 @@ def generate_data(name, feature_path, jam_path, label_encoder,
                    Y=label_encoder.transform([y]))
 
 
-def mk_bufmux(batch_size, k,
-              file_ids, aug_ids, feature_path, jam_path,
-              label_encoder,
-              lam=256.0,
-              with_replacement=True,
-              prune_empty_seeds=False,
-              n_columns=128, min_overlap=0.25):
+def bufmux(batch_size, k,
+           file_ids, aug_ids, data_path,
+           label_encoder,
+           lam=256.0,
+           with_replacement=True,
+           prune_empty_seeds=False,
+           n_columns=128, min_overlap=0.25):
     '''Make a parallel, multiplexed, pescador stream
 
     Parameters
@@ -137,11 +134,8 @@ def mk_bufmux(batch_size, k,
     aug_ids : list of int
         augmentation suffices to use, eg, `[48]`
 
-    feature_path : str
-        Path to the directory containing npz files on disk
-
-    jam_path : str
-        Path to the directory containing jams files on disk
+    data_path : str
+        Path to the directory containing npz,jams files on disk
 
     label_encoder : sklearn.preprocessing.MultiLabelBinarizer
         The multi-label encoder object
@@ -172,8 +166,7 @@ def mk_bufmux(batch_size, k,
             fname = '{}_{:06d}'.format(file_id, aug_id)
             seeds.append(pescador.Streamer(generate_data,
                                            fname,
-                                           feature_path,
-                                           jam_path,
+                                           data_path,
                                            label_encoder,
                                            n_columns=n_columns,
                                            min_overlap=min_overlap))
@@ -186,8 +179,6 @@ def mk_bufmux(batch_size, k,
                                      with_replacement=with_replacement,
                                      prune_empty_seeds=prune_empty_seeds)
 
-    bufmux = pescador.Streamer(pescador.buffer_streamer,
-                               mux_streamer,
-                               batch_size)
-
-    return bufmux
+    return pescador.Streamer(pescador.buffer_streamer,
+                             mux_streamer,
+                             batch_size)
