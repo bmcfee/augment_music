@@ -4,6 +4,7 @@
 
 import argparse
 import sys
+
 import os
 import glob
 
@@ -12,6 +13,8 @@ import pandas as pd
 
 import pescador
 import boyardeep
+
+import data_generator
 
 
 def process_args(args):

@@ -7,6 +7,7 @@ import pandas as pd
 
 import jams
 import librosa
+
 import pescador
 
 
@@ -84,7 +85,7 @@ def generate_data(name, feature_path, jam_path, label_encoder,
         The minimum overlap required for a valid observation
     '''
 
-    featurefile = os.path.join(feature_path, '{}_MIX.npz'.format(name))
+    featurefile = os.path.join(feature_path, '{}.npz'.format(name))
 
     data = np.load(featurefile)
 
@@ -111,3 +112,82 @@ def generate_data(name, feature_path, jam_path, label_encoder,
 
         yield dict(X=data['C'][:, idx:idx+n_columns][np.newaxis, np.newaxis],
                    Y=label_encoder.transform([y]))
+
+
+def mk_bufmux(batch_size, k,
+              file_ids, aug_ids, feature_path, jam_path,
+              label_encoder,
+              lam=256.0,
+              with_replacement=True,
+              prune_empty_seeds=False,
+              n_columns=128, min_overlap=0.25):
+    '''Make a parallel, multiplexed, pescador stream
+
+    Parameters
+    ----------
+    batch_size : int > 0
+        The number of examples to generate per batch
+
+    k : int > 0
+        the number of seeds to keep alive at any time
+
+    file_ids : list of str
+        filename prefixes to use, eg, 'MusicDelta_Reggae'
+
+    aug_ids : list of int
+        augmentation suffices to use, eg, `[48]`
+
+    feature_path : str
+        Path to the directory containing npz files on disk
+
+    jam_path : str
+        Path to the directory containing jams files on disk
+
+    label_encoder : sklearn.preprocessing.MultiLabelBinarizer
+        The multi-label encoder object
+
+    lam : float > 0
+    with_replacement : bool
+    prune_empty_seeds : bool
+        Lambda parameter for poisson variables in stream multiplexing
+        Additional sampling parameters for `pescador.mux`
+
+    n_columns : int > 0
+        Width of patches to generate
+
+    min_overlap : float > 0
+        minimum degree of overlap (in seconds) to require for
+        label/window overlap
+
+
+    Returns
+    -------
+    streamer : pescador.Streamer
+        A buffered multiplexing streamer
+    '''
+
+    seeds = []
+    for file_id in file_ids:
+        for aug_id in aug_ids:
+            fname = '{}_{:06d}'.format(file_id, aug_id)
+            seeds.append(pescador.Streamer(generate_data,
+                                           fname,
+                                           feature_path,
+                                           jam_path,
+                                           label_encoder,
+                                           n_columns=n_columns,
+                                           min_overlap=min_overlap))
+
+    mux_streamer = pescador.Streamer(pescador.mux,
+                                     seeds,
+                                     None,
+                                     k,
+                                     lam=lam,
+                                     with_replacement=with_replacement,
+                                     prune_empty_seeds=prune_empty_seeds)
+
+    bufmux = pescador.Streamer(pescador.buffer_streamer,
+                               mux_streamer,
+                               batch_size)
+
+    return bufmux
