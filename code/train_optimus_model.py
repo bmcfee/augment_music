@@ -140,7 +140,7 @@ if __name__ == "__main__":
 
     parser.add_argument('-s',
                         '--size',
-                        dest='size', type=str, default='large',
+                        dest='arch_size', type=str, default='large',
                         help='Size of the architecture')
     # Outputs
     parser.add_argument('-o',
