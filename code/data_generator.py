@@ -107,7 +107,7 @@ def generate_data(name, data_path, label_encoder,
                              duration,
                              min_overlap)
 
-        yield dict(X=data['C'].T[:, idx:idx+n_columns][np.newaxis, np.newaxis],
+        yield dict(X=data['C'][:, idx:idx+n_columns].T[np.newaxis, np.newaxis],
                    Y=label_encoder.transform([y]))
 
 
