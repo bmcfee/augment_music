@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
     parser.add_argument('-n',
                         '--name',
-                        dest='trial_name', type=str, default='deleteme',
+                        dest='name', type=str, default='deleteme',
                         help='Unique name for this training run.')
 
     parser.add_argument("--init_param_file",
