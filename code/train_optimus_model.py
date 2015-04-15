@@ -61,7 +61,7 @@ def load_artists(artist_file):
 def main(args):
 
     track_names, artist_ids = load_artists(args.artist_file)
-    aug_ids = np.loadtxt(args.index_file, dtype=int)
+    aug_ids = np.atleast_1d(np.loadtxt(args.index_file, dtype=int))
 
     LT = sklearn.preprocessing.MultiLabelBinarizer(classes=INSTRUMENTS)
     LT.fit(INSTRUMENTS)
