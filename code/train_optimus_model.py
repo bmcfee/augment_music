@@ -138,7 +138,7 @@ if __name__ == "__main__":
                         help='Path to the file containing the '
                              'track->artist index')
 
-    parser.add_argument('-s'
+    parser.add_argument('-s',
                         '--size',
                         dest='size', type=str, default='large',
                         help='Size of the architecture')
