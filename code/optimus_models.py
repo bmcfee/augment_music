@@ -42,11 +42,11 @@ def beastly_network(num_frames, num_classes, size='large'):
         44: (2, 2, 1)}[num_frames]
 
     input_data = optimus.Input(
-        name='cqt',
+        name='X',
         shape=(None, 1, num_frames, NUM_FREQ_COEFFS))
 
     class_targets = optimus.Input(
-        name='class_targets',
+        name='Y',
         shape=(None, num_classes))
 
     learning_rate = optimus.Input(
@@ -97,7 +97,7 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     # Graph outputs
     loss = optimus.Output(name='loss')
-    prediction = optimus.Output(name='prediction')
+    prediction = optimus.Output(name='Z')
 
     # 2. Define Edges
     base_edges = [
