@@ -8,9 +8,13 @@ import optimus
 import os
 import sklearn.preprocessing
 
+import six
+import ShuffleLabelsOut
+
 from data_generator import bufmux
 
 import optimus_models as models
+import pescador
 
 
 # The well represented instruments, as listed on the medleydb page
@@ -58,20 +62,30 @@ def load_artists(artist_file):
 def main(args):
 
     track_names, artist_ids = load_artists(args.artist_file)
-    aug_ids = np.loadtxt(args.index_file, dtype=int)
+    aug_ids = np.atleast_1d(np.loadtxt(args.index_file, dtype=int))
 
     LT = sklearn.preprocessing.MultiLabelBinarizer(classes=INSTRUMENTS)
     LT.fit(INSTRUMENTS)
+
     # TODO(ejhumphrey): I don't know what goes here.
+    splitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids,
+                                                 n_iter=1,
+                                                 random_state=5)
+
+    for train, test in splitter:
+        pass
+
     file_ids = [track_names[_] for _ in train]
 
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
-    stream = bufmux(
+    _stream = bufmux(
         BATCH_SIZE, 500, file_ids, aug_ids, args.input_path, LT,
         lam=256.0, with_replacement=True, n_columns=NUM_FRAMES,
         prune_empty_seeds=False, min_overlap=0.25)
+
+    stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])
 
     # Build the two models:
     #  {loss, Z} = trainer(X, Y, learning_rate)
@@ -127,9 +141,9 @@ if __name__ == "__main__":
                         help='Path to the file containing the '
                              'track->artist index')
 
-    parser.add_argument('-s'
+    parser.add_argument('-s',
                         '--size',
-                        dest='size', type=str, default='large',
+                        dest='arch_size', type=str, default='large',
                         help='Size of the architecture')
     # Outputs
     parser.add_argument('-o',
@@ -141,11 +155,11 @@ if __name__ == "__main__":
 
     parser.add_argument('-n',
                         '--name',
-                        dest='trial_name', type=str, default='deleteme',
+                        dest='name', type=str, default='deleteme',
                         help='Unique name for this training run.')
 
     parser.add_argument("--init_param_file",
-                        metavar="--init_param_file", type=str, default='',
+                        metavar="init_param_file", type=str, default='',
                         help="Path to a NPZ archive for initialization the "
                         "parameters of the graph.")
 

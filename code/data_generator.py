@@ -107,7 +107,7 @@ def generate_data(name, data_path, label_encoder,
                              duration,
                              min_overlap)
 
-        yield dict(X=data['C'][:, idx:idx+n_columns][np.newaxis, np.newaxis],
+        yield dict(X=data['C'][:, idx:idx+n_columns].T[np.newaxis, np.newaxis],
                    Y=label_encoder.transform([y]))
 
 
@@ -163,7 +163,7 @@ def bufmux(batch_size, k,
     seeds = []
     for file_id in file_ids:
         for aug_id in aug_ids:
-            fname = '{}_{:06d}'.format(file_id, aug_id)
+            fname = '{}_{:05d}'.format(file_id, aug_id)
             seeds.append(pescador.Streamer(generate_data,
                                            fname,
                                            data_path,

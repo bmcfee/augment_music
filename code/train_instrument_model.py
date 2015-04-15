@@ -167,6 +167,19 @@ def run_experiment(output_pattern=None,
             # Wrap the training stream in a separate thread
             zts = pescador.zmq_stream(train_stream)
 
+            # Make a validation stream
+            val_stream = bufmux(batch_size,
+                                k,
+                                [track_names[_] for _ in valid],
+                                aug_ids,
+                                input_path,
+                                LT,
+                                lam=lam,
+                                with_replacement=with_replacement,
+                                prune_empty_seeds=prune_empty_seeds,
+                                n_columns=n_columns,
+                                min_overlap=min_overlap)
+
             # Build the model
             estimator = boyardeep.Boyardeep(arch,
                                             multilabel=True,

@@ -38,7 +38,7 @@ class ShuffleLabelsOut(ShuffleSplit):
         return ('%s(labels=%s, n_iter=%d, test_size=%s, '
                 'random_state=%s)' % (
                     self.__class__.__name__,
-                    self.y,
+                    self.y_indices,
                     self.n_iter,
                     str(self.test_size),
                     self.random_state,
