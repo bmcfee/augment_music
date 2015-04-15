@@ -9,7 +9,7 @@ import os
 import sklearn.preprocessing
 
 import six
-from ShuffleLabelsOut import ShuffleLabelsOut
+import ShuffleLabelsOut
 
 from data_generator import bufmux
 
@@ -66,7 +66,9 @@ def main(args):
     LT = sklearn.preprocessing.MultiLabelBinarizer(classes=INSTRUMENTS)
     LT.fit(INSTRUMENTS)
     # TODO(ejhumphrey): I don't know what goes here.
-    splitter = ShuffleLabelsOut(artist_ids, n_iter=1, random_state=5)
+    splitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids,
+                                                 n_iter=1,
+                                                 random_state=5)
 
     train, test = six.advance_iterator(splitter)
 
