@@ -14,6 +14,7 @@ import ShuffleLabelsOut
 from data_generator import bufmux
 
 import optimus_models as models
+import pescador
 
 
 # The well represented instruments, as listed on the medleydb page
@@ -79,10 +80,12 @@ def main(args):
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
-    stream = bufmux(
+    _stream = bufmux(
         BATCH_SIZE, 500, file_ids, aug_ids, args.input_path, LT,
         lam=256.0, with_replacement=True, n_columns=NUM_FRAMES,
         prune_empty_seeds=False, min_overlap=0.25)
+
+    stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])
 
     # Build the two models:
     #  {loss, Z} = trainer(X, Y, learning_rate)
