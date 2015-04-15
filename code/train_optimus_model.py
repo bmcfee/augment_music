@@ -145,7 +145,7 @@ if __name__ == "__main__":
                         help='Unique name for this training run.')
 
     parser.add_argument("--init_param_file",
-                        metavar="--init_param_file", type=str, default='',
+                        metavar="init_param_file", type=str, default='',
                         help="Path to a NPZ archive for initialization the "
                         "parameters of the graph.")
 
