@@ -65,12 +65,14 @@ def main(args):
 
     LT = sklearn.preprocessing.MultiLabelBinarizer(classes=INSTRUMENTS)
     LT.fit(INSTRUMENTS)
+
     # TODO(ejhumphrey): I don't know what goes here.
     splitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids,
                                                  n_iter=1,
                                                  random_state=5)
 
-    train, test = six.advance_iterator(splitter)
+    for train, test in splitter:
+        pass
 
     file_ids = [track_names[_] for _ in train]
 
