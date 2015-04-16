@@ -4,6 +4,7 @@
 import os
 import numpy as np
 import pandas as pd
+import librosa
 
 import jams
 
@@ -77,7 +78,8 @@ def generate_data(name, data_path, label_encoder,
 
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
 
-    X = np.log1p(np.load(featurefile)['C'])
+    # X = np.log1p(np.load(featurefile)['C'])
+    X = librosa.logamplitude(np.load(featurefile)['C'])
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
