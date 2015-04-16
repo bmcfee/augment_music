@@ -12,7 +12,7 @@ import pescador
 
 def frames_to_time(frames, hop_length=512, sr=22050):
 
-    return frames * hop_length / float(sr)
+    return np.atleast_1d(frames) * hop_length / float(sr)
 
 
 def intersect_labels(annotation, time, duration, overlap):
