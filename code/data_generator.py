@@ -6,9 +6,13 @@ import numpy as np
 import pandas as pd
 
 import jams
-import librosa
 
 import pescador
+
+
+def frames_to_time(frames, hop_length=512, sr=22050):
+
+    return frames * hop_length / float(sr)
 
 
 def intersect_labels(annotation, time, duration, overlap):
@@ -94,7 +98,7 @@ def generate_data(name, data_path, label_encoder,
 
     annotation = annotation[annotation['value'].isin(label_encoder.classes_)]
 
-    duration = librosa.frames_to_time(n_columns)[0]
+    duration = frames_to_time(n_columns)[0]
     n_total = data['C'].shape[1]
 
     while len(annotation):
@@ -103,7 +107,7 @@ def generate_data(name, data_path, label_encoder,
 
         # Slice the labels
         y = intersect_labels(annotation,
-                             librosa.frames_to_time(idx)[0],
+                             frames_to_time(idx)[0],
                              duration,
                              min_overlap)
 
