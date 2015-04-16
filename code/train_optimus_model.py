@@ -38,8 +38,8 @@ INSTRUMENTS = ['drum set',
 NUM_FRAMES = 128
 BATCH_SIZE = 50
 DRIVER_ARGS = dict(
-    max_iter=100000,
-    save_freq=1000,
+    max_iter=5000,
+    save_freq=500,
     print_freq=50)
 LEARNING_RATE = 0.01
 
@@ -82,7 +82,7 @@ def main(args):
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
     _stream = bufmux(
         BATCH_SIZE, 500, file_ids, aug_ids, args.input_path, LT,
-        lam=256.0, with_replacement=True, n_columns=NUM_FRAMES,
+        lam=128.0, with_replacement=True, n_columns=NUM_FRAMES,
         prune_empty_seeds=False, min_overlap=0.25)
 
     stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])

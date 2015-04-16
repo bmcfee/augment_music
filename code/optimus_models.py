@@ -15,11 +15,11 @@ def param_init(nodes, scale=0.01, skip_biases=True):
 def beastly_network(num_frames, num_classes, size='large'):
     # Kernel counts, per layer
     k0, k1, k2 = dict(
-        small=(10, 20, 96),
-        med=(12, 24, 128),
-        large=(16, 32, 192),
-        xlarge=(20, 40, 256),
-        xxlarge=(24, 48, 512))[size]
+        small=(10, 20, 48),
+        med=(12, 24, 64),
+        large=(24, 48, 96),
+        xlarge=(20, 40, 128),
+        xxlarge=(24, 48, 256))[size]
 
     # Input dimensions
     # 44 frames is approx 1 second
@@ -63,14 +63,14 @@ def beastly_network(num_frames, num_classes, size='large'):
         input_shape=input_data.shape,
         weight_shape=(k0, None, n0, 13),
         pool_shape=(p0, 3),
-        act_type='relu')
+        act_type='soft_relu')
 
     layer1 = optimus.Conv3D(
         name='layer1',
         input_shape=layer0.output.shape,
         weight_shape=(k1, None, n1, 9),
         pool_shape=(p1, 1),
-        act_type='relu')
+        act_type='soft_relu')
 
     max_pool = optimus.Max(
         name='max_pool',
@@ -83,7 +83,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         name='layer2',
         input_shape=mp_output_shape,
         output_shape=(None, k2),
-        act_type='relu')
+        act_type='soft_relu')
 
     classifier = optimus.Affine(
         name='classifier',
@@ -99,15 +99,23 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     # Graph outputs
     loss = optimus.Output(name='loss')
+    Z0 = optimus.Output(name='Z0')
+    Z1 = optimus.Output(name='Z1')
+    Z2 = optimus.Output(name='Z2')
+    Z3 = optimus.Output(name='Z3')
     prediction = optimus.Output(name='Z')
 
     # 2. Define Edges
     base_edges = [
         (input_data, layer0.input),
         (layer0.output, layer1.input),
+        (layer0.output, Z0),
         (layer1.output, max_pool.input),
+        (layer1.output, Z1),
         (max_pool.output, layer2.input),
+        (max_pool.output, Z2),
         (layer2.output, classifier.input),
+        (layer2.output, Z3),
         (classifier.output, prediction)]
 
     trainer_edges = base_edges + [(classifier.output, xentropy.prediction),
@@ -118,14 +126,14 @@ def beastly_network(num_frames, num_classes, size='large'):
         map(lambda n: (learning_rate, n.weights), param_nodes) +
         map(lambda n: (learning_rate, n.bias), param_nodes))
 
-    param_init(param_nodes, scale=0.01)
+    param_init(param_nodes, scale=0.01, skip_biases=False)
 
     trainer = optimus.Graph(
         name=GRAPH_NAME,
         inputs=inputs,
         nodes=param_nodes + [max_pool, xentropy],
         connections=optimus.ConnectionManager(trainer_edges).connections,
-        outputs=[loss, prediction],
+        outputs=[loss, prediction, Z0, Z1, Z2, Z3],
         loss=loss,
         updates=updates.connections,
         verbose=True)
@@ -135,7 +143,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         inputs=[input_data],
         nodes=param_nodes + [max_pool],
         connections=optimus.ConnectionManager(base_edges).connections,
-        outputs=[prediction],
+        outputs=[prediction, Z0, Z1, Z2, Z3],
         verbose=True)
 
     return trainer, predictor

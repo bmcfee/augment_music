@@ -82,16 +82,13 @@ def main(args):
         lam=256.0, with_replacement=True, n_columns=NUM_FRAMES,
         prune_empty_seeds=False, min_overlap=0.25)
 
-    stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])
+    import time
+    _stamp = time.time()
+    data = list(_stream.generate(max_batches=5))
+    print('Time: {}'.format(time.time() - _stamp))
 
-    data = []
-    for batch in stream:
-        data.append(batch)
-        if len(data) > 10 * BATCH_SIZE:
-            break
-
-    with open(args.output, 'w') as f:
-        pickle.dump(data, f)
+    #with open(args.output, 'w') as f:
+    #    pickle.dump(data, f)
 
 
 if __name__ == "__main__":
