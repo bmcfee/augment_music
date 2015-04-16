@@ -88,7 +88,7 @@ def generate_data(name, data_path, label_encoder,
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
-    jam = jams.load(jamfile)
+    jam = jams.load(jamfile, validate=False)
 
     annotation = jam.annotations[0].data
 
