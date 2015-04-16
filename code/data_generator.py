@@ -77,7 +77,7 @@ def generate_data(name, data_path, label_encoder,
 
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
 
-    X = np.load(featurefile)['C']
+    X = np.log1p(np.load(featurefile)['C'])
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
@@ -97,7 +97,7 @@ def generate_data(name, data_path, label_encoder,
         # Slice a patch
         idx = np.random.randint(0, n_total - n_columns)
 
-        Xsamp = np.log1p(X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis])
+        Xsamp = X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis]
         Ysamp = (Y[:, idx:idx+n_columns].T.sum(axis=0, keepdims=True) >=
                  n_overlap)
         yield dict(X=Xsamp,
