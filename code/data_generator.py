@@ -14,6 +14,10 @@ def frames_to_time(frames, hop_length=512, sr=22050):
 
     return np.atleast_1d(frames) * hop_length / float(sr)
 
+def time_to_frames(times, hop_length=512, sr=22050):
+
+    return (np.atleast_1d(times) * float(sr) / hop_length).astype(int)
+
 
 def intersect_labels(annotation, time, duration, overlap):
     '''Slice a JAMS annotation frame down to an observation window.
@@ -89,6 +93,7 @@ def generate_data(name, data_path, label_encoder,
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
 
     data = np.load(featurefile)
+    X = data['C']
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
@@ -111,7 +116,7 @@ def generate_data(name, data_path, label_encoder,
                              duration,
                              min_overlap)
 
-        yield dict(X=data['C'][:, idx:idx+n_columns].T[np.newaxis, np.newaxis],
+        yield dict(X=X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis],
                    Y=label_encoder.transform([y]))
 
 
