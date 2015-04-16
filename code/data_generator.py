@@ -97,10 +97,10 @@ def generate_data(name, data_path, label_encoder,
         # Slice a patch
         idx = np.random.randint(0, n_total - n_columns)
 
-        Xsamp = np.log1p(X[:, idx:idx+n_columns].T)
+        Xsamp = np.log1p(X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis])
         Ysamp = (Y[:, idx:idx+n_columns].T.sum(axis=0, keepdims=True) >=
                  n_overlap)
-        yield dict(X=Xsamp[np.newaxis, np.newaxis],
+        yield dict(X=Xsamp,
                    Y=Ysamp.astype(int))
 
 
