@@ -63,14 +63,14 @@ def beastly_network(num_frames, num_classes, size='large'):
         input_shape=input_data.shape,
         weight_shape=(k0, None, n0, 13),
         pool_shape=(p0, 3),
-        act_type='soft_relu')
+        act_type='relu')
 
     layer1 = optimus.Conv3D(
         name='layer1',
         input_shape=layer0.output.shape,
         weight_shape=(k1, None, n1, 9),
         pool_shape=(p1, 1),
-        act_type='soft_relu')
+        act_type='relu')
 
     max_pool = optimus.Max(
         name='max_pool',
@@ -83,7 +83,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         name='layer2',
         input_shape=mp_output_shape,
         output_shape=(None, k2),
-        act_type='soft_relu')
+        act_type='relu')
 
     classifier = optimus.Affine(
         name='classifier',
