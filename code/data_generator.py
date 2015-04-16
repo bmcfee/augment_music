@@ -92,8 +92,7 @@ def generate_data(name, data_path, label_encoder,
 
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
 
-    data = np.load(featurefile)
-    X = data['C']
+    X = np.load(featurefile)['C']
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
 
@@ -104,7 +103,7 @@ def generate_data(name, data_path, label_encoder,
     annotation = annotation[annotation['value'].isin(label_encoder.classes_)]
 
     duration = frames_to_time(n_columns)[0]
-    n_total = data['C'].shape[1]
+    n_total = X.shape[1]
 
     while len(annotation):
         # Slice a patch
