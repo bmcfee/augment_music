@@ -42,6 +42,7 @@ DRIVER_ARGS = dict(
     save_freq=500,
     print_freq=50)
 LEARNING_RATE = 0.01
+WEIGHT_DECAY = 0.02
 
 
 def load_artists(artist_file):
@@ -110,7 +111,7 @@ def main(args):
     predictor_file = os.path.join(driver.output_directory, 'model_file.json')
     optimus.save(predictor, def_file=predictor_file)
 
-    hyperparams = dict(learning_rate=LEARNING_RATE)
+    hyperparams = dict(learning_rate=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     driver.fit(stream, hyperparams=hyperparams, **DRIVER_ARGS)
 
 

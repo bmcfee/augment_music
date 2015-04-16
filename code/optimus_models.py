@@ -55,6 +55,10 @@ def beastly_network(num_frames, num_classes, size='large'):
         name='learning_rate',
         shape=None)
 
+    weight_decay = optimus.Input(
+        name='weight_decay',
+        shape=None)
+
     inputs = [input_data, class_targets, learning_rate]
 
     # 1.2 Create Nodes
@@ -85,6 +89,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         output_shape=(None, k2),
         act_type='relu')
 
+    l2_penalty = optimus.WeightDecayPenalty('l2_penalty')
     classifier = optimus.Affine(
         name='classifier',
         input_shape=layer2.output.shape,
@@ -96,6 +101,7 @@ def beastly_network(num_frames, num_classes, size='large'):
     # 1.2 Create Loss
     # ---------------
     xentropy = optimus.CrossEntropyLoss(name='cross_entropy')
+    total_loss = optimus.Add('total_loss', num_inputs=2)
 
     # Graph outputs
     loss = optimus.Output(name='loss')
@@ -120,7 +126,11 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     trainer_edges = base_edges + [(classifier.output, xentropy.prediction),
                                   (class_targets, xentropy.target),
-                                  (xentropy.output, loss)]
+                                  (xentropy.output, total_loss.input_0),
+                                  (layer2.weights, l2_penalty.input),
+                                  (weight_decay, l2_penalty.weight),
+                                  (l2_penalty.output, total_loss.input_1),
+                                  (total_loss.output, loss)]
 
     updates = optimus.ConnectionManager(
         map(lambda n: (learning_rate, n.weights), param_nodes) +
@@ -130,8 +140,8 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     trainer = optimus.Graph(
         name=GRAPH_NAME,
-        inputs=inputs,
-        nodes=param_nodes + [max_pool, xentropy],
+        inputs=inputs + [weight_decay],
+        nodes=param_nodes + [max_pool, xentropy, l2_penalty, total_loss],
         connections=optimus.ConnectionManager(trainer_edges).connections,
         outputs=[loss, prediction, Z0, Z1, Z2, Z3],
         loss=loss,
