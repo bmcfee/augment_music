@@ -14,6 +14,7 @@ def frames_to_time(frames, hop_length=512, sr=22050):
 
     return np.atleast_1d(frames) * hop_length / float(sr)
 
+
 def time_to_frames(times, hop_length=512, sr=22050):
 
     return (np.atleast_1d(times) * float(sr) / hop_length).astype(int)
@@ -68,7 +69,7 @@ def intersect_labels(annotation, time, duration, overlap):
     return list(label_time.index)
 
 
-def generate_data(name, data_path, label_encoder,
+def _generate_data(name, data_path, label_encoder,
                   n_columns=128, min_overlap=0.25):
     '''Data generator for a single track
 
@@ -117,6 +118,90 @@ def generate_data(name, data_path, label_encoder,
 
         yield dict(X=X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis],
                    Y=label_encoder.transform([y]))
+
+
+def make_label_matrix(n, ann, label_encoder):
+    '''Generate a binary matrix of labels, sampled to match X
+
+    Parameters
+    ----------
+    n : int > 0
+        time extent of the labels
+
+    ann : jamsframe
+        the annotation array
+
+    label_encoder : sklearn.preprocessing.MultiLabelBinarizer
+        The label encoder
+
+    Returns
+    -------
+    Y : np.ndarray [shape=(n_classes, n)]
+    '''
+
+    n_classes = len(label_encoder.classes_)
+
+    Y = np.zeros((n_classes, n))
+
+    time = time_to_frames(ann['time'] / np.timedelta64(1, 's'))
+    duration = time_to_frames(ann['duration'] / np.timedelta64(1, 's'))
+    index = label_encoder.transform([[x] for x in ann['value'].values])
+
+    for i, j, (_, label) in zip(time, duration, np.argwhere(index)):
+        Y[label, i:i+j] = 1
+
+    return Y
+
+
+def generate_data(name, data_path, label_encoder,
+                   n_columns=128, min_overlap=0.25):
+    '''Data generator for a single track
+
+    Parameters
+    ----------
+    name : str
+        The name of the track, eg, 'MusicDelta_Reggae_000081'
+
+    data_path : str
+        Path to the directory containing feature and annotation files
+
+    label_encoder : sklearn.preprocessing.MultiLabelBinarizer
+        Transform label arrays into binary vectors
+
+    n_columns : int > 0
+        The width of patches to sample
+
+    min_overlap : float > 0
+        The minimum overlap required for a valid observation
+    '''
+
+    featurefile = os.path.join(data_path, '{}.npz'.format(name))
+
+    X = np.load(featurefile)['C']
+
+    jamfile = os.path.join(data_path, '{}.jams'.format(name))
+
+    jam = jams.load(jamfile, validate=False)
+
+    annotation = jam.annotations[0].data
+
+    annotation = annotation[annotation['value'].isin(label_encoder.classes_)]
+
+    n_total = X.shape[1]
+
+    Y = make_label_matrix(n_total, annotation, label_encoder)
+
+    n_overlap = time_to_frames(min_overlap)
+
+    while len(annotation):
+        # Slice a patch
+        idx = np.random.randint(0, n_total - n_columns)
+
+        Xsamp = X[:, idx:idx+n_columns].T
+        Ysamp = (Y[:, idx:idx+n_columns].T.sum(axis=0, keepdims=True) >=
+                 n_overlap)
+        yield dict(X=Xsamp[np.newaxis, np.newaxis],
+                   Y=Ysamp.astype(int))
 
 
 def bufmux(batch_size, k,
