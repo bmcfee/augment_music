@@ -5,19 +5,14 @@ import argparse
 import json
 import numpy as np
 import optimus
-import sys
-sys.path.insert(0, '/home/ejh333/src/optimus_dev/')
 import os
 import sklearn.preprocessing
-
-import six
-import ShuffleLabelsOut
-
-from data_generator import bufmux
-
-import optimus_models as models
+# sys.path.insert(0, '/home/ejh333/src/optimus_dev/')
 import pescador
 
+from ShuffleLabelsOut import ShuffleLabelsOut
+from data_generator import bufmux
+import optimus_models as models
 
 # The well represented instruments, as listed on the medleydb page
 INSTRUMENTS = ['drum set',
@@ -45,6 +40,10 @@ DRIVER_ARGS = dict(
     print_freq=50)
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.02
+PESCADOR_ACTIVE_SET = 500
+PESCADOR_LAMBDA = 128.0
+
+RANDOM_SEED = 5
 
 
 def load_artists(artist_file):
@@ -71,34 +70,57 @@ def main(args):
     LT.fit(INSTRUMENTS)
 
     # TODO(ejhumphrey): I don't know what goes here.
-    splitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids,
-                                                 n_iter=1,
-                                                 random_state=5)
+    split_tt = ShuffleLabelsOut(artist_ids, n_iter=5, random_state=RANDOM_SEED)
 
-    for _train, test in splitter:
-        valsplitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids[_train],
-                                                        n_iter=1,
-                                                        random_state=5)
-        for train, val in valsplitter:
+    for fold, (_train, test) in enumerate(split_tt):
+        for train, val in ShuffleLabelsOut(artist_ids[_train],
+                                           n_iter=1,
+                                           random_state=RANDOM_SEED):
+            pass
+        else:
             train_file_ids = [track_names[_] for _ in train]
             val_file_ids = [track_names[_] for _ in val]
-            test_file_ids = [track_names[_] for _ in test]
 
-    # Save the train and test sets to disk
-    tt_file = os.path.join(args.output_pattern, 'train_test.json')
+        test_file_ids = [track_names[_] for _ in test]
+
+        # Save the train and test sets to disk
+        if not os.path.isdir(args.output_directory):
+            os.makedirs(args.output_directory)
+
+        tt_file = os.path.join(args.output_directory,
+                               'fold_{:02d}_train_test.json'.format(fold))
+
+        json.dump({'train': train_file_ids,
+                   'validation': val_file_ids,
+                   'test': test_file_ids},
+                  open(tt_file, 'w'),
+                  indent=2)
+
+        train_fold(fold, train_file_ids, aug_ids, LT, args)
+
+
+def train_fold(fold, train_file_ids, aug_ids, LT, args):
 
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
-    _stream = bufmux(
-        BATCH_SIZE, 500, train_file_ids, aug_ids, args.input_path, LT,
-        lam=128.0, with_replacement=True, n_columns=NUM_FRAMES,
-        prune_empty_seeds=False, min_overlap=0.25)
+    _stream = bufmux(BATCH_SIZE,
+                     PESCADOR_ACTIVE_SET,
+                     train_file_ids,
+                     aug_ids,
+                     args.input_path,
+                     label_encoder=LT,
+                     lam=PESCADOR_LAMBDA,
+                     with_replacement=True,
+                     n_columns=NUM_FRAMES,
+                     prune_empty_seeds=False,
+                     min_overlap=0.25)
 
     stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])
-    #print('Attempting to pull from stream')
-    #print(next(stream))
-    #print('success')
+    # print('Attempting to pull from stream')
+    # print(next(stream))
+    # print('success')
+
     # Build the two models:
     #  {loss, Z} = trainer(X, Y, learning_rate)
     #  {Z} = predictor(X)
@@ -115,18 +137,13 @@ def main(args):
     print('Starting {0}'.format(args.name))
     driver = optimus.Driver(
         graph=trainer,
-        name=args.name,
+        name='fold_{:02d}_{:s}'.format(fold, args.name),
         output_directory=args.output_pattern)
 
     # Serialize the predictor graph.
-    predictor_file = os.path.join(driver.output_directory, 'model_file.json')
+    predictor_file = os.path.join(driver.output_directory,
+                                  'fold_{:02d}_model_file.json'.format(fold))
     optimus.save(predictor, def_file=predictor_file)
-
-    json.dump({'train': train_file_ids,
-               'validation': val_file_ids,
-               'test': test_file_ids},
-              open(tt_file, 'w'),
-              indent=2)
 
     hyperparams = dict(learning_rate=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     driver.fit(stream, hyperparams=hyperparams, **DRIVER_ARGS)
@@ -165,11 +182,11 @@ if __name__ == "__main__":
                         help='Size of the architecture')
     # Outputs
     parser.add_argument('-o',
-                        '--output-pattern',
+                        '--output-directory',
                         type=str,
-                        dest='output_pattern',
+                        dest='output_directory',
                         required=True,
-                        help='Pattern to store output models')
+                        help='Directory to store output models')
 
     parser.add_argument('-n',
                         '--name',
