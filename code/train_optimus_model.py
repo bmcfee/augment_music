@@ -44,6 +44,7 @@ PESCADOR_ACTIVE_SET = 500
 PESCADOR_LAMBDA = 128.0
 
 RANDOM_SEED = 5
+N_FOLDS = 1
 
 
 def load_artists(artist_file):
@@ -70,9 +71,11 @@ def main(args):
     LT.fit(INSTRUMENTS)
 
     # TODO(ejhumphrey): I don't know what goes here.
-    split_tt = ShuffleLabelsOut(artist_ids, n_iter=5, random_state=RANDOM_SEED)
+    split_tt = ShuffleLabelsOut(artist_ids, n_iter=N_FOLDS,
+                                random_state=RANDOM_SEED)
 
     for fold, (_train, test) in enumerate(split_tt):
+        # We only need one validation split here
         for train, val in ShuffleLabelsOut(artist_ids[_train],
                                            n_iter=1,
                                            random_state=RANDOM_SEED):
