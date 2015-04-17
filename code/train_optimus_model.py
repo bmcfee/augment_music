@@ -87,12 +87,6 @@ def main(args):
     # Save the train and test sets to disk
     tt_file = os.path.join(args.output_pattern, 'train_test.json')
 
-    json.dump({'train': train_file_ids,
-               'validation': val_file_ids,
-               'test': test_file_ids},
-              open(tt_file, 'w'),
-              indent=2)
-
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
@@ -127,6 +121,12 @@ def main(args):
     # Serialize the predictor graph.
     predictor_file = os.path.join(driver.output_directory, 'model_file.json')
     optimus.save(predictor, def_file=predictor_file)
+
+    json.dump({'train': train_file_ids,
+               'validation': val_file_ids,
+               'test': test_file_ids},
+              open(tt_file, 'w'),
+              indent=2)
 
     hyperparams = dict(learning_rate=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     driver.fit(stream, hyperparams=hyperparams, **DRIVER_ARGS)
