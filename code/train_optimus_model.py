@@ -77,14 +77,22 @@ def main(args):
 
     for train, test in splitter:
         pass
+    else:
+        train_file_ids = [track_names[_] for _ in train]
+        test_file_ids = [track_names[_] for _ in test]
 
-    file_ids = [track_names[_] for _ in train]
+    # Save the train and test sets to disk
+    tt_file = os.path.join(args._output_pattern, 'train_test.json')
+
+    json.dump({'train': train_file_ids, 'test': test_file_ids},
+              open(tt_file, 'w'),
+              indent=2)
 
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
     _stream = bufmux(
-        BATCH_SIZE, 500, file_ids, aug_ids, args.input_path, LT,
+        BATCH_SIZE, 500, train_file_ids, aug_ids, args.input_path, LT,
         lam=128.0, with_replacement=True, n_columns=NUM_FRAMES,
         prune_empty_seeds=False, min_overlap=0.25)
 
