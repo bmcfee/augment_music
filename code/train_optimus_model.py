@@ -75,16 +75,21 @@ def main(args):
                                                  n_iter=1,
                                                  random_state=5)
 
-    for train, test in splitter:
-        pass
-    else:
-        train_file_ids = [track_names[_] for _ in train]
-        test_file_ids = [track_names[_] for _ in test]
+    for _train, test in splitter:
+        valsplitter = ShuffleLabelsOut.ShuffleLabelsOut(artist_ids[_train],
+                                                        n_iter=1,
+                                                        random_state=5)
+        for train, val in valsplitter:
+            train_file_ids = [track_names[_] for _ in train]
+            val_file_ids = [track_names[_] for _ in val]
+            test_file_ids = [track_names[_] for _ in test]
 
     # Save the train and test sets to disk
     tt_file = os.path.join(args.output_pattern, 'train_test.json')
 
-    json.dump({'train': train_file_ids, 'test': test_file_ids},
+    json.dump({'train': train_file_ids,
+               'validation': val_file_ids,
+               'test': test_file_ids},
               open(tt_file, 'w'),
               indent=2)
 
