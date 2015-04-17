@@ -5,6 +5,8 @@ import argparse
 import json
 import numpy as np
 import optimus
+import sys
+sys.path.insert(0, '/home/ejh333/src/optimus_dev/')
 import os
 import sklearn.preprocessing
 
@@ -35,10 +37,10 @@ INSTRUMENTS = ['drum set',
                'flute',
                'mandolin']
 
-NUM_FRAMES = 128
+NUM_FRAMES = 44
 BATCH_SIZE = 50
 DRIVER_ARGS = dict(
-    max_iter=5000,
+    max_iter=500000,
     save_freq=500,
     print_freq=50)
 LEARNING_RATE = 0.01
@@ -87,7 +89,9 @@ def main(args):
         prune_empty_seeds=False, min_overlap=0.25)
 
     stream = pescador.zmq_stream(_stream, max_batches=DRIVER_ARGS['max_iter'])
-
+    #print('Attempting to pull from stream')
+    #print(next(stream))
+    #print('success')
     # Build the two models:
     #  {loss, Z} = trainer(X, Y, learning_rate)
     #  {Z} = predictor(X)

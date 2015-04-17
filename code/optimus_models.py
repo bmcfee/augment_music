@@ -85,7 +85,7 @@ def beastly_network(num_frames, num_classes, size='large'):
     mp_output_shape[-2] = 1
     layer2 = optimus.Affine(
         name='layer2',
-        input_shape=mp_output_shape,
+        input_shape=layer1.output.shape,
         output_shape=(None, k2),
         act_type='relu')
 
@@ -108,7 +108,7 @@ def beastly_network(num_frames, num_classes, size='large'):
     Z0 = optimus.Output(name='Z0')
     Z1 = optimus.Output(name='Z1')
     Z2 = optimus.Output(name='Z2')
-    Z3 = optimus.Output(name='Z3')
+    # Z3 = optimus.Output(name='Z3')
     prediction = optimus.Output(name='Z')
 
     # 2. Define Edges
@@ -116,12 +116,10 @@ def beastly_network(num_frames, num_classes, size='large'):
         (input_data, layer0.input),
         (layer0.output, layer1.input),
         (layer0.output, Z0),
-        (layer1.output, max_pool.input),
+        (layer1.output, layer2.input),
         (layer1.output, Z1),
-        (max_pool.output, layer2.input),
-        (max_pool.output, Z2),
         (layer2.output, classifier.input),
-        (layer2.output, Z3),
+        (layer2.output, Z2),
         (classifier.output, prediction)]
 
     trainer_edges = base_edges + [(classifier.output, xentropy.prediction),
@@ -143,7 +141,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         inputs=inputs + [weight_decay],
         nodes=param_nodes + [max_pool, xentropy, l2_penalty, total_loss],
         connections=optimus.ConnectionManager(trainer_edges).connections,
-        outputs=[loss, prediction, Z0, Z1, Z2, Z3],
+        outputs=[loss, prediction, Z0, Z1, Z2],
         loss=loss,
         updates=updates.connections,
         verbose=True)
@@ -153,7 +151,7 @@ def beastly_network(num_frames, num_classes, size='large'):
         inputs=[input_data],
         nodes=param_nodes + [max_pool],
         connections=optimus.ConnectionManager(base_edges).connections,
-        outputs=[prediction, Z0, Z1, Z2, Z3],
+        outputs=[prediction, Z0, Z1, Z2],
         verbose=True)
 
     return trainer, predictor
