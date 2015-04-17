@@ -129,7 +129,8 @@ def bufmux(batch_size, k,
            lam=256.0,
            with_replacement=True,
            prune_empty_seeds=False,
-           n_columns=128, min_overlap=0.25):
+           n_columns=128,
+           min_overlap=0.25):
     '''Make a parallel, multiplexed, pescador stream
 
     Parameters
