@@ -55,7 +55,7 @@ def make_label_matrix(n, ann, label_encoder):
 
 
 def generate_data(name, data_path, label_encoder,
-                   n_columns=128, min_overlap=0.25):
+                  n_columns=128, min_overlap=0.25):
     '''Data generator for a single track
 
     Parameters
@@ -95,7 +95,7 @@ def generate_data(name, data_path, label_encoder,
 
     n_overlap = time_to_frames(min_overlap)
 
-    while len(annotation):
+    while True:
         # Slice a patch
         idx = np.random.randint(0, n_total - n_columns)
 
