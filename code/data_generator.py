@@ -3,7 +3,6 @@
 
 import os
 import numpy as np
-import pandas as pd
 import librosa
 
 import jams
@@ -54,8 +53,8 @@ def make_label_matrix(n, ann, label_encoder):
     return Y
 
 
-def generate_data(name, data_path, label_encoder,
-                  n_columns=128, min_overlap=0.25):
+def makexy(name, data_path, label_encoder,
+           n_columns=128, min_overlap=0.25):
     '''Data generator for a single track
 
     Parameters
@@ -77,24 +76,42 @@ def generate_data(name, data_path, label_encoder,
     '''
 
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
-
-    # X = np.log1p(np.load(featurefile)['C'])
     X = librosa.logamplitude(np.load(featurefile)['C'])
+    n_total = X.shape[1]
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
-
     jam = jams.load(jamfile, validate=False)
-
     annotation = jam.annotations[0].data
-
     annotation = annotation[annotation['value'].isin(label_encoder.classes_)]
-
-    n_total = X.shape[1]
 
     Y = make_label_matrix(n_total, annotation, label_encoder)
 
     n_overlap = time_to_frames(min_overlap)
 
+    return X, Y, n_total, n_overlap
+
+
+def stream_data(name, data_path, label_encoder,
+                n_columns=128, min_overlap=0.25):
+
+    X, Y, n_total, n_overlap = makexy(name, data_path, label_encoder,
+                                      n_columns=n_columns,
+                                      min_overlap=min_overlap)
+
+    for idx in np.arange(0, n_total - n_columns, n_columns):
+        Xsamp = X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis]
+        Ysamp = (Y[:, idx:idx+n_columns].T.sum(axis=0, keepdims=True) >=
+                 n_overlap)
+
+        yield dict(X=Xsamp, Y=Ysamp.astype(int))
+
+
+def sample_data(name, data_path, label_encoder,
+                n_columns=128, min_overlap=0.25):
+
+    X, Y, n_total, n_overlap = makexy(name, data_path, label_encoder,
+                                      n_columns=n_columns,
+                                      min_overlap=min_overlap)
     while True:
         # Slice a patch
         idx = np.random.randint(0, n_total - n_columns)
@@ -102,8 +119,8 @@ def generate_data(name, data_path, label_encoder,
         Xsamp = X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis]
         Ysamp = (Y[:, idx:idx+n_columns].T.sum(axis=0, keepdims=True) >=
                  n_overlap)
-        yield dict(X=Xsamp,
-                   Y=Ysamp.astype(int))
+
+        yield dict(X=Xsamp, Y=Ysamp.astype(int))
 
 
 def bufmux(batch_size, k,
@@ -159,7 +176,7 @@ def bufmux(batch_size, k,
     for file_id in file_ids:
         for aug_id in aug_ids:
             fname = '{}_{:05d}'.format(file_id, aug_id)
-            seeds.append(pescador.Streamer(generate_data,
+            seeds.append(pescador.Streamer(sample_data,
                                            fname,
                                            data_path,
                                            label_encoder,
