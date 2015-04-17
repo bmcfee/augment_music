@@ -82,7 +82,7 @@ def main(args):
         test_file_ids = [track_names[_] for _ in test]
 
     # Save the train and test sets to disk
-    tt_file = os.path.join(args._output_pattern, 'train_test.json')
+    tt_file = os.path.join(args.output_pattern, 'train_test.json')
 
     json.dump({'train': train_file_ids, 'test': test_file_ids},
               open(tt_file, 'w'),
