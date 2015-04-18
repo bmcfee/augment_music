@@ -142,8 +142,8 @@ def main(args):
     d_eval = delayed(evaluator)
     results = {}
     for res in Parallel(n_jobs=args.num_jobs)(d_eval(predictor,
-                                                     val_id, aug_id,
                                                      label_encoder,
+                                                     val_id, aug_id,
                                                      args.input_path)
                                               for (val_id, aug_id) in probes):
         results.update(res)
@@ -158,4 +158,6 @@ def main(args):
 if __name__ == '__main__':
 
     parameters = process_arguments(sys.argv[1:])
+
+    pd.set_option('display.precision', 4)
     main(parameters)
