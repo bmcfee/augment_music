@@ -123,6 +123,25 @@ def sample_data(name, data_path, label_encoder,
         yield dict(X=Xsamp, Y=Ysamp.astype(int))
 
 
+def augment_file_id(file_id, aug_id):
+    '''Return the augmented file id
+
+    Parameters
+    ----------
+    file_id : str
+        The prefix of the file
+
+    aug_id : int
+        The index of the augmentation
+
+    Returns
+    -------
+    file_id_aug
+        The augmentation-friendly formatted file id
+    '''
+    return '{}_{:05d}'.format(file_id, aug_id)
+
+
 def bufmux(batch_size, k,
            file_ids, aug_ids, data_path,
            label_encoder,
@@ -176,7 +195,7 @@ def bufmux(batch_size, k,
     seeds = []
     for file_id in file_ids:
         for aug_id in aug_ids:
-            fname = '{}_{:05d}'.format(file_id, aug_id)
+            fname = augment_file_id(file_id, aug_id)
             seeds.append(pescador.Streamer(sample_data,
                                            fname,
                                            data_path,
