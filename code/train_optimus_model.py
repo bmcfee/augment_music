@@ -75,6 +75,8 @@ def main(args):
     split_tt = ShuffleLabelsOut(artist_ids, n_iter=N_FOLDS,
                                 random_state=RANDOM_SEED)
 
+    outdir = args.output_directory
+
     for fold, (_train, test) in enumerate(split_tt):
         # We only need one validation split here
         for train, val in ShuffleLabelsOut(artist_ids[_train],
@@ -87,12 +89,13 @@ def main(args):
 
         test_file_ids = [track_names[_] for _ in test]
 
+        args.output_directory = os.path.join(outdir, 'fold_{:02d}'.format(fold))
+
         # Save the train and test sets to disk
         if not os.path.isdir(args.output_directory):
             os.makedirs(args.output_directory)
 
-        tt_file = os.path.join(args.output_directory,
-                               'fold_{:02d}_train_test.json'.format(fold))
+        tt_file = os.path.join(args.output_directory, 'train_test.json')
 
         json.dump({'train': train_file_ids,
                    'validation': val_file_ids,
@@ -141,12 +144,11 @@ def train_fold(fold, train_file_ids, aug_ids, LT, args):
     print('Starting {0}'.format(args.name))
     driver = optimus.Driver(
         graph=trainer,
-        name='fold_{:02d}_{:s}'.format(fold, args.name),
+        name=args._name,
         output_directory=args.output_directory)
 
     # Serialize the predictor graph.
-    predictor_file = os.path.join(driver.output_directory,
-                                  'fold_{:02d}_model_file.json'.format(fold))
+    predictor_file = os.path.join(driver.output_directory, 'model_file.json')
     optimus.save(predictor, def_file=predictor_file)
 
     hyperparams = dict(learning_rate=LEARNING_RATE,
