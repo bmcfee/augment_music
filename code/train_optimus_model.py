@@ -144,7 +144,7 @@ def train_fold(fold, train_file_ids, aug_ids, LT, args):
     print('Starting {0}'.format(args.name))
     driver = optimus.Driver(
         graph=trainer,
-        name=args._name,
+        name=args.name,
         output_directory=args.output_directory)
 
     # Serialize the predictor graph.
