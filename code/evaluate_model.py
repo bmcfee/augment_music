@@ -111,6 +111,8 @@ def evaluator(predictor, LT, val_id, aug_id, input_path):
 
     results['accuracy'] = skm.accuracy_score(y_true, y_pred)
 
+    results['support'] = len(y_true)
+
     return {key: results}
 
 
