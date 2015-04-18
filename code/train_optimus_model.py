@@ -40,6 +40,7 @@ DRIVER_ARGS = dict(
     print_freq=50)
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.02
+DROPOUT = 0.5
 PESCADOR_ACTIVE_SET = 500
 PESCADOR_LAMBDA = 128.0
 
@@ -148,7 +149,9 @@ def train_fold(fold, train_file_ids, aug_ids, LT, args):
                                   'fold_{:02d}_model_file.json'.format(fold))
     optimus.save(predictor, def_file=predictor_file)
 
-    hyperparams = dict(learning_rate=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
+    hyperparams = dict(learning_rate=LEARNING_RATE,
+                       weight_decay=WEIGHT_DECAY,
+                       dropout=DROPOUT)
     driver.fit(stream, hyperparams=hyperparams, **DRIVER_ARGS)
 
 
