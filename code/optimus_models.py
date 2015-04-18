@@ -116,7 +116,6 @@ def beastly_network(num_frames, num_classes, size='large'):
     prediction = optimus.Output(name='Z')
 
     # Dropout
-    layer1.enable_dropout()
     layer2.enable_dropout()
 
     # 2. Define Edges
@@ -136,7 +135,6 @@ def beastly_network(num_frames, num_classes, size='large'):
                                   (layer2.weights, l2_penalty.input),
                                   (weight_decay, l2_penalty.weight),
                                   (l2_penalty.output, total_loss.input_1),
-                                  (dropout, layer1.dropout),
                                   (dropout, layer2.dropout),
                                   (total_loss.output, loss)]
 
@@ -156,7 +154,6 @@ def beastly_network(num_frames, num_classes, size='large'):
         updates=updates.connections,
         verbose=True)
 
-    layer1.disable_dropout()
     layer2.disable_dropout()
 
     predictor = optimus.Graph(
