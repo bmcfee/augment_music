@@ -81,8 +81,8 @@ def main(args):
                                            random_state=RANDOM_SEED):
             pass
         else:
-            train_file_ids = [track_names[_] for _ in train]
-            val_file_ids = [track_names[_] for _ in val]
+            train_file_ids = [track_names[_train[_]] for _ in train]
+            val_file_ids = [track_names[_train[_]] for _ in val]
 
         test_file_ids = [track_names[_] for _ in test]
 
