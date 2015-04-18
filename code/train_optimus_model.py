@@ -45,7 +45,7 @@ PESCADOR_ACTIVE_SET = 500
 PESCADOR_LAMBDA = 128.0
 
 RANDOM_SEED = 5
-N_FOLDS = 1
+N_FOLDS = 5
 
 
 def load_artists(artist_file):
@@ -75,21 +75,25 @@ def main(args):
     split_tt = ShuffleLabelsOut(artist_ids, n_iter=N_FOLDS,
                                 random_state=RANDOM_SEED)
 
-    outdir = args.output_directory
-
+    # Run all N-folds if negative, else just the one requested.
+    fold_idxs = range(N_FOLDS) if args.fold_idx < 0 else [args.fold_idx]
     for fold, (_train, test) in enumerate(split_tt):
+        if fold not in fold_idxs:
+            continue
         # We only need one validation split here
         for train, val in ShuffleLabelsOut(artist_ids[_train],
                                            n_iter=1,
                                            random_state=RANDOM_SEED):
             pass
+        # TODO(bmcfee): Doesn't Slatkin expressly forbid such things??
         else:
             train_file_ids = [track_names[_train[_]] for _ in train]
             val_file_ids = [track_names[_train[_]] for _ in val]
 
         test_file_ids = [track_names[_] for _ in test]
 
-        args.output_directory = os.path.join(outdir, 'fold_{:02d}'.format(fold))
+        args.output_directory = os.path.join(args.output_directory,
+                                             'fold_{:02d}'.format(fold))
 
         # Save the train and test sets to disk
         if not os.path.isdir(args.output_directory):
@@ -183,6 +187,12 @@ if __name__ == "__main__":
                         required=True,
                         help='Path to the file containing the '
                              'track->artist index')
+
+    parser.add_argument('-f',
+                        '--fold-index',
+                        type=int,
+                        dest='fold_idx', default=-1,
+                        help='Fold index to run, or all if less than 1.')
 
     parser.add_argument('-s',
                         '--size',
