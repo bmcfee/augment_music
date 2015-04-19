@@ -26,6 +26,8 @@ RESULTS=${BASEDIR}/results
 MODEL_FILE="model_file.json"
 SPLIT_FILE="train_test.json"
 
+EVAL_STRIDE=5
+
 NUM_CPUS=1
 
 if [ -z "$1" ] || [ -z "$2" ]; then
@@ -71,16 +73,14 @@ then
     for idx in ${FOLD_IDXS}
     do
         ./train_optimus_model.py \
--i ${FEATURES} \
--t ${METADATA}/medley_index_1_nopitch.csv \
--a ${METADATA}/medley_artist_index.json \
--f ${idx} \
--s ${MODEL_SIZE} \
--n ${EXP_NAME} \
--o ${MODELS}/aug${AUG_IDX}/
+            -i ${FEATURES} \
+            -t ${METADATA}/medley_index_${idx}_*.csv \
+            -a ${METADATA}/medley_artist_index.json \
+            -f ${idx} \
+            -s ${MODEL_SIZE} \
+            -n ${EXP_NAME} \
+            -o ${MODELS}/aug${AUG_IDX}/
     done
-}
-}
 fi
 
 # Validation Sweep
@@ -88,17 +88,19 @@ if [ $PHASE == "all" ] || [ $PHASE == "select" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        for param_file in {??}
+        MODEL_DIR=${MODELS}/aug${AUG_IDX}/fold_0${idx}
+
+        for param_file in $(find $MODEL_DIR -name \*.npz |sort |awk "!(NR%${EVAL_STRIDE})")
         do
             ./evaluate_model.py \
--i ${FEATURES} \
--t ${METADATA}/medley_index_1_nopitch.csv \
--s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
--n validation \
--j 1 \
--p ${param_file} \
--m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
--o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${param_file}.json
+                -i ${FEATURES} \
+                -t ${METADATA}/medley_index_1_nopitch.csv \
+                -s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -n validation \
+                -j ${NUM_CPUS} \
+                -p ${param_file} \
+                -m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${param_file}.json
         done
     done
 fi
@@ -115,13 +117,14 @@ then
         for name in train test
         do
             ./evaluate_model.py \
--i ${FEATURES} \
--t ${METADATA}/medley_index_1_nopitch.csv \
--s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
--n ${NAME} \
--j ${NUM_CPUS} \
--p ${FINAL_PARAMS} \
--m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
--o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${name}.json
+                -i ${FEATURES} \
+                -t ${METADATA}/medley_index_1_nopitch.csv \
+                -s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -n ${NAME} \
+                -j ${NUM_CPUS} \
+                -p ${FINAL_PARAMS} \
+                -m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${name}.json
+        done
     done
 fi
