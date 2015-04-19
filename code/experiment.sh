@@ -74,7 +74,7 @@ then
     do
         ./train_optimus_model.py \
             -i ${FEATURES} \
-            -t ${METADATA}/medley_index_${idx}_*.csv \
+            -t ${METADATA}/medley_index_${AUG_IDX}_*.csv \
             -a ${METADATA}/medley_artist_index.json \
             -f ${idx} \
             -s ${MODEL_SIZE} \
