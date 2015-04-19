@@ -9,6 +9,8 @@ import jams
 
 import pescador
 
+from extract_features import compute_features
+
 
 def frames_to_time(frames, hop_length=512, sr=22050):
 
@@ -76,7 +78,9 @@ def makexy(name, data_path, label_encoder,
     '''
 
     featurefile = os.path.join(data_path, '{}.npz'.format(name))
+
     X = librosa.logamplitude(np.load(featurefile)['C'])
+
     n_total = X.shape[1]
 
     jamfile = os.path.join(data_path, '{}.jams'.format(name))
@@ -140,6 +144,36 @@ def augment_file_id(file_id, aug_id):
         The augmentation-friendly formatted file id
     '''
     return '{}_{:05d}'.format(file_id, aug_id)
+
+
+def make_unlabeled(name):
+    '''Data generator for a single track
+
+    Parameters
+    ----------
+    name : str
+        The path to an audio file on disk
+    '''
+
+    C = compute_features(name)
+
+    X = librosa.logamplitude(C)
+
+    n_total = X.shape[1]
+
+    return X, n_total
+
+
+def stream_unlabeled(name, label_encoder, n_columns=128):
+
+    X, n_total = make_unlabeled(name)
+
+    Y = np.zeros((n_columns, len(label_encoder.classes_)), dtype=int)
+
+    for idx in np.arange(0, n_total - n_columns, n_columns):
+        Xsamp = X[:, idx:idx+n_columns].T[np.newaxis, np.newaxis]
+
+        yield dict(X=Xsamp, Y=Y)
 
 
 def bufmux(batch_size, k,
