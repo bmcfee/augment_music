@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+'''Feature extraction'''
 
 from __future__ import print_function
 
@@ -24,8 +25,7 @@ def get_output_name(output_dir, fname):
     return os.path.join(output_dir, os.path.extsep.join([root, 'npz']))
 
 
-def feature_extractor(fname, output_dir):
-
+def compute_features(fname):
     y, sr = librosa.load(fname)
 
     C = librosa.cqt(y, sr=sr,
@@ -33,10 +33,16 @@ def feature_extractor(fname, output_dir):
                     n_bins=N_BINS,
                     bins_per_octave=BINS_PER_OCTAVE).astype(np.float32)
 
+    return C
+
+
+def feature_extractor(fname, output_dir):
+
+    C = compute_features(fname)
+
     output_name = get_output_name(output_dir, fname)
 
     np.savez(output_name, C=C)
-
 
 
 def run(ogg_files=None, verbose=0, output_dir=None, num_jobs=2):
