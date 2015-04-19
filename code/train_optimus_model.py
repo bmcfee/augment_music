@@ -29,13 +29,12 @@ INSTRUMENTS = ['drum set',
                'double bass',
                'violin',
                'cello',
-               'flute',
-               'mandolin']
+               'flute']
 
 NUM_FRAMES = 44
 BATCH_SIZE = 50
 DRIVER_ARGS = dict(
-    max_iter=100000,
+    max_iter=50000,
     save_freq=1000,
     print_freq=50)
 LEARNING_RATE = 0.01
@@ -44,7 +43,7 @@ DROPOUT = 0.5
 PESCADOR_ACTIVE_SET = 500
 PESCADOR_LAMBDA = 128.0
 
-RANDOM_SEED = 5
+RANDOM_SEED = 6
 N_FOLDS = 5
 
 
