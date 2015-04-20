@@ -13,7 +13,7 @@
 #   ./sorcery.sh 0 xxlarge 3 train
 #
 
-BASEDIR=${WORK}
+BASEDIR=${HOME}/work
 SRC=${HOME}/src/augment_music/code
 cd SRC
 
@@ -64,7 +64,7 @@ else
     PHASE=$4
 fi
 
-EXP_NAME="fixme"
+EXP_NAME="aug${AUG_IDX}"
 
 # Fit networks
 # TODO(bmcfee): Any bright ideas on indexing the -t argument via AUG_IDX?
@@ -74,33 +74,34 @@ then
     do
         ./train_optimus_model.py \
             -i ${FEATURES} \
-            -t ${METADATA}/medley_index_${idx}_*.csv \
+            -t ${METADATA}/medley_index_${AUG_IDX}_*.csv \
             -a ${METADATA}/medley_artist_index.json \
             -f ${idx} \
             -s ${MODEL_SIZE} \
             -n ${EXP_NAME} \
-            -o ${MODELS}/aug${AUG_IDX}/
+            -o ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/
     done
 fi
 
+SPLIT=validation
 # Validation Sweep
 if [ $PHASE == "all" ] || [ $PHASE == "select" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        MODEL_DIR=${MODELS}/aug${AUG_IDX}/fold_0${idx}
+        MODEL_DIR=${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/
 
         for param_file in $(find $MODEL_DIR -name \*.npz |sort |awk "!(NR%${EVAL_STRIDE})")
         do
             ./evaluate_model.py \
                 -i ${FEATURES} \
                 -t ${METADATA}/medley_index_1_nopitch.csv \
-                -s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
-                -n validation \
+                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${param_file} \
-                -m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${param_file}.json
+                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -o ${param_file}-${SPLIT}.json
         done
     done
 fi
@@ -114,17 +115,17 @@ if [ $PHASE == "all" ] || [ $PHASE == "evaluate" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        for name in train test
+        for SPLIT in train test
         do
             ./evaluate_model.py \
                 -i ${FEATURES} \
                 -t ${METADATA}/medley_index_1_nopitch.csv \
                 -s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
-                -n ${NAME} \
+                -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${FINAL_PARAMS} \
                 -m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${name}.json
+                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
         done
     done
 fi
