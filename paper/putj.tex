@@ -51,9 +51,11 @@
 %
 \begin{abstract}
 Predictive models for music annotation tasks are practically limited by a paucity of
-well-annotated training.
-In this work, we develop a general framework for augmenting annotation musical datasets,
+well-annotated training data.
+In this work, we develop a general framework for augmenting annotated musical datasets,
 allowing practitioners to expand training sets in a controlled fashion.
+We investigate the effects of data augmentation on the task of instrument recognition in
+mixtures.
 \end{abstract}
 %
 \section{Introduction}
@@ -73,7 +75,7 @@ allowing practitioners to expand training sets in a controlled fashion.
 
 \cite{humphreyjams}
 
-\section{Example application: instrument recognition}
+\section{Example: instrument recognition}
 
 \cite{bittner2014medleydb}
 
@@ -84,7 +86,7 @@ The data augmentation pipeline consists of four stages:
 \begin{description}
     \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones
     \item[Time stretch] by a factor of $f \in \left\{ 2^{-1/2}, 1.0, 2^{1/2}\right\}$
-    \item[Additive noise] under four conditions: no noise,
+    \item[Background noise] under four conditions: no noise,
         subway\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}},
         crowded concert hall\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}},
         and night-time city noise\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}.
@@ -93,6 +95,27 @@ The data augmentation pipeline consists of four stages:
         standards~\cite{dolbyE}: none, \emph{speech},
         and \emph{music (standard)}.
 \end{description}
+
+Combining all stages of the pipeline produces 108 variants of each input track.  To
+simplify the experiments, we only compare the cumulative effects of the above
+augmentations.  This results in five training conditions:
+\begin{enumerate}
+    \item No augmentation;
+        \vspace{-.5\baselineskip}
+    \item Pitch shift;
+        \vspace{-.5\baselineskip}
+    \item Pitch shift and time stretch;
+        \vspace{-.5\baselineskip}
+    \item Pitch shift, time stretch, and background noise;
+        \vspace{-.5\baselineskip}
+    \item All stages.
+\end{enumerate}
+Note that each stage contains an identity transformation (\eg, shift by $0$ semitones),
+so that each configuration is contained within all subsequent configurations.
+
+\subsection{Acoustic model}
+
+TODO: fill this in
 
 \subsection{Results}
 
