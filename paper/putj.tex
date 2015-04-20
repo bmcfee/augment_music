@@ -4,11 +4,13 @@
 % -----------------------------------------------
 
 \documentclass{article}
-\usepackage{ismir,cite}
+\usepackage{ismir}
+\usepackage{url}
+\usepackage{cleveref}
+\usepackage{cite}
+\usepackage{brian}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{color}
-\usepackage{brian}
 
 % Title.
 % ------
@@ -73,9 +75,24 @@ allowing practitioners to expand training sets in a controlled fashion.
 
 \section{Example application: instrument recognition}
 
-\subsection{Experiment design}
-
 \cite{bittner2014medleydb}
+
+\subsection{Data augmentation}
+
+The data augmentation pipeline consists of four stages:
+
+\begin{description}
+    \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones
+    \item[Time stretch] by a factor of $f \in \{ 0.5, 1.0, 1.5\}$
+    \item[Additive noise] under four conditions: no noise,
+        subway\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}},
+        crowded concert hall\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}},
+        and night-time city noise\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}.
+        The latter three were mixed with random weights drawn uniformly in $[0.1, 0.4]$.
+    \item[Dynamic range compression] under three preset conditions drawn from the {Dolby E}
+        standards~\cite{dolbyE}: none, \emph{speech},
+        and \emph{music (standard)}.
+\end{description}
 
 \subsection{Results}
 
