@@ -132,7 +132,7 @@ def beastly_network(num_frames, num_classes, size='large'):
     trainer_edges = base_edges + [(classifier.output, xentropy.prediction),
                                   (class_targets, xentropy.target),
                                   (xentropy.output, total_loss.input_0),
-                                  (layer2.weights, l2_penalty.input),
+                                  (classifier.weights, l2_penalty.input),
                                   (weight_decay, l2_penalty.weight),
                                   (l2_penalty.output, total_loss.input_1),
                                   (dropout, layer2.dropout),
