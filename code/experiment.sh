@@ -120,12 +120,12 @@ then
             ./evaluate_model.py \
                 -i ${FEATURES} \
                 -t ${METADATA}/medley_index_1_nopitch.csv \
-                -s ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
                 -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${FINAL_PARAMS} \
-                -m ${MODELS}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -o ${RESULTS}/aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
+                -m ${MODELS}/${MODEL_SIZE}aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -o ${RESULTS}/${MODEL_SIZE}aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
         done
     done
 fi
