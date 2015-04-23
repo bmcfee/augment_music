@@ -32,7 +32,7 @@ INSTRUMENTS = ['drum set',
                'flute']
 
 NUM_FRAMES = 44
-BATCH_SIZE = 200
+BATCH_SIZE = 32
 DRIVER_ARGS = dict(
     max_iter=50001,
     save_freq=1000,
@@ -40,8 +40,8 @@ DRIVER_ARGS = dict(
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.02
 DROPOUT = 0.5
-PESCADOR_ACTIVE_SET = 77
-PESCADOR_LAMBDA = 32.0
+PESCADOR_ACTIVE_SET = 200
+PESCADOR_LAMBDA_MIN = 16.0
 
 RANDOM_SEED = 6
 N_FOLDS = 5
@@ -114,14 +114,24 @@ def train_fold(fold, train_file_ids, aug_ids, LT, args):
     # Create the generator; currently, at least, should yield dicts like
     #   dict(X=np.zeros([BATCH_SIZE, 1, NUM_FRAMES, NUM_FREQ_COEFFS]),
     #        Y=np.zeros([BATCH_SIZE, len(INSTRUMENTS)]))
+
+    # Number of samples to generate total
+    n_samples = BATCH_SIZE * DRIVER_ARGS['max_iter']
+    # Number of effective sources
+    n_seeds = len(train_file_ids) * len(aug_ids)
+
+    my_lambda = np.max(PESCADOR_LAMBDA_MIN, n_samples / float(n_seeds))
+
+    print 'Training with {:d} seeds and lambda={:.2f}'.format(n_seeds,
+                                                              my_lambda)
     _stream = bufmux(BATCH_SIZE,
                      PESCADOR_ACTIVE_SET,
                      train_file_ids,
                      aug_ids,
                      args.input_path,
                      label_encoder=LT,
-                     lam=PESCADOR_LAMBDA,
-                     with_replacement=True,
+                     lam=my_lambda,
+                     with_replacement=False,
                      n_columns=NUM_FRAMES,
                      prune_empty_seeds=False,
                      min_overlap=0.25)
