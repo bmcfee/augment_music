@@ -120,7 +120,7 @@ def train_fold(fold, train_file_ids, aug_ids, LT, args):
     # Number of effective sources
     n_seeds = len(train_file_ids) * len(aug_ids)
 
-    my_lambda = np.max(PESCADOR_LAMBDA_MIN, n_samples / float(n_seeds))
+    my_lambda = np.maximum(PESCADOR_LAMBDA_MIN, n_samples / float(n_seeds))
 
     print 'Training with {:d} seeds and lambda={:.2f}'.format(n_seeds,
                                                               my_lambda)
