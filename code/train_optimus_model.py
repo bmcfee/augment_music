@@ -14,7 +14,7 @@ from ShuffleLabelsOut import ShuffleLabelsOut
 from data_generator import bufmux
 import optimus_models as models
 
-# The well represented instruments, as listed on the medleydb page
+# The well represented instruments: those with 4 or more tracks
 INSTRUMENTS = ['drum set',
                'electric bass',
                'piano',
@@ -40,8 +40,8 @@ DRIVER_ARGS = dict(
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.02
 DROPOUT = 0.5
-PESCADOR_ACTIVE_SET = 500
-PESCADOR_LAMBDA = 64.0
+PESCADOR_ACTIVE_SET = 100
+PESCADOR_LAMBDA = 32.0
 
 RANDOM_SEED = 6
 N_FOLDS = 5
