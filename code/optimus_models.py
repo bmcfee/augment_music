@@ -1,7 +1,16 @@
 import optimus
+import numpy as np
 
 GRAPH_NAME = 'multiregressor'
 NUM_FREQ_COEFFS = 216
+
+
+def uniform_init(param, bias=0.0, scale=1e-2):
+    '''Uniform random initialization'''
+
+    param.value = bias + scale * np.random.uniform(low=-1.0,
+                                                   high=1.0,
+                                                   size=param.shape)
 
 
 def param_init(nodes, scale=0.01, skip_biases=True):
@@ -9,7 +18,8 @@ def param_init(nodes, scale=0.01, skip_biases=True):
         for k, p in n.params.items():
             if 'bias' in k and skip_biases:
                 continue
-            optimus.random_init(p, 0, scale)
+            # optimus.random_init(p, 0, scale)
+            uniform_init(p, bias=0, scale=scale)
 
 
 def beastly_network(num_frames, num_classes, size='large'):
