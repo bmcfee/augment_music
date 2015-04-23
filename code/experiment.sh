@@ -124,8 +124,8 @@ then
                 -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${FINAL_PARAMS} \
-                -m ${MODELS}/${MODEL_SIZE}aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -o ${RESULTS}/${MODEL_SIZE}aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
+                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -o ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
         done
     done
 fi
