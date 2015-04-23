@@ -14,8 +14,8 @@
 #
 
 BASEDIR=${HOME}/work
-SRC=${HOME}/src/augment_music/code
-cd SRC
+SRC=${HOME}/git/augment_music/code
+cd ${SRC}
 
 # Directory of features, blah blah
 FEATURES=${BASEDIR}/augmentation_features
