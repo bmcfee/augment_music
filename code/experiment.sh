@@ -26,7 +26,7 @@ RESULTS=${BASEDIR}/results
 MODEL_FILE="model_file.json"
 SPLIT_FILE="train_test.json"
 
-EVAL_STRIDE=5
+EVAL_STRIDE=1
 
 NUM_CPUS=1
 
