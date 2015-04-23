@@ -32,7 +32,7 @@ INSTRUMENTS = ['drum set',
                'flute']
 
 NUM_FRAMES = 44
-BATCH_SIZE = 50
+BATCH_SIZE = 200
 DRIVER_ARGS = dict(
     max_iter=50001,
     save_freq=1000,
