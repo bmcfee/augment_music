@@ -14,7 +14,7 @@
 
 % Title.
 % ------
-\title{Pump up the JAMS}
+\title{Pump up the jams: musical data augmentation}
 
 
 % Single address
@@ -54,28 +54,89 @@ Predictive models for music annotation tasks are practically limited by a paucit
 well-annotated training data.
 In this work, we develop a general framework for augmenting annotated musical datasets,
 allowing practitioners to expand training sets in a controlled fashion.
-We investigate the effects of data augmentation on the task of instrument recognition in
-mixtures.
+We investigate the effects of data augmentation on the task of recognizing instruments
+in mixed signals.
 \end{abstract}
 %
 \section{Introduction}
 \label{sec:introduction}
 
-\cite{sturmkiki}
-
+% Main points to make:
+%   1. music is complex, and needs big models
+%       a. big models need big data
+%       b. big data is hard to come by
+%       c. data augmentation has proven useful in vision. 
+%   2. but data augmentation is more difficult in music than in images
+%       a. the output space is much more complex than simple tags
+%       b. it's not obvious which variations preserve output structure
+%       c. 
 \subsection{Our contributions}
+% 1. develop a generic framework for synchronously manipulating audio and annotations
+% 2. investigate the effects of simple deformations on the problem of musical instrument recognition
 
-\section{Data augmentation}
+\section{Related work}
+
+% 1. it's common to engineer systems to attempt to resolve symmetries in the input,
+%       eg, chroma features are engineered to be approximately invariant to timbre and octave
+\cite{muller2011chroma}
+%       some authors suppress the 0th mfcc to get loudness invariance
+\cite{pampalk2004matlab}
+
+%   but there are some drawbacks:
+%       a. it's not easy to identify *all* relevant symmetries
+%       b. even if it was, it might not be easy to engineer around them without discarding useful information
+%
+% alternatively, we can use bigger models, and learn the appropriate invariances from statistics.
+%   but this takes a lot of (annotated) data, which we usually don't have
+%   
+%
+% 1. augmentation is not new, but it hasn't been done systematically.
+%   eg, chroma rotation for key-invariance in chord quality or mode
+%   synthetic mixtures of clean signals
+%   
+\cite{ellis2007classifying}
+\cite{kirchhoff2012multi}
+% finally, recent studies have investigated stability of models by evaluating on degraded signals:
+%   but it's not clear that the degraded signals resemble the distribution of naturally occurring sounds
+%   our goal is different: train on degraded signals, and evaluate on unmodified signals
+%   
+%   
+
+\cite{sturmkiki}
 
 \cite{mauch2013audio}
 
-\subsection{Audio deformation}
+\section{Data augmentation architecture}
 
-\subsection{Annotation deformation}
+% 1. because of the complex structure of annotations, we need to be careful
+%   a. annotations aren't just track-level, but generally time-keyed
+%   b. simple deformations can change annotations, such as chord labels or pitch
+%   frequencies
+%
+% 2. we developed a generic, plugin-oriented architecture for doing musical data augmentation
+%   a. hooks into JAMS, and inherits validation/schema.  also makes it easy to modify all annotations for a
+%   given track in one shot.
+%   b. allows the developer to register a deformation against different types of data
+%       eg, a ``pitch-shift'' deformer implements an audio deformation, pitch annotation modification, and
+%       chord/key manipulators
+%   c. modules can be chained or skipped in a pipeline, similar to sklearn feature extractors
+%       pipelines can be serialized, stored, shared, and reimplemented easily
+%   d. full history of modification state is preserved within the output JAMS sandbox, so the results are
+%   documented and reproducible
+%       this includes all random state
+%   e. deformations can be stochastic, and potentially generate infinite streams of randomized data
+%       more generally, a deformer object can implement its own state transition logic
+%       using python iterators makes this simple, self-contained, and memory-efficient
 
 \cite{humphreyjams}
 
-\section{Example: instrument recognition}
+\subsection{Audio deformation}
+
+\subsection{Annotation deformations}
+
+\subsection{Pipelines}
+
+\section{Example application: multi-instrument recognition}
 
 \cite{bittner2014medleydb}
 
@@ -84,21 +145,24 @@ mixtures.
 The data augmentation pipeline consists of four stages:
 
 \begin{description}
-    \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones
-    \item[Time stretch] by a factor of $f \in \left\{ 2^{-1/2}, 1.0, 2^{1/2}\right\}$
+    \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones.
+    \item[Time stretch] by a factor of $f \in \left\{ 2^{-1/2}, 1.0, 2^{1/2}\right\}$.
     \item[Background noise] under four conditions: no noise,
-        subway\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}},
-        crowded concert hall\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}},
-        and night-time city noise\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}.
+        subway,\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}}
+        crowded concert hall,\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}}
+        and night-time city noise.\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}
         The latter three were mixed with random weights drawn uniformly in $[0.1, 0.4]$.
     \item[Dynamic range compression] under three preset conditions drawn from the {Dolby E}
         standards~\cite{dolbyE}: none, \emph{speech},
         and \emph{music (standard)}.
 \end{description}
 
-Combining all stages of the pipeline produces 108 variants of each input track.  To
+Pitch-shift and time-stretch operations were performed by Rubberband~\cite{rubberband}, and dynamic range
+compression was performed by sox~\cite{sox}.
+
+Combining all stages of the pipeline produces {$3\times 3\times 4\times 3 = 108$} variants of each input track.  To
 simplify the experiments, we only compare the cumulative effects of the above
-augmentations.  This results in five training conditions:
+augmentations.  This results in five training conditions of increasing complexity:
 \begin{enumerate}
     \item No augmentation;
         \vspace{-.5\baselineskip}
@@ -110,14 +174,37 @@ augmentations.  This results in five training conditions:
         \vspace{-.5\baselineskip}
     \item All stages.
 \end{enumerate}
-Note that each stage contains an identity transformation (\eg, shift by $0$ semitones),
-so that each configuration is contained within all subsequent configurations.
 
 \subsection{Acoustic model}
 
-TODO: fill this in
+% Input features:
+%   CQT at 36 bpo, ranging from C3 to C8 => 216 bins, 512-frame hop at 22KHz
+%   sample patches of 44 frames ~= 1.02s
+%   logamplitude clipped to -80dB
+%
+% convolutional model:
+%   layer 1: 24 filters of shape (13x9)
+%       relu
+%   layer 2: 48 filters of shape (9x7)
+%       relu
+%   downsample 2x2 max-pooling
+%   dense layer of size 96
+%       relu
+%       dropout = 0.5
+%   dense layer for output
+%       sigmoid
+%       weight decay
+
+\cite{librosa}
 
 \subsection{Results}
+
+% Repeat x5:
+%   randomly partition artists
+%   train, validate, test for each model
+%   compare per-track meanAP of tags
+
+\cite{scikit-learn}
 
 \section{Conclusion}
 
