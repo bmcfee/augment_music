@@ -76,21 +76,45 @@ complex models.
 By the same token, estimating the parameters of complex statistical models often requires
 a large number of samples: big models require big data.
 
-Within the past few years, a similar trend has played out in the computer vision
-literature.  Currently, the best-performing models for recognition of objects in images
-exploit two fundamental properties: access to large quantities of annotated data, and
+Within the past few years, this same phenomenon of model complexity has been observed 
+in the computer vision literature.  Currently, the best-performing models for recognition 
+of objects in images exploit two fundamental properties to overcome the difficulty of 
+fitting large, complex models: access to large quantities of annotated data, and 
 identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
 The benefits of large training collections are obvious, and unfortunately, difficult to 
 carry over to most musical annotation tasks due to the complexity of the label space and
-need for expert annotators.
+need for expert annotators.  However, the idea of generating perturbations of a training
+set --- known as \emph{data augmentation} --- can be readily adapted to musical tasks.
 
 %   2. in images: 
 %       a. data augmentation has proven useful in vision. 
 %       b. general idea: perturb your data such that the features change, but the labels
 %       don't
 %       c. rotations, reflections, contrast normalization, affine transformations
+Conceptually, data augmentation consists of the application of one or more deformations to
+a collection of (annotated) training samples.  
+The motivation for data augmentation is that a learning algorithm should be less
+susceptible to spurious correlations and over-fitting if it is provided with many
+observations of an instance which have been perturbed in ways which do not affect its
+label.
+Some concrete examples of deformations drawn from computer vision include translation, 
+rotations, and reflections.  These simple operations are appealing because they typically 
+do not affect the target class label. An upside-down image of a cat is still contains cat, 
+although the situation may be more complex for concepts which are not reflection-invariant, 
+such as in optical character recognition.  Consequently, practitioners must exercise some 
+caution when applying data augmentation techniques to ensure that the correct invariances 
+are maintained.
 
-\cite{krizhevsky2012imagenet}
+In general, deformations apply not only to the observed
+stimulus, but its annotations as well.
+Continuing the image example, if an image is rotated, then any pixel-wise 
+label annotations should be modified accordingly.
+This observation opens up several interesting possibilities for musical applications, in
+which the target concept space typically exhibits a high degree of structure.
+As a simple example, time-stretching an audio track should also result in time-interval
+annotations moving accordingly~\cite{mauch2013audio}.  As a more complex example,
+pitch-shifting a track may (or may not) result in modifications to pitch contours,
+chord labels, or symbolic annotations.
 
 %   3. but data augmentation is more difficult in music than in images
 %       a. the output space is much more complex than simple tags
@@ -125,9 +149,11 @@ need for expert annotators.
 % 1. augmentation is not new, but it hasn't been done systematically.
 %   eg, chroma rotation for key-invariance in chord quality or mode
 %   synthetic mixtures of clean signals
+%   perturbations of the labels ``target smearing''
 %   
 \cite{ellis2007classifying}
 \cite{kirchhoff2012multi}
+\cite{ullrich2014boundary}
 
 % finally, recent studies have investigated stability of models by evaluating on degraded signals:
 %   but it's not clear that the degraded signals resemble the distribution of naturally occurring sounds
