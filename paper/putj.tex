@@ -67,7 +67,7 @@ in mixed signals.
 %       b. big (annotated) data is hard to come by
 
 Musical audio signals contain a wealth of rich, complex, and highly structured
-information.  The primary goal of content-based music information retrieval is to
+information.  The primary goal of content-based music information retrieval (MIR) is to
 analyze, extract, and summarize music recordings in a human-friendly
 format, such as semantic tags, chord and melody annotations, or structural boundary
 estimations.  To adequately capture and characterize the vast complexity of musical
@@ -125,14 +125,36 @@ chord labels, or symbolic annotations.
 \subsection{Our contributions}
 % 1. develop a generic framework for synchronously manipulating audio and annotations
 % 2. investigate the effects of simple deformations on the problem of musical instrument recognition
+In this work, we describe a software architecture for applying data augmentation to music
+information retrieval tasks.  The system is designed to be simple, modular, and
+extensible, allowing practitioners to develop custom deformations, and combine multiple
+simple deformations together into pipelines which can generate large volumes of reliably
+deformed, annotated music data.  The proposed system is built on top of
+JAMS~\cite{humphreyjams}, which provides a simple container for accessing and
+transporting multiple annotations for a given track.  
+
+As a simple proof of concept, we apply the proposed data augmentation architecture to the
+task of recognizing instruments in mixed signals, and demonstrate that even simple
+manipulations can provide substantial improvements in model performance.
 
 \section{Related work}
 
 % 1. it's common to engineer systems to attempt to resolve symmetries in the input,
 %       eg, chroma features are engineered to be approximately invariant to timbre and octave
-\cite{muller2011chroma}
 %       some authors suppress the 0th mfcc to get loudness invariance
-\cite{pampalk2004matlab}
+As practitioners, the first step in developing a solution to some MIR task is often to 
+design features which discard information which is irrelevant to predicting the target
+concept.  For example, chroma features are designed to capture pitch class information
+and suppress information derived from timbre, loudness, or octave 
+height~\cite{muller2011chroma}.  Similarly, many authors interested in modeling timbre
+use Mel-frequency cepstral coefficients (MFCCs) and discard the first component to
+achieve invariance to loudness~\cite{pampalk2004matlab}.
+While this general strategy makes intuitive, practical sense, it carries certain
+limitations.  First, it is not necessarily easy to identify all relevant symmetries the
+data: if it was easy, the problem would be essentially solved.  Second, even if such
+properties are easy to identify, it may still be difficult to engineer invariant
+features.  Finally, even if one does succeed in designing appropriately invariant
+features, they may inadvertently discard relevant information in the process.
 
 %   but there are some drawbacks:
 %       a. it's not easy to identify *all* relevant symmetries
@@ -145,23 +167,58 @@ chord labels, or symbolic annotations.
 %       but this takes a lot of (annotated) data, which we usually don't have
 %   
 %
+As an alternative to custom feature design, some authors advocate learning or optimizing
+features directly from the data~\cite{humphrey2012moving}.  
+Perhaps not surprisingly, this approach typically requires large model architectures, and 
+consequently requires much larger (annotated) data sets than had previously been 
+used in MIR research.  
+Our goal in this work is to ease the burden of sample complexity, and make 
+data-driven models more accessible to the MIR community.
 
 % 1. augmentation is not new, but it hasn't been done systematically.
 %   eg, chroma rotation for key-invariance in chord quality or mode
 %   synthetic mixtures of clean signals
 %   perturbations of the labels ``target smearing''
-%   
-\cite{ellis2007classifying}
-\cite{kirchhoff2012multi}
-\cite{ullrich2014boundary}
+%
+Specific instances of data augmentation can be found throughout the MIR literature,
+though they are not often identified as such, nor are they treated in a unified,
+systematic way.  For example, it is common to apply circular rotations to chroma features 
+in order to achieve invariance to key in estimating chord
+quality~\cite{ellis2007classifying}.
+Alternately, synthetic mixtures of monophonic instruments have been used 
+to train polyphonic transcription engines~\cite{kirchhoff2012multi}.
+At the other end of the spectrum, some authors leave the content unchanged and 
+only modify labels during training, as exemplified by the \emph{target smearing} 
+method of Ullrich~\etal\ for training structural boundary 
+detectors~\cite{ullrich2014boundary}.
 
 % finally, recent studies have investigated stability of models by evaluating on degraded signals:
 %   but it's not clear that the degraded signals resemble the distribution of naturally occurring sounds
 %   our goal is different: train on degraded signals, and evaluate on unmodified signals
 %   
 %   
-\cite{mauch2013audio}
-\cite{sturmkiki}
+Finally, recent studies have used degraded signals to evaluate the stability of
+existing methods for MIR tasks.
+The audio degradation toolbox was developed specifically for this purpose, and was used
+to measure the impact of naturalistic deformations of audio on several tasks, including
+beat tracking, score alignment, and chord recognition~\cite{mauch2013audio}.
+Similarly, Sturm and Collins proposed the ``Kiki-Bouba Challenge'' as a means to probe
+whether statistical models of musical concepts are actually capturing the defining
+characteristics of a category, or over-fitting to spurious
+correlations~\cite{sturmkiki}.
+
+In both of the studies cited above, models are fit to unmodified data, and evaluated in
+degraded conditions under the control of the experimenter.  
+Data augmentation provides the converse of this setting: models are fit to degraded data, 
+and evaluated on unmodified examples.  The distinction between the two approaches is
+critical.  The former attempts to measure the robustness of a system in synthetic
+conditions, while the latter attempts to provide more robust models, but the evaluation
+is outside the control of the experimenter, and relies directly upon the natural
+distribution from which samples are drawn.
+
+% TODO: say more about this, tighten it up
+
+
 
 \section{Data augmentation architecture}
 
