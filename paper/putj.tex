@@ -64,12 +64,40 @@ in mixed signals.
 % Main points to make:
 %   1. music is complex, and needs big models
 %       a. big models need big data
-%       b. big data is hard to come by
-%       c. data augmentation has proven useful in vision. 
-%   2. but data augmentation is more difficult in music than in images
+%       b. big (annotated) data is hard to come by
+
+Musical audio signals contain a wealth of rich, complex, and highly structured
+information.  The primary goal of content-based music information retrieval is to
+analyze, extract, and summarize music recordings in a human-friendly
+format, such as semantic tags, chord and melody annotations, or structural boundary
+estimations.  To adequately capture and characterize the vast complexity of musical
+recordings seems to require large, flexible models.  In short, complex data necessitate
+complex models.
+By the same token, estimating the parameters of complex statistical models often requires
+a large number of samples: big models require big data.
+
+Within the past few years, a similar trend has played out in the computer vision
+literature.  Currently, the best-performing models for recognition of objects in images
+exploit two fundamental properties: access to large quantities of annotated data, and
+identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
+The benefits of large training collections are obvious, and unfortunately, difficult to 
+carry over to most musical annotation tasks due to the complexity of the label space and
+need for expert annotators.
+
+%   2. in images: 
+%       a. data augmentation has proven useful in vision. 
+%       b. general idea: perturb your data such that the features change, but the labels
+%       don't
+%       c. rotations, reflections, contrast normalization, affine transformations
+
+\cite{krizhevsky2012imagenet}
+
+%   3. but data augmentation is more difficult in music than in images
 %       a. the output space is much more complex than simple tags
 %       b. it's not obvious which variations preserve output structure
-%       c. 
+%       c. simple example: time-stretching will move annotation boundaries
+%       d. complex example: pitch-shifting will deform chord labels
+
 \subsection{Our contributions}
 % 1. develop a generic framework for synchronously manipulating audio and annotations
 % 2. investigate the effects of simple deformations on the problem of musical instrument recognition
@@ -84,27 +112,30 @@ in mixed signals.
 
 %   but there are some drawbacks:
 %       a. it's not easy to identify *all* relevant symmetries
-%       b. even if it was, it might not be easy to engineer around them without discarding useful information
+%       b. even if it was, it might not be easy to engineer an invariant feature
+%       c. and you might accidentally discard useful information in the process
 %
-% alternatively, we can use bigger models, and learn the appropriate invariances from statistics.
-%   but this takes a lot of (annotated) data, which we usually don't have
+%   alternatively: 
+%       we can use bigger models
+%       learn the appropriate invariances from statistics.
+%       but this takes a lot of (annotated) data, which we usually don't have
 %   
 %
+
 % 1. augmentation is not new, but it hasn't been done systematically.
 %   eg, chroma rotation for key-invariance in chord quality or mode
 %   synthetic mixtures of clean signals
 %   
 \cite{ellis2007classifying}
 \cite{kirchhoff2012multi}
+
 % finally, recent studies have investigated stability of models by evaluating on degraded signals:
 %   but it's not clear that the degraded signals resemble the distribution of naturally occurring sounds
 %   our goal is different: train on degraded signals, and evaluate on unmodified signals
 %   
 %   
-
-\cite{sturmkiki}
-
 \cite{mauch2013audio}
+\cite{sturmkiki}
 
 \section{Data augmentation architecture}
 
@@ -113,23 +144,38 @@ in mixed signals.
 %   b. simple deformations can change annotations, such as chord labels or pitch
 %   frequencies
 %
-% 2. we developed a generic, plugin-oriented architecture for doing musical data augmentation
-%   a. hooks into JAMS, and inherits validation/schema.  also makes it easy to modify all annotations for a
-%   given track in one shot.
-%   b. allows the developer to register a deformation against different types of data
+% 2. why not use the audio degradation toolbox?
+%   a. we'd like to be more extensible, support annotation-dependent deformations
+%   b. support multiple annotations per-track
+%   c. want the ability to embed history within the annotations for reproducibility
+%   purposes
+%   d. closer integration with python libraries for machine learning (eg theano)
+%
+% 3. we developed a generic, plugin-oriented architecture for doing musical data augmentation
+%   a. hooks into JAMS, and inherits validation/schema.  
+%   b. also makes it easy to modify all annotations for a given track in one shot.
+%   c. allows the developer to register a deformation against different types of data
 %       eg, a ``pitch-shift'' deformer implements an audio deformation, pitch annotation modification, and
 %       chord/key manipulators
-%   c. modules can be chained or skipped in a pipeline, similar to sklearn feature extractors
+%   e. modules can be chained or skipped in a pipeline, similar to sklearn feature extractors
 %       pipelines can be serialized, stored, shared, and reimplemented easily
-%   d. full history of modification state is preserved within the output JAMS sandbox, so the results are
+%   f. full history of modification state is preserved within the output JAMS sandbox, so the results are
 %   documented and reproducible
 %       this includes all random state
-%   e. deformations can be stochastic, and potentially generate infinite streams of randomized data
+%   g. deformations can be stochastic, and potentially generate infinite streams of randomized data
 %       more generally, a deformer object can implement its own state transition logic
 %       using python iterators makes this simple, self-contained, and memory-efficient
 
 \cite{humphreyjams}
 
+% Give a figure illustrating how deformers work
+%   deformer 
+%       generates states as a function of a jam
+%       registers callbacks against annotation types
+%   pipeline
+%       chains deformers together
+%   bypass
+%       make a deformer optional
 \subsection{Audio deformation}
 
 \subsection{Annotation deformations}
@@ -182,18 +228,24 @@ augmentations.  This results in five training conditions of increasing complexit
 %   sample patches of 44 frames ~= 1.02s
 %   logamplitude clipped to -80dB
 %
+%   CQT features enable 2d-convolution for pitch-invariant feature extraction
+%   log scaling gives us relative amplitude invariance
+%
 % convolutional model:
+%   input: 216 x 44
 %   layer 1: 24 filters of shape (13x9)
+%       output dimension: 24 x (216 - 2*13+1) x (44 - 2 * 9 + 1)
 %       relu
-%   layer 2: 48 filters of shape (9x7)
+%   layer 2: 48 filters of shape (24x9x7)
 %       relu
 %   downsample 2x2 max-pooling
 %   dense layer of size 96
 %       relu
 %       dropout = 0.5
 %   dense layer for output
-%       sigmoid
+%       sigmoid nonlinearity
 %       weight decay
+%   output: n_classes
 
 \cite{librosa}
 
