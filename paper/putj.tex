@@ -202,22 +202,23 @@ existing methods for MIR tasks.
 The audio degradation toolbox was developed specifically for this purpose, and was used
 to measure the impact of naturalistic deformations of audio on several tasks, including
 beat tracking, score alignment, and chord recognition~\cite{mauch2013audio}.
-Similarly, Sturm and Collins proposed the ``Kiki-Bouba Challenge'' as a means to probe
-whether statistical models of musical concepts are actually capturing the defining
-characteristics of a category, or over-fitting to spurious
+Similarly, Sturm and Collins proposed the ``Kiki-Bouba Challenge'' as a way to determine
+whether statistical models of musical concepts actually capture the defining
+characteristics of a category (\eg, genre), or are over-fitting to spurious
 correlations~\cite{sturmkiki}.
 
 In both of the studies cited above, models are fit to unmodified data, and evaluated in
 degraded conditions under the control of the experimenter.  
 Data augmentation provides the converse of this setting: models are fit to degraded data, 
 and evaluated on unmodified examples.  The distinction between the two approaches is
-critical.  The former attempts to measure the robustness of a system in synthetic
-conditions, while the latter attempts to provide more robust models, but the evaluation
-is outside the control of the experimenter, and relies directly upon the natural
-distribution from which samples are drawn.
-
-% TODO: say more about this, tighten it up
-
+critical.  The former attempts to measure the robustness of a system under synthetic
+conditions, while the latter attempts to provide more robust models by training under
+synthetic conditions. Note that with data augmentation, the evaluation set is outside 
+the control of the experimenter, so the resulting comparisons are unbiased with respect
+to the underlying distribution from which the data are sampled.  While this does not
+directly measure robustness of the resulting system, it has still been observed that data
+augmentation can be used effectively to reduce generalization error in
+practice~\cite{krizhevsky2012imagenet}.
 
 
 \section{Data augmentation architecture}
