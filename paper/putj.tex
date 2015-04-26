@@ -112,7 +112,9 @@ label annotations should be modified accordingly.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
 As a simple example, time-stretching an audio track should also result in time-interval
-annotations moving accordingly~\cite{mauch2013audio}.  As a more complex example,
+annotations moving accordingly~\cite{mauch2013audio}.  Extending this example,
+time-dependent annotations such as \emph{tempo} would also have to be adjusted.
+As a more complex example,
 pitch-shifting a track may (or may not) result in modifications to pitch contours,
 chord labels, or symbolic annotations.
 
@@ -198,7 +200,7 @@ detectors~\cite{ullrich2014boundary}.
 %   
 Finally, recent studies have used degraded signals to evaluate the stability of
 existing methods for MIR tasks.
-The audio degradation toolbox was developed specifically for this purpose, and was used
+The Audio Degradation Toolbox (ADT) was developed for this purpose, and was used
 to measure the impact of naturalistic deformations of audio on several tasks, including
 beat tracking, score alignment, and chord recognition~\cite{mauch2013audio}.
 Similarly, Sturm and Collins proposed the ``Kiki-Bouba Challenge'' as a way to determine
@@ -248,10 +250,46 @@ practice~\cite{krizhevsky2012imagenet}.
 %   g. deformations can be stochastic, and potentially generate infinite streams of randomized data
 %       more generally, a deformer object can implement its own state transition logic
 %       using python iterators makes this simple, self-contained, and memory-efficient
+Our implementation takes inspiration from the Audio Degradation
+Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly 
+for data augmentation simply by applying it to the training set rather than test set.
+However, we opted for an independent, Python-based implementation for a variety of
+reasons as detailed below.
 
-\cite{mauch2013audio}
+% 1. object-oriented design
+%   simple, reusable components that are easy to modify and extend
+%   
+First, Python enables object-oriented design, which in turn allows for structured,
+extensible, and reusable code.  This in turn facilitates a simple interface shared across
+all \emph{deformation objects}, and makes it easy for practitioners to combine existing
+deformations, or implement new transformations with minimal effort.
 
-\cite{humphreyjams}
+% 2. leverage jams as a container
+%   transform all annotations for an object at once
+%       -> everything stays in sync easily
+%   store the transformation properties within the jams sandbox
+%       -> reproducibility, provenance
+%   the jams sandbox can store the audio and other intermediate features
+%       -> 
+%   allow deformers to apply different transformations to different types of annotations
+%       implemented as simple callbacks registered against annotation types or patterns
+%
+
+Second, we leverage JAMS objects~\cite{humphreyjams} to contain and transport all
+annotations for a given track.
+This simplifies the task of maintaining synchronization between audio and annotations,
+and also facilitates task-dependent annotation deformations.  Moreover, we can take
+advantage of JAMS metadata fields to provide data provenance and facilitate
+reproducibility.
+
+% 3. use familiar design paradigms
+%   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
+%
+Finally, we can borrow familiar software design concepts from the Scikit-Learn
+package~\cite{scikit-learn}, such as the notions of \emph{transformers},
+\emph{pipelines}, and model serialization.  These simple building blocks allow
+practitioners to develop and deploy complex data augmentation pipelines from small,
+conceptually simple components.
 
 % Give a figure illustrating how deformers work
 %   deformer 
@@ -261,9 +299,10 @@ practice~\cite{krizhevsky2012imagenet}.
 %       chains deformers together
 %   bypass
 %       make a deformer optional
-\subsection{Audio deformation}
+\subsection{Deformation objects}
 
-\subsection{Annotation deformations}
+\subsection{Reproducibility and data provenance}
+\cite{buneman2000data}
 
 \subsection{Pipelines}
 
@@ -341,8 +380,6 @@ augmentations.  This results in five training conditions of increasing complexit
 %   randomly partition artists
 %   train, validate, test for each model
 %   compare per-track meanAP of tags
-
-\cite{scikit-learn}
 
 \section{Conclusion}
 
