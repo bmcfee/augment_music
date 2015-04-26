@@ -412,6 +412,13 @@ practitioners to generate a wide range of deformations up front, and then later 
 resulting objects.  As a result, it is straightforward to generate a suite of experiments
 over different subsets of data augmentation parameters.
 
+To further facilitate reproducibility and sharing of experimental designs, the proposed
+architecture supports \emph{serialization} of deformation pipelines into a simple,
+human-readable JSON format.  Once a pipeline has been constructed, it can be exported to
+disk, edited as plain text, shared, and reloaded.  This feature also simplifies the
+process of applying several different sets of deformation parameters, and eliminates the
+need for writing a custom script for each setting.
+
 \section{Example application: multi-instrument recognition}
 
 \cite{bittner2014medleydb}
