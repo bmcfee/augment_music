@@ -216,7 +216,7 @@ synthetic conditions. Note that with data augmentation, the evaluation set is ou
 the control of the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
 directly measure robustness of the resulting system, it has still been observed that data
-augmentation can be used effectively to reduce generalization error in
+augmentation can be used effectively to improve generalization in
 practice~\cite{krizhevsky2012imagenet}.
 
 
@@ -249,6 +249,8 @@ practice~\cite{krizhevsky2012imagenet}.
 %       more generally, a deformer object can implement its own state transition logic
 %       using python iterators makes this simple, self-contained, and memory-efficient
 
+\cite{mauch2013audio}
+
 \cite{humphreyjams}
 
 % Give a figure illustrating how deformers work
@@ -280,7 +282,8 @@ The data augmentation pipeline consists of four stages:
         subway,\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}}
         crowded concert hall,\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}}
         and night-time city noise.\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}
-        The latter three were mixed with random weights drawn uniformly in $[0.1, 0.4]$.
+        The latter three were linearly mixed with random weights drawn uniformly
+        $\alpha \sim { }_U[0.1, 0.4]$.
     \item[Dynamic range compression] under three preset conditions drawn from the {Dolby E}
         standards~\cite{dolbyE}: none, \emph{speech},
         and \emph{music (standard)}.
