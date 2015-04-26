@@ -330,6 +330,14 @@ parameters, or randomly sample from a distribution of deformations.  To support 
 behavior, deformation objects can implement arbitrary state transition logic, and produce
 a sequence of state objects through Python's \emph{generator} functionality.
 
+Deformation objects can register transformation functions against the type of an
+annotation as described by regular expressions.  For example, ``\texttt{.*}'' matches all 
+annotation types, while ``\texttt{chord.*}'' matches only chord-type annotations.
+There is no need for these patterns to be unique or disjoint, though care must be taken
+to ensure consistency.  In our implementation, deformations are always applied in the
+order in which they are registered, and we encourage the convention that patterns be
+registered in order of descending generality.
+
 The high-level transformation engine is described in
 \Cref{alg:transformation}.  For each state $S$, the input data is copied, transformed,
 and yielded.  Each transformed object $J'$ can either be saved off to disk, fed directly
@@ -371,14 +379,15 @@ Once a state $S$ has been generated, the \emph{audio} deformation would apply th
 time-stretch to the audio signal, which is stored within the JAMS sandbox upon 
 instantiation.\footnote{The \emph{sandbox} provides unstructured storage space within a
 JAMS object, which is used in our framework as a scratch space for audio signals.}
-Next, a generic \emph{annotation} deformation applies the time stretch to all
+
+Next, a generic \emph{annotation} deformation can apply the stretch factor to all
 \emph{time} and \emph{duration} fields of all annotations, but leaves the \emph{values}
 untouched.
+
 Finally, any annotations whose \emph{value} fields depend on time, such as \emph{tempo}
-can be modified directly.
-To facilitate this functionality, deformation objects register transformation functions
-against annotation type regular expressions: \eg, ``\texttt{.*}'' matches all annotations, 
-while ``\texttt{chord.*}'' matches only chord-type annotations.
+can be modified directly by registering the transformation function against the
+appropriate type pattern: in this case, ``\texttt{tempo}''.  Other time-dependent type
+deformations would be registered separately as needed.
 
 \begin{algorithm}[t]
     \caption{Randomized time-stretch state logic\label{alg:timestate}}
