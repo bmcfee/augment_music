@@ -183,8 +183,7 @@ data-driven models more accessible to the MIR community.
 Specific instances of data augmentation can be found throughout the MIR literature,
 though they are not often identified as such, nor are they treated in a unified,
 systematic way.  For example, it is common to apply circular rotations to chroma features 
-in order to achieve invariance to key in estimating chord
-quality~\cite{ellis2007classifying}.
+in order to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
 Alternately, synthetic mixtures of monophonic instruments have been used 
 to train polyphonic transcription engines~\cite{kirchhoff2012multi}.
 At the other end of the spectrum, some authors leave the content unchanged and 
@@ -212,7 +211,7 @@ degraded conditions under the control of the experimenter.
 Data augmentation provides the converse of this setting: models are fit to degraded data, 
 and evaluated on unmodified examples.  The distinction between the two approaches is
 critical.  The former attempts to measure the robustness of a system under synthetic
-conditions, while the latter attempts to provide more robust models by training under
+conditions, while the latter attempts to improve robustness by \emph{training} under
 synthetic conditions. Note that with data augmentation, the evaluation set is outside 
 the control of the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
