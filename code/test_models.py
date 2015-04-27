@@ -14,7 +14,7 @@ def process_arguments(args):
     parser.add_argument('best_params', type=str,
                         help='Path to best-parameter json file')
 
-    return vars(parser.parse_argus(args))
+    return vars(parser.parse_args(args))
 
 
 def run(best_params=None):
