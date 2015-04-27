@@ -188,7 +188,7 @@ consequently requires much larger (annotated) data sets than had previously been
 used in MIR research.  
 Due to the high cost of acquiring annotated musical data, it has so far been difficult to
 apply these techniques in most MIR tasks.
-Our goal in this work is to ease the burden of sample complexity, and make 
+Our goal in this work is to ease this burden of sample complexity, and make 
 data-driven models more accessible to the MIR community.
 
 % 1. augmentation is not new, but it hasn't been done systematically.
@@ -490,7 +490,8 @@ recognition in mixed audio signals.  For this task, we used the MedleyDB dataset
 consists of 122 tracks, spanning a variety of genres and
 instrumentations~\cite{bittner2014medleydb}.  Each track is annotated with time-varying
 instrument activation functions, which are thresholded to provide a set of active
-instruments at each point in time.  Because of the relatively small sample size, we limit
+instruments at each point in time.
+Because of the relatively small sample size, we limit
 the experiment to cover only the 15 most frequently used (by track) instruments, as
 listed in \Cref{medleytags}.
 
@@ -521,9 +522,8 @@ listed in \Cref{medleytags}.
     \end{tabular}
 \end{table}
 
-For evaluation purposes, each track is split into one-second clips (44 frames at 22050Hz,
-with a hop length of 512 samples).  The system is then tasked with recognizing the
-instruments active within each clip.
+For evaluation purposes, each track is split into one-second clips. 
+The system is then tasked with recognizing the instruments active within each clip.
 
 \subsection{Data augmentation}
 
@@ -574,6 +574,20 @@ augmentations.  This results in five training conditions of increasing complexit
 %   CQT features enable 2d-convolution for pitch-invariant feature extraction
 %   log scaling gives us relative amplitude invariance
 %
+
+The acoustic model used in these experiments is a deep convolutional network.
+The input to the network consists of log-amplitude, constant-Q spectrogram patches
+extracted with librosa~\cite{librosa}.
+Each example spans approximately one second of audio: 44 frames at a hop length of 512 
+samples, and a sampling rate of $22050$~Hz. 
+Constant-Q spectrograms were generated to span C3 ($65.41$~Hz) to C9 ($4186$~Hz) at 36
+bins per octave, resulting in sample patches of size $216\times44$.  Instrument activations were aggregated into a single binary label
+vector, and each instrument was counted as active if its on-time within the sample
+exceeds 0.25 seconds.
+By using constant-Q representations and 2-D convolutional filters, we achieve time- and
+pitch-invariance.
+
+% TODO: eric, do your thing.
 % convolutional model:
 %   input: 216 x 44
 %   layer 1: 24 filters of shape (13x9)
@@ -590,14 +604,20 @@ augmentations.  This results in five training conditions of increasing complexit
 %       weight decay
 %   output: n_classes
 
-\cite{librosa}
-
-\subsection{Results}
+\subsection{Experimental procedure and results}
 
 % Repeat x5:
 %   randomly partition artists
 %   train, validate, test for each model
 %   compare per-track meanAP of tags
+Five random artist-conditional partitions of the MedleyDB collection were generated with
+a train/test artist ratio of 4:1.  For the purposes of this experiment, 
+the ``artist'' \emph{MusicDelta} was separated into a collection of distinct pseudo-artists 
+depending on the genres of the recordings.
+For each train/test split of the data, the training set was further partitioned into
+training and validation sets, again at a ratio of 4:1.
+To evaluate performance, we compute for each test track the mean label-ranking average
+precision of predictions over all one-second patches in the track.  
 
 \section{Conclusion}
 
