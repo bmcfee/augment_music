@@ -14,7 +14,7 @@
 
 % Title.
 % ------
-\title{Pump up the jams: musical data augmentation}
+\title{Musical data augmentation}
 
 
 % Single address
@@ -52,10 +52,14 @@
 \begin{abstract}
 Predictive models for music annotation tasks are practically limited by a paucity of
 well-annotated training data.
-In this work, we develop a general framework for augmenting annotated musical datasets,
-allowing practitioners to expand training sets in a controlled fashion.
-We investigate the effects of data augmentation on the task of recognizing instruments
-in mixed signals.
+In the broader context of large-scale machine learning, the concept of ``data
+augmentation'' --- supplementing a training set with carefully perturbed samples ---
+has emerged as an important component of robust systems.
+In this work, we develop a general software framework for augmenting annotated 
+musical datasets, which will allow practitioners to easily expand training sets 
+with musically-oriented perturbations of both audio and annotations.
+As a proof of concept, we investigate the effects of data augmentation on 
+the task of recognizing instruments in mixed signals.
 \end{abstract}
 %
 \section{Introduction}
@@ -72,7 +76,7 @@ analyze, extract, and summarize music recordings in a human-friendly
 format, such as semantic tags, chord and melody annotations, or structural boundary
 estimations.  To adequately capture and characterize the vast complexity of musical
 recordings seems to require large, flexible models with many parameters.  
-In short, complex data necessitate complex models.
+In short, complex data require complex models.
 By the same token, estimating the parameters of complex statistical models often requires
 a large number of samples: big models require big data.
 
@@ -93,8 +97,8 @@ set --- known as \emph{data augmentation} --- can be readily adapted to musical 
 %       c. rotations, reflections, contrast normalization, affine transformations
 Conceptually, data augmentation consists of the application of one or more deformations to
 a collection of (annotated) training samples.  
-The motivation for data augmentation is that a learning algorithm should be less
-susceptible to spurious correlations and over-fitting if it is provided with many
+Data augmentation is motivated by the observation that a learning algorithm should be less
+susceptible to over-fitting and spurious correlations if it is provided with many
 observations of an instance which have been perturbed in ways which do not affect its
 label.
 Some concrete examples of deformations drawn from computer vision include translation, 
@@ -158,12 +162,13 @@ and suppress information derived from timbre, loudness, or octave
 height~\cite{muller2011chroma}.  Similarly, many authors interested in modeling timbre
 use Mel-frequency cepstral coefficients (MFCCs) and discard the first component to
 achieve invariance to loudness~\cite{pampalk2004matlab}.
-While this general strategy makes intuitive, practical sense, it carries certain
-limitations.  First, it is not necessarily easy to identify all relevant symmetries the
-data: if it was easy, the problem would be essentially solved.  Second, even if such
-properties are easy to identify, it may still be difficult to engineer invariant
-features.  Finally, even if one does succeed in designing appropriately invariant
-features, they may inadvertently discard relevant information in the process.
+This approach makes intuitive sense, but it carries certain limitations.
+First, it is not necessarily easy to identify all relevant symmetries the
+data: if it was easy, the modeling problem would be essentially solved.  
+Second, even if such properties are easy to identify, it may still be difficult to
+engineer appropriately invariant features without discarding potentially useful
+information.  For example, 2-D Fourier magnitude coefficients achieve invariance to 
+time- and pitch-transposition, but also discard phase coherence~\cite{ellis2012large}.
 
 %   but there are some drawbacks:
 %       a. it's not easy to identify *all* relevant symmetries
@@ -181,6 +186,8 @@ features directly from the data~\cite{humphrey2012moving}.
 Perhaps not surprisingly, this approach typically requires large model architectures, and 
 consequently requires much larger (annotated) data sets than had previously been 
 used in MIR research.  
+Due to the high cost of acquiring annotated musical data, it has so far been difficult to
+apply these techniques in most MIR tasks.
 Our goal in this work is to ease the burden of sample complexity, and make 
 data-driven models more accessible to the MIR community.
 
@@ -194,8 +201,9 @@ though they are not often identified as such, nor are they treated in a unified,
 systematic way.  For example, it is common to apply circular rotations to chroma features 
 in order to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
 Alternately, synthetic mixtures of monophonic instruments have been used 
-to train polyphonic transcription engines~\cite{kirchhoff2012multi}.
-At the other end of the spectrum, some authors leave the content unchanged and 
+to generate non-trivial examples when training polyphonic transcription 
+engines~\cite{kirchhoff2012multi}.
+At the other end of the spectrum, some authors leave the audio content unchanged and 
 only modify labels during training, as exemplified by the \emph{target smearing} 
 method of Ullrich~\etal\ for training structural boundary 
 detectors~\cite{ullrich2014boundary}.
@@ -221,12 +229,12 @@ Data augmentation provides the converse of this setting: models are fit to degra
 and evaluated on unmodified examples.  The distinction between the two approaches is
 critical.  The former attempts to measure the robustness of a system under synthetic
 conditions, while the latter attempts to improve robustness by \emph{training} under
-synthetic conditions. Note that with data augmentation, the evaluation set is outside 
-the control of the experimenter, so the resulting comparisons are unbiased with respect
+synthetic conditions. Note that with data augmentation, the evaluation set is left
+untouched by the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
 directly measure robustness of the resulting system, it has still been observed that data
 augmentation can be used effectively to improve generalization in
-practice~\cite{krizhevsky2012imagenet}.
+practice~\cite{krizhevsky2012imagenet,he2015delving}.
 
 
 \section{Data augmentation architecture}
@@ -266,7 +274,7 @@ reasons as detailed below.
 % 1. object-oriented design
 %   simple, reusable components that are easy to modify and extend
 %   
-First, Python enables object-oriented design, which in turn allows for structured,
+First, Python enables object-oriented design, allowing for structured,
 extensible, and reusable code.  This in turn facilitates a simple interface shared across
 all \emph{deformation objects}, and makes it easy for practitioners to combine existing
 deformations, or implement new transformations with minimal effort.
@@ -295,7 +303,7 @@ reproducibility.
 Finally, we can borrow familiar software design concepts from the SciKit-Learn
 package~\cite{scikit-learn}, such as the notions of \emph{transformers},
 \emph{pipelines}, and model serialization.  These simple building blocks allow
-practitioners to develop and deploy complex data augmentation pipelines from small,
+practitioners to assemble and deploy complex data augmentation pipelines from small,
 conceptually simple components.
 
 % Give a figure illustrating how deformers work
@@ -320,30 +328,36 @@ objects.
 
 At the core of our implementation is the concept of a \emph{deformation object}.
 A deformation object implements one or more \emph{transformation} methods, each of which 
-applies to audio data, meta-data, or annotations.  Since each of these methods are
-self-contained, a \emph{state} object is used to share information across method calls,
-so each transformation method takes as input a state-data pair $(S, x)$ and returns the 
-suitably transformed audio, meta-data, or annotation $x'$.
+applies to audio data, meta-data, or annotations.  An auxiliary \emph{state} object is used 
+to share information across method calls, so each transformation method takes as input a 
+state-data pair $(S, x)$ and returns the suitably transformed audio, meta-data, or
+annotation $x'$.  Decoupling a deformation object's instantiation from 
+its state allows multiple tracks to be processed in parallel, and as detailed in
+\Cref{sec:reproducibility}, promotes reproducibility by making state objects re-usable.
 
-It would be inefficient to use a separate deformation object for each parameterization of
-a deformation.  In practice, we would generally prefer to iterate over a range of
-parameters, or randomly sample from a distribution of deformations.  To support this
+It would be inefficient to instantiate a separate deformation object for each 
+candidate parameterization.
+In practice, data augmentation can be performed by sweeping over a range of
+parameters, or randomly sample from a distribution over parameters.  To support this
 behavior, deformation objects can implement arbitrary state transition logic, and produce
 a sequence of state objects through Python's \emph{generator} functionality.
 
 Deformation objects can register transformation functions against the type of an
-annotation as described by regular expressions.  For example, ``\texttt{.*}'' matches all 
-annotation types, while ``\texttt{chord.*}'' matches only chord-type annotations.
+annotation as described by regular expressions.  For example, the pattern ``\texttt{.*}'' 
+matches all annotation types, while ``\texttt{chord.*}'' matches only chord-type 
+annotations.
 There is no need for these patterns to be unique or disjoint, though care must be taken
-to ensure consistency.  In our implementation, deformations are always applied in the
+to ensure consistent behavior.  In our implementation, deformations are always applied in the
 order in which they are registered, and we encourage the convention that patterns be
-registered in order of descending generality.
+registered in order of decreasing generality.
 
 The high-level transformation engine is described in
 \Cref{alg:transformation}.  For each state $S$, the input data is copied, transformed,
 and yielded.  Each transformed object $J'$ can either be saved off to disk, fed directly
 as a sample to a learning algorithm, or passed along to another deformation object in a
-pipeline for subsequent processing.
+pipeline for subsequent processing.  When all subsequent processing of $J'$ has
+completed, \Cref{alg:transformation} resumes computation at line~10 and proceeds to the 
+next state.
 
 \begin{algorithm}[t]
 \caption{Abstract transformation pseudocode\label{alg:transformation}}
@@ -383,7 +397,9 @@ $D.\text{audio}(S, J.\text{audio})$
 would apply the time-stretch to the audio signal, which is stored within the 
 JAMS sandbox upon instantiation.\footnote{The \emph{sandbox} provides unstructured 
 storage space within a JAMS object, which is used in our framework as a scratch space for 
-audio signals.}
+audio signals.}  Similarly, track-level meta-data can be modified by the \emph{metadata}
+method.  In this example, time-stretching will change the track length, which is recorded
+in the JAMS meta-data field.
 
 Next, a generic \emph{annotation} deformation would be registered to the pattern
 ``\texttt{.*}'' and apply the stretch factor to all \emph{time} and \emph{duration} 
@@ -417,11 +433,11 @@ this would suffice.  However, some applications may require combining or cascadi
 multiple types of deformation, and we would prefer a unified interface that obviates the
 need for customized data augmentation scripts.
 
-Here, we draw inspiration from both ADT and SciKit-Learn in defining \emph{pipeline}
+Here, we draw inspiration from SciKit-Learn in defining \emph{pipeline}
 objects.  The general idea is simple: two or more deformation objects can be chained
-together, and treated as a single, holistic deformation object.  This functionality
+together, and treated as a single, integrated deformation object.  This functionality
 mimics the SciKit-Learn \emph{Transformer} pipeline\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html}} functionality, except that rather
-than applying a composition of one-to-one feature mappings, deformation pipelines
+than applying a composition of one-to-one mappings, deformation pipelines
 compose functions in a one-to-many fashion.  More precisely, for a deformation pipeline
 $P$ composed of stages $D_i$:
 \[
@@ -438,10 +454,13 @@ is substantial.
 Finally, we introduce a \emph{bypass} deformation object, which can be used to mark
 individual deformation objects as optional in a pipeline.  This can be useful when it is
 otherwise difficult to encode a special \emph{no-op} state within a deformation object, 
-such as the randomized time-stretch example listed as \Cref{alg:timestate}.  Integrating
-bypasses ensures that the original examples are propagated through the pipeline unscathed.
+such as the randomized time-stretch example listed as \Cref{alg:timestate}.  Bypasses 
+can be used to ensure that the original examples are propagated through the 
+pipeline unscathed, and the resulting augmented data set is a strict superset of the
+clean data.
 
 \subsection{Reproducibility and data provenance}
+\label{sec:reproducibility}
 When modifying data for statistical modeling purposes, maintaining transparency is of
 utmost importance to ensure reproducibility and accurate interpretation of results.
 This ultimately becomes a question of data provenance~\cite{buneman2000data}: a record of
@@ -458,14 +477,53 @@ over different subsets of data augmentation parameters.
 
 To further facilitate reproducibility and sharing of experimental designs, the proposed
 architecture supports \emph{serialization} of deformation pipelines into a simple,
-human-readable JSON format.  Once a pipeline has been constructed, it can be exported to
+human-readable JavaScript object notation (JSON) format.
+Once a pipeline has been constructed, it can be exported to
 disk, edited as plain text, shared, and reloaded.  This feature also simplifies the
 process of applying several different sets of deformation parameters, and eliminates the
 need for writing a custom script for each setting.
 
 \section{Example application: multi-instrument recognition}
 
-\cite{bittner2014medleydb}
+To illustrate the data augmentation process, we applied it to the task of instrument
+recognition in mixed audio signals.  For this task, we used the MedleyDB dataset, which
+consists of 122 tracks, spanning a variety of genres and
+instrumentations~\cite{bittner2014medleydb}.  Each track is annotated with time-varying
+instrument activation functions, which are thresholded to provide a set of active
+instruments at each point in time.  Because of the relatively small sample size, we limit
+the experiment to cover only the 15 most frequently used (by track) instruments, as
+listed in \Cref{medleytags}.
+
+\begin{table}
+\caption{The 15 most frequently used instrument labels in MedleyDB.\label{medleytags}}
+\centering
+\small
+    \begin{tabular}{lr}
+        \toprule
+        Instrument & Number of tracks\\
+        \midrule
+        drum set                    & 65\\
+        electric bass               & 64\\
+        piano                       & 42 \\
+        male singer                 & 38 \\
+        clean electric guitar       & 37\\
+        vocalists                   & 27\\
+        synthesizer                 & 27\\
+        female singer               & 25\\
+        acoustic guitar             & 24\\
+        distorted electric guitar   & 21\\
+        auxiliary percussion        & 18\\
+        double bass                 & 16\\
+        violin                      & 14\\
+        cello                       & 11\\
+        flute                       & 11\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+For evaluation purposes, each track is split into one-second clips (44 frames at 22050Hz,
+with a hop length of 512 samples).  The system is then tasked with recognizing the
+instruments active within each clip.
 
 \subsection{Data augmentation}
 
@@ -474,19 +532,22 @@ The data augmentation pipeline consists of four stages:
 \begin{description}
     \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones.
     \item[Time stretch] by a factor of $f \in \left\{ 2^{-1/2}, 1.0, 2^{1/2}\right\}$.
-    \item[Background noise] under four conditions: no noise,
+    \item[Background noise (bypass)] under three conditions:
         subway,\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}}
         crowded concert hall,\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}}
         and night-time city noise.\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}
         The latter three were linearly mixed with random weights drawn uniformly
         $\alpha \sim { }_U[0.1, 0.4]$.
-    \item[Dynamic range compression] under three preset conditions drawn from the {Dolby E}
-        standards~\cite{dolbyE}: none, \emph{speech},
-        and \emph{music (standard)}.
+    \item[Dynamic range compression (bypass)] under two settings drawn from the {Dolby E}
+        standards~\cite{dolbyE}: \emph{speech},
+        and \emph{music~(standard)}.
 \end{description}
 
 Pitch-shift and time-stretch operations were performed by Rubberband~\cite{rubberband}, and dynamic range
 compression was performed by sox~\cite{sox}.
+Note that the first two stages include no-op parameter settings $n=0$ and $f=1$.  We use
+bypasses on the final two stages to ensure that all combinations of augmentation are
+present in the final set.
 
 Combining all stages of the pipeline produces {$3\times 3\times 4\times 3 = 108$} variants of each input track.  To
 simplify the experiments, we only compare the cumulative effects of the above
