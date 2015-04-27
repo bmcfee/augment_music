@@ -1,37 +1,37 @@
 {
   "1": {
-    "0": "../models/large/aug1/fold_00/aug1-006000-2015-04-24_08h18m44s.npz", 
-    "1": "../models/large/aug1/fold_01/aug1-047000-2015-04-24_10h26m32s.npz", 
-    "2": "../models/large/aug1/fold_02/aug1-031000-2015-04-24_11h12m05s.npz", 
-    "3": "../models/large/aug1/fold_03/aug1-007000-2015-04-24_11h45m13s.npz", 
-    "4": "../models/large/aug1/fold_04/aug1-005000-2015-04-24_12h45m17s.npz"
+    "0": "large/aug1/fold_00/aug1-006000-2015-04-24_08h18m44s.npz", 
+    "1": "large/aug1/fold_01/aug1-047000-2015-04-24_10h26m32s.npz", 
+    "2": "large/aug1/fold_02/aug1-031000-2015-04-24_11h12m05s.npz", 
+    "3": "large/aug1/fold_03/aug1-007000-2015-04-24_11h45m13s.npz", 
+    "4": "large/aug1/fold_04/aug1-005000-2015-04-24_12h45m17s.npz"
   }, 
   "2": {
-    "0": "../models/large/aug2/fold_00/aug2-011000-2015-04-25_08h38m15s.npz", 
-    "1": "../models/large/aug2/fold_01/aug2-047000-2015-04-25_10h44m40s.npz", 
-    "2": "../models/large/aug2/fold_02/aug2-035000-2015-04-25_11h39m54s.npz", 
-    "3": "../models/large/aug2/fold_03/aug2-018000-2015-04-25_12h27m35s.npz", 
-    "4": "../models/large/aug2/fold_04/aug2-041000-2015-04-25_14h14m03s.npz"
+    "0": "large/aug2/fold_00/aug2-011000-2015-04-25_08h38m15s.npz", 
+    "1": "large/aug2/fold_01/aug2-047000-2015-04-25_10h44m40s.npz", 
+    "2": "large/aug2/fold_02/aug2-035000-2015-04-25_11h39m54s.npz", 
+    "3": "large/aug2/fold_03/aug2-018000-2015-04-25_12h27m35s.npz", 
+    "4": "large/aug2/fold_04/aug2-041000-2015-04-25_14h14m03s.npz"
   }, 
   "3": {
-    "0": "../models/large/aug3/fold_00/aug3-043000-2015-04-25_16h20m06s.npz", 
-    "1": "../models/large/aug3/fold_01/aug3-005000-2015-04-25_16h37m58s.npz", 
-    "2": "../models/large/aug3/fold_02/aug3-045000-2015-04-25_18h47m38s.npz", 
-    "3": "../models/large/aug3/fold_03/aug3-011000-2015-04-25_19h10m16s.npz", 
-    "4": "../models/large/aug3/fold_04/aug3-023000-2015-04-25_20h39m05s.npz"
+    "0": "large/aug3/fold_00/aug3-043000-2015-04-25_16h20m06s.npz", 
+    "1": "large/aug3/fold_01/aug3-005000-2015-04-25_16h37m58s.npz", 
+    "2": "large/aug3/fold_02/aug3-045000-2015-04-25_18h47m38s.npz", 
+    "3": "large/aug3/fold_03/aug3-011000-2015-04-25_19h10m16s.npz", 
+    "4": "large/aug3/fold_04/aug3-023000-2015-04-25_20h39m05s.npz"
   }, 
   "4": {
-    "0": "../models/large/aug4/fold_00/aug4-037000-2015-04-25_16h29m01s.npz", 
-    "1": "../models/large/aug4/fold_01/aug4-039000-2015-04-25_16h34m05s.npz", 
-    "2": "../models/large/aug4/fold_02/aug4-021000-2015-04-25_16h50m10s.npz", 
-    "3": "../models/large/aug4/fold_03/aug4-010000-2015-04-25_16h25m16s.npz", 
-    "4": "../models/large/aug4/fold_04/aug4-021000-2015-04-25_17h19m52s.npz"
+    "0": "large/aug4/fold_00/aug4-037000-2015-04-25_16h29m01s.npz", 
+    "1": "large/aug4/fold_01/aug4-039000-2015-04-25_16h34m05s.npz", 
+    "2": "large/aug4/fold_02/aug4-021000-2015-04-25_16h50m10s.npz", 
+    "3": "large/aug4/fold_03/aug4-010000-2015-04-25_16h25m16s.npz", 
+    "4": "large/aug4/fold_04/aug4-021000-2015-04-25_17h19m52s.npz"
   }, 
   "5": {
-    "0": "../models/large/aug5/fold_00/aug5-018000-2015-04-24_17h12m24s.npz", 
-    "1": "../models/large/aug5/fold_01/aug5-022000-2015-04-24_18h24m54s.npz", 
-    "2": "../models/large/aug5/fold_02/aug5-036000-2015-04-24_19h51m03s.npz", 
-    "3": "../models/large/aug5/fold_03/aug5-039000-2015-04-24_21h02m29s.npz", 
-    "4": "../models/large/aug5/fold_04/aug5-047000-2015-04-24_22h20m24s.npz"
+    "0": "large/aug5/fold_00/aug5-018000-2015-04-24_17h12m24s.npz", 
+    "1": "large/aug5/fold_01/aug5-022000-2015-04-24_18h24m54s.npz", 
+    "2": "large/aug5/fold_02/aug5-036000-2015-04-24_19h51m03s.npz", 
+    "3": "large/aug5/fold_03/aug5-039000-2015-04-24_21h02m29s.npz", 
+    "4": "large/aug5/fold_04/aug5-047000-2015-04-24_22h20m24s.npz"
   }
 }
