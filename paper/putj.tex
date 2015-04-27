@@ -57,7 +57,7 @@ augmentation'' --- supplementing a training set with carefully perturbed samples
 has emerged as an important component of robust systems.
 In this work, we develop a general software framework for augmenting annotated 
 musical datasets, which will allow practitioners to easily expand training sets 
-with musically-oriented perturbations of both audio and annotations.
+with musically motivated perturbations of both audio and annotations.
 As a proof of concept, we investigate the effects of data augmentation on 
 the task of recognizing instruments in mixed signals.
 \end{abstract}
@@ -619,6 +619,16 @@ training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
 precision of predictions over all one-second patches in the track.  
 
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{figs/lrap}
+    \caption{Mean label-ranking average precision (LRAP) scores for each randomized 
+        partition of the data.
+        Augmentation conditions are indexed as: 1 (no augmentation), 2 (pitch-shift), 3
+        (pitch and time), 4 (pitch, time, and noise), and 5 (pitch, time, noise, and
+        DRC).
+        \label{lrapresults}}
+\end{figure*}
 \section{Conclusion}
 
 % For bibtex users:
