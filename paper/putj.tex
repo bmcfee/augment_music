@@ -74,17 +74,16 @@ Musical audio signals contain a wealth of rich, complex, and highly structured
 information.  The primary goal of content-based music information retrieval (MIR) is to
 analyze, extract, and summarize music recordings in a human-friendly
 format, such as semantic tags, chord and melody annotations, or structural boundary
-estimations.  To adequately capture and characterize the vast complexity of musical
-recordings seems to require large, flexible models with many parameters.
-In short, complex data require complex models.
+estimations.  Modeling the vast complexity of musical audio seems to require large, 
+flexible models with many parameters.
 By the same token, estimating the parameters of complex statistical models often requires
 a large number of samples: big models require big data.
 
-Within the past few years, this same phenomenon of increasing model complexity has been 
+Within the past few years, this phenomenon of increasing model complexity has been 
 observed in the computer vision literature.  Currently, the best-performing models for 
 recognition of objects in images exploit two fundamental properties to overcome the 
 difficulty of fitting large, complex models: access to large quantities of annotated data, 
-and identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
+and identifying label-invariant data transformations~\cite{krizhevsky2012imagenet}.
 The benefits of large training collections are obvious, and unfortunately, difficult to
 carry over to most musical annotation tasks due to the complexity of the label space and
 need for expert annotators.  However, the idea of generating perturbations of a training
@@ -120,7 +119,7 @@ As a musical analog to the image rotation example, time-stretching an audio trac
 should induce a dilation of time-keyed annotations boundaries (\eg, chord or instrument
 activation timings)~\cite{mauch2013audio}.
 
-Moreover, many natural, musically-inspired deformation operations
+Moreover, many natural, musically-inspired deformations
 would not only change the position of annotations, but the annotation
 \emph{values} themselves.
 For instance, if a track has tempo annotations, any time-stretching deformations should
@@ -128,7 +127,7 @@ be applied to the annotations as well.
 Similarly, pitch-shifting a track should induce transpositions of annotated fundamental
 frequency curves, and if the transposition is sufficiently large, chord labels or symbolic 
 annotations may change as well.
-It follows that successful application of data augmentation techniques in MIR may require
+It follows that successful use of data augmentation in MIR may require
 substantially more careful implementations and transformation algorithms than are currently
 in use in other domains.
 
@@ -170,11 +169,11 @@ use Mel-frequency cepstral coefficients (MFCCs) and discard the first component 
 achieve invariance to loudness~\cite{pampalk2004matlab}.
 This general strategy makes intuitive sense, but it carries many limitations.
 First, it is not necessarily easy to identify all relevant symmetries the
-data: if it was easy, the modeling problem would be essentially solved already.
+data: if it was, the modeling problem would be essentially solved.
 Second, even if such properties are easy to identify, it may still be difficult to
 engineer appropriately invariant features without discarding potentially useful
 information.  For example, 2-D Fourier magnitude coefficients achieve invariance to
-time- and pitch-transposition, but also discard phase coherence~\cite{ellis2012large}.
+time- and pitch-transposition, but discard phase coherence~\cite{ellis2012large}.
 
 %   but there are some drawbacks:
 %       a. it's not easy to identify *all* relevant symmetries
@@ -189,9 +188,8 @@ time- and pitch-transposition, but also discard phase coherence~\cite{ellis2012l
 %
 As an alternative to custom feature design, some authors advocate learning or optimizing
 features directly from the data~\cite{humphrey2012moving}.
-Perhaps not surprisingly, this approach typically requires large model architectures, and
-consequently requires much larger (annotated) data sets than had previously been
-used in MIR research.  
+Not surprisingly, this approach typically requires large model architectures, and
+much larger (annotated) data sets than had previously been used in MIR research.  
 Due to the high cost of acquiring annotated musical data, it has so far been difficult to
 apply these techniques in most MIR tasks.
 While some authors have advocated leveraging unlabeled data to ``pre-train'' feature
@@ -207,9 +205,10 @@ sample complexity, and make data-driven methodology more accessible to the MIR c
 %   perturbations of the labels ``target smearing''
 %
 Specific instances of data augmentation can be found throughout the MIR literature,
-though they are not often identified as such, nor are they treated in a unified,
-systematic way.  For example, it is common to apply circular rotations to chroma features
-in order to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
+though they are not often identified as such, nor are they treated systematically 
+in a unified framework.
+For example, it is common to apply circular rotations to chroma features
+to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
 Alternately, synthetic mixtures of monophonic instruments have been used
 to generate non-trivial examples when training polyphonic transcription
 engines~\cite{kirchhoff2012multi}.
@@ -242,9 +241,8 @@ conditions, while the latter attempts to improve robustness by \emph{training} u
 synthetic conditions. Note that with data augmentation, the evaluation set is left
 untouched by the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
-directly measure robustness of the resulting system, it has still been observed that data
-augmentation can be used effectively to improve generalization in
-practice~\cite{krizhevsky2012imagenet,he2015delving}.
+directly measure robustness of the resulting system, it has been observed  
+that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,he2015delving}.
 
 
 \section{Data augmentation architecture}
@@ -300,21 +298,21 @@ deformations, or implement new transformations with minimal effort.
 %       implemented as simple callbacks registered against annotation types or patterns
 %
 
-Second, we leverage JAMS objects~\cite{humphreyjams} to contain and transport all
-annotations for a given track.
-This simplifies the task of maintaining synchronization between audio and annotations,
-and also facilitates task-dependent annotation deformations.  Moreover, we take
+Second, we use JAMS objects~\cite{humphreyjams} to contain and transport all
+annotations and audio content for a given track.
+This simplifies the tasks of maintaining synchronization between audio and annotations,
+and implementing task-dependent annotation deformations.  Moreover, we take
 advantage of JAMS meta-data fields to provide data provenance and facilitate
 reproducibility.
 
 % 3. use familiar design paradigms
 %   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
 %
-Finally, we borrow familiar software design concepts from the SciKit-Learn
-package~\cite{scikit-learn}, such as the notions of \emph{transformers},
-\emph{pipelines}, and model serialization.  These simple building blocks allow
-practitioners to assemble and deploy complex data augmentation pipelines from small,
-conceptually simple components.
+Finally, we borrow familiar software design patterns from the SciKit-Learn
+package~\cite{scikit-learn}, such \emph{transformers}, \emph{pipelines}, 
+and model serialization.  These simple building blocks allow
+practitioners to quickly and easily assemble complex data augmentation pipelines 
+from small, conceptually simple components.
 
 % Give a figure illustrating how deformers work
 %   deformer
@@ -338,38 +336,44 @@ objects.
 
 At the core of our implementation is the concept of a \emph{deformation object}.
 A deformation object implements one or more \emph{transformation} methods, each of which
-applies to audio data, meta-data, or annotations.  An auxiliary \emph{state} object is used
-to share information across method calls, so each transformation method takes as input a
-state-data pair $(S, x)$ and returns the suitably transformed audio, meta-data, or
-annotation $x'$.  Decoupling a deformation object's instantiation from
-its state allows multiple tracks to be processed in parallel, and as detailed in
-\Cref{sec:reproducibility}, promotes reproducibility by making state objects re-usable.
+applies to audio data, meta-data, or annotations.
+Parameters of the deformation are shared through a \emph{state} object $S$:
+For example, $S$ might contain the speed-up factor of a
+time-stretch operation, or the number of semi-tones in a pitch-shift.  
+Each transformation method thus takes as input a pair $(S, x)$ and
+returns the suitably transformed audio, meta-data, or annotation $x'$.
+This decoupling of the deformation object's instantiation from
+its state allows multiple tracks to be processed in parallel by the same object.
+Moreover, as described in \Cref{sec:reproducibility}, it promotes reproducibility 
+by making state objects re-usable.
 
-It would be inefficient to instantiate a separate deformation object for each
-candidate parameterization.
-In practice, data augmentation can be performed by sweeping over a range of
-parameters --- \eg, multiple time-stretch factors --- or randomly sample from 
-a distribution over parameters. 
-To support this behavior, deformation objects can implement arbitrary state transition 
-logic, and produce a sequence of state objects through Python's \emph{generator} 
+Data augmentation often requires sweeping or randomly sampling a set of deformation 
+parameters, and instantiating a separate deformation object for each parameterization 
+would be woefully inefficient.
+To streamline this process, deformation objects must provide \emph{state generators},
+which may implement arbitrary state transition logic to produce a sequence of 
+state objects.  This is accomplished efficiently via Python's \emph{generator}
 functionality.
 
-Deformation objects can register transformation functions against the type of an
-annotation as described by regular expressions.  For example, the pattern ``\texttt{.*}''
-matches all annotation types, while ``\texttt{chord.*}'' matches only chord-type
-annotations.
+Finally, deformation objects may register transformation functions against the 
+\emph{type} of an annotation, as described by regular expressions.
+During execution, the JAMS object is queried for all annotations matching the specified
+expression, and the results are processed by the corresponding transformation method.
+For example, the expression ``\texttt{.*}'' matches all annotation types, while 
+``\texttt{chord.*}'' matches only chord-type annotations.
 These patterns need not be unique or disjoint, though care must be taken
 to ensure consistent behavior.
 Deformations are always applied following the order in which they are registered, 
-and we encourage the convention that patterns be registered in order of decreasing generality.
+and we encourage the convention that patterns be registered in order of decreasing
+generality.
 
-The high-level transformation engine is described in
-\Cref{alg:transformation}.  For each state $S$, the input data is copied, transformed,
-and yielded.  Each transformed object $J'$ can either be saved off to disk, fed directly
-as a sample to a learning algorithm, or passed along to another deformation object in a
-pipeline for subsequent processing.  When all subsequent processing of $J'$ has
-completed, \Cref{alg:transformation} resumes computation at line~10 and proceeds to the
-next state.
+The abstract transformation algorithm is described in \Cref{alg:transformation}.
+For each state $S$, the input data $J$ is copied, transformed into $J'$, and yielded 
+back to the caller. 
+Each $J'$ can then be saved off to disk, provided as a sample to an iterative learning 
+algorithm, or passed along to another deformation object in a pipeline for further processing.
+When all subsequent processing of $J'$ has completed, \Cref{alg:transformation} may resume
+computation at line~10 and proceed to the next state at line~2.
 
 \begin{algorithm}[t]
 \caption{Abstract transformation pseudocode\label{alg:transformation}}
@@ -406,13 +410,15 @@ simplify exposition.}
 
 The JAMS object $J$ over which the deformations will be applied is also provided as input 
 to the state generator.  Though not used in this example, it allows the state generator
-to pre-compute persistent quantities of interest, such as track duration 
-(necessary for target-smearing deformations) or tuning estimations (necessary for 
-pitch-shifting deformations).
+to pre-compute quantities of interest, such as track duration 
+ --- which is necessary to ensure well-defined outputs from target-smearing deformations --- 
+or tuning estimates, which are used by pitch-shift deformations to 
+determine when a shift is large enough to 
+alter note labels.
 
 Once a state $S$ has been generated, the $\Call{audio}$ deformation method
 --- $D.\Call{audio}{S, J.\text{audio}}$ --- 
-would apply the time-stretch to the audio signal, which is stored within the
+applies the time-stretch to the audio signal, which is stored within the
 JAMS sandbox upon instantiation.\footnote{The \emph{sandbox} provides unstructured
 storage space within a JAMS object, which is used in our framework as a scratch space for
 audio signals.}  Similarly, track-level meta-data can be modified by the $\Call{metadata}$
@@ -424,7 +430,7 @@ Next, a generic \emph{annotation} deformation would be registered to the pattern
 fields of all annotations.  This deformation would leave the annotation
 \emph{values} untouched, since not all annotation types have time-dependent values.
 
-Finally, any annotations whose \emph{value} fields depend on time, such as \emph{tempo}
+Finally, any annotations whose \emph{value} fields depend on time, such as \emph{tempo},
 can be modified directly by registering the transformation function against the
 appropriate type pattern, \eg, ``\texttt{tempo}''.  Other time-dependent type
 deformations would be registered separately as needed.
