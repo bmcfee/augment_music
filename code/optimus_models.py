@@ -26,7 +26,7 @@ def beastly_network(num_frames, num_classes, size='large'):
     # Kernel counts, per layer
     k0, k1, k2 = dict(
         small=(10, 20, 48),
-        med=(12, 24, 64),
+        med=(12, 24, 256),
         large=(24, 48, 96),
         xlarge=(20, 40, 128),
         xxlarge=(24, 48, 256))[size]
