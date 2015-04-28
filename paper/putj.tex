@@ -55,10 +55,10 @@ well-annotated training data.
 In the broader context of large-scale machine learning, the concept of ``data
 augmentation'' --- supplementing a training set with carefully perturbed samples ---
 has emerged as an important component of robust systems.
-In this work, we develop a general software framework for augmenting annotated 
-musical datasets, which will allow practitioners to easily expand training sets 
+In this work, we develop a general software framework for augmenting annotated
+musical datasets, which will allow practitioners to easily expand training sets
 with musically motivated perturbations of both audio and annotations.
-As a proof of concept, we investigate the effects of data augmentation on 
+As a proof of concept, we investigate the effects of data augmentation on
 the task of recognizing instruments in mixed signals.
 \end{abstract}
 %
@@ -75,55 +75,55 @@ information.  The primary goal of content-based music information retrieval (MIR
 analyze, extract, and summarize music recordings in a human-friendly
 format, such as semantic tags, chord and melody annotations, or structural boundary
 estimations.  To adequately capture and characterize the vast complexity of musical
-recordings seems to require large, flexible models with many parameters.  
+recordings seems to require large, flexible models with many parameters.
 In short, complex data require complex models.
 By the same token, estimating the parameters of complex statistical models often requires
 a large number of samples: big models require big data.
 
-Within the past few years, this same phenomenon of model complexity has been observed 
-in the computer vision literature.  Currently, the best-performing models for recognition 
-of objects in images exploit two fundamental properties to overcome the difficulty of 
-fitting large, complex models: access to large quantities of annotated data, and 
+Within the past few years, this same phenomenon of model complexity has been observed
+in the computer vision literature.  Currently, the best-performing models for recognition
+of objects in images exploit two fundamental properties to overcome the difficulty of
+fitting large, complex models: access to large quantities of annotated data, and
 identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
-The benefits of large training collections are obvious, and unfortunately, difficult to 
+The benefits of large training collections are obvious, and unfortunately, difficult to
 carry over to most musical annotation tasks due to the complexity of the label space and
 need for expert annotators.  However, the idea of generating perturbations of a training
 set --- known as \emph{data augmentation} --- can be readily adapted to musical tasks.
 
-%   2. in images: 
-%       a. data augmentation has proven useful in vision. 
+%   2. in images:
+%       a. data augmentation has proven useful in vision.
 %       b. general idea: perturb your data such that the features change, but the labels
 %       don't
 %       c. rotations, reflections, contrast normalization, affine transformations
 Conceptually, data augmentation consists of the application of one or more deformations to
-a collection of (annotated) training samples.  
+a collection of (annotated) training samples.
 Data augmentation is motivated by the observation that a learning algorithm should be less
 susceptible to over-fitting and spurious correlations if it is provided with many
 observations of an instance which have been perturbed in ways which do not affect its
 label.
-Some concrete examples of deformations drawn from computer vision include translation, 
-rotations, and reflections.  These simple operations are appealing because they typically 
-do not affect the target class label. An upside-down image of a cat is still contains cat, 
-although the situation may be more complex for concepts which are not reflection-invariant, 
-such as in optical character recognition.  Consequently, practitioners must exercise some 
-caution when applying data augmentation techniques to ensure that the correct invariances 
+Some concrete examples of deformations drawn from computer vision include translation,
+rotations, and reflections.  These simple operations are appealing because they typically
+do not affect the target class label. An upside-down image of a cat is still contains cat,
+although the situation may be more complex for concepts which are not reflection-invariant,
+such as in optical character recognition.  Consequently, practitioners must exercise some
+caution when applying data augmentation techniques to ensure that the correct invariances
 are maintained.
 
-Continuing with the image example, if an image is rotated, then any pixel-wise 
-label annotations (\eg, bounding boxes) should be modified accordingly.  
-More generally, deformations apply not only to the observable stimulus, 
+Continuing with the image example, if an image is rotated, then any pixel-wise
+label annotations (\eg, bounding boxes) should be modified accordingly.
+More generally, deformations apply not only to the observable stimulus,
 but its annotations as well.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
-As a simple example, time-stretching an audio track should also result in movement of 
-time-keyed annotations~\cite{mauch2013audio}.  
+As a simple example, time-stretching an audio track should also result in movement of
+time-keyed annotations~\cite{mauch2013audio}.
 Moreover, time-dependent annotation \emph{values} such as \emph{tempo} can also be adjusted.
 As a more complex example,
 pitch-shifting a track should induce transpositions of melodic pitch contours,
 and if the transposition is sufficiently large, chord labels or symbolic annotations
 should also be modified.
 To summarize, successful application of data augmentation techniques in MIR may require
-substantially more careful implementations and transformation algorithms than are currently 
+substantially more careful implementations and transformation algorithms than are currently
 in use in other domains.
 
 %   3. but data augmentation is more difficult in music than in images
@@ -140,11 +140,11 @@ information retrieval tasks.\footnote{For anonymity purposes, the name of the so
     described here is redacted throughout the text.  This will be changed in the final
 draft, and download links will be provided.}
 The system is designed to be simple, modular, and
-extensible. The design enables practitioners to develop custom deformations, and combine 
-multiple simple deformations together into pipelines which can generate large volumes of 
+extensible. The design enables practitioners to develop custom deformations, and combine
+multiple simple deformations together into pipelines which can generate large volumes of
 reliably deformed, annotated music data.  The proposed system is built on top of
 JAMS~\cite{humphreyjams}, which provides a simple container for accessing and
-transporting multiple annotations for a given track.  
+transporting multiple annotations for a given track.
 
 As a proof of concept, we apply the proposed data augmentation architecture to the
 task of recognizing instruments in mixed signals, and demonstrate that simple
@@ -155,19 +155,19 @@ manipulations can yield improvements in accuracy.
 % 1. it's common to engineer systems to attempt to resolve symmetries in the input,
 %       eg, chroma features are engineered to be approximately invariant to timbre and octave
 %       some authors suppress the 0th mfcc to get loudness invariance
-As practitioners, the first step in developing a solution to some MIR task is often to 
+As practitioners, the first step in developing a solution to some MIR task is often to
 design features which discard information which is irrelevant to predicting the target
 concept.  For example, chroma features are designed to capture pitch class information
-and suppress information derived from timbre, loudness, or octave 
+and suppress information derived from timbre, loudness, or octave
 height~\cite{muller2011chroma}.  Similarly, many authors interested in modeling timbre
 use Mel-frequency cepstral coefficients (MFCCs) and discard the first component to
 achieve invariance to loudness~\cite{pampalk2004matlab}.
 This approach makes intuitive sense, but it carries certain limitations.
 First, it is not necessarily easy to identify all relevant symmetries the
-data: if it was easy, the modeling problem would be essentially solved.  
+data: if it was easy, the modeling problem would be essentially solved.
 Second, even if such properties are easy to identify, it may still be difficult to
 engineer appropriately invariant features without discarding potentially useful
-information.  For example, 2-D Fourier magnitude coefficients achieve invariance to 
+information.  For example, 2-D Fourier magnitude coefficients achieve invariance to
 time- and pitch-transposition, but also discard phase coherence~\cite{ellis2012large}.
 
 %   but there are some drawbacks:
@@ -175,20 +175,20 @@ time- and pitch-transposition, but also discard phase coherence~\cite{ellis2012l
 %       b. even if it was, it might not be easy to engineer an invariant feature
 %       c. and you might accidentally discard useful information in the process
 %
-%   alternatively: 
+%   alternatively:
 %       we can use bigger models
 %       learn the appropriate invariances from statistics.
 %       but this takes a lot of (annotated) data, which we usually don't have
-%   
+%
 %
 As an alternative to custom feature design, some authors advocate learning or optimizing
-features directly from the data~\cite{humphrey2012moving}.  
-Perhaps not surprisingly, this approach typically requires large model architectures, and 
-consequently requires much larger (annotated) data sets than had previously been 
-used in MIR research.  
+features directly from the data~\cite{humphrey2012moving}.
+Perhaps not surprisingly, this approach typically requires large model architectures, and
+consequently requires much larger (annotated) data sets than had previously been
+used in MIR research.
 Due to the high cost of acquiring annotated musical data, it has so far been difficult to
 apply these techniques in most MIR tasks.
-Our goal in this work is to ease this burden of sample complexity, and make 
+Our goal in this work is to ease this burden of sample complexity, and make
 data-driven models more accessible to the MIR community.
 
 % 1. augmentation is not new, but it hasn't been done systematically.
@@ -198,21 +198,21 @@ data-driven models more accessible to the MIR community.
 %
 Specific instances of data augmentation can be found throughout the MIR literature,
 though they are not often identified as such, nor are they treated in a unified,
-systematic way.  For example, it is common to apply circular rotations to chroma features 
+systematic way.  For example, it is common to apply circular rotations to chroma features
 in order to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
-Alternately, synthetic mixtures of monophonic instruments have been used 
-to generate non-trivial examples when training polyphonic transcription 
+Alternately, synthetic mixtures of monophonic instruments have been used
+to generate non-trivial examples when training polyphonic transcription
 engines~\cite{kirchhoff2012multi}.
-At the other end of the spectrum, some authors leave the audio content unchanged and 
-only modify labels during training, as exemplified by the \emph{target smearing} 
-method of Ullrich~\etal\ for training structural boundary 
+At the other end of the spectrum, some authors leave the audio content unchanged and
+only modify labels during training, as exemplified by the \emph{target smearing}
+method of Ullrich~\etal\ for training structural boundary
 detectors~\cite{ullrich2014boundary}.
 
 % finally, recent studies have investigated stability of models by evaluating on degraded signals:
 %   but it's not clear that the degraded signals resemble the distribution of naturally occurring sounds
 %   our goal is different: train on degraded signals, and evaluate on unmodified signals
-%   
-%   
+%
+%
 Finally, recent studies have used degraded signals to evaluate the stability of
 existing methods for MIR tasks.
 The Audio Degradation Toolbox (ADT) was developed for this purpose, and was used
@@ -224,8 +224,8 @@ characteristics of a category (\eg, genre), or are over-fitting to spurious
 correlations~\cite{sturmkiki}.
 
 In both of the studies cited above, models are fit to unmodified data, and evaluated in
-degraded conditions under the control of the experimenter.  
-Data augmentation provides the converse of this setting: models are fit to degraded data, 
+degraded conditions under the control of the experimenter.
+Data augmentation provides the converse of this setting: models are fit to degraded data,
 and evaluated on unmodified examples.  The distinction between the two approaches is
 critical.  The former attempts to measure the robustness of a system under synthetic
 conditions, while the latter attempts to improve robustness by \emph{training} under
@@ -252,7 +252,7 @@ practice~\cite{krizhevsky2012imagenet,he2015delving}.
 %   d. closer integration with python libraries for machine learning (eg theano)
 %
 % 3. we developed a generic, plugin-oriented architecture for doing musical data augmentation
-%   a. hooks into JAMS, and inherits validation/schema.  
+%   a. hooks into JAMS, and inherits validation/schema.
 %   b. also makes it easy to modify all annotations for a given track in one shot.
 %   c. allows the developer to register a deformation against different types of data
 %       eg, a ``pitch-shift'' deformer implements an audio deformation, pitch annotation modification, and
@@ -266,14 +266,14 @@ practice~\cite{krizhevsky2012imagenet,he2015delving}.
 %       more generally, a deformer object can implement its own state transition logic
 %       using python iterators makes this simple, self-contained, and memory-efficient
 Our implementation takes inspiration from the Audio Degradation
-Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly 
+Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly
 for data augmentation simply by applying it to the training set rather than test set.
 However, we opted for an independent, Python-based implementation for a variety of
 reasons as detailed below.
 
 % 1. object-oriented design
 %   simple, reusable components that are easy to modify and extend
-%   
+%
 First, Python enables object-oriented design, allowing for structured,
 extensible, and reusable code.  This in turn facilitates a simple interface shared across
 all \emph{deformation objects}, and makes it easy for practitioners to combine existing
@@ -285,7 +285,7 @@ deformations, or implement new transformations with minimal effort.
 %   store the transformation properties within the jams sandbox
 %       -> reproducibility, provenance
 %   the jams sandbox can store the audio and other intermediate features
-%       -> 
+%       ->
 %   allow deformers to apply different transformations to different types of annotations
 %       implemented as simple callbacks registered against annotation types or patterns
 %
@@ -307,7 +307,7 @@ practitioners to assemble and deploy complex data augmentation pipelines from sm
 conceptually simple components.
 
 % Give a figure illustrating how deformers work
-%   deformer 
+%   deformer
 %       generates states as a function of a jam
 %       registers callbacks against annotation types
 %   pipeline
@@ -318,7 +318,7 @@ conceptually simple components.
 In the remainder of this section, we will describe each of these
 properties in more detail.  Without loss of generality, we will assume that an
 annotation (\eg, instrument activations or semantic tags) is encoded as a collection of
-tuples: \emph{(time, duration, value, confidence)}.  
+tuples: \emph{(time, duration, value, confidence)}.
 Note that instantaneous events can be represented as having zero duration, while
 track-level annotations have full-track duration.  The \emph{value} field will depend on
 the annotation type, and may encode strings, numeric quantities, or fully structured
@@ -327,15 +327,15 @@ objects.
 \subsection{Deformation objects}
 
 At the core of our implementation is the concept of a \emph{deformation object}.
-A deformation object implements one or more \emph{transformation} methods, each of which 
-applies to audio data, meta-data, or annotations.  An auxiliary \emph{state} object is used 
-to share information across method calls, so each transformation method takes as input a 
+A deformation object implements one or more \emph{transformation} methods, each of which
+applies to audio data, meta-data, or annotations.  An auxiliary \emph{state} object is used
+to share information across method calls, so each transformation method takes as input a
 state-data pair $(S, x)$ and returns the suitably transformed audio, meta-data, or
-annotation $x'$.  Decoupling a deformation object's instantiation from 
+annotation $x'$.  Decoupling a deformation object's instantiation from
 its state allows multiple tracks to be processed in parallel, and as detailed in
 \Cref{sec:reproducibility}, promotes reproducibility by making state objects re-usable.
 
-It would be inefficient to instantiate a separate deformation object for each 
+It would be inefficient to instantiate a separate deformation object for each
 candidate parameterization.
 In practice, data augmentation can be performed by sweeping over a range of
 parameters, or randomly sample from a distribution over parameters.  To support this
@@ -343,8 +343,8 @@ behavior, deformation objects can implement arbitrary state transition logic, an
 a sequence of state objects through Python's \emph{generator} functionality.
 
 Deformation objects can register transformation functions against the type of an
-annotation as described by regular expressions.  For example, the pattern ``\texttt{.*}'' 
-matches all annotation types, while ``\texttt{chord.*}'' matches only chord-type 
+annotation as described by regular expressions.  For example, the pattern ``\texttt{.*}''
+matches all annotation types, while ``\texttt{chord.*}'' matches only chord-type
 annotations.
 There is no need for these patterns to be unique or disjoint, though care must be taken
 to ensure consistent behavior.  In our implementation, deformations are always applied in the
@@ -356,7 +356,7 @@ The high-level transformation engine is described in
 and yielded.  Each transformed object $J'$ can either be saved off to disk, fed directly
 as a sample to a learning algorithm, or passed along to another deformation object in a
 pipeline for subsequent processing.  When all subsequent processing of $J'$ has
-completed, \Cref{alg:transformation} resumes computation at line~10 and proceeds to the 
+completed, \Cref{alg:transformation} resumes computation at line~10 and proceeds to the
 next state.
 
 \begin{algorithm}[t]
@@ -393,17 +393,17 @@ that this is just one example: one could easily imagine sequential state generat
 sweep out a deterministic parameter grid, or perform otherwise arbitrary computation.
 
 Once a state $S$ has been generated, the \emph{audio} deformation method
-$D.\text{audio}(S, J.\text{audio})$ 
-would apply the time-stretch to the audio signal, which is stored within the 
-JAMS sandbox upon instantiation.\footnote{The \emph{sandbox} provides unstructured 
-storage space within a JAMS object, which is used in our framework as a scratch space for 
+$D.\text{audio}(S, J.\text{audio})$
+would apply the time-stretch to the audio signal, which is stored within the
+JAMS sandbox upon instantiation.\footnote{The \emph{sandbox} provides unstructured
+storage space within a JAMS object, which is used in our framework as a scratch space for
 audio signals.}  Similarly, track-level meta-data can be modified by the \emph{metadata}
 method.  In this example, time-stretching will change the track length, which is recorded
 in the JAMS meta-data field.
 
 Next, a generic \emph{annotation} deformation would be registered to the pattern
-``\texttt{.*}'' and apply the stretch factor to all \emph{time} and \emph{duration} 
-fields of all annotations.  This deformation would leave the annotation 
+``\texttt{.*}'' and apply the stretch factor to all \emph{time} and \emph{duration}
+fields of all annotations.  This deformation would leave the annotation
 \emph{values} untouched.
 
 Finally, any annotations whose \emph{value} fields depend on time, such as \emph{tempo}
@@ -428,7 +428,7 @@ deformations would be registered separately as needed.
 \subsection{Pipelines and bypasses}
 \Cref{alg:transformation} describes the process by which a deformation object turns a
 single annotated audio example into a sequence of deformed examples.  If we were
-interested in experimenting with only a single type of augmentation (\eg, time stretching), 
+interested in experimenting with only a single type of augmentation (\eg, time stretching),
 this would suffice.  However, some applications may require combining or cascading
 multiple types of deformation, and we would prefer a unified interface that obviates the
 need for customized data augmentation scripts.
@@ -442,7 +442,7 @@ compose functions in a one-to-many fashion.  More precisely, for a deformation p
 $P$ composed of stages $D_i$:
 \[
 P = (D_1, D_2, \dots, D_k),
-\]examples are generated by a depth-first traversal of the 
+\]examples are generated by a depth-first traversal of the
 cartesian product of the state spaces
 ${\Sigma_1 \times \Sigma_2 \times \cdots \times \Sigma_k}$, where $\Sigma_i$ corresponds
 to the state space of $D_i$.  Consequently, one input example produces $n_p = \prod_{i=1}^k
@@ -453,9 +453,9 @@ is substantial.
 
 Finally, we introduce a \emph{bypass} deformation object, which can be used to mark
 individual deformation objects as optional in a pipeline.  This can be useful when it is
-otherwise difficult to encode a special \emph{no-op} state within a deformation object, 
-such as the randomized time-stretch example listed as \Cref{alg:timestate}.  Bypasses 
-can be used to ensure that the original examples are propagated through the 
+otherwise difficult to encode a special \emph{no-op} state within a deformation object,
+such as the randomized time-stretch example listed as \Cref{alg:timestate}.  Bypasses
+can be used to ensure that the original examples are propagated through the
 pipeline unscathed, and the resulting augmented data set is a strict superset of the
 clean data.
 
@@ -465,9 +465,9 @@ When modifying data for statistical modeling purposes, maintaining transparency 
 utmost importance to ensure reproducibility and accurate interpretation of results.
 This ultimately becomes a question of data provenance~\cite{buneman2000data}: a record of
 all transformations should be kept, preferably attached as closely as possible to the data.
-This is accomplished at line~9 of \Cref{alg:transformation} by embedding the 
+This is accomplished at line~9 of \Cref{alg:transformation} by embedding the
 \emph{state} object $S$ (and, in practice, the parameters used to construct the
-deformation object $D$) within the JAMS object after each deformation is applied.  
+deformation object $D$) within the JAMS object after each deformation is applied.
 Each object generated at line~10 thus contains a full transactional history of all
 modifications required to transform the original input $J$ into the output $J'$.
 
@@ -523,7 +523,7 @@ listed in \Cref{medleytags}.
     \end{tabular}
 \end{table}
 
-For evaluation purposes, each track is split into one-second clips. 
+For evaluation purposes, each track is split into one-second clips.
 The system is then tasked with recognizing the instruments active within each clip.
 
 \subsection{Data augmentation}
@@ -577,33 +577,54 @@ augmentations.  This results in five training conditions of increasing complexit
 %
 
 The acoustic model used in these experiments is a deep convolutional network.
-The input to the network consists of log-amplitude, constant-Q spectrogram patches
-extracted with librosa~\cite{librosa}.
-Each example spans approximately one second of audio: 44 frames at a hop length of 512 
-samples, and a sampling rate of $22050$~Hz. 
-Constant-Q spectrograms were generated to span C3 ($65.41$~Hz) to C9 ($4186$~Hz) at 36
-bins per octave, resulting in sample patches of size $216\times44$.  Instrument activations were aggregated into a single binary label
-vector, and each instrument was counted as active if its on-time within the sample
-exceeds 0.25 seconds.
-By using constant-Q representations and 2-D convolutional filters, we achieve time- and
-pitch-invariance.
+The input to the network consists of log-amplitude, constant-Q spectrogram patches extracted with librosa~\cite{librosa}.
+Each example spans approximately one second of audio, corresponding to 44 frames at a hop length of 512 samples and sampling rate of $22050$~Hz.
+Constant-Q spectrograms cover the range of C3 ($65.41$~Hz) to C9 ($4186$~Hz) at 36 bins per octave, resulting in time-frequency patches of size $216\times44$.
+Instrument activations are aggregated into a single binary label vector, such that an instrument is deemed active if its on-time within the sample exceeds 0.25 seconds.
 
-% TODO: eric, do your thing.
-% convolutional model:
-%   input: 216 x 44
-%   layer 1: 24 filters of shape (13x9)
-%       output dimension: 24 x (216 - 2*13+1) x (44 - 2 * 9 + 1)
-%       relu
-%   layer 2: 48 filters of shape (24x9x7)
-%       relu
-%   downsample 2x2 max-pooling
-%   dense layer of size 96
-%       relu
-%       dropout = 0.5
-%   dense layer for output
-%       sigmoid nonlinearity
-%       weight decay
-%   output: n_classes
+Importantly, constant-Q representations are linear in both time and pitch, a property that can be exploited by convolutional neural networks to achieve translation invariance.
+Thus a four-layer model is designed to estimate the presence of zero or more instruments in a time-frequency patch.
+Formally, an input, $X$, is transformed into an output, $Z$, via a composite nonlinear function $\mathcal{F}(\cdot \vert \Theta)$, given a parameter set $\Theta$.
+This is achieved as a sequential cascade of $L=4$ operations, $f_l(\cdot \vert \theta_l)$, referred to as \emph{layers}, the order of which is given by $l$:
+
+\begin{equation}
+\label{eq:layers}
+Z = \mathcal{F}(X \vert \Theta) = f_{L}(  ... f_2(f_1(X \vert \theta_1) \vert \theta_2) ) ... \vert \theta_{L})
+\end{equation}
+
+% \noindent Here, $\mathcal{F} = \{f_1, f_2, ... f_{L} \}$ is the set of layers, $\Theta = \{\theta_1, \theta_2, ... \theta_{L} \}$, the corresponding set of parameters, and the output of one layer is passed as the input to the next, as $X_{l+1} = Z_{l}$.
+
+The first two layers, $l \in \{1, 2\}$, are convolutional, expressed by the following:
+
+\begin{equation}
+\label{eq:convlayer}
+\small
+Z_l = f_l(X_l \vert \theta_l) = h(X_{l} \circledast W + b), \quad \theta_l = [W, b]
+\end{equation}
+
+\noindent Here, the valid convolution, $\circledast$, is computed by convolving a 3D input tensor, $X_l$, consisting of $N$ \emph{feature maps}, with a collection of $M$ 3D-\emph{kernels}, $W$, followed by an additive vector bias term, $b$, and transformed by a point-wise activation function, $h(\cdot)$.
+In this formulation, $X_l$ has shape $(N, d_0, d_1)$, $W$ has shape $(M, N, m_0, m_1)$, and the output, $Z_l$, has shape $(M, d_0-m_0+1, d_1-m_1+1)$.
+% Note that the number of feature maps, $N$, must match between input and kernels.
+Max-pooling is applied in time and frequency, to further accelerate computation by reducing the size of feature maps, and allowing a small degree of scale invariance in both time and pitch.
+
+The final two layers, $l \in \{3, 4\}$, are fully-connected matrix products, given as follows:
+
+\begin{equation}
+\label{eq:fclayer}
+Z_l = f_l(X_l \vert \theta_l) = h( W~X_{l} + b), \quad \theta_l = [W, b]
+\end{equation}
+
+\noindent Here, the input to the $l^{th}$ layer, $X_l$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
+
+The network is parameterized thusly:
+$l_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two dimensions, and a rectified linear (ReLU) activation function, \ie $\max(x, 0)$;
+$l_2$ uses $W$ with shape $(48, 24, 9, 7)$, $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
+$l_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
+finally, $l_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
+
+During training, the model is optimized to a cross-entropy loss via mini-batch stochastic gradient descent, $n=50$, with a constant learning rate of 0.02.
+Dropout is applied to the activations of the penultimate layer, $l=3$, with $p=0.5$, and a small amount of $l_2$-regularization is applied to the weights of the final layer, $l=4$, to prevent the weights from growing arbitrarily large and causing numerical instability.
+
 
 \subsection{Experimental procedure and results}
 
@@ -612,8 +633,8 @@ pitch-invariance.
 %   train, validate, test for each model
 %   compare per-track meanAP of tags
 Five random artist-conditional partitions of the MedleyDB collection were generated with
-a train/test artist ratio of 4:1.  For the purposes of this experiment, 
-the ``artist'' \emph{MusicDelta} was separated into a collection of distinct pseudo-artists 
+a train/test artist ratio of 4:1.  For the purposes of this experiment,
+the ``artist'' \emph{MusicDelta} was separated into a collection of distinct pseudo-artists
 depending on the genres of the recordings.
 For each train/test split of the data, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
@@ -625,7 +646,7 @@ latter can be sensitive to class bias and the choice of detection thresholds.
 \begin{figure*}[ht]
     \centering
     \includegraphics[width=\textwidth]{figs/lrap}
-    \caption{Test-set score distributions (label-ranking average precision) for each 
+    \caption{Test-set score distributions (label-ranking average precision) for each
         randomized partition of the data.
         Augmentation conditions are indexed as: 1 (no augmentation), 2 (pitch-shift), 3
         (pitch and time), 4 (pitch, time, and noise), and 5 (pitch, time, noise, and
@@ -633,25 +654,25 @@ latter can be sensitive to class bias and the choice of detection thresholds.
 \end{figure*}
 
 \Cref{lrapresults} illustrates the test-set performance for each of the train/test
-splits.  Because of the relatively small size of MedleyDB and the need for 
+splits.  Because of the relatively small size of MedleyDB and the need for
 artist-conditional splits, the resulting test-sets are small and thus exhibit high
-variance across splits.  However, a few trends can be readily observed from the figure. 
-First, the models trained with data augmentation (2--5) all generalize at least as well 
+variance across splits.  However, a few trends can be readily observed from the figure.
+First, the models trained with data augmentation (2--5) all generalize at least as well
 as the one trained only on clean data (1).  This indicates that the learning algorithm is
 not corrupted by training on noisy examples.
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/onevstwo}
-    \caption{Point-wise comparison of test-set scores (LRAP) 
+    \caption{Point-wise comparison of test-set scores (LRAP)
         for augmentation condition 1 (no augmentation) vs.\ condition 2 (pitch-shifting).
-        Each data point corresponds to a single test track, and is colored according to 
+        Each data point corresponds to a single test track, and is colored according to
         the random train-test split from which it was drawn.\label{onevstwo}}
 \end{figure}
 
 To more clearly investigate the effects of pitch-shifting augmentation, \Cref{onevstwo}
 illustrates the differences in accuracy between the no-augmentation models (1) and the
-models trained with additional pitch-shifted data (2), aggregated across all splits.  
+models trained with additional pitch-shifted data (2), aggregated across all splits.
 The majority of test points lie above the main diagonal, indicating
 consistent improvements due to data augmentation.
 
