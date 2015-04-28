@@ -161,16 +161,16 @@ manipulations can yield improvements in accuracy.
 % 1. it's common to engineer systems to attempt to resolve symmetries in the input,
 %       eg, chroma features are engineered to be approximately invariant to timbre and octave
 %       some authors suppress the 0th mfcc to get loudness invariance
-As practitioners, the first step in developing a solution to some MIR task is often to
-design features which discard information which is irrelevant to predicting the target
+The first step in developing a solution to an MIR problem is often to
+design features which discard information thought to be irrelevant to the target
 concept.  For example, chroma features are designed to capture pitch class information
-and suppress information derived from timbre, loudness, or octave
-height~\cite{muller2011chroma}.  Similarly, many authors interested in modeling timbre
+and suppress timbre, loudness, or octave height~\cite{muller2011chroma}.
+Similarly, many authors interested in modeling timbre
 use Mel-frequency cepstral coefficients (MFCCs) and discard the first component to
 achieve invariance to loudness~\cite{pampalk2004matlab}.
-This approach makes intuitive sense, but it carries certain limitations.
+This general strategy makes intuitive sense, but it carries many limitations.
 First, it is not necessarily easy to identify all relevant symmetries the
-data: if it was easy, the modeling problem would be essentially solved.
+data: if it was easy, the modeling problem would be essentially solved already.
 Second, even if such properties are easy to identify, it may still be difficult to
 engineer appropriately invariant features without discarding potentially useful
 information.  For example, 2-D Fourier magnitude coefficients achieve invariance to
@@ -195,7 +195,7 @@ used in MIR research.
 Due to the high cost of acquiring annotated musical data, it has so far been difficult to
 apply these techniques in most MIR tasks.
 Our goal in this work is to ease this burden of sample complexity, and make
-data-driven models more accessible to the MIR community.
+data-driven methodology more accessible to the MIR community.
 
 % 1. augmentation is not new, but it hasn't been done systematically.
 %   eg, chroma rotation for key-invariance in chord quality or mode
@@ -226,7 +226,7 @@ to measure the impact of naturalistic deformations of audio on several tasks, in
 beat tracking, score alignment, and chord recognition~\cite{mauch2013audio}.
 Similarly, Sturm and Collins proposed the ``Kiki-Bouba Challenge'' as a way to determine
 whether statistical models of musical concepts actually capture the defining
-characteristics of a category (\eg, genre), or are over-fitting to spurious
+characteristics of the concept (\eg, genre), or are over-fitting to spurious
 correlations~\cite{sturmkiki}.
 
 In both of the studies cited above, models are fit to unmodified data, and evaluated in
@@ -271,7 +271,7 @@ practice~\cite{krizhevsky2012imagenet,he2015delving}.
 %   g. deformations can be stochastic, and potentially generate infinite streams of randomized data
 %       more generally, a deformer object can implement its own state transition logic
 %       using python iterators makes this simple, self-contained, and memory-efficient
-Our implementation takes inspiration from the Audio Degradation
+Our implementation takes substantial inspiration from the Audio Degradation
 Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly
 for data augmentation simply by applying it to the training set rather than test set.
 However, we opted for an independent, Python-based implementation for a variety of
@@ -299,14 +299,14 @@ deformations, or implement new transformations with minimal effort.
 Second, we leverage JAMS objects~\cite{humphreyjams} to contain and transport all
 annotations for a given track.
 This simplifies the task of maintaining synchronization between audio and annotations,
-and also facilitates task-dependent annotation deformations.  Moreover, we can take
+and also facilitates task-dependent annotation deformations.  Moreover, we take
 advantage of JAMS meta-data fields to provide data provenance and facilitate
 reproducibility.
 
 % 3. use familiar design paradigms
 %   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
 %
-Finally, we can borrow familiar software design concepts from the SciKit-Learn
+Finally, we borrow familiar software design concepts from the SciKit-Learn
 package~\cite{scikit-learn}, such as the notions of \emph{transformers},
 \emph{pipelines}, and model serialization.  These simple building blocks allow
 practitioners to assemble and deploy complex data augmentation pipelines from small,
@@ -344,18 +344,20 @@ its state allows multiple tracks to be processed in parallel, and as detailed in
 It would be inefficient to instantiate a separate deformation object for each
 candidate parameterization.
 In practice, data augmentation can be performed by sweeping over a range of
-parameters, or randomly sample from a distribution over parameters.  To support this
-behavior, deformation objects can implement arbitrary state transition logic, and produce
-a sequence of state objects through Python's \emph{generator} functionality.
+parameters --- \eg, multiple time-stretch factors --- or randomly sample from 
+a distribution over parameters. 
+To support this behavior, deformation objects can implement arbitrary state transition 
+logic, and produce a sequence of state objects through Python's \emph{generator} 
+functionality.
 
 Deformation objects can register transformation functions against the type of an
 annotation as described by regular expressions.  For example, the pattern ``\texttt{.*}''
 matches all annotation types, while ``\texttt{chord.*}'' matches only chord-type
 annotations.
-There is no need for these patterns to be unique or disjoint, though care must be taken
-to ensure consistent behavior.  In our implementation, deformations are always applied in the
-order in which they are registered, and we encourage the convention that patterns be
-registered in order of decreasing generality.
+These patterns need not be unique or disjoint, though care must be taken
+to ensure consistent behavior.
+Deformations are always applied following the order in which they are registered, 
+and we encourage the convention that patterns be registered in order of decreasing generality.
 
 The high-level transformation engine is described in
 \Cref{alg:transformation}.  For each state $S$, the input data is copied, transformed,
@@ -388,29 +390,27 @@ next state.
 \end{algorithm}
 
 
-\subsubsection{Example: time-stretching}
-To illustrate the deformation object interface, consider a \emph{time-stretch} operation.
+\subsubsection{Example: randomized time-stretching}
+To illustrate the deformation object interface, we will describe the implementation of a 
+randomized \emph{time-stretch} deformation object.
 In this case, each \emph{state} object contains a single quantity: the stretch factor $f$.
 \Cref{alg:timestate} illustrates the state-generation logic for a randomized
 time-stretcher, in which some $n$ examples are generated by sampling $f$ uniformly at
-random over an interval $[f_-, f_+]$.  While this example is quite
-simple, it serves to illustrate the power and flexibility of the architecture.  We note
-that this is just one example: one could easily imagine sequential state generators that
-sweep out a deterministic parameter grid, or perform otherwise arbitrary computation.
+random from an interval $[f_-, f_+]$.
 
 Once a state $S$ has been generated, the \emph{audio} deformation method
-$D.\text{audio}(S, J.\text{audio})$
+--- $D.\text{audio}(S, J.\text{audio})$ --- 
 would apply the time-stretch to the audio signal, which is stored within the
 JAMS sandbox upon instantiation.\footnote{The \emph{sandbox} provides unstructured
 storage space within a JAMS object, which is used in our framework as a scratch space for
 audio signals.}  Similarly, track-level meta-data can be modified by the \emph{metadata}
-method.  In this example, time-stretching will change the track length, which is recorded
+method.  In this example, time-stretching will change the track duration, which is recorded
 in the JAMS meta-data field.
 
 Next, a generic \emph{annotation} deformation would be registered to the pattern
 ``\texttt{.*}'' and apply the stretch factor to all \emph{time} and \emph{duration}
 fields of all annotations.  This deformation would leave the annotation
-\emph{values} untouched.
+\emph{values} untouched, since not all annotation types have time-dependent values.
 
 Finally, any annotations whose \emph{value} fields depend on time, such as \emph{tempo}
 can be modified directly by registering the transformation function against the
@@ -431,6 +431,14 @@ deformations would be registered separately as needed.
     \end{algorithmic}
 \end{algorithm}
 
+The time-stretching example is simple, but it serves to illustrate the flexibility of 
+the architecture.
+It is straightforward to extend this example into more sophisticated deformations 
+with structured state generators to sweep over deterministic parameter grids.
+For example, an additive background noise deformation could be parameterized by 
+a collection of noise sources and a range of gain parameters, and 
+generate one example for each unique combination of source and gain.
+
 \subsection{Pipelines and bypasses}
 \Cref{alg:transformation} describes the process by which a deformation object turns a
 single annotated audio example into a sequence of deformed examples.  If we were
@@ -442,26 +450,30 @@ need for customized data augmentation scripts.
 Here, we draw inspiration from SciKit-Learn in defining \emph{pipeline}
 objects.  The general idea is simple: two or more deformation objects can be chained
 together, and treated as a single, integrated deformation object.  This functionality
-mimics the SciKit-Learn \emph{Transformer} pipeline\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html}} functionality, except that rather
+mimics that of the SciKit-Learn \emph{Transformer} pipeline,\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html}} except that rather
 than applying a composition of one-to-one mappings, deformation pipelines
 compose functions in a one-to-many fashion.  More precisely, for a deformation pipeline
-$P$ composed of stages $D_i$:
+$P$ composed of $k$ stages:
 \[
 P = (D_1, D_2, \dots, D_k),
 \]examples are generated by a depth-first traversal of the
-cartesian product of the state spaces
-${\Sigma_1 \times \Sigma_2 \times \cdots \times \Sigma_k}$, where $\Sigma_i$ corresponds
-to the state space of $D_i$.  Consequently, one input example produces $n_p = \prod_{i=1}^k
+cartesian product of the corresponding state spaces
+\[
+{\Sigma_1 \times \Sigma_2 \times \cdots \times \Sigma_k}.
+\]
+Consequently, one input example produces $n_p = \prod_{i=1}^k
 |\Sigma_i|$ output examples.  However, by using generators rather than returning full
 lists of states, we ensure that only $k$ examples are ever in memory at any time.
 In most cases, $k$ is much smaller than $n_p$, and the improvement in memory efficiency
 is substantial.
 
-Finally, we introduce a \emph{bypass} deformation object, which can be used to mark
-individual deformation objects as optional in a pipeline.  This can be useful when it is
+Finally, we introduce the \emph{bypass} object, which is used to mark
+individual deformation objects as optional.  This can be useful when it is
 otherwise difficult to encode a special \emph{no-op} state within a deformation object,
-such as the randomized time-stretch example listed as \Cref{alg:timestate}.  Bypasses
-can be used to ensure that the original examples are propagated through the
+such as the randomized time-stretch example listed as \Cref{alg:timestate}.is
+The internal logic of a bypass object is simple: first, pass the input directly through
+unmodified, and then generate samples from the contained deformation object as usual.
+Bypasses can be used to ensure that the original examples are propagated through the
 pipeline unscathed, and the resulting augmented data set is a strict superset of the
 clean data.
 
@@ -476,6 +488,8 @@ This is accomplished at line~9 of \Cref{alg:transformation} by embedding the
 deformation object $D$) within the JAMS object after each deformation is applied.
 Each object generated at line~10 thus contains a full transactional history of all
 modifications required to transform the original input $J$ into the output $J'$.
+For this reason, stochastic deformations are designed so that all randomness is contianed
+within the state generation logic, and transformations are all deterministic.
 
 In addition to facilitating reproducibility, maintaining transformation provenance allows
 practitioners to generate a wide range of deformations up front, and then later filter the
