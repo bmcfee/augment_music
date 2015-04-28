@@ -617,18 +617,30 @@ depending on the genres of the recordings.
 For each train/test split of the data, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
-precision of predictions over all one-second patches in the track.  
+precision (LRAP) of predictions over all one-second patches in the track.  
 
-\begin{figure*}
+\begin{figure*}[t]
     \centering
     \includegraphics[width=\textwidth]{figs/lrap}
-    \caption{Mean label-ranking average precision (LRAP) scores for each randomized 
-        partition of the data.
+    \caption{Mean label-ranking average precision test-set scores for each 
+        randomized partition of the data.
         Augmentation conditions are indexed as: 1 (no augmentation), 2 (pitch-shift), 3
         (pitch and time), 4 (pitch, time, and noise), and 5 (pitch, time, noise, and
-        DRC).
-        \label{lrapresults}}
+        DRC).\label{lrapresults}}
 \end{figure*}
+
+\Cref{lrapresults} illustrates the test-set performance for each of the train/test
+splits.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figs/onevstwo}
+    \caption{Point-wise comparison of test-set scores for augmentation condition 1 (no
+        augmentation) vs.\ condition 2 (pitch-shifting).  Each data point corresponds to a
+        single test track, and is colored according to the test split index from which it
+        was drawn.  The majority of points lie above the main diagonal, and are more 
+        accurately predicted by the model trained with data augmentation.\label{onevstwo}}
+\end{figure}
 \section{Conclusion}
 
 % For bibtex users:
