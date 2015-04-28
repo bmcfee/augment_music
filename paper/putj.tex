@@ -628,12 +628,13 @@ finally, $l_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
 During training, the model is optimizes cross-entropy loss via mini-batch stochastic
 gradient descent, on batches of $n=64$ patches, with a constant learning rate of 0.01.
-Dropout is applied to the activations of the penultimate layer, $l=3$ with dropout
+Dropout is applied to the activations of the penultimate layer, $\ell=3$ with dropout
 probability $p=0.5$.
-$\ell_2$-regularization is applied to the weights of the final layer, $l=4$, with a
+Quadratic regularization is applied to the weights of the final layer, $\ell=4$, with a
 penalty factor of $\lambda=0.02$. This helps prevent numerical instability by keeping
 the weights from growing arbitrarily large.
-
+The model is check-pointed after every 1000 batches, and a validation set is used to
+select the best-performing parameter setting.
 
 \subsection{Experimental procedure and results}
 
