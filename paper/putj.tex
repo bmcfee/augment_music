@@ -97,32 +97,38 @@ set --- known as \emph{data augmentation} --- can be readily adapted to musical 
 %       c. rotations, reflections, contrast normalization, affine transformations
 Conceptually, data augmentation consists of the application of one or more deformations to
 a collection of (annotated) training samples.
-Data augmentation is motivated by the observation that a learning algorithm should be less
-susceptible to over-fitting and spurious correlations if it is provided with many
-observations of an instance which have been perturbed in ways which do not affect its
-label.
+Data augmentation is motivated by the observation that a learning algorithm may
+generalize better if it is trained on instances which have been perturbed in ways 
+which are irrelevant to their labels.
 Some concrete examples of deformations drawn from computer vision include translation,
-rotations, and reflections.  These simple operations are appealing because they typically
-do not affect the target class label. An upside-down image of a cat is still contains cat,
-although the situation may be more complex for concepts which are not reflection-invariant,
-such as in optical character recognition.  Consequently, practitioners must exercise some
-caution when applying data augmentation techniques to ensure that the correct invariances
-are maintained.
+rotation, reflection, and scaling.
+These simple operations are appealing because they typically do not affect the target 
+class label: an image of a cat still contains a cat, even when it is flipped upside-down.
+%although the situation may be more complex for concepts which are not reflection-invariant,
+%such as in optical character recognition.  Consequently, practitioners must exercise some
+%caution when applying data augmentation techniques to ensure that the correct invariances
+%are maintained.
 
-Continuing with the image example, if an image is rotated, then any pixel-wise
-label annotations (\eg, bounding boxes) should be modified accordingly.
-More generally, deformations apply not only to the observable stimulus,
-but its annotations as well.
+More generally, we may consider deformations which apply not only to the observable
+features, but the labels as well.
+Continuing with the image example, if an image is rotated by some angle, 
+then any pixel-wise label annotations (\eg, bounding boxes) should be also be rotated by
+that angle.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
-As a simple example, time-stretching an audio track should also result in movement of
-time-keyed annotations~\cite{mauch2013audio}.
-Moreover, time-dependent annotation \emph{values} such as \emph{tempo} can also be adjusted.
-As a more complex example,
-pitch-shifting a track should induce transpositions of melodic pitch contours,
+As a musical analog to the image rotation example, time-stretching an audio track 
+should also result in dilation of time-keyed annotations (\eg, chord or instrument
+activation timings)~\cite{mauch2013audio}.
+
+Moreover, many natural, musically-inspired deformation operations
+would not only change the position of annotations, but the annotation
+\emph{values} themselves.
+For instance, if a track has tempo annotations, any time-stretching deformations should
+be applied to the annotations as well.
+Similarly, pitch-shifting a track should induce transpositions of melodic pitch contours,
 and if the transposition is sufficiently large, chord labels or symbolic annotations
 should also be modified.
-To summarize, successful application of data augmentation techniques in MIR may require
+It follows that successful application of data augmentation techniques in MIR may require
 substantially more careful implementations and transformation algorithms than are currently
 in use in other domains.
 
