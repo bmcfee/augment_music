@@ -650,13 +650,13 @@ Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell 
 
 The network is parameterized thusly:
 $\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two
-dimensions, and a rectified linear (ReLU) activation function: $h(x) \defeq \max(x, 0)$;
-$\ell_2$ uses $W$ with shape $(48, 24, 9, 7)$, $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
+dimensions, and a rectified linear unit (ReLU) activation function: $h(x) \defeq \max(x, 0)$;
+$\ell_2$ has filter parameters $W$ with shape $(48, 24, 9, 7)$, followed by $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
 $\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
 finally, $\ell_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
-During training, the model is optimizes cross-entropy loss via mini-batch stochastic
-gradient descent, using mini-batches of $n=64$ patches and a constant learning rate of 0.01.
+During training, the model optimizes cross-entropy loss via mini-batch stochastic
+gradient descent, using batches of $n=64$ patches and a constant learning rate of 0.01.
 Dropout is applied to the activations of the penultimate layer, $\ell=3$ with dropout
 probability $0.5$.
 Quadratic regularization is applied to the weights of the final layer, $\ell=4$, with a
