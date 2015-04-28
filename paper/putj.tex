@@ -464,9 +464,10 @@ clean data.
 When modifying data for statistical modeling purposes, maintaining transparency is of
 utmost importance to ensure reproducibility and accurate interpretation of results.
 This ultimately becomes a question of data provenance~\cite{buneman2000data}: a record of
-all transformations should be kept, preferably attached as closely to the data as
-possible.  This is accomplished at line~9 of \Cref{alg:transformation} by embedding the 
-\emph{state} object $S$ (and, in practice, the parameters used to construct $D$) within the JAMS object after each deformation is applied.  
+all transformations should be kept, preferably attached as closely as possible to the data.
+This is accomplished at line~9 of \Cref{alg:transformation} by embedding the 
+\emph{state} object $S$ (and, in practice, the parameters used to construct the
+deformation object $D$) within the JAMS object after each deformation is applied.  
 Each object generated at line~10 thus contains a full transactional history of all
 modifications required to transform the original input $J$ into the output $J'$.
 
