@@ -615,7 +615,8 @@ Importantly, constant-Q representations are linear in both time and pitch, a pro
 Thus a four-layer model is designed to estimate the presence of zero or more instruments in a time-frequency patch.
 Formally, an input, $X$, is transformed into an output, $Z$, via a composite nonlinear
 function $\mathcal{F}(\cdot \given \Theta)$, given a parameter set $\Theta$.
-This is achieved as a sequential cascade of $L=4$ operations, $f_l(\cdot \given \theta_l)$, referred to as \emph{layers}, the order of which is given by $l$:
+This is achieved as a sequential cascade of $L=4$ operations, $f_\ell(\cdot \given
+\theta_\ell)$, referred to as \emph{layers}, the order of which is given by $\ell$:
 
 \begin{equation}
 \label{eq:layers}
@@ -625,15 +626,15 @@ Z = \mathcal{F}(X \given \Theta) = f_{L}(  ... f_2(f_1(X \given \theta_1) \given
 
 % \noindent Here, $\mathcal{F} = \{f_1, f_2, ... f_{L} \}$ is the set of layers, $\Theta = \{\theta_1, \theta_2, ... \theta_{L} \}$, the corresponding set of parameters, and the output of one layer is passed as the input to the next, as $X_{l+1} = Z_{l}$.
 
-The first two layers, $l \in \{1, 2\}$, are convolutional, expressed by the following:
-
+The first two layers, $\ell \in \{1, 2\}$, are convolutional, expressed by the following:
 \begin{equation}
 \label{eq:convlayer}
 \small
-Z_l = f_l(X_l \given \theta_l) = h(W \circledast X_\ell + b), \quad \theta_l = [W, b]
+Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h(W \circledast X_\ell + b), \quad
+\theta_\ell = [W, b]
 \end{equation}
-
-\noindent Here, the valid convolution, $\circledast$, is computed by convolving a 3D input tensor, $X_l$, consisting of $N$ \emph{feature maps}, with a collection of $M$ 3D-\emph{kernels}, $W$, followed by an additive vector bias term, $b$, and transformed by a point-wise activation function, $h(\cdot)$.
+Here, the valid convolution, $\circledast$, is computed by convolving a 3D input tensor,
+$X_\ell$, consisting of $N$ \emph{feature maps}, with a collection of $M$ 3D-\emph{kernels}, $W$, followed by an additive vector bias term, $b$, and transformed by a point-wise activation function, $h(\cdot)$.
 In this formulation, $X_l$ has shape $(N, d_0, d_1)$, $W$ has shape $(M, N, m_0, m_1)$, and the output, $Z_l$, has shape $(M, d_0-m_0+1, d_1-m_1+1)$.
 % Note that the number of feature maps, $N$, must match between input and kernels.
 Max-pooling is applied in time and frequency, to further accelerate computation by reducing the size of feature maps, and allowing a small degree of scale invariance in both time and pitch.
@@ -652,14 +653,14 @@ $\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the las
 dimensions, and a rectified linear (ReLU) activation function: $h(x) \defeq \max(x, 0)$;
 $\ell_2$ uses $W$ with shape $(48, 24, 9, 7)$, $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
 $\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
-finally, $l_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
+finally, $\ell_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
 During training, the model is optimizes cross-entropy loss via mini-batch stochastic
-gradient descent, on batches of $n=64$ patches, with a constant learning rate of 0.01.
+gradient descent, using mini-batches of $n=64$ patches and a constant learning rate of 0.01.
 Dropout is applied to the activations of the penultimate layer, $\ell=3$ with dropout
-probability $p=0.5$.
+probability $0.5$.
 Quadratic regularization is applied to the weights of the final layer, $\ell=4$, with a
-penalty factor of $\lambda=0.02$. This helps prevent numerical instability by keeping
+penalty factor of $0.02$. This helps prevent numerical instability by keeping
 the weights from growing arbitrarily large.
 The model is check-pointed after every 1000 batches, and a validation set is used to
 select the best-performing parameter setting.
