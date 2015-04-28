@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
+'''Evaluation script for optimus models'''
 
 from __future__ import print_function
 
 import argparse
 import json
 import sys
+import os
 from itertools import product
 
 import numpy as np
@@ -57,6 +59,10 @@ def process_arguments(args):
                         type=str, required=True,
                         help='Path to the model parameters npz')
 
+    parser.add_argument('-d', '--output-dir', dest='output_directory',
+                        type=str, required=True,
+                        help='Path to store the predictions')
+
     parser.add_argument('-o', '--output', dest='score_file',
                         type=str, required=True,
                         help='Path to store the results as json')
@@ -69,7 +75,7 @@ def get_predictor_input_size(predictor):
     return port.shape[2]
 
 
-def evaluator(predictor, LT, val_id, aug_id, input_path):
+def evaluator(predictor, LT, val_id, aug_id, input_path, output_directory):
 
     key = dg.augment_file_id(val_id, aug_id)
 
@@ -90,6 +96,13 @@ def evaluator(predictor, LT, val_id, aug_id, input_path):
     y_true = np.concatenate(y_true)
     y_score = np.concatenate(y_score)
     y_pred = (y_score >= 0.5).astype(int)
+
+    #   save the predictions, truth, and scores out to an npz file
+    outfile = os.path.join(output_directory, os.extsep.join([key, 'npz']))
+    np.savez(outfile, {'y_true': y_true,
+                       'y_score': y_score,
+                       'y_pred': y_pred,
+                       'classes': LT.classes_})
 
     results['lrap'] = skm.label_ranking_average_precision_score(y_true,
                                                                 y_score)
@@ -146,15 +159,15 @@ def main(args):
     for res in Parallel(n_jobs=args.num_jobs)(d_eval(predictor,
                                                      label_encoder,
                                                      val_id, aug_id,
-                                                     args.input_path)
+                                                     args.input_path,
+                                                     args.output_path)
                                               for (val_id, aug_id) in probes):
         results.update(res)
 
     rframe = pd.DataFrame.from_dict(results, orient='index')
 
     print(rframe.describe())
-
-    rframe.to_json(args.score_file)
+    rframe.to_json(os.path.join(args.output_directory, args.score_file))
 
 
 if __name__ == '__main__':

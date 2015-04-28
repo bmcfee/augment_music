@@ -101,6 +101,7 @@ then
                 -j ${NUM_CPUS} \
                 -p ${param_file} \
                 -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -d ${MODEL_DIR} \
                 -o ${param_file}-${SPLIT}.json
         done
     done
@@ -125,7 +126,8 @@ then
                 -j ${NUM_CPUS} \
                 -p ${FINAL_PARAMS} \
                 -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -o ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT}.json
+                -d ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx} \
+                -o ${SPLIT}.json
         done
     done
 fi
