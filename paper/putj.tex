@@ -80,11 +80,11 @@ In short, complex data require complex models.
 By the same token, estimating the parameters of complex statistical models often requires
 a large number of samples: big models require big data.
 
-Within the past few years, this same phenomenon of model complexity has been observed
-in the computer vision literature.  Currently, the best-performing models for recognition
-of objects in images exploit two fundamental properties to overcome the difficulty of
-fitting large, complex models: access to large quantities of annotated data, and
-identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
+Within the past few years, this same phenomenon of increasing model complexity has been 
+observed in the computer vision literature.  Currently, the best-performing models for 
+recognition of objects in images exploit two fundamental properties to overcome the 
+difficulty of fitting large, complex models: access to large quantities of annotated data, 
+and identification of label-invariant transformations~\cite{krizhevsky2012imagenet}.
 The benefits of large training collections are obvious, and unfortunately, difficult to
 carry over to most musical annotation tasks due to the complexity of the label space and
 need for expert annotators.  However, the idea of generating perturbations of a training
@@ -112,12 +112,12 @@ class label: an image of a cat still contains a cat, even when it is flipped ups
 More generally, we may consider deformations which apply not only to the observable
 features, but the labels as well.
 Continuing with the image example, if an image is rotated by some angle, 
-then any pixel-wise label annotations (\eg, bounding boxes) should be also be rotated by
+then any pixel-wise label annotations (\eg, bounding boxes) should also be rotated by
 that angle.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
 As a musical analog to the image rotation example, time-stretching an audio track 
-should also result in dilation of time-keyed annotations (\eg, chord or instrument
+should induce a dilation of time-keyed annotations boundaries (\eg, chord or instrument
 activation timings)~\cite{mauch2013audio}.
 
 Moreover, many natural, musically-inspired deformation operations
@@ -125,9 +125,9 @@ would not only change the position of annotations, but the annotation
 \emph{values} themselves.
 For instance, if a track has tempo annotations, any time-stretching deformations should
 be applied to the annotations as well.
-Similarly, pitch-shifting a track should induce transpositions of melodic pitch contours,
-and if the transposition is sufficiently large, chord labels or symbolic annotations
-should also be modified.
+Similarly, pitch-shifting a track should induce transpositions of annotated fundamental
+frequency curves, and if the transposition is sufficiently large, chord labels or symbolic 
+annotations may change as well.
 It follows that successful application of data augmentation techniques in MIR may require
 substantially more careful implementations and transformation algorithms than are currently
 in use in other domains.
@@ -191,11 +191,15 @@ As an alternative to custom feature design, some authors advocate learning or op
 features directly from the data~\cite{humphrey2012moving}.
 Perhaps not surprisingly, this approach typically requires large model architectures, and
 consequently requires much larger (annotated) data sets than had previously been
-used in MIR research.
+used in MIR research.  
 Due to the high cost of acquiring annotated musical data, it has so far been difficult to
 apply these techniques in most MIR tasks.
-Our goal in this work is to ease this burden of sample complexity, and make
-data-driven methodology more accessible to the MIR community.
+While some authors have advocated leveraging unlabeled data to ``pre-train'' feature
+representations, recent studies have shown that comparable or better performance can be
+achieved with random initialization and fully supervised
+training~\cite{glorot2011deep,zeiler2013rectified}.
+Our goal in this work is to provide data augmentation tools which may ease the burden of 
+sample complexity, and make data-driven methodology more accessible to the MIR community.
 
 % 1. augmentation is not new, but it hasn't been done systematically.
 %   eg, chroma rotation for key-invariance in chord quality or mode
@@ -617,13 +621,11 @@ Formally, an input, $X$, is transformed into an output, $Z$, via a composite non
 function $\mathcal{F}(\cdot \given \Theta)$, given a parameter set $\Theta$.
 This is achieved as a sequential cascade of $L=4$ operations, $f_\ell(\cdot \given
 \theta_\ell)$, referred to as \emph{layers}, the order of which is given by $\ell$:
-
 \begin{equation}
 \label{eq:layers}
 Z = \mathcal{F}(X \given \Theta) = f_{L}(  ... f_2(f_1(X \given \theta_1) \given \theta_2) )
  \given \theta_{L})
 \end{equation}
-
 % \noindent Here, $\mathcal{F} = \{f_1, f_2, ... f_{L} \}$ is the set of layers, $\Theta = \{\theta_1, \theta_2, ... \theta_{L} \}$, the corresponding set of parameters, and the output of one layer is passed as the input to the next, as $X_{l+1} = Z_{l}$.
 
 The first two layers, $\ell \in \{1, 2\}$, are convolutional, expressed by the following:
@@ -640,13 +642,11 @@ In this formulation, $X_l$ has shape $(N, d_0, d_1)$, $W$ has shape $(M, N, m_0,
 Max-pooling is applied in time and frequency, to further accelerate computation by reducing the size of feature maps, and allowing a small degree of scale invariance in both time and pitch.
 
 The final two layers, $l \in \{3, 4\}$, are fully-connected matrix products, given as follows:
-
 \begin{equation}
 \label{eq:fclayer}
 Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell = [W, b]
 \end{equation}
-
-\noindent Here, the input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
+Here, the input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
 
 The network is parameterized thusly:
 $\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two
