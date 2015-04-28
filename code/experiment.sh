@@ -116,7 +116,7 @@ if [ $PHASE == "all" ] || [ $PHASE == "evaluate" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        for SPLIT in train test
+        for SPLIT in train validate test
         do
             ./evaluate_model.py \
                 -i ${FEATURES} \
@@ -127,6 +127,7 @@ then
                 -p ${FINAL_PARAMS} \
                 -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
                 -d ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx} \
+                --predict \
                 -o ${SPLIT}.json
         done
     done

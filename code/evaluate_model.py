@@ -63,6 +63,10 @@ def process_arguments(args):
                         type=str, required=True,
                         help='Path to store the predictions')
 
+    parser.add_argument('--predict', dest='predict',
+                        action='store_true', default=False,
+                        help='Store predictions')
+
     parser.add_argument('-o', '--output', dest='score_file',
                         type=str, required=True,
                         help='Path to store the results as json')
@@ -75,7 +79,8 @@ def get_predictor_input_size(predictor):
     return port.shape[2]
 
 
-def evaluator(predictor, LT, val_id, aug_id, input_path, output_directory):
+def evaluator(predictor, LT, val_id, aug_id, predict, input_path,
+              output_directory):
 
     key = dg.augment_file_id(val_id, aug_id)
 
@@ -98,11 +103,12 @@ def evaluator(predictor, LT, val_id, aug_id, input_path, output_directory):
     y_pred = (y_score >= 0.5).astype(int)
 
     #   save the predictions, truth, and scores out to an npz file
-    outfile = os.path.join(output_directory, os.extsep.join([key, 'npz']))
-    np.savez(outfile, {'y_true': y_true,
-                       'y_score': y_score,
-                       'y_pred': y_pred,
-                       'classes': LT.classes_})
+    if predict:
+        outfile = os.path.join(output_directory, os.extsep.join([key, 'npz']))
+        np.savez(outfile, {'y_true': y_true,
+                           'y_score': y_score,
+                           'y_pred': y_pred,
+                           'classes': LT.classes_})
 
     results['lrap'] = skm.label_ranking_average_precision_score(y_true,
                                                                 y_score)
@@ -159,6 +165,7 @@ def main(args):
     for res in Parallel(n_jobs=args.num_jobs)(d_eval(predictor,
                                                      label_encoder,
                                                      val_id, aug_id,
+                                                     args.predict,
                                                      args.input_path,
                                                      args.output_path)
                                               for (val_id, aug_id) in probes):
