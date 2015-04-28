@@ -579,17 +579,20 @@ augmentations.  This results in five training conditions of increasing complexit
 The acoustic model used in these experiments is a deep convolutional network.
 The input to the network consists of log-amplitude, constant-Q spectrogram patches extracted with librosa~\cite{librosa}.
 Each example spans approximately one second of audio, corresponding to 44 frames at a hop length of 512 samples and sampling rate of $22050$~Hz.
-Constant-Q spectrograms cover the range of C3 ($65.41$~Hz) to C9 ($4186$~Hz) at 36 bins per octave, resulting in time-frequency patches of size $216\times44$.
+Constant-Q spectrograms cover the range of C3 ($65.41$~Hz) to C9 ($4186$~Hz) at 36 bins
+per octave, resulting in time-frequency patches $X \in \R^{216\times44}$.
 Instrument activations are aggregated into a single binary label vector, such that an instrument is deemed active if its on-time within the sample exceeds 0.25 seconds.
 
 Importantly, constant-Q representations are linear in both time and pitch, a property that can be exploited by convolutional neural networks to achieve translation invariance.
 Thus a four-layer model is designed to estimate the presence of zero or more instruments in a time-frequency patch.
-Formally, an input, $X$, is transformed into an output, $Z$, via a composite nonlinear function $\mathcal{F}(\cdot \vert \Theta)$, given a parameter set $\Theta$.
-This is achieved as a sequential cascade of $L=4$ operations, $f_l(\cdot \vert \theta_l)$, referred to as \emph{layers}, the order of which is given by $l$:
+Formally, an input, $X$, is transformed into an output, $Z$, via a composite nonlinear
+function $\mathcal{F}(\cdot \given \Theta)$, given a parameter set $\Theta$.
+This is achieved as a sequential cascade of $L=4$ operations, $f_l(\cdot \given \theta_l)$, referred to as \emph{layers}, the order of which is given by $l$:
 
 \begin{equation}
 \label{eq:layers}
-Z = \mathcal{F}(X \vert \Theta) = f_{L}(  ... f_2(f_1(X \vert \theta_1) \vert \theta_2) ) ... \vert \theta_{L})
+Z = \mathcal{F}(X \given \Theta) = f_{L}(  ... f_2(f_1(X \given \theta_1) \given \theta_2) )
+ \given \theta_{L})
 \end{equation}
 
 % \noindent Here, $\mathcal{F} = \{f_1, f_2, ... f_{L} \}$ is the set of layers, $\Theta = \{\theta_1, \theta_2, ... \theta_{L} \}$, the corresponding set of parameters, and the output of one layer is passed as the input to the next, as $X_{l+1} = Z_{l}$.
@@ -599,7 +602,7 @@ The first two layers, $l \in \{1, 2\}$, are convolutional, expressed by the foll
 \begin{equation}
 \label{eq:convlayer}
 \small
-Z_l = f_l(X_l \vert \theta_l) = h(X_{l} \circledast W + b), \quad \theta_l = [W, b]
+Z_l = f_l(X_l \given \theta_l) = h(W \circledast X_\ell + b), \quad \theta_l = [W, b]
 \end{equation}
 
 \noindent Here, the valid convolution, $\circledast$, is computed by convolving a 3D input tensor, $X_l$, consisting of $N$ \emph{feature maps}, with a collection of $M$ 3D-\emph{kernels}, $W$, followed by an additive vector bias term, $b$, and transformed by a point-wise activation function, $h(\cdot)$.
@@ -611,19 +614,25 @@ The final two layers, $l \in \{3, 4\}$, are fully-connected matrix products, giv
 
 \begin{equation}
 \label{eq:fclayer}
-Z_l = f_l(X_l \vert \theta_l) = h( W~X_{l} + b), \quad \theta_l = [W, b]
+Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell = [W, b]
 \end{equation}
 
-\noindent Here, the input to the $l^{th}$ layer, $X_l$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
+\noindent Here, the input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
 
 The network is parameterized thusly:
-$l_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two dimensions, and a rectified linear (ReLU) activation function, \ie $\max(x, 0)$;
-$l_2$ uses $W$ with shape $(48, 24, 9, 7)$, $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
-$l_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
+$\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two
+dimensions, and a rectified linear (ReLU) activation function: $h(x) \defeq \max(x, 0)$;
+$\ell_2$ uses $W$ with shape $(48, 24, 9, 7)$, $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
+$\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
 finally, $l_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
-During training, the model is optimized to a cross-entropy loss via mini-batch stochastic gradient descent, $n=50$, with a constant learning rate of 0.02.
-Dropout is applied to the activations of the penultimate layer, $l=3$, with $p=0.5$, and a small amount of $l_2$-regularization is applied to the weights of the final layer, $l=4$, to prevent the weights from growing arbitrarily large and causing numerical instability.
+During training, the model is optimizes cross-entropy loss via mini-batch stochastic
+gradient descent, on batches of $n=64$ patches, with a constant learning rate of 0.01.
+Dropout is applied to the activations of the penultimate layer, $l=3$ with dropout
+probability $p=0.5$.
+$\ell_2$-regularization is applied to the weights of the final layer, $l=4$, with a
+penalty factor of $\lambda=0.02$. This helps prevent numerical instability by keeping
+the weights from growing arbitrarily large.
 
 
 \subsection{Experimental procedure and results}
