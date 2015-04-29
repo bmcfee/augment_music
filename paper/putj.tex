@@ -462,7 +462,7 @@ generate one example for each unique combination of source and gain.
 single annotated audio example into a sequence of deformed examples.  If we were
 interested in experimenting with only a single type of augmentation (\eg, time stretching),
 this would suffice.  However, some applications may require combining or cascading
-multiple types of deformation, and we would prefer a unified interface that obviates the
+multiple types of deformation, and we prefer a unified interface that obviates the
 need for customized data augmentation scripts.
 
 Here, we draw inspiration from SciKit-Learn in defining \emph{pipeline}
@@ -479,16 +479,17 @@ cartesian product of the corresponding state spaces
 \[
 \Sigma_P = \Sigma_1 \times \Sigma_2 \times \cdots \times \Sigma_k.
 \]
-Consequently, one input example produces $n_P=|\Sigma_P|=\prod_{i=1}^k
-|\Sigma_i|$ output examples.  However, by using generators rather than returning full
-lists of states, we ensure that only $k$ examples are ever in memory at any time.
-In most cases, $k$ is much smaller than $n_p$, and the improvement in memory efficiency
-is substantial.
+A single input example produces $|\Sigma_P|=\prod_{i=1}^k |\Sigma_i|$ outputs.
+By using generators rather than explicit lists of states, 
+we ensure that only $k$ examples are ever in memory at any time.
+In most cases, $k$ is much smaller than $|\Sigma_P|$, which provides substantial
+improvements to memory efficiency.
 
 Finally, we introduce the \emph{bypass} object, which is used to mark
-individual deformation objects as optional.  This can be useful when it is
-otherwise difficult to encode a special \emph{no-op} state within a deformation object,
-such as the randomized time-stretch example listed as \Cref{alg:timestate}.is
+individual pipeline stages as optional.
+Bypasses are useful when it is difficult to encode a special \emph{no-op} 
+state within a deformation object, such as the randomized time-stretch 
+example listed as \Cref{alg:timestate}.
 The internal logic of a bypass object is simple: first, pass the input directly through
 unmodified, and then generate samples from the contained deformation object as usual.
 Bypasses can be used to ensure that the original examples are propagated through the
@@ -501,13 +502,15 @@ When modifying data for statistical modeling purposes, maintaining transparency 
 utmost importance to ensure reproducibility and accurate interpretation of results.
 This ultimately becomes a question of data provenance~\cite{buneman2000data}: a record of
 all transformations should be kept, preferably attached as closely as possible to the data.
+Rather than force practitioners to handle book-keeping, we automate the process from within
+the deformation engine.
 This is accomplished at line~9 of \Cref{alg:transformation} by embedding the
 \emph{state} object $S$ (and, in practice, the parameters used to construct the
 deformation object $D$) within the JAMS object after each deformation is applied.
-Each object generated at line~10 thus contains a full transactional history of all
-modifications required to transform the original input $J$ into the output $J'$.
-For this reason, stochastic deformations are designed so that all randomness is contianed
-within the state generation logic, and transformations are all deterministic.
+Each $J'$ generated at line~10 thus contains a full transactional history of all
+modifications required to transform $J$ into $J'$.
+For this reason, stochastic deformations are designed so that all randomness is contained
+within the state generator, and transformations are all deterministic.
 
 In addition to facilitating reproducibility, maintaining transformation provenance allows
 practitioners to generate a wide range of deformations up front, and then later filter the
@@ -515,10 +518,10 @@ resulting objects.  As a result, it is straightforward to generate a suite of ex
 over different subsets of data augmentation parameters.
 
 To further facilitate reproducibility and sharing of experimental designs, the proposed
-architecture supports \emph{serialization} of deformation pipelines into a simple,
-human-readable JavaScript object notation (JSON) format.
-Once a pipeline has been constructed, it can be exported to
-disk, edited as plain text, shared, and reloaded.  This feature also simplifies the
+architecture supports \emph{serialization} of deformation objects and pipelines into a 
+simple, human-readable JavaScript object notation (JSON) format.
+Once a pipeline has been constructed, it can be exported, edited as plain text, shared,
+and reconstructed.  This feature also simplifies the
 process of applying several different sets of deformation parameters, and eliminates the
 need for writing a custom script for each setting.
 
@@ -643,11 +646,12 @@ Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h(W \circledast X_\ell + b), \quad
 \end{equation}
 Here, the valid convolution, $\circledast$, is computed by convolving a 3D input tensor,
 $X_\ell$, consisting of $N$ \emph{feature maps}, with a collection of $M$ 3D-\emph{kernels}, $W$, followed by an additive vector bias term, $b$, and transformed by a point-wise activation function, $h(\cdot)$.
-In this formulation, $X_l$ has shape $(N, d_0, d_1)$, $W$ has shape $(M, N, m_0, m_1)$, and the output, $Z_l$, has shape $(M, d_0-m_0+1, d_1-m_1+1)$.
+In this formulation, $X_\ell$ has shape $(N, d_0, d_1)$, $W$ has shape $(M, N, m_0, m_1)$,
+and the output, $Z_\ell$, has shape $(M, d_0-m_0+1, d_1-m_1+1)$.
 % Note that the number of feature maps, $N$, must match between input and kernels.
 Max-pooling is applied in time and frequency, to further accelerate computation by reducing the size of feature maps, and allowing a small degree of scale invariance in both time and pitch.
 
-The final two layers, $l \in \{3, 4\}$, are fully-connected matrix products, given as follows:
+The final two layers, $\ell \in \{3, 4\}$, are fully-connected matrix products, given as follows:
 \begin{equation}
 \label{eq:fclayer}
 Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell = [W, b]
