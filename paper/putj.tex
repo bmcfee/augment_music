@@ -594,17 +594,17 @@ present in the final set.
 Combining all stages of the pipeline produces {$3\times 3\times 4\times 3 = 108$} variants of each input track.  To
 simplify the experiments, we only compare the cumulative effects of the above
 augmentations.  This results in five training conditions of increasing complexity:
-\begin{enumerate}
-    \item No augmentation;
+\begin{description}
+    \item[(N)] No augmentation,
         \vspace{-.5\baselineskip}
-    \item Pitch shift;
+    \item[(P)] pitch shift,
         \vspace{-.5\baselineskip}
-    \item Pitch shift and time stretch;
+    \item[(PT)] pitch shift and time stretch,
         \vspace{-.5\baselineskip}
-    \item Pitch shift, time stretch, and background noise;
+    \item[(PTB)] pitch shift, time stretch, and background noise,
         \vspace{-.5\baselineskip}
-    \item All stages.
-\end{enumerate}
+    \item[(PTBC)] all stages.
+\end{description}
 
 \subsection{Acoustic model}
 
@@ -717,6 +717,15 @@ not corrupted by training on noisy examples.
         for augmentation condition 1 (no augmentation) vs.\ condition 2 (pitch-shifting).
         Each data point corresponds to a single test track, and is colored according to
         the random train-test split from which it was drawn.\label{onevstwo}}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figs/fscore-improvement}
+    \caption{Per-class change in test-set $F$-score for each augmentation condition,
+        relative to the no-augmentation condition.  
+        Positive changes indicate improvement by training with data augmentation.
+        Results are averaged across splits.\label{fscore}}
 \end{figure}
 
 To more clearly investigate the effects of pitch-shifting augmentation, \Cref{onevstwo}
