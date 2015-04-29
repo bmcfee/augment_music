@@ -595,7 +595,7 @@ Combining all stages of the pipeline produces {$3\times 3\times 4\times 3 = 108$
 simplify the experiments, we only compare the cumulative effects of the above
 augmentations.  This results in five training conditions of increasing complexity:
 \begin{description}
-    \item[(N)] No augmentation,
+    \item[(N)] no augmentation,
         \vspace{-.5\baselineskip}
     \item[(P)] pitch shift,
         \vspace{-.5\baselineskip}
@@ -688,9 +688,8 @@ depending on the genres of the recordings.
 For each train/test split of the data, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
-precision (LRAP) of predictions over all one-second patches in the track.  We opted for
-a ranking-based metric, rather than classification metrics (\eg, F1-score) because the
-latter can be sensitive to class bias and the choice of detection thresholds.
+precision (LRAP) of predictions over all one-second patches in the track.  
+
 
 \begin{figure}
     \centering
@@ -699,42 +698,56 @@ latter can be sensitive to class bias and the choice of detection thresholds.
         across train-test splits.\label{lrapresults}}
 \end{figure}
 
-\Cref{lrapresults} illustrates the test-set performance, aggregated across all splits. 
+\Cref{lrapresults} illustrates the test-set performance aggregated across all splits. 
 Because of the relatively small size of MedleyDB and the need for
 artist-conditional splits, the resulting test-sets are small and thus exhibit high
 variance across splits.  
 However, a few trends can be readily observed from the figure.
 First, the models trained with data augmentation (2--5) all generalize at least as well
-as the one trained only on clean data (1).  This indicates that the learning algorithm is
-not corrupted by training on noisy examples.
+as the one trained only on clean data (1).
+This indicates that the learning algorithm is not corrupted by training on noisy examples.
+Between the no-augmentation condition (N) and pitch-shifting augmentation, there is a
+small, but consistent improvement in performance.  However, little differentiation can be
+observed between different augmentation conditions.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{figs/onevstwo}
+    \includegraphics[width=0.75\columnwidth]{figs/onevstwo}
     \caption{Point-wise comparison of test-set scores (LRAP)
-        for augmentation condition 1 (no augmentation) vs.\ condition 2 (pitch-shifting).
-        Each data point corresponds to a single test track, and is colored according to
-        the random train-test split from which it was drawn.\label{onevstwo}}
+        for \emph{no augmentation} vs.\ \emph{pitch-shifting}.
+        Each point corresponds to a single test track.% and is colored according to
+        %the random train-test split from which it was drawn.
+\label{onevstwo}}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/fscore-improvement}
     \caption{Per-class change in test-set $F$-score for each augmentation condition,
-        relative to the no-augmentation condition.  
+        relative to no-augmentation.  
         Positive changes indicate improvement by training with data augmentation.
         Results are averaged across splits.\label{fscore}}
 \end{figure}
 
 To more clearly investigate the effects of pitch-shifting augmentation, \Cref{onevstwo}
-illustrates the differences in accuracy between the no-augmentation models (1) and the
-models trained with additional pitch-shifted data (2), aggregated across all splits.
+illustrates the differences in accuracy between the no-augmentation models (N) and the
+models trained with additional pitch-shifted data (P), aggregated across all splits.
 The majority of test points lie above the main diagonal, indicating
 consistent improvements due to data augmentation.
 
-\section{Conclusion}
+Finally, we investigate the effects on each class due to data augmentation.
+\Cref{fscore} illustrates the change in per-class $F$-score relative to the
+no-augmentation condition, averaged across across splits.
+While the change varies between classes, the trend is generally positive
+with the exceptions of \emph{female singer} and especially \emph{violin}.
+In the latter case, negative change is only observed after introducing time-stretch
+deformations, which may introduce unnatural distortions to the vibrato characteristics,
+and thus make the class more difficult to model.
+
+\section{Discussion}
 
 % For bibtex users:
+\newpage
 \bibliography{refs}
 
 \end{document}
