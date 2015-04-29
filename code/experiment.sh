@@ -116,7 +116,7 @@ if [ $PHASE == "all" ] || [ $PHASE == "evaluate" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        for SPLIT in train validate test
+        for SPLIT in train validation test
         do
             ./evaluate_model.py \
                 -i ${FEATURES} \
