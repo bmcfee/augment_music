@@ -59,7 +59,7 @@ def process_arguments(args):
                         type=str, required=True,
                         help='Path to the model parameters npz')
 
-    parser.add_argument('-d', '--output-dir', dest='output_directory',
+    parser.add_argument('-d', '--output-dir', dest='output_path',
                         type=str, required=True,
                         help='Path to store the predictions')
 
@@ -174,7 +174,7 @@ def main(args):
     rframe = pd.DataFrame.from_dict(results, orient='index')
 
     print(rframe.describe())
-    rframe.to_json(os.path.join(args.output_directory, args.score_file))
+    rframe.to_json(os.path.join(args.output_path, args.score_file))
 
 
 if __name__ == '__main__':
