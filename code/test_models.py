@@ -17,10 +17,14 @@ def process_arguments(args):
     parser.add_argument('base_dir', type=str,
                         help='Path to the results')
 
+    parser.add_argument('-m', '--model', dest='model',
+                        type=str, default='large',
+                        help='Model name (default: large)')
+
     return vars(parser.parse_args(args))
 
 
-def run(best_params=None, base_dir=None):
+def run(best_params=None, base_dir=None, model='large'):
     '''Run the tests'''
 
     best_parameters = json.load(open(best_params, 'r'))
@@ -33,7 +37,7 @@ def run(best_params=None, base_dir=None):
 
             subprocess.check_call(['./experiment.sh',
                                    aug_idx,
-                                   'large',
+                                   model,
                                    fold,
                                    'evaluate'])
 
