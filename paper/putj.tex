@@ -108,8 +108,7 @@ class label: an image of a cat still contains a cat, even when it is flipped ups
 %caution when applying data augmentation techniques to ensure that the correct invariances
 %are maintained.
 
-More generally, we may consider deformations which apply not only to the observable
-features, but the labels as well.
+More generally, deformations may apply not only to the observable features, but the labels as well.
 Continuing with the image example, if an image is rotated by some angle, 
 then any pixel-wise label annotations (\eg, bounding boxes) should also be rotated by
 that angle.
@@ -210,10 +209,9 @@ in a unified framework.
 For example, it is common to apply circular rotations to chroma features
 to achieve key invariance when modeling chord quality~\cite{lee2008acoustic}.
 Alternately, synthetic mixtures of monophonic instruments have been used
-to generate non-trivial examples when training polyphonic transcription
+to generate more difficult examples when training polyphonic transcription
 engines~\cite{kirchhoff2012multi}.
-At the other end of the spectrum, some authors leave the audio content unchanged and
-only modify labels during training, as exemplified by the \emph{target smearing}
+Some authors even leave the audio content unchanged and only modify labels during training, as exemplified by the \emph{target smearing}
 method of Ullrich~\etal\ for training structural boundary
 detectors~\cite{ullrich2014boundary}.
 
@@ -276,8 +274,7 @@ that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,h
 Our implementation takes substantial inspiration from the Audio Degradation
 Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly
 for data augmentation simply by applying it to the training set rather than test set.
-However, we opted for an independent, Python-based implementation for a variety of
-reasons as detailed below.
+However, we opted for an independent, Python-based implementation for a variety of reasons.
 
 % 1. object-oriented design
 %   simple, reusable components that are easy to modify and extend
@@ -298,12 +295,13 @@ deformations, or implement new transformations with minimal effort.
 %       implemented as simple callbacks registered against annotation types or patterns
 %
 
-Second, we use JAMS objects~\cite{humphreyjams} to contain and transport all
-annotations and audio content for a given track.
+Second, we use JAMS~\cite{humphreyjams} both to transport and store track annotations, 
+and as an internal data structure for processing.
+JAMS provides a unified interface to different annotation types, and a convenient framework to comanage all annotations
+for a particular track.
 This simplifies the tasks of maintaining synchronization between audio and annotations,
-and implementing task-dependent annotation deformations.  Moreover, we take
-advantage of JAMS meta-data fields to provide data provenance and facilitate
-reproducibility.
+and implementing task-dependent annotation deformations.  
+We also adapt JAMS sandbox fields to provide data provenance and facilitate reproducibility.
 
 % 3. use familiar design paradigms
 %   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
@@ -324,11 +322,11 @@ from small, conceptually simple components.
 %       make a deformer optional
 
 In the remainder of this section, we will describe each of these
-properties in more detail.  Without loss of generality, we will assume that an
-annotation (\eg, instrument activations or semantic tags) is encoded as a collection of
+properties in more detail.  Without loss of generality, we assume that an
+annotation (\eg, instrument activations) is encoded as a collection of
 tuples: \emph{(time, duration, value, confidence)}.
-Note that instantaneous events can be represented as having zero duration, while
-track-level annotations have full-track duration.  The \emph{value} field will depend on
+Note that instantaneous events can be represented with zero duration, while
+track-level annotations have full-track duration.  The \emph{value} field depends on
 the annotation type, and may encode strings, numeric quantities, or fully structured
 objects.
 
@@ -530,12 +528,10 @@ need for writing a custom script for each setting.
 To illustrate the data augmentation process, we applied it to the task of instrument
 recognition in mixed audio signals.  For this task, we used the MedleyDB dataset, which
 consists of 122 tracks, spanning a variety of genres and
-instrumentations~\cite{bittner2014medleydb}.  Each track is annotated with time-varying
-instrument activation functions, which are thresholded to provide a set of active
-instruments at each point in time.
-Because of the relatively small sample size, we limit
-the experiment to cover only the 15 most frequently used (by track) instruments, as
-listed in \Cref{medleytags}.
+instrumentations~\cite{bittner2014medleydb}.  Each track is strongly annotated with 
+time-varying instrument activation indicators derived from the recording stems.
+Because of the relatively small sample size, we limit the experiment to cover only 
+the 15 most frequently used (by track) instruments, as listed in \Cref{medleytags}.
 
 \begin{table}
 \caption{The 15 most frequently used instrument labels in MedleyDB.\label{medleytags}}
