@@ -167,7 +167,7 @@ Similarly, many authors interested in modeling timbre
 use Mel-frequency cepstral coefficients (MFCCs) and discard the first component to
 achieve invariance to loudness~\cite{pampalk2004matlab}.
 This general strategy makes intuitive sense, but it carries many limitations.
-First, it is not necessarily easy to identify all relevant symmetries the
+First, it is not necessarily easy to identify all relevant symmetries in the
 data: if it was, the modeling problem would be essentially solved.
 Second, even if such properties are easy to identify, it may still be difficult to
 engineer appropriately invariant features without discarding potentially useful
@@ -332,26 +332,28 @@ objects.
 
 \subsection{Deformation objects}
 
-At the core of our implementation is the concept of a \emph{deformation object}.
-A deformation object implements one or more \emph{transformation} methods, each of which
-applies to audio data, meta-data, or annotations.
-Parameters of the deformation are shared through a \emph{state} object $S$:
-For example, $S$ might contain the speed-up factor of a
-time-stretch operation, or the number of semi-tones in a pitch-shift.  
-Each transformation method thus takes as input a pair $(S, x)$ and
-returns the suitably transformed audio, meta-data, or annotation $x'$.
-This decoupling of the deformation object's instantiation from
-its state allows multiple tracks to be processed in parallel by the same object.
-Moreover, as described in \Cref{sec:reproducibility}, it promotes reproducibility 
-by making state objects re-usable.
+At the core of our implementation is the concept of a \emph{deformation object}, which we will 
+first describe abstractly, followed by a high-level description of an example.
 
-Data augmentation often requires sweeping or randomly sampling a set of deformation 
+A deformation object implements one or more \emph{transformation} methods, each of which
+applies to either audio, meta-data, or annotations.
+Parameters of the deformation are shared through a \emph{state} object $S$.
+For example, $S$ might contain the speed-up factor of a
+time-stretch, or the number of semi-tones in a pitch-shift.  
+Each transformation method takes as input a pair $(S, x)$ and
+returns the transformed audio, meta-data, or annotation $x'$.
+Decoupling the deformation object's instantiation from
+its state allows multiple tracks to be processed in parallel by the same object.
+Moreover, as described in \Cref{sec:reproducibility}, 
+state objects are reusable, which promotes reproducibility.
+
+Data augmentation often requires sampling or sweeping a set of deformation 
 parameters, and instantiating a separate deformation object for each parameterization 
 would be woefully inefficient.
-To streamline this process, deformation objects must provide \emph{state generators},
-which may implement arbitrary state transition logic to produce a sequence of 
-state objects.  This is accomplished efficiently via Python's \emph{generator}
-functionality.
+Instead, a deformation object implements a \emph{state generator},
+which may execute arbitrary transition logic to produce a sequence of 
+states $(S_1, S_2, \dots)$.
+This is implemented efficiently using Python \emph{generators}.
 
 Finally, deformation objects may register transformation functions against the 
 \emph{type} of an annotation, as described by regular expressions.
@@ -361,13 +363,10 @@ For example, the expression ``\texttt{.*}'' matches all annotation types, while
 ``\texttt{chord.*}'' matches only chord-type annotations.
 These patterns need not be unique or disjoint, though care must be taken
 to ensure consistent behavior.
-Deformations are always applied following the order in which they are registered, 
-and we encourage the convention that patterns be registered in order of decreasing
-generality.
+Deformations are always applied following the order in which they are registered.
 
 The abstract transformation algorithm is described in \Cref{alg:transformation}.
-For each state $S$, the input data $J$ is copied, transformed into $J'$, and yielded 
-back to the caller. 
+For each state $S$, the input data $J$ is copied, transformed into $J'$, and yielded back to the caller. 
 Each $J'$ can then be saved off to disk, provided as a sample to an iterative learning 
 algorithm, or passed along to another deformation object in a pipeline for further processing.
 When all subsequent processing of $J'$ has completed, \Cref{alg:transformation} may resume
@@ -690,7 +689,7 @@ precision (LRAP) of predictions over all one-second patches in the track.
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
-    \caption{Test-set score distributions (label-ranking average precision), aggregated
+    \caption{Test-set score distributions (mean track-wise label-ranking average precision), aggregated
         across train-test splits.\label{lrapresults}}
 \end{figure}
 
@@ -701,9 +700,9 @@ variance across splits.
 As a basic sanity check, we first note that training with degraded audio does not appear
 to decrease overall performance.
 Between the no-augmentation condition (N) and pitch-shifting augmentation, there is a
-small, but consistent improvement in performance.  A Wilcoxon signed-rank test between
-conditions (N) and (P) produced a test statistic of 2018 and $p=2.25\times 10^{-6}$.
-However, little differentiation was be observed among the different augmentation conditions.
+small, but consistent improvement in performance.
+%A Wilcoxon signed-rank test between conditions (N) and (P) produced a test statistic of 2018 and $p=2.25\times 10^{-6}$.
+However, little differentiation was observed among the different augmentation conditions.
 
 %\begin{figure}
 %    \centering
@@ -731,11 +730,11 @@ However, little differentiation was be observed among the different augmentation
 
 Next, we investigated the effects of data augmentation on each class.
 \Cref{fscore} illustrates the change in per-class $F$-score relative to the
-no-augmentation condition, averaged across across splits.
+no-augmentation condition, averaged across splits.
 While the change varies between classes, the trend is generally positive
 with the exceptions of \emph{female singer} and especially \emph{violin}.
 In the latter case, negative change is only observed after introducing time-stretch
-deformations, which may introduce unnatural distortions to the vibrato characteristics,
+deformations, which may unnaturally distort the vibrato characteristics,
 and thus make the class more difficult to model.
 
 \section{Discussion}
