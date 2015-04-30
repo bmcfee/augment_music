@@ -689,20 +689,23 @@ precision (LRAP) of predictions over all one-second patches in the track.
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
-    \caption{Test-set score distributions (mean track-wise label-ranking average precision), aggregated
-        across train-test splits.\label{lrapresults}}
+    \caption{Test-set score distributions (mean track-wise label-ranking average precision), aggregated across train-test splits.\label{lrapresults}}
 \end{figure}
 
 \Cref{lrapresults} illustrates the test-set performance aggregated across all splits. 
 Because of the relatively small size of MedleyDB and the need for
 artist-conditional splits, the resulting test-sets are small and thus exhibit high
 variance across splits.  
-As a basic sanity check, we first note that training with degraded audio does not appear
-to decrease overall performance.
-Between the no-augmentation condition (N) and pitch-shifting augmentation, there is a
-small, but consistent improvement in performance.
+%As a basic sanity check, we first note that training with degraded audio does not appear
+%to decrease overall performance.
+Between the no-augmentation condition (N) and pitch-shifting augmentation (P), 
+there is a small, but consistent improvement in performance.
+Subsequent deformation conditions do not appear to improve beyond this point, however,
+the final condition (all deformations) achieves much lower variance --- \ie, higher
+stability --- across train-test splits.
 %A Wilcoxon signed-rank test between conditions (N) and (P) produced a test statistic of 2018 and $p=2.25\times 10^{-6}$.
-However, little differentiation was observed among the different augmentation conditions.
+%However, little differentiation was observed among the different augmentation conditions.
+
 
 %\begin{figure}
 %    \centering
@@ -728,7 +731,7 @@ However, little differentiation was observed among the different augmentation co
         Results are averaged across splits.\label{fscore}}
 \end{figure}
 
-Next, we investigated the effects of data augmentation on each class.
+Next, we investigated the effects of data augmentation on each instrument class.
 \Cref{fscore} illustrates the change in per-class $F$-score relative to the
 no-augmentation condition, averaged across splits.
 While the change varies between classes, the trend is generally positive
