@@ -32,7 +32,7 @@
 
 % Three addresses
 % --------------
-\threeauthors
+\threeauthors%
   {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
   {Second author} {\bf Retain these fake authors in\\\bf submission to preserve the formatting}
   {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
@@ -297,8 +297,8 @@ deformations, or implement new transformations with minimal effort.
 
 Second, we use JAMS~\cite{humphreyjams} both to transport and store track annotations, 
 and as an internal data structure for processing.
-JAMS provides a unified interface to different annotation types, and a convenient framework to comanage all annotations
-for a particular track.
+JAMS provides a unified interface to different annotation types, and a convenient framework to 
+manage all annotations for a particular track.
 This simplifies the tasks of maintaining synchronization between audio and annotations,
 and implementing task-dependent annotation deformations.  
 We also adapt JAMS sandbox fields to provide data provenance and facilitate reproducibility.
@@ -306,7 +306,7 @@ We also adapt JAMS sandbox fields to provide data provenance and facilitate repr
 % 3. use familiar design paradigms
 %   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
 %
-Finally, we borrow familiar software design patterns from the SciKit-Learn
+Finally, we borrow familiar software design patterns from the scikit-learn
 package~\cite{buitinck2013api}, such \emph{transformers}, \emph{pipelines}, 
 and model serialization.  These simple building blocks allow
 practitioners to quickly and easily assemble complex data augmentation pipelines 
@@ -462,10 +462,10 @@ this would suffice.  However, some applications may require combining or cascadi
 multiple types of deformation, and we prefer a unified interface that obviates the
 need for customized data augmentation scripts.
 
-Here, we draw inspiration from SciKit-Learn in defining \emph{pipeline}
+Here, we draw inspiration from scikit-learn in defining \emph{pipeline}
 objects.  The general idea is simple: two or more deformation objects can be chained
 together, and treated as a single, integrated deformation object.  This functionality
-mimics that of the SciKit-Learn \emph{Transformer} pipeline,\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html}} except that rather
+mimics that of the scikit-learn \emph{Transformer} pipeline,\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html}} except that rather
 than applying a composition of one-to-one mappings, deformation pipelines
 compose functions in a one-to-many fashion.  More precisely, for a deformation pipeline
 $P$ composed of $k$ stages:
@@ -527,7 +527,7 @@ need for writing a custom script for each setting.
 To illustrate the data augmentation process, we applied it to the task of instrument
 recognition in mixed audio signals.  For this task, we used the MedleyDB dataset, which
 consists of 122 tracks, spanning a variety of genres and
-instrumentations~\cite{bittner2014medleydb}.  Each track is strongly annotated with 
+instrumentation~\cite{bittner2014medleydb}.  Each track is strongly annotated with 
 time-varying instrument activation indicators derived from the recording stems.
 Because of the relatively small sample size, we limit the experiment to cover only 
 the 15 most frequently used (by track) instruments, as listed in \Cref{medleytags}.
@@ -627,8 +627,7 @@ This is achieved as a sequential cascade of $L=4$ operations, $f_\ell(\cdot \giv
 \theta_\ell)$, referred to as \emph{layers}, the order of which is given by $\ell$:
 \begin{equation}
 \label{eq:layers}
-Z = \mathcal{F}(X \given \Theta) = f_{L}(  ... f_2(f_1(X \given \theta_1) \given \theta_2) )
- \given \theta_{L})
+Z = \mathcal{F}(X \given \Theta) = f_{L}(  \cdots f_2(f_1(X \given \theta_1) \given \theta_2) \given \theta_{L})
 \end{equation}
 % \noindent Here, $\mathcal{F} = \{f_1, f_2, ... f_{L} \}$ is the set of layers, $\Theta = \{\theta_1, \theta_2, ... \theta_{L} \}$, the corresponding set of parameters, and the output of one layer is passed as the input to the next, as $X_{l+1} = Z_{l}$.
 
@@ -678,9 +677,9 @@ select the best-performing parameter setting.
 %   compare per-track meanAP of tags
 Five random artist-conditional partitions of the MedleyDB collection were generated with
 a train/test artist ratio of 4:1.  For the purposes of this experiment,
-the ``artist'' \emph{MusicDelta} was separated into a collection of distinct pseudo-artists
-depending on the genres of the recordings.
-For each train/test split of the data, the training set was further partitioned into
+\emph{MusicDelta} tracks were separated by genre into a collection of distinct 
+pseudo-artists.
+For each train/test split, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
 precision (LRAP) of predictions over all disjoint one-second patches.
