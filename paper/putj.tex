@@ -115,7 +115,7 @@ that angle.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
 As a musical analog to the image rotation example, time-stretching an audio track 
-should induce a dilation of time-keyed annotations boundaries (\eg, chord or instrument
+should induce a dilation of time-keyed annotation boundaries (\eg, chord or instrument
 activation timings)~\cite{mauch2013audio}.
 
 Moreover, many natural, musically-inspired deformations
@@ -126,9 +126,8 @@ be applied to the annotations as well.
 Similarly, pitch-shifting a track should induce transpositions of annotated fundamental
 frequency curves, and if the transposition is sufficiently large, chord labels or symbolic 
 annotations may change as well.
-It follows that successful use of data augmentation in MIR may require
-substantially more careful implementations and transformation algorithms than are currently
-in use in other domains.
+To successfully apply data augmentation may require a more sophisticated approach in MIR
+than in other domains.
 
 %   3. but data augmentation is more difficult in music than in images
 %       a. the output space is much more complex than simple tags
@@ -307,7 +306,7 @@ We also adapt JAMS sandbox fields to provide data provenance and facilitate repr
 %   take inspiration from the Transformer and Pipeline paradigms of scikit-learn
 %
 Finally, we borrow familiar software design patterns from the scikit-learn
-package~\cite{buitinck2013api}, such \emph{transformers}, \emph{pipelines}, 
+package~\cite{buitinck2013api}, such as \emph{transformers}, \emph{pipelines}, 
 and model serialization.  These simple building blocks allow
 practitioners to quickly and easily assemble complex data augmentation pipelines 
 from small, conceptually simple components.
