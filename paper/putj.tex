@@ -533,7 +533,7 @@ Because of the relatively small sample size, we limit the experiment to cover on
 the 15 instruments listed in \Cref{medleytags}.
 
 \begin{table}
-\caption{The 15 most frequently used instrument labels in MedleyDB.\label{medleytags}}
+\caption{The 15 MedleyDB instrument labels used in our experiments.\label{medleytags}}
 \centering
 \small
     \begin{tabular}{lrr}
@@ -567,14 +567,14 @@ The system is then tasked with recognizing the instruments active within each cl
 The data augmentation pipeline consists of four stages:
 
 \begin{description}
-    \item[Pitch shift] by $n \in \{-1, 0, +1\}$ semitones.
-    \item[Time stretch] by a factor of $r \in \left\{ 2^{-1/2}, 1.0, 2^{1/2}\right\}$.
+    \item[Pitch shift] by $n \in \{-1,\, 0,\, +1\}$ semitones.
+    \item[Time stretch] by a factor of $r \in \left\{ 2^{-1/2},\, 1.0,\, 2^{1/2}\right\}$.
     \item[Background noise (bypass)] under three conditions:
         subway,\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}}
         crowded concert hall,\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}}
         and night-time city noise.\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}
-        The latter three were linearly mixed with the input signal $y$ using random weights drawn uniformly
-        $\alpha \sim { }_U[0.1, 0.4]$:
+        The latter three were linearly mixed with the input signal $y$ using random weights
+        $\alpha \sim { }_U[0.1,\, 0.4]$:
         \[
             y' \leftarrow (1-\alpha) \cdot y + \alpha \cdot y_\text{noise}.
         \]
@@ -693,7 +693,8 @@ precision (LRAP) of predictions over all disjoint one-second patches.
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
-    \caption{Test-set score distributions (mean track-wise label-ranking average precision), aggregated across train-test splits.\label{lrapresults}}
+    \caption{Test-set score distributions (mean track-wise label-ranking average
+        precision), over all train-test splits.\label{lrapresults}}
 \end{figure}
 
 \Cref{lrapresults} illustrates the test-set performance aggregated across all splits. 
