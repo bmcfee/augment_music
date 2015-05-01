@@ -651,7 +651,7 @@ The final two layers, $\ell \in \{3, 4\}$, are fully-connected matrix products, 
 \label{eq:fclayer}
 Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell = [W, b]
 \end{equation}
-Here, the input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix, $W$, of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
+The input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix $W$ of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
 
 The network is parameterized thusly:
 $\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two
@@ -683,7 +683,7 @@ depending on the genres of the recordings.
 For each train/test split of the data, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
-precision (LRAP) of predictions over all one-second patches in the track.  
+precision (LRAP) of predictions over all disjoint one-second patches.
 
 
 \begin{figure}
