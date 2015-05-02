@@ -52,7 +52,8 @@ fi
 if [ -z "$3" ] || [ "$3" == "all" ];
 then
     echo "Setting all folds"
-    FOLD_IDXS=$(seq -w 0 15)
+    #FOLD_IDXS=$(seq -w 0 15)
+    FOLD_IDXS=$(seq -w 10 15)
 else
     FOLD_IDXS=$3
 fi
