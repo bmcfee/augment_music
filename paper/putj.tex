@@ -672,7 +672,7 @@ the weights from growing arbitrarily large.
 The model is check-pointed after every 1000 batches, and a validation set is used to
 select the best-performing parameter setting.
 
-\subsection{Experimental procedure and results}
+\subsection{Evaluation}
 
 % Repeat x5:
 %   randomly partition artists
@@ -704,9 +704,10 @@ precision (LRAP) of predictions over all disjoint one-second patches.
 %to decrease overall performance.
 Between the no-augmentation condition (N) and pitch-shifting augmentation (P), 
 there is a small, but consistent improvement in performance.
-Subsequent deformation conditions do not appear to improve beyond this point, however,
-the final condition (all deformations) achieves much lower variance --- \ie, higher
-stability --- across train-test splits.
+Subsequent deformation conditions do not appear to improve beyond this point on average.
+%Subsequent deformation conditions do not appear to improve beyond this point, however,
+%the final condition (all deformations) achieves much lower variance --- \ie, higher
+%stability --- across train-test splits.
 %A Wilcoxon signed-rank test between conditions (N) and (P) produced a test statistic of 2018 and $p=2.25\times 10^{-6}$.
 %However, little differentiation was observed among the different augmentation conditions.
 
@@ -728,11 +729,11 @@ stability --- across train-test splits.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{figs/fscore-improvement}
-    \caption{Per-class change in test-set $F$-score for each augmentation condition,
-        relative to no-augmentation.  
-        Positive changes indicate improvement by training with data augmentation.
-        Results are averaged across splits.\label{fscore}}
+    \includegraphics[width=\columnwidth]{figs/fscore-change}
+    \caption{Per-class relative change in test-set $F$-score for each augmentation condition,
+        relative to no-augmentation ($F_N$).  
+        Positive change indicates improvement by training with data augmentation.
+        $F$-scores are averaged across test splits.\label{fscore}}
 \end{figure}
 
 Next, we investigated the effects of data augmentation on each instrument class.
