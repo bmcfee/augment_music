@@ -46,5 +46,17 @@
     "7": "large/aug4/fold_07/aug4-033000-2015-05-01_10h42m00s.npz", 
     "8": "large/aug4/fold_08/aug4-046000-2015-05-01_12h31m37s.npz", 
     "9": "large/aug4/fold_09/aug4-031000-2015-05-01_14h49m32s.npz"
+  }, 
+  "5": {
+    "0": "large/aug5/fold_00/aug5-018000-2015-04-24_17h12m24s.npz", 
+    "1": "large/aug5/fold_01/aug5-022000-2015-04-24_18h24m54s.npz", 
+    "2": "large/aug5/fold_02/aug5-036000-2015-04-24_19h51m03s.npz", 
+    "3": "large/aug5/fold_03/aug5-039000-2015-04-24_21h02m29s.npz", 
+    "4": "large/aug5/fold_04/aug5-047000-2015-04-24_22h20m24s.npz", 
+    "5": "large/aug5/fold_05/aug5-031000-2015-05-01_11h52m33s.npz", 
+    "6": "large/aug5/fold_06/aug5-026000-2015-05-01_18h59m53s.npz", 
+    "7": "large/aug5/fold_07/aug5-042000-2015-05-01_21h04m03s.npz", 
+    "8": "large/aug5/fold_08/aug5-035000-2015-05-01_22h26m42s.npz", 
+    "9": "large/aug5/fold_09/aug5-037000-2015-05-02_00h06m52s.npz"
   }
 }
