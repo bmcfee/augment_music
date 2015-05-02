@@ -44,7 +44,7 @@ PESCADOR_ACTIVE_SET = 1000
 PESCADOR_LAMBDA_MIN = 16.0
 
 RANDOM_SEED = 7
-N_FOLDS = 5
+N_FOLDS = 15
 
 
 def load_artists(artist_file):
