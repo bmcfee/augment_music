@@ -52,7 +52,7 @@ fi
 if [ -z "$3" ] || [ "$3" == "all" ];
 then
     echo "Setting all folds"
-    FOLD_IDXS=$(seq 0 4)
+    FOLD_IDXS=$(seq -w 0 15)
 else
     FOLD_IDXS=$3
 fi
@@ -89,18 +89,18 @@ if [ $PHASE == "all" ] || [ $PHASE == "select" ];
 then
     for idx in ${FOLD_IDXS}
     do
-        MODEL_DIR=${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/
+        MODEL_DIR=${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx}/
 
         for param_file in $(find $MODEL_DIR -name \*.npz |sort |awk "!(NR%${EVAL_STRIDE})")
         do
             ./evaluate_model.py \
                 -i ${FEATURES} \
                 -t ${METADATA}/medley_index_1_nopitch.csv \
-                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx}/${SPLIT_FILE} \
                 -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${param_file} \
-                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
+                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx}/${MODEL_FILE} \
                 -d ${MODEL_DIR} \
                 -o ${param_file}-${SPLIT}.json
         done
@@ -121,12 +121,12 @@ then
             ./evaluate_model.py \
                 -i ${FEATURES} \
                 -t ${METADATA}/medley_index_1_nopitch.csv \
-                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${SPLIT_FILE} \
+                -s ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx}/${SPLIT_FILE} \
                 -n ${SPLIT} \
                 -j ${NUM_CPUS} \
                 -p ${FINAL_PARAMS} \
-                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx}/${MODEL_FILE} \
-                -d ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_0${idx} \
+                -m ${MODELS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx}/${MODEL_FILE} \
+                -d ${RESULTS}/${MODEL_SIZE}/aug${AUG_IDX}/fold_${idx} \
                 --predict \
                 -o ${SPLIT}.json
         done
