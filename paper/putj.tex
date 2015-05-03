@@ -693,10 +693,13 @@ precision (LRAP) over all disjoint one-second patches.
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
     \caption{Test-set score distributions (mean track-wise label-ranking average
-        precision), over all train-test splits.\label{lrapresults}}
+        precision), over all train-test splits. Mean scores are indicated by \color{red}
+        $\bullet$\normalcolor{}.
+        Boxes cover the $25$--$75$ percentiles, whiskers cover the $10$--$90$
+        percentiles.\label{lrapresults}}
 \end{figure}
 
-\Cref{lrapresults} illustrates the test-set performance aggregated across all splits. 
+\Cref{lrapresults} illustrates the distribution of test-set performance over all splits. 
 %Because of the relatively small size of MedleyDB and the need for
 %artist-conditional splits, the resulting test-sets are small and thus exhibit high
 %variance across splits.  
@@ -704,17 +707,24 @@ precision (LRAP) over all disjoint one-second patches.
 %to decrease overall performance.
 Between the no-augmentation condition (N) and pitch-shifting augmentation (P), 
 there is a small, but consistent improvement in performance from an average of 0.655 to
-0.677.
+0.677.  This is in keeping with the motivation for this work, and our 
+expectations when training a (pitch)-convolutional model on a small sample.
+If the unmodified data is too small, the model may easily over-fit by capturing
+irrelevant, correlated properties.
+(For example, if all of the \emph{piano} recordings are in one key, the model may simply
+capture the key rather than the characteristics of \emph{piano}.)
+
 Subsequent deformation conditions do not appear to improve beyond this point on average.
-All deformation conditions outperform the baseline, indicating that augmentation 
-does not generally hurt performance.  However, because the improvement is not monotonic
-with respect to the cumulative effects of deformation, it may be that not all deformations 
-are equally useful.
+In each case, no significant difference from the pitch-shift condition could be detected 
+by a Wilcoxon signed-rank test.
+However, all deformation conditions consistently outperform the baseline on average.
+%Because the improvement is not monotonic with respect to the cumulative effects 
+%of deformation, it may be that not all deformations are equally useful.
 
 Although the difference in average performance is relatively small, the upper and lower 
-quantiles are notably higher in (P), (PT), and (PTB) conditions.  This suggests a
-reduction in the tendency to over-fit the relatively small training sets used in these
-experiments.
+quantiles are notably higher in (P), (PT), and (PTB) conditions.
+This suggests a reduction in the tendency to over-fit the relatively small training sets
+used in these experiments.
 
 
 %Subsequent deformation conditions do not appear to improve beyond this point, however,
@@ -746,10 +756,11 @@ experiments.
     %\includegraphics[width=\columnwidth]{figs/fscore-change}
     %\caption{Per-class change in mean test-set $F$-score for each augmentation condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
     \includegraphics[width=\columnwidth]{figs/fscore-improvement}
-    \caption{Per-class change in mean test-set $F$-score for each augmentation condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
+    \caption{Per-class change in mean test-set $F$-score for each augmentation condition
+        ($F$), relative to the no-augmentation baseline ($F_N$).\label{fscore}}
 \end{figure}
 
-Next, we investigated the effects of data augmentation on each instrument class.
+We investigated the effects of augmentation on each instrument class.
 Specifically, we computed the precision, recall, and $F$-score of frame-level multi-label
 instrument classification under each training condition, and averaged the results across
 all test tracks in a split, and then across all splits.
@@ -757,15 +768,19 @@ The quantity of interest is the label-wise change in $F$-score relative to the b
 condition (N): $\Delta F = (F - F_N)$.
 The results are collected in \Cref{fscore}.
 
-While the changes vary over classes, the trend is primarily positive
-with a few notable exceptions of \emph{synthesizer}, \emph{female singer},
+The trend is primarily positive: in all but three classes, all augmentation
+conditions provide consistent improvement.  
+The three exceptions are \emph{synthesizer}, \emph{female singer},
 and \emph{violin}.
 In the latter two cases, negative change is only observed after introducing time-stretch
-deformations, which may unnaturally distort vibrato characteristics,
-rendering these classes more difficult to model.
-
+deformations, which may unnaturally distort vibrato characteristics and
+render these classes more difficult to model.
+The large decrease in accuracy for \emph{synthesizer} in the (PT) condition may explain 
+the reduction in accuracy seen in \Cref{lrapresults}.
 
 \section{Conclusion}
+
+
 
 
 %\section*{Acknowledgments}
