@@ -703,8 +703,19 @@ precision (LRAP) over all disjoint one-second patches.
 %As a basic sanity check, we first note that training with degraded audio does not appear
 %to decrease overall performance.
 Between the no-augmentation condition (N) and pitch-shifting augmentation (P), 
-there is a small, but consistent improvement in performance from 0.646 to 0.668.
+there is a small, but consistent improvement in performance from an average of 0.655 to
+0.677.
 Subsequent deformation conditions do not appear to improve beyond this point on average.
+All deformation conditions outperform the baseline, indicating that augmentation 
+does not generally hurt performance.  However, because the improvement is not monotonic
+with respect to the cumulative effects of deformation, it may be that not all deformations 
+are equally useful.
+
+Although the difference in average performance is relatively small, the upper and lower 
+quantiles are notably higher in (P), (PT), and (PTB) conditions.  This suggests a
+reduction in the tendency to over-fit the relatively small training sets used in these
+experiments.
+
 
 %Subsequent deformation conditions do not appear to improve beyond this point, however,
 %the final condition (all deformations) achieves much lower variance --- \ie, higher
@@ -732,16 +743,18 @@ Subsequent deformation conditions do not appear to improve beyond this point on 
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=\columnwidth]{figs/fscore-change}
-    \caption{Per-class relative change in mean test-set $F$-score for each augmentation
-        condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
+    %\includegraphics[width=\columnwidth]{figs/fscore-change}
+    %\caption{Per-class change in mean test-set $F$-score for each augmentation condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
+    \includegraphics[width=\columnwidth]{figs/fscore-improvement}
+    \caption{Per-class change in mean test-set $F$-score for each augmentation condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
 \end{figure}
 
 Next, we investigated the effects of data augmentation on each instrument class.
 Specifically, we computed the precision, recall, and $F$-score of frame-level multi-label
 instrument classification under each training condition, and averaged the results across
-splits.  The quantity of interest is the label-wise change in $F$-score relative to the
-no-augmentation condition (N): $\Delta F = (F - F_N)/F_N$.
+all test tracks in a split, and then across all splits.
+The quantity of interest is the label-wise change in $F$-score relative to the baseline
+condition (N): $\Delta F = (F - F_N)$.
 The results are collected in \Cref{fscore}.
 
 While the changes vary over classes, the trend is primarily positive
