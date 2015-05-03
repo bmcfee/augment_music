@@ -686,9 +686,10 @@ This results in 75 unique artist identifiers for the 122 tracks.
 For each train/test split, the training set was further partitioned into
 training and validation sets, again at a ratio of 4:1.
 To evaluate performance, we compute for each test track the mean label-ranking average
-precision (LRAP) of predictions over all disjoint one-second patches.
+precision (LRAP) over all disjoint one-second patches.
 
 
+\subsubsection{Label ranking results}
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
@@ -703,8 +704,9 @@ precision (LRAP) of predictions over all disjoint one-second patches.
 %As a basic sanity check, we first note that training with degraded audio does not appear
 %to decrease overall performance.
 Between the no-augmentation condition (N) and pitch-shifting augmentation (P), 
-there is a small, but consistent improvement in performance.
+there is a small, but consistent improvement in performance from 0.646 to 0.668.
 Subsequent deformation conditions do not appear to improve beyond this point on average.
+
 %Subsequent deformation conditions do not appear to improve beyond this point, however,
 %the final condition (all deformations) achieves much lower variance --- \ie, higher
 %stability --- across train-test splits.
@@ -727,27 +729,34 @@ Subsequent deformation conditions do not appear to improve beyond this point on 
 %The majority of test points lie above the main diagonal, indicating
 %consistent improvements due to data augmentation.
 
-\begin{figure}
+\subsubsection{Frame-tagging results}
+
+\begin{figure}[t]
     \centering
     \includegraphics[width=\columnwidth]{figs/fscore-change}
-    \caption{Per-class relative change in test-set $F$-score for each augmentation condition,
-        relative to no-augmentation ($F_N$).  
-        Positive change indicates improvement by training with data augmentation.
-        $F$-scores are averaged across test splits.\label{fscore}}
+    \caption{Per-class relative change in mean test-set $F$-score for each augmentation
+        condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
 \end{figure}
 
 Next, we investigated the effects of data augmentation on each instrument class.
-\Cref{fscore} illustrates the change in per-class $F$-score relative to the
-no-augmentation condition, averaged across splits.
-While the change varies between classes, the trend is generally positive
-with the exceptions of \emph{female singer} and especially \emph{violin}.
-In the latter case, negative change is only observed after introducing time-stretch
-deformations, which may unnaturally distort the vibrato characteristics,
-and thus make the class more difficult to model.
+Specifically, we computed the precision, recall, and $F$-score of frame-level multi-label
+instrument classification under each training condition, and averaged the results across
+splits.  The quantity of interest is the label-wise change in $F$-score relative to the
+no-augmentation condition (N): $\Delta F = (F - F_N)/F_N$.
+The results are collected in \Cref{fscore}.
 
-\section{Discussion}
+While the changes vary over classes, the trend is primarily positive
+with a few notable exceptions of \emph{synthesizer}, \emph{female singer},
+and \emph{violin}.
+In the latter two cases, negative change is only observed after introducing time-stretch
+deformations, which may unnaturally distort vibrato characteristics,
+rendering these classes more difficult to model.
 
-% For bibtex users:
+
+\section{Conclusion}
+
+
+%\section*{Acknowledgments}
 
 \bibliography{refs}
 
