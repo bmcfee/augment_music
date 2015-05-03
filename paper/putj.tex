@@ -76,7 +76,7 @@ analyze, extract, and summarize music recordings in a human-friendly
 format, such as semantic tags, chord and melody annotations, or structural boundary
 estimations.  Modeling the vast complexity of musical audio seems to require large, 
 flexible models with many parameters.
-By the same token, estimating the parameters of complex statistical models often requires
+By the same token, parameter estimation in large models often requires
 a large number of samples: big models require big data.
 
 Within the past few years, this phenomenon of increasing model complexity has been 
@@ -118,11 +118,10 @@ As a musical analog to the image rotation example, time-stretching an audio trac
 should induce a dilation of time-keyed annotation boundaries (\eg, chord or instrument
 activation timings)~\cite{mauch2013audio}.
 
-Moreover, many natural, musically-inspired deformations
-would not only change the position of annotations, but the annotation
-\emph{values} themselves.
+Many natural, musically-inspired deformations would not only change the position of
+annotations, but the \emph{values} themselves.
 For instance, if a track has tempo annotations, any time-stretching deformations should
-be applied to the annotations as well.
+also be applied to the tempo values.
 Similarly, pitch-shifting a track should induce transpositions of annotated fundamental
 frequency curves, and if the transposition is sufficiently large, chord labels or symbolic 
 annotations may change as well.
@@ -139,7 +138,7 @@ than in other domains.
 % 1. develop a generic framework for synchronously manipulating audio and annotations
 % 2. investigate the effects of simple deformations on the problem of musical instrument recognition
 In this work, we describe a software architecture for applying data augmentation to music
-information retrieval tasks.\footnote{For anonymity purposes, the name of the software
+information retrieval tasks.\footnote{For anonymity purposes, the name of the software 
     described here is redacted throughout the text.  This will be changed in the final
 draft, and download links will be provided.}
 The system is designed to be simple, modular, and
@@ -149,8 +148,8 @@ reliably deformed, annotated music data.  The proposed system is built on top of
 JAMS~\cite{humphreyjams}, which provides a simple container for accessing and
 transporting multiple annotations for a given track.
 
-As a proof of concept, we apply the proposed data augmentation architecture to the
-task of recognizing instruments in mixed signals, and demonstrate that simple
+We demonstrate the proposed data augmentation architecture with the 
+task of recognizing instruments in mixed signals, and show that simple
 manipulations can yield improvements in accuracy.
 
 \section{Related work}
@@ -575,7 +574,7 @@ The data augmentation pipeline consists of four stages:
         The latter three were linearly mixed with the input signal $y$ using random weights
         $\alpha \sim { }_U[0.1,\, 0.4]$:
         \[
-            y' \leftarrow (1-\alpha) \cdot y + \alpha \cdot y_\text{noise}.
+            y' \leftarrow (1-\alpha) \cdot y \,+ \, \alpha \cdot y_\text{noise}.
         \]
     \item[Dynamic range compression (bypass)] under two settings drawn from the {Dolby E}
         standards~\cite{dolbyE}: \emph{speech},
@@ -663,14 +662,14 @@ $\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
 finally, $\ell_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
 During training, the model optimizes cross-entropy loss via mini-batch stochastic
-gradient descent, using batches of $n=64$ patches and a constant learning rate of 0.01.
+gradient descent, using batches of $n=64$ patches and a constant learning rate of $0.01$.
 Dropout is applied to the activations of the penultimate layer, $\ell=3$ with dropout
 probability $0.5$.
 Quadratic regularization is applied to the weights of the final layer, $\ell=4$, with a
 penalty factor of $0.02$. This helps prevent numerical instability by keeping
 the weights from growing arbitrarily large.
-The model is check-pointed after every 1000 batches, and a validation set is used to
-select the best-performing parameter setting.
+The model is check-pointed after every $1000$ batches (up to $50000$ batches), and a 
+validation set is used to select the best-performing parameter setting.
 
 \subsection{Evaluation}
 
