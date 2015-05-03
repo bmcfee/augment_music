@@ -9,7 +9,12 @@
     "04": "large/aug1/fold_04/aug1-005000-2015-04-24_12h45m17s.npz", 
     "05": "large/aug1/fold_05/aug1-012000-2015-04-30_10h00m48s.npz", 
     "08": "large/aug1/fold_08/aug1-018000-2015-04-30_14h24m49s.npz", 
-    "09": "large/aug1/fold_09/aug1-025000-2015-04-30_16h01m29s.npz"
+    "09": "large/aug1/fold_09/aug1-025000-2015-04-30_16h01m29s.npz", 
+    "13": "large/aug1/fold_13/aug1-016000-2015-05-02_23h59m31s.npz", 
+    "12": "large/aug1/fold_12/aug1-036000-2015-05-02_23h03m56s.npz", 
+    "14": "large/aug1/fold_14/aug1-005000-2015-05-03_01h14m46s.npz", 
+    "11": "large/aug1/fold_11/aug1-010000-2015-05-02_20h42m08s.npz", 
+    "10": "large/aug1/fold_10/aug1-031000-2015-05-02_19h48m47s.npz"
   }, 
   "2": {
     "02": "large/aug2/fold_02/aug2-035000-2015-04-25_11h39m54s.npz", 
@@ -21,7 +26,12 @@
     "04": "large/aug2/fold_04/aug2-041000-2015-04-25_14h14m03s.npz", 
     "05": "large/aug2/fold_05/aug2-047000-2015-04-30_19h03m49s.npz", 
     "08": "large/aug2/fold_08/aug2-025000-2015-04-30_22h39m30s.npz", 
-    "09": "large/aug2/fold_09/aug2-033000-2015-05-01_00h21m01s.npz"
+    "09": "large/aug2/fold_09/aug2-033000-2015-05-01_00h21m01s.npz", 
+    "13": "large/aug2/fold_13/aug2-031000-2015-05-03_00h32m42s.npz", 
+    "12": "large/aug2/fold_12/aug2-047000-2015-05-02_23h28m11s.npz", 
+    "14": "large/aug2/fold_14/aug2-047000-2015-05-03_02h44m15s.npz", 
+    "11": "large/aug2/fold_11/aug2-046000-2015-05-02_21h52m06s.npz", 
+    "10": "large/aug2/fold_10/aug2-035000-2015-05-02_19h57m25s.npz"
   }, 
   "3": {
     "02": "large/aug3/fold_02/aug3-045000-2015-04-25_18h47m38s.npz", 
@@ -33,7 +43,12 @@
     "04": "large/aug3/fold_04/aug3-023000-2015-04-25_20h39m05s.npz", 
     "05": "large/aug3/fold_05/aug3-045000-2015-04-30_23h51m59s.npz", 
     "08": "large/aug3/fold_08/aug3-039000-2015-05-01_04h01m31s.npz", 
-    "09": "large/aug3/fold_09/aug3-029000-2015-05-01_05h08m40s.npz"
+    "09": "large/aug3/fold_09/aug3-029000-2015-05-01_05h08m40s.npz", 
+    "13": "large/aug3/fold_13/aug3-044000-2015-05-03_06h50m06s.npz", 
+    "12": "large/aug3/fold_12/aug3-047000-2015-05-03_05h27m49s.npz", 
+    "14": "large/aug3/fold_14/aug3-027000-2015-05-03_07h48m09s.npz", 
+    "11": "large/aug3/fold_11/aug3-040000-2015-05-03_03h21m52s.npz", 
+    "10": "large/aug3/fold_10/aug3-047000-2015-05-03_01h52m35s.npz"
   }, 
   "4": {
     "02": "large/aug4/fold_02/aug4-021000-2015-04-25_16h50m10s.npz", 
@@ -45,7 +60,12 @@
     "04": "large/aug4/fold_04/aug4-021000-2015-04-25_17h19m52s.npz", 
     "05": "large/aug4/fold_05/aug4-046000-2015-05-01_08h08m20s.npz", 
     "08": "large/aug4/fold_08/aug4-046000-2015-05-01_12h31m37s.npz", 
-    "09": "large/aug4/fold_09/aug4-031000-2015-05-01_14h49m32s.npz"
+    "09": "large/aug4/fold_09/aug4-031000-2015-05-01_14h49m32s.npz", 
+    "13": "large/aug4/fold_13/aug4-036000-2015-05-03_12h56m14s.npz", 
+    "12": "large/aug4/fold_12/aug4-043000-2015-05-03_04h43m19s.npz", 
+    "14": "large/aug4/fold_14/aug4-044000-2015-05-03_11h28m18s.npz", 
+    "11": "large/aug4/fold_11/aug4-010000-2015-05-03_02h09m37s.npz", 
+    "10": "large/aug4/fold_10/aug4-036000-2015-05-03_01h24m01s.npz"
   }, 
   "5": {
     "02": "large/aug5/fold_02/aug5-036000-2015-04-24_19h51m03s.npz", 
@@ -57,6 +77,11 @@
     "04": "large/aug5/fold_04/aug5-047000-2015-04-24_22h20m24s.npz", 
     "05": "large/aug5/fold_05/aug5-023000-2015-05-01_17h20m58s.npz", 
     "08": "large/aug5/fold_08/aug5-035000-2015-05-01_22h26m42s.npz", 
-    "09": "large/aug5/fold_09/aug5-037000-2015-05-02_00h06m52s.npz"
+    "09": "large/aug5/fold_09/aug5-037000-2015-05-02_00h06m52s.npz", 
+    "13": "large/aug5/fold_13/aug5-016000-2015-05-03_00h47m26s.npz", 
+    "12": "large/aug5/fold_12/aug5-042000-2015-05-02_23h55m25s.npz", 
+    "14": "large/aug5/fold_14/aug5-049000-2015-05-03_03h47m16s.npz", 
+    "11": "large/aug5/fold_11/aug5-026000-2015-05-02_21h40m39s.npz", 
+    "10": "large/aug5/fold_10/aug5-043000-2015-05-02_20h33m22s.npz"
   }
 }
