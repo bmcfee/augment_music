@@ -236,8 +236,7 @@ conditions, while the latter attempts to improve robustness by \emph{training} u
 synthetic conditions. Note that with data augmentation, the evaluation set is left
 untouched by the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
-directly measure robustness, it has been observed  
-that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,he2015delving}.
+directly measure robustness, it has been observed that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,he2015delving}.
 
 
 \section{Data augmentation architecture}
@@ -697,6 +696,7 @@ precision (LRAP) over all disjoint one-second patches.
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{figs/lrapall}
+    \vspace{-1.5\baselineskip}
     \caption{Test-set score distributions (mean track-wise label-ranking average
         precision), over all train-test splits. Mean scores are indicated by \color{red}
         $\bullet$\normalcolor{}.
@@ -760,6 +760,7 @@ used in these experiments.
     %\includegraphics[width=\columnwidth]{figs/fscore-change}
     %\caption{Per-class change in mean test-set $F$-score for each augmentation condition ($F$), relative to no-augmentation ($F_N$).\label{fscore}}
     \includegraphics[width=\columnwidth]{figs/fscore-improvement}
+    \vspace{-1.5\baselineskip}
     \caption{Per-class change in mean test-set $F$-score for each augmentation condition
         ($F$), relative to the no-augmentation baseline ($F_N$).\label{fscore}}
 \end{figure}
@@ -778,19 +779,34 @@ and \emph{violin}.
 In the latter two cases, negative change is only observed after introducing time-stretch
 deformations, which may unnaturally distort vibrato characteristics and
 render these classes more difficult to model.
-The large decrease in accuracy for \emph{synthesizer} in the (PT) condition may explain 
-the reduction in accuracy seen in \Cref{lrapresults}, and might be expected due to the
-generally high variability of \emph{synthesizer} as a concept.
+The effect is particularly prominent for \emph{violin}, which has the fewest unique
+artists in MedleyDB, and often produces the fewest examples for training.
+
+The reduction in $F$-score for \emph{synthesizer} in the (PT) condition may 
+explain the corresponding reduction in \Cref{lrapresults}, and may be due
+to a confluence of factors.
+First, many of the synthesizer examples in MedleyDB have low amplitudes in the mix, 
+and may be difficult to model in general.
+Second, the class itself may be ill-defined, 
+as \emph{synthesizer} encompasses a range of instruments and timbres which may be
+artist-dependent and idiosyncratic.
+Simple augmentations can have adverse effects if the
+perturbed examples are insufficiently varied from the originals, which may be the case
+here for (P) and (PT).
+However, the inclusion of background noise (PTB) results in a slight improvement over
+the baseline.
 
 \section{Conclusion}
 
 The data augmentation framework described in this paper provides a simple and flexible
-interface to generate large quantities of distorted training data for training models of
-music.  The instrument recognition experiment demonstrates that even simple deformations
-such as pitch-shifting can improve model generalization.  However, we stress that these
-results are preliminary, and do not yet fully exploit the capabilities of the
-augmentation framework.  In future work, we plan to investigate the effects of
-data augmentation on a variety of MIR tasks.
+interface to help train models on distorted data.
+The instrument recognition experiment demonstrates that even simple deformations
+such as pitch-shifting can improve model generalization, but also demonstrate that some
+care should be exercised in the selection of deformations depending on the
+characteristics of the problem.  
+We note that these results are preliminary, and do not fully exploit the capabilities of the
+augmentation framework.
+In future work, we will to investigate the effects of data augmentation on a variety of MIR tasks.
 
 
 %\section*{Acknowledgments}
