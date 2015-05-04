@@ -525,13 +525,16 @@ need for writing a custom script for each setting.
 
 \section{Example application: multi-instrument recognition}
 
-To illustrate the data augmentation process, we applied it to the task of instrument
-recognition in mixed audio signals.  For this task, we used the MedleyDB dataset, which
-consists of 122 tracks, spanning a variety of genres and
-instrumentation~\cite{bittner2014medleydb}.  Each track is strongly annotated with 
-time-varying instrument activation indicators derived from the recording stems.
-Because of the relatively small sample size, we limit the experiment to cover only 
+We applied data augmentation to the task of instrument recognition in mixed audio signals.
+For this task, we used the MedleyDB dataset, which consists of 122 tracks, spanning a variety of genres and instrumentation~\cite{bittner2014medleydb}.
+Each track is strongly annotated with time-varying instrument activations derived from the recording stems.
+MedleyDB is a small, but well-annotated collection, which we selected because
+it should be possible to over-fit with a reasonably complex model.
+Our purpose here is not to achieve the best possible recognition results, but to
+investigate utility of data augmentation for improving generalization.
+However, because of the small sample size, we limited the experiment to cover only 
 the 15 instruments listed in \Cref{medleytags}.
+
 
 \begin{table}
 \caption{The 15 MedleyDB instrument labels used in our experiments.\label{medleytags}}
