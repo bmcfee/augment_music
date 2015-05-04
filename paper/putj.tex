@@ -271,7 +271,8 @@ that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,h
 %       using python iterators makes this simple, self-contained, and memory-efficient
 Our implementation takes substantial inspiration from the Audio Degradation
 Toolbox~\cite{mauch2013audio}.  In principle, the ADT can be used directly
-for data augmentation simply by applying it to the training set rather than test set.
+for some forms of data augmentation simply by applying it to the training set 
+rather than test set.
 However, we opted for an independent, Python-based implementation for a variety of reasons.
 
 % 1. object-oriented design
@@ -330,8 +331,9 @@ objects.
 
 \subsection{Deformation objects}
 
-At the core of our implementation is the concept of a \emph{deformation object}, which we will 
-first describe abstractly, followed by a high-level description of an example.
+At the core of our implementation is the concept of a \emph{deformation object}.
+We will first describe deformation objects in terms of their methods and abstract
+properties.  \Cref{deformer-example} follows with a concrete, but high-level example.
 
 A deformation object implements one or more \emph{transformation} methods, each of which
 applies to either audio, meta-data, or annotations.
@@ -394,6 +396,7 @@ computation at line~10 and proceed to the next state at line~2.
 
 
 \subsubsection{Example: randomized time-stretching}
+\label{deformer-example}
 To illustrate the deformation object interface, we will describe the implementation of a 
 randomized \emph{time-stretch} deformation object.
 In this case, each \emph{state} object contains a single quantity: the stretch factor $r$.
