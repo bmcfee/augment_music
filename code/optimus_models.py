@@ -1,7 +1,16 @@
 import optimus
+import numpy as np
 
 GRAPH_NAME = 'multiregressor'
 NUM_FREQ_COEFFS = 216
+
+
+def uniform_init(param, bias=0.0, scale=1e-2):
+    '''Uniform random initialization'''
+
+    param.value = bias + scale * np.random.uniform(low=-1.0,
+                                                   high=1.0,
+                                                   size=param.shape)
 
 
 def param_init(nodes, scale=0.01, skip_biases=True):
@@ -9,14 +18,15 @@ def param_init(nodes, scale=0.01, skip_biases=True):
         for k, p in n.params.items():
             if 'bias' in k and skip_biases:
                 continue
-            optimus.random_init(p, 0, scale)
+            # optimus.random_init(p, 0, scale)
+            uniform_init(p, bias=0, scale=scale)
 
 
 def beastly_network(num_frames, num_classes, size='large'):
     # Kernel counts, per layer
     k0, k1, k2 = dict(
         small=(10, 20, 48),
-        med=(12, 24, 64),
+        med=(12, 24, 256),
         large=(24, 48, 96),
         xlarge=(20, 40, 128),
         xxlarge=(24, 48, 256))[size]
@@ -57,6 +67,10 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     weight_decay = optimus.Input(
         name='weight_decay',
+        shape=None)
+
+    dropout = optimus.Input(
+        name='dropout',
         shape=None)
 
     inputs = [input_data, class_targets, learning_rate]
@@ -111,6 +125,9 @@ def beastly_network(num_frames, num_classes, size='large'):
     # Z3 = optimus.Output(name='Z3')
     prediction = optimus.Output(name='Z')
 
+    # Dropout
+    layer2.enable_dropout()
+
     # 2. Define Edges
     base_edges = [
         (input_data, layer0.input),
@@ -125,9 +142,10 @@ def beastly_network(num_frames, num_classes, size='large'):
     trainer_edges = base_edges + [(classifier.output, xentropy.prediction),
                                   (class_targets, xentropy.target),
                                   (xentropy.output, total_loss.input_0),
-                                  (layer2.weights, l2_penalty.input),
+                                  (classifier.weights, l2_penalty.input),
                                   (weight_decay, l2_penalty.weight),
                                   (l2_penalty.output, total_loss.input_1),
+                                  (dropout, layer2.dropout),
                                   (total_loss.output, loss)]
 
     updates = optimus.ConnectionManager(
@@ -138,13 +156,15 @@ def beastly_network(num_frames, num_classes, size='large'):
 
     trainer = optimus.Graph(
         name=GRAPH_NAME,
-        inputs=inputs + [weight_decay],
+        inputs=inputs + [weight_decay, dropout],
         nodes=param_nodes + [max_pool, xentropy, l2_penalty, total_loss],
         connections=optimus.ConnectionManager(trainer_edges).connections,
         outputs=[loss, prediction, Z0, Z1, Z2],
         loss=loss,
         updates=updates.connections,
         verbose=True)
+
+    layer2.disable_dropout()
 
     predictor = optimus.Graph(
         name=GRAPH_NAME,
