@@ -109,9 +109,8 @@ class label: an image of a cat still contains a cat, even when it is flipped ups
 %are maintained.
 
 More generally, deformations apply not only to observable features, but the labels as well.
-Continuing with the image example, if an image is rotated by some angle, 
-then any pixel-wise label annotations (\eg, bounding boxes) should also be rotated by
-that angle.
+Continuing with the image example, if an image is rotated, 
+then any pixel-wise label annotations (\eg, bounding boxes) should be rotated accordingly.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
 A musical analog to the image rotation example would be time-stretching,
@@ -237,7 +236,7 @@ conditions, while the latter attempts to improve robustness by \emph{training} u
 synthetic conditions. Note that with data augmentation, the evaluation set is left
 untouched by the experimenter, so the resulting comparisons are unbiased with respect
 to the underlying distribution from which the data are sampled.  While this does not
-directly measure robustness of the resulting system, it has been observed  
+directly measure robustness, it has been observed  
 that data augmentation can improve generalization~\cite{krizhevsky2012imagenet,he2015delving}.
 
 
