@@ -705,7 +705,7 @@ precision (LRAP) over all disjoint one-second patches.
         percentiles.\label{lrapresults}}
 \end{figure}
 
-\Cref{lrapresults} illustrates the distribution of test-set performance over all splits. 
+\Cref{lrapresults} illustrates the distribution of test-set performance across splits. 
 %Because of the relatively small size of MedleyDB and the need for
 %artist-conditional splits, the resulting test-sets are small and thus exhibit high
 %variance across splits.  
@@ -719,17 +719,16 @@ If the amount of clean data is too small, the model may easily over-fit by captu
 irrelevant, correlated properties.
 (For example, if all of the \emph{piano} recordings are in one key, the model may simply
 capture the key rather than the characteristics of \emph{piano}.)
+Adding pitch-shifted examples should help the model disambiguate these properties.
 
-Subsequent deformation conditions do not appear to improve beyond this point on average.
+Subsequent deformations do not appear to improve over condition (P) on average.
 In each case, no significant difference from the pitch-shift condition could be detected 
-by a Wilcoxon signed-rank test.
+by a Bonferroni-corrected Wilcoxon signed-rank test.
 However, all deformation conditions consistently outperform the baseline on average.
-%Because the improvement is not monotonic with respect to the cumulative effects 
-%of deformation, it may be that not all deformations are equally useful.
 
 Although the difference in average performance is relatively small, the upper and lower 
 quantiles are notably higher in (P), (PT), and (PTB) conditions.
-This suggests a reduction in the tendency to over-fit the relatively small training sets
+This indicates a reduction in the tendency to over-fit the relatively small training sets
 used in these experiments.
 
 
@@ -768,11 +767,10 @@ used in these experiments.
 
 To investigate the effects of augmentation on each instrument class,
 we computed the precision, recall, and $F$-score of frame-level multi-label
-instrument classification under each training condition, and averaged the results across
-all test tracks in a split, and then across all splits.
-The quantity of interest is the label-wise change in $F$-score relative to the baseline
+instrument classification under each training condition.  Results were averaged first
+across test tracks in a split, and then across all splits.
+\Cref{fscore} depicts the change in $F$-score relative to the baseline
 condition (N): $\Delta F = (F - F_N)$.
-The results are collected in \Cref{fscore}.
 
 The trend is primarily positive: in all but three classes, all augmentation
 conditions provide consistent improvement.  
@@ -782,7 +780,8 @@ In the latter two cases, negative change is only observed after introducing time
 deformations, which may unnaturally distort vibrato characteristics and
 render these classes more difficult to model.
 The large decrease in accuracy for \emph{synthesizer} in the (PT) condition may explain 
-the reduction in accuracy seen in \Cref{lrapresults}.
+the reduction in accuracy seen in \Cref{lrapresults}, and might be expected due to the
+generally high variability of \emph{synthesizer} as a concept.
 
 \section{Conclusion}
 
@@ -790,11 +789,9 @@ The data augmentation framework described in this paper provides a simple and fl
 interface to generate large quantities of distorted training data for training models of
 music.  The instrument recognition experiment demonstrates that even simple deformations
 such as pitch-shifting can improve model generalization.  However, we stress that these
-results are preliminary, and do not yet fully exploit the full capabilities of the
+results are preliminary, and do not yet fully exploit the capabilities of the
 augmentation framework.  In future work, we plan to investigate the effects of
 data augmentation on a variety of MIR tasks.
-
-
 
 
 %\section*{Acknowledgments}
