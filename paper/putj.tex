@@ -83,9 +83,9 @@ Within the past few years, this phenomenon of increasing model complexity has be
 observed in the computer vision literature.  Currently, the best-performing models for 
 recognition of objects in images exploit two fundamental properties to overcome the 
 difficulty of fitting large, complex models: access to large quantities of annotated data, 
-and identifying label-invariant data transformations~\cite{krizhevsky2012imagenet}.
-The benefits of large training collections are obvious, and unfortunately, difficult to
-carry over to most musical annotation tasks due to the complexity of the label space and
+and label-invariant data transformations~\cite{krizhevsky2012imagenet}.
+The benefits of large training collections are obvious, but unfortunately difficult to
+achieve for most musical annotation tasks due to the complexity of the label space and
 need for expert annotators.  However, the idea of generating perturbations of a training
 set --- known as \emph{data augmentation} --- can be readily adapted to musical tasks.
 
@@ -108,24 +108,24 @@ class label: an image of a cat still contains a cat, even when it is flipped ups
 %caution when applying data augmentation techniques to ensure that the correct invariances
 %are maintained.
 
-More generally, deformations may apply not only to the observable features, but the labels as well.
+More generally, deformations apply not only to observable features, but the labels as well.
 Continuing with the image example, if an image is rotated by some angle, 
 then any pixel-wise label annotations (\eg, bounding boxes) should also be rotated by
 that angle.
 This observation opens up several interesting possibilities for musical applications, in
 which the target concept space typically exhibits a high degree of structure.
-As a musical analog to the image rotation example, time-stretching an audio track 
-should induce a dilation of time-keyed annotation boundaries (\eg, chord or instrument
-activation timings)~\cite{mauch2013audio}.
+A musical analog to the image rotation example would be time-stretching,
+where time-keyed annotation boundaries (\eg, chord labels or instrument
+activations) must be adjusted to fit the stretched signal~\cite{mauch2013audio}.
 
 Many natural, musically-inspired deformations would not only change the position of
 annotations, but the \emph{values} themselves.
-For instance, if a track has tempo annotations, any time-stretching deformations should
-also be applied to the tempo values.
+For instance, if a time-stretched track has tempo annotations, the annotation values
+should be scaled accordingly.
 Similarly, pitch-shifting a track should induce transpositions of annotated fundamental
 frequency curves, and if the transposition is sufficiently large, chord labels or symbolic 
 annotations may change as well.
-To successfully apply data augmentation may require a more sophisticated approach in MIR
+Successful application of data augmentation may therefore require a more sophisticated approach in MIR
 than in other domains.
 
 %   3. but data augmentation is more difficult in music than in images
@@ -148,8 +148,8 @@ reliably deformed, annotated music data.  The proposed system is built on top of
 JAMS~\cite{humphreyjams}, which provides a simple container for accessing and
 transporting multiple annotations for a given track.
 
-We demonstrate the proposed data augmentation architecture with the 
-task of recognizing instruments in mixed signals, and show that simple
+We demonstrate the proposed data augmentation architecture with the application
+of recognizing instruments in mixed signals, and show that simple
 manipulations can yield improvements in accuracy.
 
 \section{Related work}
@@ -320,10 +320,9 @@ from small, conceptually simple components.
 %   bypass
 %       make a deformer optional
 
-In the remainder of this section, we will describe each of these
-properties in more detail.  Without loss of generality, we assume that an
-annotation (\eg, instrument activations) is encoded as a collection of
-tuples: \emph{(time, duration, value, confidence)}.
+In the remainder of this section, we will describe the software architecture in more
+detail.
+Without loss of generality, we assume that an annotation (\eg, instrument activations) is encoded as a collection of tuples: \emph{(time, duration, value, confidence)}.
 Note that instantaneous events can be represented with zero duration, while
 track-level annotations have full-track duration.  The \emph{value} field depends on
 the annotation type, and may encode strings, numeric quantities, or fully structured
@@ -357,6 +356,7 @@ This is implemented efficiently using Python \emph{generators}.
 
 Finally, deformation objects may register transformation functions against the 
 \emph{type} of an annotation, as described by regular expressions.
+This allows different transformation procedures to be applied to different annotation types.
 During execution, the JAMS object is queried for all annotations matching the specified
 expression, and the results are processed by the corresponding transformation method.
 For example, the expression ``\texttt{.*}'' matches all annotation types, while 
@@ -485,7 +485,7 @@ improvements to memory efficiency.
 
 Finally, we introduce the \emph{bypass} object, which is used to mark
 individual pipeline stages as optional.
-Bypasses are useful when it is difficult to encode a special \emph{no-op} 
+Bypasses are useful when it is difficult to encode a special \emph{no-transformation}
 state within a deformation object, such as the randomized time-stretch 
 example listed as \Cref{alg:timestate}.
 The internal logic of a bypass object is simple: first, pass the input directly through
@@ -574,7 +574,7 @@ The data augmentation pipeline consists of four stages:
         subway,\footnote{\url{https://www.freesound.org/people/jobro/sounds/112252/}}
         crowded concert hall,\footnote{\url{https://www.freesound.org/people/klankbeeld/sounds/171317/}}
         and night-time city noise.\footnote{\url{https://www.freesound.org/people/inkhorn/sounds/231870/}}
-        The latter three were linearly mixed with the input signal $y$ using random weights
+        Noise clips were randomly sampled and linearly mixed with the input signal $y$ using random weights
         $\alpha \sim { }_U[0.1,\, 0.4]$:
         \[
             y' \leftarrow (1-\alpha) \cdot y \,+ \, \alpha \cdot y_\text{noise}.
@@ -586,7 +586,7 @@ The data augmentation pipeline consists of four stages:
 
 Pitch-shift and time-stretch operations were performed by Rubberband~\cite{rubberband}, and dynamic range
 compression was performed by sox~\cite{sox}.
-Note that the first two stages include no-op parameter settings $n=0$ and $r=1$.  We use
+Note that the first two stages include no-transformation parameter settings $n=0$ and $r=1$.  We use
 bypasses on the final two stages to ensure that all combinations of augmentation are
 present in the final set.
 The full pipeline produces
@@ -594,17 +594,17 @@ The full pipeline produces
 |\Sigma_P| = 3\times 3\times (3+1)\times (2+1) = 108\]
 variants of each input track.  To simplify the experiments, we only compare the cumulative effects of the above
 augmentations.  This results in five training conditions of increasing complexity:
-\begin{description}
-    \item[(N)] no augmentation,
+\begin{itemize}
+    \item (N) no augmentation,
         \vspace{-.5\baselineskip}
-    \item[(P)] pitch shift,
+    \item (P) pitch shift,
         \vspace{-.5\baselineskip}
-    \item[(PT)] pitch shift and time stretch,
+    \item (PT) pitch shift and time stretch,
         \vspace{-.5\baselineskip}
-    \item[(PTB)] pitch shift, time stretch, and background noise,
+    \item (PTB) pitch shift, time stretch, and noise,
         \vspace{-.5\baselineskip}
-    \item[(PTBC)] all stages.
-\end{description}
+    \item (PTBC) all stages.
+\end{itemize}
 
 \subsection{Acoustic model}
 
@@ -658,7 +658,7 @@ Z_\ell = f_\ell(X_\ell \given \theta_\ell) = h( WX_\ell + b), \quad \theta_\ell 
 The input to the $\ell^{th}$ layer, $X_\ell$, is flattened to a column vector of length $N$, projected against a weight matrix $W$ of shape $(M, N)$, added to a vector bias term, $b$, of length $M$, and transformed by a point-wise activation function, $h(\cdot)$.
 
 The network is parameterized thusly:
-$\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, $(2, 2)$ max-pooling over the last two
+$\ell_1$ uses $W$ with shape $(24, 1, 13, 9)$, followed by $(2, 2)$ max-pooling over the last two
 dimensions, and a rectified linear unit (ReLU) activation function: $h(x) \defeq \max(x, 0)$;
 $\ell_2$ has filter parameters $W$ with shape $(48, 24, 9, 7)$, followed by $(2, 2)$ max-pooling over the last two dimensions, and a ReLU activation function;
 $\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
@@ -712,7 +712,7 @@ Between the no-augmentation condition (N) and pitch-shifting augmentation (P),
 there is a small, but consistent improvement in performance from an average of 0.655 to
 0.677.  This is in keeping with the motivation for this work, and our 
 expectations when training a (pitch)-convolutional model on a small sample.
-If the unmodified data is too small, the model may easily over-fit by capturing
+If the amount of clean data is too small, the model may easily over-fit by capturing
 irrelevant, correlated properties.
 (For example, if all of the \emph{piano} recordings are in one key, the model may simply
 capture the key rather than the characteristics of \emph{piano}.)
@@ -763,8 +763,8 @@ used in these experiments.
         ($F$), relative to the no-augmentation baseline ($F_N$).\label{fscore}}
 \end{figure}
 
-We investigated the effects of augmentation on each instrument class.
-Specifically, we computed the precision, recall, and $F$-score of frame-level multi-label
+To investigate the effects of augmentation on each instrument class,
+we computed the precision, recall, and $F$-score of frame-level multi-label
 instrument classification under each training condition, and averaged the results across
 all test tracks in a split, and then across all splits.
 The quantity of interest is the label-wise change in $F$-score relative to the baseline
