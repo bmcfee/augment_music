@@ -9,12 +9,15 @@
 \usepackage{cleveref}
 \usepackage{cite}
 \usepackage{brian}
+\usepackage{authblk}
 \usepackage{graphicx}
 \usepackage{booktabs}
 
+\renewcommand\Authfont{\bfseries}
+
 % Title.
 % ------
-\title{Musical data augmentation}
+\title{A framework for musical data augmentation}
 
 
 % Single address
@@ -32,10 +35,12 @@
 
 % Three addresses
 % --------------
-\threeauthors%
-  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
-  {Second author} {\bf Retain these fake authors in\\\bf submission to preserve the formatting}
-  {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
+%\threeauthors%
+%  {Brian McFee} {Center for Data Science\\ New York University\\ {\tt brian.mcfee@nyu.edu}}
+%  {Eric J. Humphrey} {Music and Audio Research Laboratory \\ New York University\\ {\tt
+%  ejhumphrey@nyu.edu}}
+%  {Juan P. Bello} {Music and Audio Research Laboratory \\ New York University \\ {\tt jpbello@nyu.edu}}
+
 
 % Four addresses
 % --------------
@@ -45,9 +50,23 @@
 %  {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
 %  {Fourth author} {Affiliation4 \\ {\tt author4@ismir.edu}}
 
+\author[1,2,*]{Brian McFee}
+\author[2,3]{Eric J. Humphrey}
+\author[2]{Juan P. Bello}
+\affil[1]{Center for Data Science \\ New York University}
+\affil[2]{Music and Audio Research Laboratory \\ New York University}
+\affil[3]{MuseAmi, Inc.}
+
+\def\authorname{Brian McFee, Eric J. Humphrey, Juan P. Bello}
+
 \begin{document}
 %
 \maketitle
+%
+\let\oldthefootnote\thefootnote
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{Please direct correspondence to \url{brian.mcfee@nyu.edu}}
+\let\thefootnote\oldthefootnote
 %
 \begin{abstract}
 Predictive models for music annotation tasks are practically limited by a paucity of
@@ -136,10 +155,8 @@ than in other domains.
 \subsection{Our contributions}
 % 1. develop a generic framework for synchronously manipulating audio and annotations
 % 2. investigate the effects of simple deformations on the problem of musical instrument recognition
-In this work, we describe a software architecture for applying data augmentation to music
-information retrieval tasks.\footnote{For anonymity purposes, the name of the software 
-    described here is redacted throughout the text.  This will be changed in the final
-draft, and download links will be provided.}
+In this work, we describe the MUDA software architecture for applying data augmentation to music
+information retrieval tasks.\footnote{\url{https://bmcfee.github.io/muda}}
 The system is designed to be simple, modular, and
 extensible. The design enables practitioners to develop custom deformations, and combine
 multiple simple deformations together into pipelines which can generate large volumes of
