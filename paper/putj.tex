@@ -578,7 +578,7 @@ the 15 instruments listed in \Cref{medleytags}.
     \end{tabular}
 \end{table}
 
-For evaluation purposes, each track is split into one-second clips.
+For evaluation purposes, each test track is split into disjoint one-second clips.
 The system is then tasked with recognizing the instruments active within each clip.
 The system is evaluated according to the average track-wise mean (label-ranking) average
 precision (LRAP), and per-instrument $F$-score over one-second clips.
@@ -685,7 +685,8 @@ $\ell_3$ uses $W$ with shape $(17280, 96)$ and a ReLU activation function;
 finally, $\ell_4$ uses $W$ with shape $(96, 15)$ and a sigmoid activation function.
 
 During training, the model optimizes cross-entropy loss via mini-batch stochastic
-gradient descent, using batches of $n=64$ patches and a constant learning rate of $0.01$.
+gradient descent, using batches of $n=64$ randomly selected patches and a constant 
+learning rate of $0.01$.
 Dropout is applied to the activations of the penultimate layer, $\ell=3$ with dropout
 probability $0.5$.
 Quadratic regularization is applied to the weights of the final layer, $\ell=4$, with a
@@ -786,8 +787,8 @@ used in these experiments.
 \end{figure}
 
 To investigate the effects of augmentation on each instrument class,
-we computed the $F$-score of frame-level multi-label
-instrument classification under each training condition.  Results were averaged first
+we computed the $F$-score of frame-level instrument recognition under 
+each training condition.  Results were averaged first
 across test tracks in a split, and then across all splits.
 \Cref{fscore} depicts the change in $F$-score relative to the baseline
 condition (N): $\Delta F = (F - F_N)$.
@@ -821,7 +822,7 @@ the baseline.
 The data augmentation framework provides a simple and flexible
 interface to train models on distorted data.
 The instrument recognition experiment demonstrates that even simple deformations
-such as pitch-shifting can improve model generalization, but that some
+such as pitch-shifting can improve generalization, but that some
 care should be exercised when selecting deformations depending on the
 characteristics of the problem.
 We note that these results are preliminary, and do not fully exploit the capabilities of the
